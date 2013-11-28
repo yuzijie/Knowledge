@@ -1,5 +1,5 @@
-# 什么是 KPMG?
+# KPMG公司介绍
 
-source: wikipedia
+KPMG is one of the largest professional services companies in the world and one of the Big Four auditors, along with Deloitte, Ernst & Young (EY) and PricewaterhouseCoopers (PwC). Its global headquarters is located in Amstelveen, the Netherlands. [source: wikipedia][1]
 
-KPMG is one of the largest professional services companies in the world and one of the Big Four auditors, along with Deloitte, Ernst & Young (EY) and PricewaterhouseCoopers (PwC). Its global headquarters is located in Amstelveen, the Netherlands.
+[1]:	http://en.wikipedia.org/wiki/KPMG "KPMG"
