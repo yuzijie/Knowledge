@@ -12,6 +12,15 @@
 		<array>
 			<string>KPMG.md</string>
 		</array>
+		<array>
+			<string>Deloitte.md</string>
+		</array>
+		<array>
+			<string>Ernst &amp; Young.md</string>
+		</array>
+		<array>
+			<string>PricewaterhouseCoopers.md</string>
+		</array>
 	</array>
 	<key>userIconName</key>
 	<string>Box</string>
