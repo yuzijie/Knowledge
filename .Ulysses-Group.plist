@@ -4,6 +4,15 @@
 <dict>
 	<key>createMarkedFile</key>
 	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>README.md</string>
+		</array>
+		<array>
+			<string>KPMG.md</string>
+		</array>
+	</array>
 	<key>userIconName</key>
 	<string>Box</string>
 </dict>
