@@ -2,20 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>childOrder</key>
-	<array>
-		<string>公司介绍</string>
-		<string>体育运动</string>
-	</array>
 	<key>createMarkedFile</key>
 	<false/>
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>README.md</string>
+			<string>巴西柔术.md</string>
 		</array>
 	</array>
-	<key>userIconName</key>
-	<string>Bookmarks</string>
 </dict>
 </plist>
