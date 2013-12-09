@@ -9,6 +9,9 @@
 	- Ernst & Young
 	- PricewaterhouseCoopers
 - 体育运动
-	- 巴西柔术
-- 待添加条目
-	- 比特币的算法
+	- 巴西柔术 **20%**
+- 小技巧
+- 食谱
+	- Torta Pistacchio Cioccolato
+- 金融
+	- 比特币 **0%**
