@@ -1,17 +1,10 @@
-# Knowledge
-
-我所有知识的积累和汇总
-
+# 我的知识积累
+## 前言
+不积跬步无以至千里，不积小流无以成江海。抱着每天成长一点的精神去生活，生活才会变得更有希望，生命才会更加充实。
 ## 目录
 - 公司介绍
-	- KPMG
-	- Deloitte
-	- Ernst & Young
-	- PricewaterhouseCoopers
-- 体育运动
-	- 巴西柔术 **20%**
+- 运动
 - 小技巧
 - 食谱
-	- Torta Pistacchio Cioccolato
 - 金融
-	- 比特币 **0%**
+- 着装
