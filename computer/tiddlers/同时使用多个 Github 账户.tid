@@ -1,0 +1,12 @@
+created: 20140501124234247
+modified: 20140501125122346
+tags: github ssh tips
+title: 同时使用多个 Github 账户
+type: text/vnd.tiddlywiki
+
+<ol><li>Create a New SSH Key<ul><li><code>ssh-keygen -t rsa -C &quot;your-email-address&quot;</code></li><li>save the file as <code>~/.ssh/YOUR_NAME_rsa</code> instead of <code>~/.ssh/id_rsa</code></li></ul></li><li>Attach the New Key<ul><li><code>pbcopy &lt; ~/.ssh/YOUR_NAME_rsa.pub</code></li><li>Paste this into the GitHub &quot;add new ssh key&quot; area</li><li>because we saved our key with a unique name, we need to tell SSH about it: <br><code>ssh-add ~/.ssh/YOUR_NAME_rsa</code></li></ul></li><li>Open Config file: <code>s ~/.ssh/config</code><ul><li>add new account into <code>config</code>
+<pre>Host YOUR_NAME
+HostName github.com
+User git
+IdentityFile ~/.ssh/YOUR_NAME_rsa
+</pre></li></ul></li><li>Change git origin url <code>git remote add origin git@YOUR_NAME:user/repo.git</code></li></ol>
