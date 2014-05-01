@@ -1,0 +1,8 @@
+title: My customized style
+tags: [[$:/tags/stylesheet]]
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+html body.tw-body code {
+	border-width: 0px;
+}
