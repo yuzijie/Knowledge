@@ -127,8 +127,6 @@ Error message and password prompt
 
 <li>$:/plugins/tiddlywiki/highlight</li>
 
-<li>$:/ShowEditPreview</li>
-
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
@@ -146,6 +144,8 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/vanilla</li>
 
 <li>github</li>
+
+<li>My customized style</li>
 
 <li>ssh</li>
 
@@ -3465,8 +3465,19 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140501133526123" title="$:/HistoryList" type="application/json" revision="1" bag="default">
+<div current-tiddler="$:/ControlPanel" modified="20140501152102753" title="$:/HistoryList" type="application/json" revision="2" bag="default">
 <pre>[
+    {
+        &quot;title&quot;: &quot;同时使用多个 Github 账户&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 285,
+            &quot;left&quot;: 149,
+            &quot;width&quot;: 278,
+            &quot;right&quot;: 427,
+            &quot;bottom&quot;: 305,
+            &quot;height&quot;: 20
+        }
+    },
     {
         &quot;title&quot;: &quot;$:/ControlPanel&quot;,
         &quot;fromPageRect&quot;: {
@@ -3580,16 +3591,13 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20140501124509171" modified="20140501124508101" title="$:/ShowEditPreview" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>no</pre>
-</div>
 <div created="20140501125846791" modified="20140501125850900" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>YU Zijie's personal web notebook</pre>
 </div>
 <div created="20140501125834302" modified="20140501125859254" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Computer</pre>
 </div>
-<div modified="20140501133527912" title="$:/state/tab-{-1370058198}" revision="1" bag="default">
+<div modified="20140501152104458" title="$:/state/tab-{-1370058198}" revision="1" bag="default">
 <pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
@@ -3598,7 +3606,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel [[同时使用多个 Github 账户]] github ssh tips" title="$:/StoryList" revision="3" bag="default">
+<div list="$:/ControlPanel GettingStarted [[My customized style]] [[同时使用多个 Github 账户]] github ssh tips" title="$:/StoryList" revision="2" bag="default">
 <pre></pre>
 </div>
 <div dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.0.10-beta" revision="0" bag="default">
@@ -3646,6 +3654,13 @@ Error message and password prompt
 </div>
 <div color="#6699FF" created="20140501125146773" modified="20140501125231876" title="github" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
+</div>
+<div tags="$:/tags/stylesheet" title="My customized style" revision="0" bag="default">
+<pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+html body.tw-body code {
+	border-width: 0px;
+}</pre>
 </div>
 <div color="#009933" created="20140501125251367" modified="20140501125309934" title="ssh" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
