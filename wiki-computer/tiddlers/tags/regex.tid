@@ -1,6 +1,15 @@
 color: #ff9300
 created: 20140502162144709
-modified: 20140502162148798
+modified: 20140502184457973
 title: regex
 type: text/vnd.tiddlywiki
 
+<ol>
+<$list filter="[tag[regex]sort[title]]">
+<li>
+	<$link>
+    	<$view field="title"/>
+	</$link>
+</li>
+</$list>
+</ol>

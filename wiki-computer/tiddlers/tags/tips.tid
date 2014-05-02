@@ -1,6 +1,15 @@
 color: #FF3300
 created: 20140501125320932
-modified: 20140501125320932
+modified: 20140502184417626
 title: tips
 type: text/vnd.tiddlywiki
 
+<ol>
+<$list filter="[tag[tips]sort[title]]">
+<li>
+	<$link>
+    	<$view field="title"/>
+	</$link>
+</li>
+</$list>
+</ol>

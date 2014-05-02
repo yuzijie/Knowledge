@@ -1,6 +1,15 @@
 color: #009933
 created: 20140501125251367
-modified: 20140501125309934
+modified: 20140502184445564
 title: ssh
 type: text/vnd.tiddlywiki
 
+<ol>
+<$list filter="[tag[ssh]sort[title]]">
+<li>
+	<$link>
+    	<$view field="title"/>
+	</$link>
+</li>
+</$list>
+</ol>
