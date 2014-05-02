@@ -1,0 +1,77 @@
+created: 20140502114535173
+modified: 20140502145659273
+tags: apache
+title: .htaccess mod_rewrite 正则表达式
+type: text/vnd.tiddlywiki
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Character</th>
+	<th style="text-align:left;">Meaning</th>
+	<th style="text-align:left;">Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><code>.</code></td>
+	<td style="text-align:left;">Matches any single character</td>
+	<td style="text-align:left;"><code>c.t</code> will match <code>cat</code>, <code>cot</code>, <code>cut</code>, etc.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>+</code></td>
+	<td style="text-align:left;">Repeats the previous match one or more times</td>
+	<td style="text-align:left;"><code>a+</code> matches <code>a</code>, <code>aa</code>, <code>aaa</code>, etc</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>*</code></td>
+	<td style="text-align:left;">Repeats the previous match zero or more times</td>
+	<td style="text-align:left;"><code>a*</code> matches all the same things <code>a+</code> matches, but will also match an empty string</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>?</code></td>
+	<td style="text-align:left;">Makes the match optional</td>
+	<td style="text-align:left;"><code>colou?r</code> will match <code>color</code> and <code>colour</code></td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>^</code></td>
+	<td style="text-align:left;">Called an anchor, matches the beginning of the string</td>
+	<td style="text-align:left;"><code>^a</code> matches a string that begins with <code>a</code></td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>$</code></td>
+	<td style="text-align:left;">The other anchor, this matches the end of the string</td>
+	<td style="text-align:left;"><code>a$</code> matches a string that ends with <code>a</code></td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>( )</code></td>
+	<td style="text-align:left;">Groups several characters into a single unit, and captures a match for use in a backreference</td>
+	<td style="text-align:left;"><code>(ab)+</code> matches <code>ababab</code> - that is, the <code>+</code> applies to the group</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>[ ]</code></td>
+	<td style="text-align:left;">A character class - matches one of the characters</td>
+	<td style="text-align:left;"><code>c[uoa]t</code> matches <code>cut</code>, <code>cot</code> or <code>cat</code>.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code>[^ ]</code></td>
+	<td style="text-align:left;">Negative character class - matches any character not specified</td>
+	<td style="text-align:left;"><code>c[^/]t</code> matches <code>cat</code> or <code>c=t</code> but not <code>c/t</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>In mod_rewrite the ! character can be used before a regular expression to negate it. This is, a string will be considered to have matched only if it does not match the rest of the expression.</p>
+
+<p><strong>Regex Back-Reference Availability</strong></p>
+
+<p>One important thing here has to be remembered: Whenever you use parentheses in Pattern or in one of the CondPattern, back-references are internally created which can be used with the strings <code>$N</code> and <code>%N</code> (see below). These are available for creating the strings Substitution and TestString as outlined in the following chapters. Figure 1 shows to which locations the back-references are transferred for expansion as well as illustrating the flow of the RewriteRule, RewriteCond matching.</p>
+
+[img[rewrite_backreferences.png]]
