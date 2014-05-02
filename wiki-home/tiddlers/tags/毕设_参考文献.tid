@@ -1,0 +1,16 @@
+color: #0096ff
+created: 20140502203334255
+modified: 20140502203334255
+tags: 毕设
+title: 毕设/参考文献
+type: text/vnd.tiddlywiki
+
+<ol>
+<$list filter="[tag[毕设/参考文献]sort[title]]">
+<li>
+	<$link>
+    	<$view field="title"/>
+	</$link>
+</li>
+</$list>
+</ol>
