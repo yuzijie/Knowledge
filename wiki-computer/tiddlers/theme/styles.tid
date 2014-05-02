@@ -14,3 +14,7 @@ html body.tw-body code {
 html body, .tw-sidebar-scrollable-backdrop {
 	background: url(<<datauri "$:/themes/tiddlywiki/mytheme/bg.png">>);
 }
+
+html body {
+	font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
