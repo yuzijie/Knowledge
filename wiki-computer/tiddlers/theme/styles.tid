@@ -3,6 +3,10 @@ tags: [[$:/tags/stylesheet]]
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
+body.tw-body {
+	font-size: 15px;
+}
+
 html body.tw-body code {
 	border-width: 0px;
 }
