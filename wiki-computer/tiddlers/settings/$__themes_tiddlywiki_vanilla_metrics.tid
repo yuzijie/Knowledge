@@ -1,5 +1,5 @@
 created: 20140502162550614
-modified: 20140502162549393
+modified: 20140502164656001
 title: $:/themes/tiddlywiki/vanilla/metrics
 type: application/x-tiddler-dictionary
 
@@ -7,6 +7,6 @@ fontsize: `15px`
 lineheight: `20px`
 storyleft: `0px`
 storytop: `0px`
-storyright: `770px`
-storywidth: `770px`
+storyright: `780px`
+storywidth: `1000px`
 tiddlerwidth: `700px`
