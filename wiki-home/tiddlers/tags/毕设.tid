@@ -1,16 +1,11 @@
 color: #005493
 created: 20140502192748142
-modified: 20140502201016515
+modified: 20140505101627035
 tags: top
 title: 毕设
 type: text/vnd.tiddlywiki
 
-<ol>
-<$list filter="[tag[毕设]sort[title]]">
-<li>
-	<$link>
-    	<$view field="title"/>
-	</$link>
-</li>
-</$list>
-</ol>
+# [[毕业设计题目]]
+# [[毕设/参考文献]]
+## [[英文]]
+## [[中文]]
