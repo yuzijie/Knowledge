@@ -1,0 +1,15 @@
+color: #ff2600
+created: 20140505143942750
+modified: 20140505143942750
+title: 重要
+type: text/vnd.tiddlywiki
+
+<ol>
+<$list filter="[tag[重要]sort[title]]">
+<li>
+	<$link>
+    	<$view field="title"/>
+	</$link>
+</li>
+</$list>
+</ol>
