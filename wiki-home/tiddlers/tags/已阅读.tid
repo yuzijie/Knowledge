@@ -1,0 +1,15 @@
+color: #9437ff
+created: 20140506090707025
+modified: 20140506090754090
+title: 已阅读
+type: text/vnd.tiddlywiki
+
+<ol>
+<$list filter="[tag[已阅读]sort[title]]">
+<li>
+	<$link>
+    	<$view field="title"/>
+	</$link>
+</li>
+</$list>
+</ol>
