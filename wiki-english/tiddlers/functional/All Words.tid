@@ -1,0 +1,37 @@
+created: 20140406174833877
+modified: 20140408161649403
+title: All Words
+type: text/vnd.tiddlywiki
+
+\define bulletList(tag)
+{{$tag$}}
+<ol>
+  <$list filter="[tag[$tag$]]">
+    <li>
+      <$link to={{!!title}}>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+\end
+
+! Nouns
+
+<<bulletList "noun">>
+
+! Verbs
+
+<<bulletList "verb">>
+
+! Adjectives
+
+<<bulletList "adjective">>
+
+! Adverbs
+
+<<bulletList "adverb">>
+
+! Phrases
+
+<<bulletList "phrase">>

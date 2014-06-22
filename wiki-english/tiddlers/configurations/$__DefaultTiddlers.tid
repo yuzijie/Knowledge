@@ -3,4 +3,6 @@ modified: 20140524095428551
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
+[[All Words]]
+[[Words to Remember]]
 [!is[system]has[modified]!sort[modified]limit[25]]
