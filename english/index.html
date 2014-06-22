@@ -135,6 +135,8 @@ Error message and password prompt
 
 <li>$:/state/tab-{-388046578}</li>
 
+<li>$:/state/tab/sidebar-{-1982391943}</li>
+
 <li>$:/status/IsLoggedIn</li>
 
 <li>$:/status/UserName</li>
@@ -145,23 +147,55 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>adjective</li>
+
+<li>adverb</li>
+
+<li>All Words</li>
+
+<li>Arbitrarily</li>
+
+<li>Arbitrary</li>
+
 <li>confine</li>
+
+<li>Consonant</li>
 
 <li>dispute</li>
 
+<li>Divisive</li>
+
 <li>eponymous</li>
+
+<li>Immerse</li>
 
 <li>intimate</li>
 
+<li>new</li>
+
+<li>noun</li>
+
 <li>outset</li>
+
+<li>phrase</li>
 
 <li>plagued</li>
 
 <li>prestige</li>
 
+<li>Provision</li>
+
+<li>Recruit</li>
+
 <li>shed light on</li>
 
+<li>Skew up</li>
+
 <li>stratospheric</li>
+
+<li>verb</li>
+
+<li>Words to Remember</li>
 
 </ul>
 </p>
@@ -3699,10 +3733,23 @@ Error message and password prompt
 }</pre>
 </div>
 <div created="20140524095427701" modified="20140524095428551" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>[!is[system]has[modified]!sort[modified]limit[25]]</pre>
+<pre>[[All Words]]
+[[Words to Remember]]
+[!is[system]has[modified]!sort[modified]limit[25]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140530225454286" title="$:/HistoryList" type="application/json" revision="1" bag="default">
+<div current-tiddler="$:/ControlPanel" modified="20140622122117167" title="$:/HistoryList" type="application/json" revision="2" bag="default">
 <pre>[
+    {
+        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 144,
+            &quot;left&quot;: 806.328125,
+            &quot;width&quot;: 36.328125,
+            &quot;right&quot;: 842.65625,
+            &quot;bottom&quot;: 171,
+            &quot;height&quot;: 27
+        }
+    },
     {
         &quot;title&quot;: &quot;$:/ControlPanel&quot;,
         &quot;fromPageRect&quot;: {
@@ -3840,8 +3887,11 @@ Error message and password prompt
 <div created="20140524094821221" modified="20140524095353944" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>英语积累</pre>
 </div>
-<div modified="20140530225456045" title="$:/state/tab-{-388046578}" revision="1" bag="default">
+<div modified="20140622122125163" title="$:/state/tab-{-388046578}" revision="3" bag="default">
 <pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
+</div>
+<div modified="20140622122110863" title="$:/state/tab/sidebar-{-1982391943}" revision="2" bag="default">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
@@ -3849,7 +3899,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel intimate confine outset dispute prestige eponymous stratospheric [[shed light on]] plagued" title="$:/StoryList" revision="2" bag="default">
+<div list="$:/ControlPanel" title="$:/StoryList" revision="5" bag="default">
 <pre></pre>
 </div>
 <div dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.0.12-beta" revision="0" bag="default">
@@ -3895,6 +3945,57 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div color="#0096ff" created="20140406174303020" modified="20140406174422058" title="adjective" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div color="#011993" created="20140408161548639" modified="20140408161554566" title="adverb" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20140406174833877" modified="20140408161649403" title="All Words" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define bulletList(tag)
+{{$tag$}}
+&lt;ol&gt;
+  &lt;$list filter=&quot;[tag[$tag$]]&quot;&gt;
+    &lt;li&gt;
+      &lt;$link to={{!!title}}&gt;
+        &lt;$view field=&quot;title&quot;/&gt;
+      &lt;/$link&gt;
+    &lt;/li&gt;
+  &lt;/$list&gt;
+&lt;/ol&gt;
+\end
+
+! Nouns
+
+&lt;&lt;bulletList &quot;noun&quot;&gt;&gt;
+
+! Verbs
+
+&lt;&lt;bulletList &quot;verb&quot;&gt;&gt;
+
+! Adjectives
+
+&lt;&lt;bulletList &quot;adjective&quot;&gt;&gt;
+
+! Adverbs
+
+&lt;&lt;bulletList &quot;adverb&quot;&gt;&gt;
+
+! Phrases
+
+&lt;&lt;bulletList &quot;phrase&quot;&gt;&gt;</pre>
+</div>
+<div created="20140408161420159" modified="20140408161847990" tags="adverb new" title="Arbitrarily" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>武断地
+
+形容词 [[Arbitrary]]</pre>
+</div>
+<div created="20140408161732008" modified="20140408161831397" tags="adjective" title="Arbitrary" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>武断的，随意的
+
+our choice was purely arbitrary
+我们的选择完全是随意的</pre>
+</div>
 <div created="20140525164406096" modified="20140530225254319" title="confine" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition
 : (limit)限制、局限于
@@ -3908,6 +4009,11 @@ Error message and password prompt
 : «problem, activity»局限于‹topic, area›
 : the problem is not ''confined'' to old people
 : 这个问题并不限于老年人</pre>
+</div>
+<div created="20140408161317439" modified="20140408161410518" tags="noun new" title="Consonant" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre># (letter)辅音字母
+# Phonetics辅音
+#* voiced/unvoiced consonants 浊/清辅音</pre>
 </div>
 <div created="20140525161835720" modified="20140525215629473" title="dispute" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition 1
@@ -3927,11 +4033,23 @@ Error message and password prompt
 : to be open to ''dispute''
 : 尚不确定</pre>
 </div>
+<div created="20140406113018288" modified="20140406121829258" tags="adjective new" title="Divisive" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>(causing disagreement)引起分歧的 (causing disunity)制造分裂的
+
+to be socially divisive 引起社会不稳定</pre>
+</div>
 <div created="20140525155620480" modified="20140525155809588" title="eponymous" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition
 : (与书、戏剧、电影等)同名的
 ; Examples
 : And no telling the additional number of articles on those topics that did not contain the ''eponymous'' phrases in the title.</pre>
+</div>
+<div created="20140408160905939" modified="20140408161254947" tags="verb new" title="Immerse" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre># 浸泡
+#* to immerse [something] in [something] 把某物浸泡于某液体中
+# 使…沉浸 ‹person›
+#* to be immersed in [something] 深陷于某事
+# to immerse oneself (in [something]) 专心于（某事）</pre>
 </div>
 <div created="20140524103500037" modified="20140530225423013" title="intimate" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition
@@ -3939,6 +4057,12 @@ Error message and password prompt
 ; Examples
 : to have an ''intimate'' knowledge of/acquaintance with [something]
 : 对某事物了如指掌</pre>
+</div>
+<div color="#ff2600" created="20140406174309278" modified="20140406174309279" title="new" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div color="#945200" created="20140406174313300" modified="20140406174427817" title="noun" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20140525161425588" modified="20140530225237765" title="outset" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition
@@ -3948,6 +4072,9 @@ Error message and password prompt
 : 起初
 : from the ''outset''
 : 从一开始</pre>
+</div>
+<div color="#942193" created="20140406174328719" modified="20140406174331634" title="phrase" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20140524105428297" modified="20140524110154683" title="plagued" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition
@@ -3961,6 +4088,26 @@ Error message and password prompt
 ; Examples
 : They are the highest in ''prestige''</pre>
 </div>
+<div created="20140406112321791" modified="20140406121825492" tags="noun new" title="Provision" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre># 供给
+# 准备
+## provision for [somebody]/[something] 为某人/某事物所作的安排
+# 规定
+## under the provisions of ... 按照…的规定
+## according to or within the provisions 根据条款</pre>
+</div>
+<div created="20140406113255596" modified="20140406121835990" tags="verb noun new" title="Recruit" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre># noun
+## (in armed forces)新兵 (in police force)新警员
+## (in company, department)新成员
+##* a recruit to [something] 某处的新成员
+##* a recruit from [something] 从某处招来的新成员
+# transitive verb
+## (in armed forces, police)征募 ‹soldier, mercenaries›
+## (enrol)«club, party» 招收 ‹member›;
+## «society, movement, sect» 吸纳 ‹person, member›
+</pre>
+</div>
 <div created="20140524095549124" modified="20140524110238298" title="shed light on" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition
 : make free from confusion or ambiguity;
@@ -3969,11 +4116,33 @@ Error message and password prompt
 : This discussion has ''shed some light on'' the problem.
 : Let's see if Ann can throw any light on this question.</pre>
 </div>
+<div created="20140406112106890" modified="20140406121827437" tags="phrase new" title="Skew up" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>歪斜向上</pre>
+</div>
 <div created="20140525154308150" modified="20140525154511905" title="stratospheric" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>; Definition
 : 极高的
 ; Examples
 : For health care, the yield was a ''stratospheric'' 980.</pre>
+</div>
+<div color="#008f00" created="20140406174336347" modified="20140406174435758" title="verb" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20140406174045589" modified="20140406174217166" title="Words to Remember" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define bulletList(tag)
+{{$tag$}}
+&lt;ol&gt;
+  &lt;$list filter=&quot;[tag[$tag$]]&quot;&gt;
+    &lt;li&gt;
+      &lt;$link to={{!!title}}&gt;
+        &lt;$view field=&quot;title&quot;/&gt;
+      &lt;/$link&gt;
+    &lt;/li&gt;
+  &lt;/$list&gt;
+&lt;/ol&gt;
+\end
+
+&lt;&lt;bulletList &quot;new&quot;&gt;&gt;</pre>
 </div>
 
 </div>
