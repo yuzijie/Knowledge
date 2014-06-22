@@ -1,0 +1,26 @@
+created: 20140622204848773
+modified: 20140622204946517
+tags: $:/tags/stylesheet
+title: Custom Style
+type: text/vnd.tiddlywiki
+
+.tw-site-title,
+.tw-site-subtitle {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.tw-site-subtitle {
+	font-size: 15px;
+}
+
+.story-river .tw-tiddler-title .titlebar .title,
+.story-river .tw-subtitle,
+.story-river .body h1,
+.story-river .body h2,
+.story-river .body h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
+}
+
+html body.tw-body code {
+	border-width: 0px;
+}
