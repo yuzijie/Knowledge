@@ -1,0 +1,41 @@
+created: 20140406201626215
+modified: 20140406215024414
+title: All Tags
+type: text/vnd.tiddlywiki
+
+\define bulletList(tag)
+{{$tag$}}
+<ol>
+  <$list filter="[tag[$tag$]]">
+    <li>
+      <$link to={{!!title}}>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+\end
+
+@@color:#ff2f92;
+! Theory
+@@
+
+<<bulletList "Theory">>
+
+@@color:#945200;
+! Term
+@@
+
+<<bulletList "Term">>
+
+@@color:#0096ff;
+! Company
+@@
+
+<<bulletList "Company">>
+
+@@color:#009051;
+! Taxation
+@@
+
+<<bulletList "Taxation">>

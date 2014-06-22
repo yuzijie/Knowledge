@@ -1,0 +1,25 @@
+created: 20140406214321087
+modified: 20140406215556296
+tags: Theory Term
+title: Multifactor Productivity
+type: text/vnd.tiddlywiki
+
+Multifactor productivity (MFP) measures the changes in output per unit of combined inputs.
+
+In the United States, Indices of MFP are produced for ''the private business'', ''private nonfarm business'', and ''manufacturing sectors'' of the economy. 
+
+MFP is also developed for 2-and 3-digit Standard Industrial Classification (SIC) through 1987, and NAICS (North Atlantic Industrial Classification System) through 2005 for manufacturing industries, the railroad transportation industry, the air transportation industry, and the utility and gas industry.
+
+Multifactor productivity measures reflect output per unit of some combined set of inputs. Multifactor productivity measures reflect the joint effects of many factors including new technologies, economies of scale, managerial skill, and changes in the organization of production.
+
+Whereas labor productivity measures the output per unit of labor input, multifactor productivity looks at a combination of production inputs (or factors): labor, materials, and capital. In theory, it’s a more comprehensive measure than labor productivity, but it’s also more difficult to calculate.
+
+{{Multifactor Productivity Formular}}
+
+* ''L'' is a dollar quantity of labor
+* ''K'' is a dollar quantity of capital
+* ''M'' is a dollar quantity of materials
+* ''S'' is a dollar quantity of business services
+* ''E'' is energy or exergy, only used in some models.
+
+{{Labor Productivity Formular}}

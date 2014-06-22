@@ -1,0 +1,49 @@
+created: 20140408150143690
+modified: 20140408155450540
+title: Tutte Le Etichette
+type: text/vnd.tiddlywiki
+
+\define bulletList(tag)
+{{$tag$}}
+<ol>
+  <$list filter="[tag[$tag$]]">
+    <li>
+      <$link to={{!!title}}>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+\end
+
+! Comune
+
+<<bulletList "Comune">>
+
+! Sostantivo
+
+<<bulletList "Sostantivo">>
+
+! Maschile
+
+<<bulletList "Maschile">>
+
+! Femminile
+
+<<bulletList "Femminile">>
+
+! Aggettivo
+
+<<bulletList "Aggettivo">>
+
+! Avverbio
+
+<<bulletList "Avverbio">>
+
+! Animale
+
+<<bulletList "Animale">>
+
+! Proverbio
+
+<<bulletList "Proverbio">>

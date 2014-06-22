@@ -1,7 +1,6 @@
-created: 20140609201038140
-modified: 20140622122900723
+created: 20140622153913889
+modified: 20140622153916306
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[[All Tags]]
 [!is[system]has[modified]!sort[modified]limit[25]]

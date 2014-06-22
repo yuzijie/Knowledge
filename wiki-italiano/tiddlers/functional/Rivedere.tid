@@ -1,0 +1,19 @@
+created: 20140408165037724
+modified: 20140408165057705
+title: Rivedere
+type: text/vnd.tiddlywiki
+
+\define bulletList(tag)
+{{$tag$}}
+<ol>
+  <$list filter="[tag[$tag$]]">
+    <li>
+      <$link to={{!!title}}>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+\end
+
+<<bulletList "Recensione">>
