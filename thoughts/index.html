@@ -43,7 +43,7 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 DAMAGE.
 " />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Thoughts and Reflection — YU Zijie's personal web notebook</title>
+<title>Thoughts & Reflection — YU Zijie's online notebook</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 </head>
@@ -144,6 +144,10 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>$:/themes/tiddlywiki/vanilla/settings</li>
+
+<li>Custom Style</li>
 
 <li>Keywords</li>
 
@@ -3726,7 +3730,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20140621160857357" modified="20140622181451172" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="4" bag="default">
+<div created="20140621160857357" modified="20140622181451172" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[[我要成为一个什么样的人]]
 [[现阶段主要目标]]
 [[现阶段次要目标]]
@@ -3735,19 +3739,8 @@ Error message and password prompt
 [[建立我自己的成长系统]]
 [[我从复习考试中收获了什么]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140622181456393" title="$:/HistoryList" type="application/json" revision="2" bag="default">
+<div current-tiddler="$:/ControlPanel" modified="20140622212652968" title="$:/HistoryList" type="application/json" revision="1" bag="default">
 <pre>[
-    {
-        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 144,
-            &quot;left&quot;: 806.328125,
-            &quot;width&quot;: 36.328125,
-            &quot;right&quot;: 842.65625,
-            &quot;bottom&quot;: 171,
-            &quot;height&quot;: 27
-        }
-    },
     {
         &quot;title&quot;: &quot;$:/ControlPanel&quot;,
         &quot;fromPageRect&quot;: {
@@ -3879,13 +3872,13 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20140621160843177" modified="20140621160843177" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>YU Zijie's personal web notebook</pre>
+<div created="20140621160843177" modified="20140622211330888" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>YU Zijie's online notebook</pre>
 </div>
-<div created="20140621160551420" modified="20140621160735692" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Thoughts and Reflection</pre>
+<div created="20140621160551420" modified="20140622211211507" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Thoughts &amp; Reflection</pre>
 </div>
-<div modified="20140622181501409" title="$:/state/tab-{-388046578}" revision="3" bag="default">
+<div modified="20140622212655691" title="$:/state/tab-{-388046578}" revision="1" bag="default">
 <pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
@@ -3894,7 +3887,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel 现阶段主要目标 现阶段次要目标 现阶段要考虑的事情 我要成为一个什么样的人 Keywords 建立我自己的成长系统 我从复习考试中收获了什么" title="$:/StoryList" revision="4" bag="default">
+<div list="$:/ControlPanel 我要成为一个什么样的人 现阶段主要目标 现阶段次要目标 现阶段要考虑的事情 Keywords 建立我自己的成长系统 我从复习考试中收获了什么" title="$:/StoryList" revision="2" bag="default">
 <pre></pre>
 </div>
 <div dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.0.12-beta" revision="0" bag="default">
@@ -3938,6 +3931,27 @@ Error message and password prompt
             &quot;text&quot;: &quot;fontfamily: `\&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Lucida Grande\&quot;, sans-serif`\n&quot;
         }
     }
+}</pre>
+</div>
+<div created="20140622204158124" modified="20140622204156956" title="$:/themes/tiddlywiki/vanilla/settings" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>fontfamily: `&quot;Lucida Grande&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
+</div>
+<div created="20140622204848773" modified="20140622204946517" tags="$:/tags/stylesheet" title="Custom Style" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>.tw-site-title,
+.tw-site-subtitle {
+	font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;
+}
+
+.tw-site-subtitle {
+	font-size: 15px;
+}
+
+.story-river .tw-tiddler-title .titlebar .title,
+.story-river .tw-subtitle,
+.story-river .body h1,
+.story-river .body h2,
+.story-river .body h3 {
+	font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;	
 }</pre>
 </div>
 <div created="20140622155458078" modified="20140622155531019" title="Keywords" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -4005,10 +4019,10 @@ Error message and password prompt
 # [[记笔记并时常复习]]
 # [[查缺补漏，总结经验教训]]</pre>
 </div>
-<div created="20140622155620831" modified="20140622160113071" title="我要成为一个什么样的人" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!!! ''1. 永远做正确事情的人，即使再活一次，也不会比现在做得好太多''
-!!! ''2. 负责人的人，为自己负责，为别人负责''
-!!! ''3. 做各方面均衡发展的人''</pre>
+<div created="20140622155620831" modified="20140622203445092" title="我要成为一个什么样的人" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!!! 1. 永远做正确事情的人，即使再活一次，也不会比现在做得好太多
+!!! 2. 负责人的人，为自己负责，为别人负责
+!!! 3. 做各方面均衡发展的人</pre>
 </div>
 <div created="20140622162017739" modified="20140622162439181" title="把背诵作为一件快乐的事情" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>一个人记住得越多，就越聪明。
