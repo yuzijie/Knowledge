@@ -6,14 +6,14 @@
 
 ## 目录
 
-1. Analysis: 收集数据分析方面的知识
-1. Computer: 计算机知识
-1. Digest: 网络上的文章摘抄
-1. English: 英语学习
-1. Finance: 有关金融方面的知识
-1. General: 其他各种科普知识
-1. Health: 收集健康以及健身方面的知识
-1. Italiano: 意大利语学习
-1. Management: 管理方面的知识，包括知识管理
-1. Thoughts: 我的想法汇总
-1. Thesis: 毕业设计
+* [Analysis](http://k.yuz.me/analysis): 收集数据分析方面的知识
+* [Computer](http://k.yuz.me/computer): 计算机知识
+* [Digest](http://k.yuz.me/digest): 网络上的文章摘抄
+* [English](http://k.yuz.me/english): 英语学习
+* [Finance](http://k.yuz.me/finance): 有关金融方面的知识
+* [General](http://k.yuz.me/general): 其他各种科普知识
+* [Health](http://k.yuz.me/health): 收集健康以及健身方面的知识
+* [Italiano](http://k.yuz.me/italiano): 意大利语学习
+* [Management](http://k.yuz.me/management): 管理方面的知识，包括知识管理
+* [Thoughts](http://k.yuz.me/thoughts): 我的想法汇总
+* [Thesis](http://k.yuz.me/thesis): 毕业设计
