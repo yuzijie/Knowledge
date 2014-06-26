@@ -28,7 +28,7 @@ body.tw-body {
 
 .tw-page-controls svg {
 	height: 1.5em;
-	padding-right: 0.3em;
+	padding-right: 0.4em;
 	fill: #CFCFCF;
 }
 
@@ -50,10 +50,15 @@ hr {
 }
 
 .tw-search {
-	padding-top: 8px;
+	padding-top: 10px;
 	padding-bottom: 8px;
 }
 
 .tw-sidebar-lists .tw-search input {
 	border: 1px solid #CCCCCC;
+}
+
+.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
+	background-color: #F3F3F3;
+	border-bottom: 1px solid #F3F3F3;
 }
