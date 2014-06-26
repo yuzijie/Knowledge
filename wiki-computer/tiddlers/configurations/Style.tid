@@ -15,12 +15,45 @@ type: text/vnd.tiddlywiki
 
 .story-river .tw-tiddler-title .titlebar .title,
 .story-river .tw-subtitle,
+.tw-tab-buttons button,
 .story-river .body h1,
 .story-river .body h2,
 .story-river .body h3 {
 	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
 }
 
-html body.tw-body code {
-	border-width: 0px;
+body.tw-body {
+	background-color: #F3F3F3;
+}
+
+.tw-page-controls svg {
+	height: 1.5em;
+	padding-right: 0.3em;
+	fill: #CFCFCF;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #e4e4e4;
+	padding: 0;
+}
+
+.tw-sidebar-lists .tw-tab-divider {
+	border-top: none;
+	height: 1px;
+	background-image: -o-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
+	background-image: -moz-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
+	background-image: -webkit-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
+	background-image: -ms-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
+}
+
+.tw-search {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.tw-sidebar-lists .tw-search input {
+	border: 1px solid #CCCCCC;
 }
