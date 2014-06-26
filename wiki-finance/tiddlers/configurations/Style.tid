@@ -53,3 +53,7 @@ hr {
 	padding-top: 8px;
 	padding-bottom: 10px;
 }
+
+.tw-sidebar-lists .tw-search input {
+	border: 1px solid #CCCCCC;
+}
