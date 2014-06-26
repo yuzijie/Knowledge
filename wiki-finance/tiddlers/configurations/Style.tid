@@ -43,10 +43,10 @@ hr {
 .tw-sidebar-lists .tw-tab-divider {
 	border-top: none;
 	height: 1px;
-	background-image: -o-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
-	background-image: -moz-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
-	background-image: -webkit-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
-	background-image: -ms-linear-gradient(left, rgb(204,204,204) 0%, rgb(243,243,243) 300px);
+	background-image: -o-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
+	background-image: -moz-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
+	background-image: -webkit-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
+	background-image: -ms-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
 }
 
 .tw-search {
