@@ -15,8 +15,19 @@ type: text/vnd.tiddlywiki
 
 .story-river .tw-tiddler-title .titlebar .title,
 .story-river .tw-subtitle,
+.tw-tab-buttons button,
 .story-river .body h1,
 .story-river .body h2,
 .story-river .body h3 {
 	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
+}
+
+body.tw-body {
+	background-color: #F3F3F3;
+}
+
+.tw-page-controls svg {
+	-webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.2));
+	-moz-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.2));
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.2));
 }
