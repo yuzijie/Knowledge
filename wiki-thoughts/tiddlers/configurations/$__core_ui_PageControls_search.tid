@@ -1,0 +1,7 @@
+created: 20140630160537347
+modified: 20140630160717494
+tags: $:/tags/PageControls
+title: $:/core/ui/PageControls/search
+type: text/vnd.tiddlywiki
+
+<$button to="$:/AdvancedSearch" title="Search" aria-label="Search" class="btn-invisible">{{$:/core/images/search-button}}</$button>
