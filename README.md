@@ -7,6 +7,7 @@
 ## 目录
 
 * [Analysis](http://k.yuz.me/analysis): 收集数据分析方面的知识
+* [Better](http://k.yuz.me/better): 效率提升、个人成长的知识与技巧
 * [Computer](http://k.yuz.me/computer): 计算机知识
 * [Digest](http://k.yuz.me/digest): 网络上的文章摘抄
 * [English](http://k.yuz.me/english): 英语学习
@@ -14,6 +15,5 @@
 * [General](http://k.yuz.me/general): 其他各种科普知识
 * [Health](http://k.yuz.me/health): 收集健康以及健身方面的知识
 * [Italiano](http://k.yuz.me/italiano): 意大利语学习
-* [Improve](http://k.yuz.me/improve): 各种提高效率，个人成长的知识与技巧
 * [Thoughts](http://k.yuz.me/thoughts): 我的想法汇总
 * [Thesis](http://k.yuz.me/thesis): 毕业设计
