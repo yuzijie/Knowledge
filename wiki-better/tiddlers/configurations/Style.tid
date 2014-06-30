@@ -9,9 +9,7 @@ type: text/vnd.tiddlywiki
 	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
-.tw-site-subtitle {
-	font-size: 15px;
-}
+.tw-site-subtitle { font-weight: 300; }
 
 .story-river .tw-tiddler-title .titlebar .title,
 .story-river .tw-subtitle,
