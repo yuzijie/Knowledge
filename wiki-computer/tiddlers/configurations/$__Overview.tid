@@ -1,0 +1,6 @@
+created: 20140630222838204
+modified: 20140630223641998
+title: $:/Overview
+type: text/vnd.tiddlywiki
+
+<<tabs "$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types" "$:/core/ui/MoreSideBar/All" "$:/state/tab/overview">>

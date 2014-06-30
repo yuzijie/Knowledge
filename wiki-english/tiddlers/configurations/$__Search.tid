@@ -1,0 +1,8 @@
+created: 20140630230129934
+modified: 20140630230453948
+title: $:/Search
+type: text/vnd.tiddlywiki
+
+<div class="tw-advanced-search">
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/AdvancedSearch]!has[draft.of]]" "$:/core/ui/AdvancedSearch/Standard">>
+</div>
