@@ -42,8 +42,11 @@ hr {
 }
 
 .tw-tab-buttons button.tw-tab-selected {
-	background-color: #ececec;
 	border-bottom: 1px solid #ececec;
+}
+
+tw-tiddler-frame .tw-tab-buttons button.tw-tab-selected {
+	border-bottom: 1px solid #ffffff;
 }
 
 code {
