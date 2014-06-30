@@ -4,4 +4,4 @@ tags: $:/tags/PageControls
 title: $:/core/ui/PageControls/search
 type: text/vnd.tiddlywiki
 
-<$button to="$:/AdvancedSearch" title="Search" aria-label="Search" class="btn-invisible">{{$:/core/images/search-button}}</$button>
+<$button to="$:/Search" title="Search" aria-label="Search" class="btn-invisible">{{$:/core/images/search-button}}</$button>
