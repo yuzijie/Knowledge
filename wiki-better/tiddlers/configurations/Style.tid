@@ -1,16 +1,10 @@
 created: 20140622204848773
 modified: 20140622204946517
 tags: $:/tags/stylesheet
-title: Custom Style
+title: Custom Stylesheet
 type: text/vnd.tiddlywiki
 
 .tw-site-title,
-.tw-site-subtitle {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-}
-
-.tw-site-subtitle { font-weight: 300; }
-
 .story-river .tw-tiddler-title .titlebar .title,
 .story-river .tw-subtitle,
 .tw-tab-buttons button,
@@ -20,14 +14,14 @@ type: text/vnd.tiddlywiki
 	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
 }
 
-body.tw-body {
-	background-color: #F3F3F3;
+.tw-page-controls svg {
+	height: 1.6em;
+	padding-right: 0.6em;
 }
 
-.tw-page-controls svg {
-	height: 1.5em;
-	padding-right: 0.4em;
-	fill: #CFCFCF;
+.tw-tiddler-controls button svg {
+	height: 0.7em;
+	fill: #ececec;
 }
 
 hr {
@@ -38,25 +32,32 @@ hr {
 	padding: 0;
 }
 
-.tw-sidebar-lists .tw-tab-divider {
-	border-top: none;
-	height: 1px;
-	background-image: -o-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
-	background-image: -moz-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
-	background-image: -webkit-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
-	background-image: -ms-linear-gradient(left, rgb(216,216,216) 0%, rgb(243,243,243) 280px);
-}
-
 .tw-search {
 	padding-top: 10px;
-	padding-bottom: 8px;
+	padding-bottom: 6px;
 }
 
 .tw-sidebar-lists .tw-search input {
-	border: 1px solid #CCCCCC;
+	border: 1px solid #e4e4e4;
 }
 
-.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
-	background-color: #F3F3F3;
-	border-bottom: 1px solid #F3F3F3;
+.tw-tab-buttons button.tw-tab-selected {
+	background-color: #ececec;
+	border-bottom: 1px solid #ececec;
+}
+
+code {
+	background-color: #ffffff;
+	border: none;
+	padding: 0;
+}
+
+pre {
+	border: 1px solid #dddddd;
+	background-color: #f8f8f8;
+}
+
+li > pre {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
