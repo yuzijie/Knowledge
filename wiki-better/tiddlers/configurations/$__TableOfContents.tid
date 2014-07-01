@@ -1,9 +1,10 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140701120044827
+modified: 20140701205423789
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
 
-Hello!
+# [[How To Speed Read And Comprehend]]
+# [[Leo's Top Ten Study Tips]]
