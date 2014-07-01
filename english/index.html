@@ -149,8 +149,6 @@ Error message and password prompt
 
 <li>$:/state/tab-{794734817}</li>
 
-<li>$:/state/tab/overview-{-685522591}</li>
-
 <li>$:/status/IsLoggedIn</li>
 
 <li>$:/status/UserName</li>
@@ -4034,12 +4032,12 @@ Error message and password prompt
 <div created="20140630131636250" modified="20140630131851059" tags="$:/tags/ViewToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140524095427701" modified="20140524095428551" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140524095427701" modified="20140701105701310" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="4" bag="default">
 <pre>[[All Words]]
 [[Words to Remember]]
-[!is[system]has[modified]!sort[modified]limit[25]]</pre>
+[!is[system]has[modified]!sort[modified]limit[10]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140630235717624" title="$:/HistoryList" type="application/json" revision="3" bag="default">
+<div current-tiddler="$:/ControlPanel" modified="20140701105709520" title="$:/HistoryList" type="application/json" revision="3" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;intimate&quot;
@@ -4048,14 +4046,14 @@ Error message and password prompt
         &quot;title&quot;: &quot;intimate&quot;
     },
     {
-        &quot;title&quot;: &quot;$:/Overview&quot;,
+        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
         &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 186,
-            &quot;left&quot;: 924.859375,
-            &quot;width&quot;: 14,
-            &quot;right&quot;: 938.859375,
-            &quot;bottom&quot;: 203,
-            &quot;height&quot;: 17
+            &quot;top&quot;: 144,
+            &quot;left&quot;: 844.109375,
+            &quot;width&quot;: 37.71875,
+            &quot;right&quot;: 881.828125,
+            &quot;bottom&quot;: 169,
+            &quot;height&quot;: 25
         }
     },
     {
@@ -4236,11 +4234,8 @@ Error message and password prompt
 <div created="20140524094821221" modified="20140524095353944" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>英语积累</pre>
 </div>
-<div modified="20140630235721522" title="$:/state/tab-{794734817}" revision="2" bag="default">
+<div modified="20140701105712618" title="$:/state/tab-{794734817}" revision="1" bag="default">
 <pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
-</div>
-<div modified="20140630235708998" title="$:/state/tab/overview-{-685522591}" revision="4" bag="default">
-<pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
@@ -4248,7 +4243,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel" title="$:/StoryList" revision="5" bag="default">
+<div list="$:/ControlPanel" title="$:/StoryList" revision="6" bag="default">
 <pre></pre>
 </div>
 <div created="20140630160800071" list="$:/core/ui/PageControls/new-tiddler $:/core/ui/PageControls/search $:/core/ui/PageControls/control-panel $:/core/ui/PageControls/save-wiki" modified="20140630161004012" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -4263,8 +4258,7 @@ Error message and password prompt
 .story-river .tw-subtitle,
 .tw-tab-buttons button,
 .story-river .body h1,
-.story-river .body h2,
-.story-river .body h3 {
+.story-river .body h2 {
 	font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;	
 }
 
@@ -4321,6 +4315,11 @@ li &gt; pre {
 
 .tw-missing-tiddler-label {
 	padding-right: 0.5em;
+}
+
+.tw-topbar-right {
+	top: 5px;
+	right: 5px;
 }
 </pre>
 </div>
