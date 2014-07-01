@@ -9,8 +9,7 @@ type: text/vnd.tiddlywiki
 .story-river .tw-subtitle,
 .tw-tab-buttons button,
 .story-river .body h1,
-.story-river .body h2,
-.story-river .body h3 {
+.story-river .body h2 {
 	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
 }
 
