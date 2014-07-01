@@ -1,5 +1,5 @@
 created: 20140630231329619
-modified: 20140630231435942
+modified: 20140701120156420
 title: $:/core/ui/SideBarLists
 type: text/vnd.tiddlywiki
 
@@ -30,7 +30,7 @@ type: text/vnd.tiddlywiki
 
 <$reveal state="$:/temp/search" type="match" text="">
 
-<<tabs "[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]" "$:/core/ui/SideBar/Open" "$:/state/tab/sidebar">>
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]" "$:/TableOfContents" "$:/state/tab/sidebar">>
 
 </$reveal>
 
