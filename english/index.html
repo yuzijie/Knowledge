@@ -117,6 +117,8 @@ Error message and password prompt
 
 <p>This <a class='tw-tiddlylink-external' href='http://tiddlywiki.com' target='_blank'>TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/AnimationDuration</li>
+
 <li>$:/core</li>
 
 <li>$:/core/images/close-others-button</li>
@@ -155,6 +157,8 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/TableOfContents</li>
+
 <li>$:/tags/PageControls</li>
 
 <li>$:/tags/ViewToolbar</li>
@@ -165,13 +169,13 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics</li>
+
 <li>$:/themes/tiddlywiki/vanilla/settings</li>
 
 <li>adjective</li>
 
 <li>adverb</li>
-
-<li>All Words</li>
 
 <li>Arbitrarily</li>
 
@@ -227,6 +231,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20140701112228257" modified="20140701112228334" title="$:/config/AnimationDuration" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>300</pre>
+</div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core plugin" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.0.13-beta" revision="0" bag="default">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -3994,7 +4001,7 @@ Error message and password prompt
 <div created="20140630160537347" modified="20140630160717494" tags="$:/tags/PageControls" title="$:/core/ui/PageControls/search" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button to=&quot;$:/Search&quot; title=&quot;Search&quot; aria-label=&quot;Search&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/search-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140630231329619" modified="20140630231435942" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140630231329619" modified="20140701120156420" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tw-sidebar-lists&quot;&gt;
 
 &lt;div class=&quot;tw-search&quot;&gt;
@@ -4022,7 +4029,7 @@ Error message and password prompt
 
 &lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;match&quot; text=&quot;&quot;&gt;
 
-&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]&quot; &quot;$:/core/ui/SideBar/Open&quot; &quot;$:/state/tab/sidebar&quot;&gt;&gt;
+&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]&quot; &quot;$:/TableOfContents&quot; &quot;$:/state/tab/sidebar&quot;&gt;&gt;
 
 &lt;/$reveal&gt;
 
@@ -4032,39 +4039,27 @@ Error message and password prompt
 <div created="20140630131636250" modified="20140630131851059" tags="$:/tags/ViewToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140524095427701" modified="20140701105701310" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="4" bag="default">
-<pre>[[All Words]]
-[[Words to Remember]]
+<div created="20140524095427701" modified="20140701214118737" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>[[Words to Remember]]
 [!is[system]has[modified]!sort[modified]limit[10]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140701105709520" title="$:/HistoryList" type="application/json" revision="3" bag="default">
+<div current-tiddler="$:/ControlPanel" modified="20140701221734290" title="$:/HistoryList" type="application/json" revision="2" bag="default">
 <pre>[
     {
-        &quot;title&quot;: &quot;intimate&quot;
+        &quot;title&quot;: &quot;Words to Remember&quot;
     },
     {
-        &quot;title&quot;: &quot;intimate&quot;
-    },
-    {
-        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 144,
-            &quot;left&quot;: 844.109375,
-            &quot;width&quot;: 37.71875,
-            &quot;right&quot;: 881.828125,
-            &quot;bottom&quot;: 169,
-            &quot;height&quot;: 25
-        }
+        &quot;title&quot;: &quot;Words to Remember&quot;
     },
     {
         &quot;title&quot;: &quot;$:/ControlPanel&quot;,
         &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 144,
-            &quot;left&quot;: 844.109375,
-            &quot;width&quot;: 37.71875,
-            &quot;right&quot;: 881.828125,
-            &quot;bottom&quot;: 169,
-            &quot;height&quot;: 25
+            &quot;top&quot;: 147,
+            &quot;left&quot;: 845.328125,
+            &quot;width&quot;: 38.328125,
+            &quot;right&quot;: 883.65625,
+            &quot;bottom&quot;: 175,
+            &quot;height&quot;: 28
         }
     }
 ]</pre>
@@ -4234,7 +4229,7 @@ Error message and password prompt
 <div created="20140524094821221" modified="20140524095353944" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>英语积累</pre>
 </div>
-<div modified="20140701105712618" title="$:/state/tab-{794734817}" revision="1" bag="default">
+<div modified="20140701221741287" title="$:/state/tab-{794734817}" revision="2" bag="default">
 <pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
@@ -4243,8 +4238,11 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel" title="$:/StoryList" revision="6" bag="default">
+<div list="$:/ControlPanel [[Words to Remember]] intimate confine outset dispute prestige eponymous stratospheric [[shed light on]] plagued Arbitrarily" title="$:/StoryList" revision="2" bag="default">
 <pre></pre>
+</div>
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140701120044827" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Hello!</pre>
 </div>
 <div created="20140630160800071" list="$:/core/ui/PageControls/new-tiddler $:/core/ui/PageControls/search $:/core/ui/PageControls/control-panel $:/core/ui/PageControls/save-wiki" modified="20140630161004012" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
@@ -4255,8 +4253,6 @@ Error message and password prompt
 <div created="20140630215823406" modified="20140630215945250" tags="$:/tags/stylesheet" title="$:/themes/Global" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>.tw-site-title,
 .story-river .tw-tiddler-title .titlebar .title,
-.story-river .tw-subtitle,
-.tw-tab-buttons button,
 .story-river .body h1,
 .story-river .body h2 {
 	font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;	
@@ -4321,6 +4317,24 @@ li &gt; pre {
 	top: 5px;
 	right: 5px;
 }
+
+img {
+	background: #fff;
+	padding: 4px;
+	border: 1px solid;
+	border-color: #e5e5e5 #dbdbdb #d2d2d2;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+
+.left {
+	float: left;
+	margin-right: 1em;
+}
+
+.right {
+	float: right;
+	margin-left: 1em;
+}
 </pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.0.13-beta" revision="0" bag="default">
@@ -4366,48 +4380,23 @@ li &gt; pre {
     }
 }</pre>
 </div>
+<div created="20140701214753884" modified="20140701214751849" title="$:/themes/tiddlywiki/vanilla/metrics" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>fontsize: `15px`
+lineheight: `20px`
+storyleft: `0px`
+storytop: `0px`
+storyright: `770px`
+storywidth: `770px`
+tiddlerwidth: `686px`</pre>
+</div>
 <div created="20140622204158124" modified="20140622204156956" title="$:/themes/tiddlywiki/vanilla/settings" type="application/x-tiddler-dictionary" revision="0" bag="default">
-<pre>fontfamily: `&quot;Lucida Grande&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
+<pre>fontfamily: `&quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
 </div>
 <div color="#0096ff" created="20140406174303020" modified="20140406174422058" title="adjective" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div color="#011993" created="20140408161548639" modified="20140408161554566" title="adverb" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
-</div>
-<div created="20140406174833877" modified="20140408161649403" title="All Words" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define bulletList(tag)
-{{$tag$}}
-&lt;ol&gt;
-  &lt;$list filter=&quot;[tag[$tag$]]&quot;&gt;
-    &lt;li&gt;
-      &lt;$link to={{!!title}}&gt;
-        &lt;$view field=&quot;title&quot;/&gt;
-      &lt;/$link&gt;
-    &lt;/li&gt;
-  &lt;/$list&gt;
-&lt;/ol&gt;
-\end
-
-! Nouns
-
-&lt;&lt;bulletList &quot;noun&quot;&gt;&gt;
-
-! Verbs
-
-&lt;&lt;bulletList &quot;verb&quot;&gt;&gt;
-
-! Adjectives
-
-&lt;&lt;bulletList &quot;adjective&quot;&gt;&gt;
-
-! Adverbs
-
-&lt;&lt;bulletList &quot;adverb&quot;&gt;&gt;
-
-! Phrases
-
-&lt;&lt;bulletList &quot;phrase&quot;&gt;&gt;</pre>
 </div>
 <div created="20140408161420159" modified="20140408161847990" tags="adverb new" title="Arbitrarily" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>武断地
