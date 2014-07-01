@@ -68,3 +68,8 @@ li > pre {
 .tw-missing-tiddler-label {
 	padding-right: 0.5em;
 }
+
+.tw-topbar-right {
+	top: 5px;
+	right: 5px;
+}
