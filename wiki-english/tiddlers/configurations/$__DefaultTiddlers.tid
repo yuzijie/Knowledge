@@ -1,8 +1,7 @@
 created: 20140524095427701
-modified: 20140701105701310
+modified: 20140701214118737
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[[All Words]]
 [[Words to Remember]]
 [!is[system]has[modified]!sort[modified]limit[10]]
