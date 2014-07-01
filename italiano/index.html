@@ -169,6 +169,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics</li>
+
 <li>$:/themes/tiddlywiki/vanilla/settings</li>
 
 <li>2014-06-23</li>
@@ -4089,7 +4091,7 @@ Error message and password prompt
 <pre>[[背单词]]
 [[短文]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140701123312295" title="$:/HistoryList" type="application/json" revision="2" bag="default">
+<div current-tiddler="$:/ControlPanel" modified="20140701220123733" title="$:/HistoryList" type="application/json" revision="3" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;背单词&quot;
@@ -4098,14 +4100,25 @@ Error message and password prompt
         &quot;title&quot;: &quot;背单词&quot;
     },
     {
+        &quot;title&quot;: &quot;Page-13-English&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 442.09375,
+            &quot;left&quot;: 125,
+            &quot;width&quot;: 111,
+            &quot;right&quot;: 236,
+            &quot;bottom&quot;: 459.09375,
+            &quot;height&quot;: 17
+        }
+    },
+    {
         &quot;title&quot;: &quot;$:/ControlPanel&quot;,
         &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 144,
-            &quot;left&quot;: 844.109375,
-            &quot;width&quot;: 37.71875,
-            &quot;right&quot;: 881.828125,
-            &quot;bottom&quot;: 169,
-            &quot;height&quot;: 25
+            &quot;top&quot;: 147,
+            &quot;left&quot;: 845.328125,
+            &quot;width&quot;: 38.328125,
+            &quot;right&quot;: 883.65625,
+            &quot;bottom&quot;: 175,
+            &quot;height&quot;: 28
         }
     }
 ]</pre>
@@ -4275,7 +4288,7 @@ Error message and password prompt
 <div created="20140622153848094" modified="20140622153849768" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Italiano</pre>
 </div>
-<div modified="20140701123314350" title="$:/state/tab-{794734817}" revision="1" bag="default">
+<div modified="20140701220128871" title="$:/state/tab-{794734817}" revision="1" bag="default">
 <pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
@@ -4284,7 +4297,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel 背单词 短文" title="$:/StoryList" revision="2" bag="default">
+<div list="$:/ControlPanel" title="$:/StoryList" revision="4" bag="default">
 <pre></pre>
 </div>
 <div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140701120044827" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -4299,8 +4312,6 @@ Error message and password prompt
 <div created="20140630215823406" modified="20140630215945250" tags="$:/tags/stylesheet" title="$:/themes/Global" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>.tw-site-title,
 .story-river .tw-tiddler-title .titlebar .title,
-.story-river .tw-subtitle,
-.tw-tab-buttons button,
 .story-river .body h1,
 .story-river .body h2 {
 	font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;	
@@ -4365,6 +4376,24 @@ li &gt; pre {
 	top: 5px;
 	right: 5px;
 }
+
+img {
+	background: #fff;
+	padding: 4px;
+	border: 1px solid;
+	border-color: #e5e5e5 #dbdbdb #d2d2d2;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+
+.left {
+	float: left;
+	margin-right: 1em;
+}
+
+.right {
+	float: right;
+	margin-left: 1em;
+}
 </pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.0.13-beta" revision="0" bag="default">
@@ -4410,8 +4439,17 @@ li &gt; pre {
     }
 }</pre>
 </div>
+<div created="20140701214753884" modified="20140701214751849" title="$:/themes/tiddlywiki/vanilla/metrics" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>fontsize: `15px`
+lineheight: `20px`
+storyleft: `0px`
+storytop: `0px`
+storyright: `770px`
+storywidth: `770px`
+tiddlerwidth: `686px`</pre>
+</div>
 <div created="20140622204158124" modified="20140622204156956" title="$:/themes/tiddlywiki/vanilla/settings" type="application/x-tiddler-dictionary" revision="0" bag="default">
-<pre>fontfamily: `&quot;Lucida Grande&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
+<pre>fontfamily: `&quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
 </div>
 <div created="20140623184550297" modified="20140623203048493" title="2014-06-23" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre># [[agricoltore]]
