@@ -1,10 +1,24 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140701205423789
+modified: 20140702110619361
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
 
-# [[How To Speed Read And Comprehend]]
-# [[Leo's Top Ten Study Tips]]
+<h4 style="margin-bottom:0;">Table of Contents [[·|$:/TableOfContents]]</h4>
+
+<div style="font-size:small;">
+<ol style="padding-left:2em;margin-top:0.6em;">
+<$list filter="[!is[system]tag[Topic]sort[title]]">
+<li><$link to={{!!title}}><$view field="title"/></$link></li>
+</$list>
+</ol>
+
+<hr/>
+
+[[Show All Tags|$:/Overview]]
+
+</div>
+
+{{$:/editions/server/download-offline-button}}
