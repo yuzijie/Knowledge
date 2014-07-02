@@ -129,6 +129,10 @@ Error message and password prompt
 
 <li>$:/core/ui/PageControls/search</li>
 
+<li>$:/core/ui/SideBar/More</li>
+
+<li>$:/core/ui/SideBar/Tools</li>
+
 <li>$:/core/ui/SideBarLists</li>
 
 <li>$:/core/ui/ViewToolbar/close-others</li>
@@ -151,7 +155,7 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
-<li>$:/state/tab-{794734817}</li>
+<li>$:/state/popup/tags-auto-complete-{1510956814}</li>
 
 <li>$:/status/IsLoggedIn</li>
 
@@ -161,9 +165,13 @@ Error message and password prompt
 
 <li>$:/TableOfContents</li>
 
+<li>$:/tags/MoreSideBar</li>
+
 <li>$:/tags/PageControls</li>
 
 <li>$:/tags/ViewToolbar</li>
+
+<li>$:/temp/NewTagName</li>
 
 <li>$:/themes/Global</li>
 
@@ -223,9 +231,9 @@ Error message and password prompt
 
 <li>毕业设计题目</li>
 
-<li>毕设</li>
-
 <li>毕设/参考文献</li>
+
+<li>毕设总览</li>
 
 <li>美国R&amp;D税收激励政策——美国政府对跨国公司从事R&amp;D活动的政策调研</li>
 
@@ -4024,7 +4032,32 @@ An Analysis of &quot;Tax Reduction Effect&quot;
 <div created="20140630160537347" modified="20140630160717494" tags="$:/tags/PageControls" title="$:/core/ui/PageControls/search" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button to=&quot;$:/Search&quot; title=&quot;Search&quot; aria-label=&quot;Search&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/search-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140630231329619" modified="20140701120156420" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="{{$:/language/SideBar/More/Caption}}" created="20140702091818059" modified="20140702091823864" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;div class=&quot;tw-more-sidebar&quot;&gt;
+&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; &quot;$:/core/ui/SideBar/Tools&quot; &quot;$:/state/tab/moresidebar&quot; &quot;tw-vertical&quot;&gt;&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20140702091531846" modified="20140702103411244" tags="$:/tags/MoreSideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define lingo-base() $:/language/ControlPanel/
+&lt;&lt;lingo Tools/Import/Prompt&gt;&gt; &lt;$browse/&gt;
+
+---
+
+{{$:/snippets/viewswitcher}}
+
+---
+
+&lt;&lt;lingo Basics/Version/Prompt&gt;&gt; &lt;&lt;version&gt;&gt;
+
+---
+
+{{$:/snippets/encryptionstatus}}
+
+---
+</pre>
+</div>
+<div created="20140702090524706" modified="20140702102452054" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tw-sidebar-lists&quot;&gt;
 
 &lt;div class=&quot;tw-search&quot;&gt;
@@ -4033,8 +4066,6 @@ An Analysis of &quot;Tax Reduction Effect&quot;
 &lt;$linkcatcher to=&quot;$:/temp/search&quot;&gt;
 &lt;$link to=&quot;&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$link&gt;
 &lt;/$linkcatcher&gt;
-&lt;/$reveal&gt;
-&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;match&quot; text=&quot;&quot;&gt;&amp;nbsp;&lt;$link to=&quot;$:/Overview&quot; tooltip=&quot;All tiddlers&quot; aria-label=&quot;All tiddlers&quot; class=&quot;btn-invisible&quot;&gt;&amp;hellip;&lt;/$link&gt;
 &lt;/$reveal&gt;
 &lt;/div&gt;
 
@@ -4065,7 +4096,7 @@ An Analysis of &quot;Tax Reduction Effect&quot;
 <div created="20140701112652516" modified="20140701112657424" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[!is[system]has[modified]!sort[modified]limit[10]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140701221309860" title="$:/HistoryList" type="application/json" revision="2" bag="default">
+<div current-tiddler="毕设/参考文献" modified="20140702113207292" title="$:/HistoryList" type="application/json" revision="16" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;Does the alternate incremental credit affect firm R&amp;D?&quot;
@@ -4074,23 +4105,81 @@ An Analysis of &quot;Tax Reduction Effect&quot;
         &quot;title&quot;: &quot;Does the alternate incremental credit affect firm R&amp;D?&quot;
     },
     {
-        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
+        &quot;title&quot;: &quot;Draft of '正在阅读'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;正在阅读&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '正在阅读'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;正在阅读&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '已阅读'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;已阅读&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '毕设'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;毕设总览&quot;
+    },
+    {
+        &quot;title&quot;: &quot;$:/Overview&quot;,
         &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 147,
-            &quot;left&quot;: 845.328125,
-            &quot;width&quot;: 38.328125,
-            &quot;right&quot;: 883.65625,
-            &quot;bottom&quot;: 175,
-            &quot;height&quot;: 28
+            &quot;top&quot;: 384.984375,
+            &quot;left&quot;: 770,
+            &quot;width&quot;: 81,
+            &quot;right&quot;: 851,
+            &quot;bottom&quot;: 399.984375,
+            &quot;height&quot;: 15
         }
+    },
+    {
+        &quot;title&quot;: &quot;毕业设计题目&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 449.75,
+            &quot;left&quot;: 86,
+            &quot;width&quot;: 278,
+            &quot;right&quot;: 364,
+            &quot;bottom&quot;: 469.75,
+            &quot;height&quot;: 20
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '毕业设计题目'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;毕业设计题目&quot;
+    },
+    {
+        &quot;title&quot;: &quot;毕设/参考文献&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 449.75,
+            &quot;left&quot;: 86,
+            &quot;width&quot;: 278,
+            &quot;right&quot;: 364,
+            &quot;bottom&quot;: 469.75,
+            &quot;height&quot;: 20
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '毕设/参考文献'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;毕设/参考文献&quot;
     }
 ]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div created="20140630222838204" modified="20140630223641998" title="$:/Overview" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;tabs &quot;$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types&quot; &quot;$:/core/ui/MoreSideBar/All&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
+<div created="20140630222838204" modified="20140702093819585" title="$:/Overview" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;tabs &quot;$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
 </div>
 <div author="JeremyRuston" dependents="" description="Codemirror plugin" plugin-type="plugin" title="$:/plugins/tiddlywiki/codemirror" type="application/json" version="5.0.13-beta" revision="0" bag="default">
 <pre>{
@@ -4251,8 +4340,8 @@ An Analysis of &quot;Tax Reduction Effect&quot;
 <div created="20140630091254799" modified="20140701112432907" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>毕业设计</pre>
 </div>
-<div modified="20140701221311337" title="$:/state/tab-{794734817}" revision="1" bag="default">
-<pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
+<div modified="20140702113205076" title="$:/state/popup/tags-auto-complete-{1510956814}" revision="1" bag="default">
+<pre>(94,790,120,25)</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
@@ -4260,16 +4349,38 @@ An Analysis of &quot;Tax Reduction Effect&quot;
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel [[Does the alternate incremental credit affect firm R&amp;D?]] [[Firm size and R&amp;D tax incentives]] [[Do R&amp;D tax credits work? Evidence from a panel of countries 1979–1997]] [[How effective are fiscal incentives for R&amp;D? A review of the evidence]] 重要 正在阅读 已阅读 毕设 [[The Corporate R&amp;D Tax Credit and U.S. Innovation and Competitiveness]] [[Review of Ireland's research and development tax credit 2013]]" title="$:/StoryList" revision="2" bag="default">
+<div list="$:/Overview 毕设/参考文献 毕业设计题目 [[Does the alternate incremental credit affect firm R&amp;D?]] [[Firm size and R&amp;D tax incentives]] [[Do R&amp;D tax credits work? Evidence from a panel of countries 1979–1997]] [[How effective are fiscal incentives for R&amp;D? A review of the evidence]] 重要 正在阅读 已阅读 毕设总览 [[The Corporate R&amp;D Tax Credit and U.S. Innovation and Competitiveness]] [[Review of Ireland's research and development tax credit 2013]]" title="$:/StoryList" revision="16" bag="default">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140701120044827" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Hello!</pre>
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140702110619361" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;h4 style=&quot;margin-bottom:0;&quot;&gt;Table of Contents [[·|$:/TableOfContents]]&lt;/h4&gt;
+
+&lt;div style=&quot;font-size:small;&quot;&gt;
+&lt;ol style=&quot;padding-left:2em;margin-top:0.6em;&quot;&gt;
+&lt;$list filter=&quot;[!is[system]tag[Topic]sort[title]]&quot;&gt;
+&lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ol&gt;
+
+&lt;hr/&gt;
+
+[[Show All Tags|$:/Overview]]
+
+&lt;/div&gt;
+
+{{$:/editions/server/download-offline-button}}
+</pre>
+</div>
+<div created="20140702091742782" list="$:/core/ui/SideBar/Tools $:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Orphans $:/core/ui/MoreSideBar/Types $:/core/ui/MoreSideBar/System $:/core/ui/MoreSideBar/Shadows" modified="20140702091747742" title="$:/tags/MoreSideBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20140630160800071" list="$:/core/ui/PageControls/new-tiddler $:/core/ui/PageControls/search $:/core/ui/PageControls/control-panel $:/core/ui/PageControls/save-wiki" modified="20140630161004012" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20140630131957902" list="$:/core/ui/ViewToolbar/info $:/core/ui/ViewToolbar/edit $:/core/ui/ViewToolbar/close-others $:/core/ui/ViewToolbar/close" modified="20140630132003486" title="$:/tags/ViewToolbar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20140702113027528" modified="20140702113054795" title="$:/temp/NewTagName" revision="10" bag="default">
 <pre></pre>
 </div>
 <div created="20140630215823406" modified="20140630215945250" tags="$:/tags/stylesheet" title="$:/themes/Global" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -4609,7 +4720,7 @@ Norwegian business spending on R&amp;D is low by OECD standards. To stimulate bu
 
 [[下载|https://www.dropbox.com/sh/nx2jmcwy3pjvk8l/JHvZmtE6Fy/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/%E4%BF%83%E8%BF%9B%E6%88%91%E5%9B%BD%E4%BC%81%E4%B8%9A%E8%87%AA%E4%B8%BB%E5%88%9B%E6%96%B0%E7%9A%84%E7%A8%8E%E6%94%B6%E6%94%BF%E7%AD%96%E7%A0%94%E7%A9%B6.pdf]]</pre>
 </div>
-<div color="#9437ff" created="20140506090707025" modified="20140506090754090" title="已阅读" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div color="#9437ff" created="20140506090707025" modified="20140702113105514" tags="Topic" title="已阅读" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>&lt;ol&gt;
 &lt;$list filter=&quot;[tag[已阅读]sort[title]]&quot;&gt;
 &lt;li&gt;
@@ -4644,7 +4755,7 @@ Japan was one of the earliest countries in the world which introduced a R&amp;D 
 
 [[下载|https://www.dropbox.com/sh/nx2jmcwy3pjvk8l/jZe6o-P14r/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/%E6%97%A5%E6%9C%AC%E7%9A%84R%26D%E7%A8%8E%E6%94%B6%E6%8A%B5%E5%85%8D%E5%88%B6%E5%BA%A6%E5%8F%8A%E5%AF%B9%E6%88%91%E5%9B%BD%E7%9A%84%E5%90%AF%E7%A4%BA.pdf]]</pre>
 </div>
-<div color="#ff9300" created="20140505144945458" modified="20140506090756310" title="正在阅读" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div color="#ff9300" created="20140505144945458" modified="20140702113057136" tags="Topic" title="正在阅读" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>&lt;ol&gt;
 &lt;$list filter=&quot;[tag[正在阅读]sort[title]]&quot;&gt;
 &lt;li&gt;
@@ -4656,22 +4767,13 @@ Japan was one of the earliest countries in the world which introduced a R&amp;D 
 &lt;/ol&gt;
 </pre>
 </div>
-<div created="20140502192508933" modified="20140502202928854" tags="毕设" title="毕业设计题目" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140502192508933" modified="20140702113153177" tags="Topic" title="毕业设计题目" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>&lt;&lt;&lt;
 THE IMPACT OF R&amp;D TAX CREDITS ON INNOVATION ACTIVITIES AND PRODUCTIVE PERFORMANCES OF COMPANIES. AN INTERNATIONAL REVIEW.
 &lt;&lt;&lt;
 </pre>
 </div>
-<div color="#005493" created="20140502192748142" modified="20140506090733067" tags="top" title="毕设" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre># [[毕业设计题目]]
-# [[毕设/参考文献]]
-## [[英文]]
-## [[中文]]
-## [[重要]]
-## [[正在阅读]]
-## [[已阅读]]</pre>
-</div>
-<div color="#0096ff" created="20140502203334255" modified="20140502203334255" tags="毕设" title="毕设/参考文献" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div color="#0096ff" created="20140502203334255" modified="20140702113207291" tags="Topic" title="毕设/参考文献" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>&lt;ol&gt;
 &lt;$list filter=&quot;[tag[毕设/参考文献]sort[title]]&quot;&gt;
 &lt;li&gt;
@@ -4682,6 +4784,15 @@ THE IMPACT OF R&amp;D TAX CREDITS ON INNOVATION ACTIVITIES AND PRODUCTIVE PERFOR
 &lt;/$list&gt;
 &lt;/ol&gt;
 </pre>
+</div>
+<div color="#005493" created="20140502192748142" modified="20140702113129308" tags="Topic" title="毕设总览" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<pre># [[毕业设计题目]]
+# [[毕设/参考文献]]
+## [[英文]]
+## [[中文]]
+## [[重要]]
+## [[正在阅读]]
+## [[已阅读]]</pre>
 </div>
 <div created="20140502214100488" modified="20140505140452325" tags="毕设/参考文献 中文" title="美国R&amp;D税收激励政策——美国政府对跨国公司从事R&amp;D活动的政策调研" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>http://d.wanfangdata.com.cn/Periodical_qqkjjjlw200904009.aspx
