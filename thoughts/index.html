@@ -127,6 +127,10 @@ Error message and password prompt
 
 <li>$:/core/ui/PageControls/search</li>
 
+<li>$:/core/ui/SideBar/More</li>
+
+<li>$:/core/ui/SideBar/Tools</li>
+
 <li>$:/core/ui/SideBarLists</li>
 
 <li>$:/core/ui/ViewToolbar/close-others</li>
@@ -149,7 +153,9 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
-<li>$:/state/tab-{794734817}</li>
+<li>$:/state/popup/tags-auto-complete-{-1869642610}</li>
+
+<li>$:/state/tab/sidebar-{312696086}</li>
 
 <li>$:/status/IsLoggedIn</li>
 
@@ -159,9 +165,13 @@ Error message and password prompt
 
 <li>$:/TableOfContents</li>
 
+<li>$:/tags/MoreSideBar</li>
+
 <li>$:/tags/PageControls</li>
 
 <li>$:/tags/ViewToolbar</li>
+
+<li>$:/temp/NewTagName</li>
 
 <li>$:/themes/Global</li>
 
@@ -3999,7 +4009,32 @@ Error message and password prompt
 <div created="20140630160537347" modified="20140630160717494" tags="$:/tags/PageControls" title="$:/core/ui/PageControls/search" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button to=&quot;$:/Search&quot; title=&quot;Search&quot; aria-label=&quot;Search&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/search-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140630231329619" modified="20140701120156420" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="{{$:/language/SideBar/More/Caption}}" created="20140702091818059" modified="20140702091823864" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;div class=&quot;tw-more-sidebar&quot;&gt;
+&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; &quot;$:/core/ui/SideBar/Tools&quot; &quot;$:/state/tab/moresidebar&quot; &quot;tw-vertical&quot;&gt;&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20140702091531846" modified="20140702103411244" tags="$:/tags/MoreSideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define lingo-base() $:/language/ControlPanel/
+&lt;&lt;lingo Tools/Import/Prompt&gt;&gt; &lt;$browse/&gt;
+
+---
+
+{{$:/snippets/viewswitcher}}
+
+---
+
+&lt;&lt;lingo Basics/Version/Prompt&gt;&gt; &lt;&lt;version&gt;&gt;
+
+---
+
+{{$:/snippets/encryptionstatus}}
+
+---
+</pre>
+</div>
+<div created="20140702090524706" modified="20140702102452054" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tw-sidebar-lists&quot;&gt;
 
 &lt;div class=&quot;tw-search&quot;&gt;
@@ -4008,8 +4043,6 @@ Error message and password prompt
 &lt;$linkcatcher to=&quot;$:/temp/search&quot;&gt;
 &lt;$link to=&quot;&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$link&gt;
 &lt;/$linkcatcher&gt;
-&lt;/$reveal&gt;
-&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;match&quot; text=&quot;&quot;&gt;&amp;nbsp;&lt;$link to=&quot;$:/Overview&quot; tooltip=&quot;All tiddlers&quot; aria-label=&quot;All tiddlers&quot; class=&quot;btn-invisible&quot;&gt;&amp;hellip;&lt;/$link&gt;
 &lt;/$reveal&gt;
 &lt;/div&gt;
 
@@ -4046,7 +4079,7 @@ Error message and password prompt
 [[建立我自己的成长系统]]
 [[我从复习考试中收获了什么]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140701221124507" title="$:/HistoryList" type="application/json" revision="10" bag="default">
+<div current-tiddler="建立我自己的成长系统" modified="20140702112932403" title="$:/HistoryList" type="application/json" revision="15" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;我要成为一个什么样的人&quot;
@@ -4055,47 +4088,54 @@ Error message and password prompt
         &quot;title&quot;: &quot;我要成为一个什么样的人&quot;
     },
     {
+        &quot;title&quot;: &quot;Draft of '我从复习考试中收获了什么'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;我从复习考试中收获了什么&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '我要成为一个什么样的人'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;我要成为一个什么样的人&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '现阶段主要目标'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;现阶段主要目标&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'Keywords'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Keywords&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '现阶段次要目标'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;现阶段次要目标&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '现阶段要考虑的事情'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;现阶段要考虑的事情&quot;
+    },
+    {
         &quot;title&quot;: &quot;Draft of '建立我自己的成长系统'&quot;
     },
     {
         &quot;title&quot;: &quot;建立我自己的成长系统&quot;
-    },
-    {
-        &quot;title&quot;: &quot;Draft of '建立我自己的成长系统'&quot;
-    },
-    {
-        &quot;title&quot;: &quot;建立我自己的成长系统&quot;
-    },
-    {
-        &quot;title&quot;: &quot;Draft of '建立我自己的成长系统'&quot;
-    },
-    {
-        &quot;title&quot;: &quot;建立我自己的成长系统&quot;
-    },
-    {
-        &quot;title&quot;: &quot;Draft of '建立我自己的成长系统'&quot;
-    },
-    {
-        &quot;title&quot;: &quot;建立我自己的成长系统&quot;
-    },
-    {
-        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 147,
-            &quot;left&quot;: 845.328125,
-            &quot;width&quot;: 38.328125,
-            &quot;right&quot;: 883.65625,
-            &quot;bottom&quot;: 175,
-            &quot;height&quot;: 28
-        }
     }
 ]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div created="20140630222838204" modified="20140630223641998" title="$:/Overview" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;tabs &quot;$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types&quot; &quot;$:/core/ui/MoreSideBar/All&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
+<div created="20140630222838204" modified="20140702093819585" title="$:/Overview" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;tabs &quot;$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
 </div>
 <div author="JeremyRuston" dependents="" description="Codemirror plugin" plugin-type="plugin" title="$:/plugins/tiddlywiki/codemirror" type="application/json" version="5.0.13-beta" revision="0" bag="default">
 <pre>{
@@ -4256,8 +4296,11 @@ Error message and password prompt
 <div created="20140621160551420" modified="20140622211211507" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Thoughts &amp; Reflection</pre>
 </div>
-<div modified="20140701221126267" title="$:/state/tab-{794734817}" revision="1" bag="default">
-<pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
+<div modified="20140702112930059" title="$:/state/popup/tags-auto-complete-{-1869642610}" revision="1" bag="default">
+<pre>(94,1583,120,25)</pre>
+</div>
+<div modified="20140702112949233" title="$:/state/tab/sidebar-{312696086}" revision="3" bag="default">
+<pre>$:/TableOfContents</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
@@ -4265,22 +4308,38 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel 我要成为一个什么样的人 现阶段主要目标 现阶段次要目标 现阶段要考虑的事情 Keywords 建立我自己的成长系统 我从复习考试中收获了什么" title="$:/StoryList" revision="10" bag="default">
+<div list="我要成为一个什么样的人 现阶段主要目标 现阶段次要目标 现阶段要考虑的事情 Keywords 建立我自己的成长系统 我从复习考试中收获了什么" title="$:/StoryList" revision="15" bag="default">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140701213417406" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* [[我要成为一个什么样的人]]
-* [[现阶段主要目标]]
-* [[现阶段次要目标]]
-* [[现阶段要考虑的事情]]
-* [[Keywords]]
-* [[建立我自己的成长系统]]
-* [[我从复习考试中收获了什么]]</pre>
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140702110619361" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;h4 style=&quot;margin-bottom:0;&quot;&gt;Table of Contents [[·|$:/TableOfContents]]&lt;/h4&gt;
+
+&lt;div style=&quot;font-size:small;&quot;&gt;
+&lt;ol style=&quot;padding-left:2em;margin-top:0.6em;&quot;&gt;
+&lt;$list filter=&quot;[!is[system]tag[Topic]sort[title]]&quot;&gt;
+&lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ol&gt;
+
+&lt;hr/&gt;
+
+[[Show All Tags|$:/Overview]]
+
+&lt;/div&gt;
+
+{{$:/editions/server/download-offline-button}}
+</pre>
+</div>
+<div created="20140702091742782" list="$:/core/ui/SideBar/Tools $:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Orphans $:/core/ui/MoreSideBar/Types $:/core/ui/MoreSideBar/System $:/core/ui/MoreSideBar/Shadows" modified="20140702091747742" title="$:/tags/MoreSideBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20140630160800071" list="$:/core/ui/PageControls/new-tiddler $:/core/ui/PageControls/search $:/core/ui/PageControls/control-panel $:/core/ui/PageControls/save-wiki" modified="20140630161004012" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20140630131957902" list="$:/core/ui/ViewToolbar/info $:/core/ui/ViewToolbar/edit $:/core/ui/ViewToolbar/close-others $:/core/ui/ViewToolbar/close" modified="20140630132003486" title="$:/tags/ViewToolbar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20140702112614913" modified="20140702112625199" title="$:/temp/NewTagName" revision="17" bag="default">
 <pre></pre>
 </div>
 <div created="20140630215823406" modified="20140630215945250" tags="$:/tags/stylesheet" title="$:/themes/Global" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -4425,7 +4484,7 @@ tiddlerwidth: `686px`</pre>
 <div created="20140622204158124" modified="20140622204156956" title="$:/themes/tiddlywiki/vanilla/settings" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>fontfamily: `&quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
 </div>
-<div created="20140622155458078" modified="20140622155531019" title="Keywords" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140622155458078" modified="20140702112742255" tags="Topic" title="Keywords" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre># Data Analysis
 # Knowledge Management
 # Health and Fitness</pre>
@@ -4459,7 +4518,7 @@ tiddlerwidth: `686px`</pre>
 
 能把大的事情拆成小的部分，各个击破敌人，是解决问题的好办法。</pre>
 </div>
-<div created="20140622172915805" modified="20140701221048884" title="建立我自己的成长系统" type="text/vnd.tiddlywiki" revision="4" bag="default">
+<div created="20140622172915805" modified="20140702112932402" tags="Topic" title="建立我自己的成长系统" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>!! 时间管理系统
 
 # Planning
@@ -4476,7 +4535,7 @@ tiddlerwidth: `686px`</pre>
 
 不断用思索和计算来锻炼自己的大脑，让自己的大脑永保青春。</pre>
 </div>
-<div created="20140622155537490" modified="20140622172807203" title="我从复习考试中收获了什么" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140622155537490" modified="20140702112619254" tags="Topic" title="我从复习考试中收获了什么" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre># [[不断试探自己的极限]]
 # [[再坚持一会]]
 # [[思考到头大]]
@@ -4494,7 +4553,7 @@ tiddlerwidth: `686px`</pre>
 # [[记笔记并时常复习]]
 # [[查缺补漏，总结经验教训]]</pre>
 </div>
-<div created="20140622155620831" modified="20140701220317916" title="我要成为一个什么样的人" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140622155620831" modified="20140702112627461" tags="Topic" title="我要成为一个什么样的人" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre># 永远做正确事情的人，即使再活一次，也不会比现在做得好太多
 # 负责人的人，为自己负责，为别人负责
 # 做各方面均衡发展的人</pre>
@@ -4522,19 +4581,19 @@ tiddlerwidth: `686px`</pre>
 <div created="20140622172314720" modified="20140622172457490" title="查缺补漏，总结经验教训" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>人人都会犯错误，查缺补漏，总结经验教训，不断修正自己的行为，未来才能够越来越好。</pre>
 </div>
-<div created="20140622180919595" modified="20140622181043713" title="现阶段主要目标" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140622180919595" modified="20140702112731666" tags="Topic" title="现阶段主要目标" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre># ~~结束考试~~
 # 完成毕设
 # 找工作、或者实习
 # 学意大利语</pre>
 </div>
-<div created="20140622181130108" modified="20140622181154775" title="现阶段次要目标" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140622181130108" modified="20140702112755846" tags="Topic" title="现阶段次要目标" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre># 保持身体健康
 # 研究如何提高效率
 # 完善自己的时间记录系统
 # 研究如何用软件及网页来帮助自己完成一些任务</pre>
 </div>
-<div created="20140622181212615" modified="20140701220302232" title="现阶段要考虑的事情" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140622181212615" modified="20140702112801893" tags="Topic" title="现阶段要考虑的事情" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre># 收拾东西，为回国做准备
 # 续居留</pre>
 </div>
