@@ -1,12 +1,12 @@
 created: 20140625153642573
-modified: 20140702221529474
+modified: 20140702230544499
 tags: Topic
 title: 背单词
 type: text/vnd.tiddlywiki
 
 \define bulletList(tag)
 <ol>
-  <$list filter="[tag[$tag$]]">
+  <$list filter="[!is[system]tag[$tag$]]">
     <li>
       <$link to={{!!title}}>
         <$view field="title"/>
