@@ -1,5 +1,5 @@
-created: 20140630231329619
-modified: 20140701120156420
+created: 20140702090524706
+modified: 20140702102452054
 title: $:/core/ui/SideBarLists
 type: text/vnd.tiddlywiki
 
@@ -11,8 +11,6 @@ type: text/vnd.tiddlywiki
 <$linkcatcher to="$:/temp/search">
 <$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link>
 </$linkcatcher>
-</$reveal>
-<$reveal state="$:/temp/search" type="match" text="">&nbsp;<$link to="$:/Overview" tooltip="All tiddlers" aria-label="All tiddlers" class="btn-invisible">&hellip;</$link>
 </$reveal>
 </div>
 

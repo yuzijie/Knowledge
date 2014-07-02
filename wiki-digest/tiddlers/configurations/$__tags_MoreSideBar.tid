@@ -1,0 +1,6 @@
+created: 20140702091742782
+list: $:/core/ui/SideBar/Tools $:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Orphans $:/core/ui/MoreSideBar/Types $:/core/ui/MoreSideBar/System $:/core/ui/MoreSideBar/Shadows
+modified: 20140702091747742
+title: $:/tags/MoreSideBar
+type: text/vnd.tiddlywiki
+
