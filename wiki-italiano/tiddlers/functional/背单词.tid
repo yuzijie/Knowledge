@@ -1,9 +1,19 @@
 created: 20140625153642573
-modified: 20140702112449866
+modified: 20140702221529474
 tags: Topic
 title: 背单词
 type: text/vnd.tiddlywiki
 
-# [[2014-06-23]]
-# [[2014-06-24]]
-# [[2014-06-25]]
+\define bulletList(tag)
+<ol>
+  <$list filter="[tag[$tag$]]">
+    <li>
+      <$link to={{!!title}}>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+\end
+
+<<bulletList "背单词">>
