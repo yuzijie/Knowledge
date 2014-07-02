@@ -71,7 +71,7 @@ li > pre {
 	right: 5px;
 }
 
-img {
+.border {
 	background: #fff;
 	padding: 4px;
 	border: 1px solid;
