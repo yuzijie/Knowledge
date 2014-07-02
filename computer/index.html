@@ -131,6 +131,10 @@ Error message and password prompt
 
 <li>$:/core/ui/PageControls/search</li>
 
+<li>$:/core/ui/SideBar/More</li>
+
+<li>$:/core/ui/SideBar/Tools</li>
+
 <li>$:/core/ui/SideBarLists</li>
 
 <li>$:/core/ui/ViewToolbar/close-others</li>
@@ -153,10 +157,6 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
-<li>$:/state/sidebar</li>
-
-<li>$:/state/tab-{794734817}</li>
-
 <li>$:/status/IsLoggedIn</li>
 
 <li>$:/status/UserName</li>
@@ -164,6 +164,8 @@ Error message and password prompt
 <li>$:/StoryList</li>
 
 <li>$:/TableOfContents</li>
+
+<li>$:/tags/MoreSideBar</li>
 
 <li>$:/tags/PageControls</li>
 
@@ -178,8 +180,6 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/vanilla/metrics</li>
 
 <li>$:/themes/tiddlywiki/vanilla/settings</li>
-
-<li>AllTags</li>
 
 <li>apache</li>
 
@@ -4052,7 +4052,32 @@ Error message and password prompt
 <div created="20140630160537347" modified="20140630160717494" tags="$:/tags/PageControls" title="$:/core/ui/PageControls/search" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button to=&quot;$:/Search&quot; title=&quot;Search&quot; aria-label=&quot;Search&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/search-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140630231329619" modified="20140701120156420" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="{{$:/language/SideBar/More/Caption}}" created="20140702091818059" modified="20140702091823864" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;div class=&quot;tw-more-sidebar&quot;&gt;
+&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; &quot;$:/core/ui/SideBar/Tools&quot; &quot;$:/state/tab/moresidebar&quot; &quot;tw-vertical&quot;&gt;&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20140702091531846" modified="20140702103411244" tags="$:/tags/MoreSideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define lingo-base() $:/language/ControlPanel/
+&lt;&lt;lingo Tools/Import/Prompt&gt;&gt; &lt;$browse/&gt;
+
+---
+
+{{$:/snippets/viewswitcher}}
+
+---
+
+&lt;&lt;lingo Basics/Version/Prompt&gt;&gt; &lt;&lt;version&gt;&gt;
+
+---
+
+{{$:/snippets/encryptionstatus}}
+
+---
+</pre>
+</div>
+<div created="20140702090524706" modified="20140702102452054" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tw-sidebar-lists&quot;&gt;
 
 &lt;div class=&quot;tw-search&quot;&gt;
@@ -4061,8 +4086,6 @@ Error message and password prompt
 &lt;$linkcatcher to=&quot;$:/temp/search&quot;&gt;
 &lt;$link to=&quot;&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$link&gt;
 &lt;/$linkcatcher&gt;
-&lt;/$reveal&gt;
-&lt;$reveal state=&quot;$:/temp/search&quot; type=&quot;match&quot; text=&quot;&quot;&gt;&amp;nbsp;&lt;$link to=&quot;$:/Overview&quot; tooltip=&quot;All tiddlers&quot; aria-label=&quot;All tiddlers&quot; class=&quot;btn-invisible&quot;&gt;&amp;hellip;&lt;/$link&gt;
 &lt;/$reveal&gt;
 &lt;/div&gt;
 
@@ -4090,91 +4113,24 @@ Error message and password prompt
 <div created="20140630131636250" modified="20140630131851059" tags="$:/tags/ViewToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140502181800674" modified="20140626082141378" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>[[Reading List]]
-AllTags</pre>
+<div created="20140502181800674" modified="20140702112108074" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>[[Reading List]]</pre>
 </div>
-<div current-tiddler="$:/ControlPanel" modified="20140701215629241" title="$:/HistoryList" type="application/json" revision="7" bag="default">
+<div current-tiddler="Reading List" modified="20140702112236369" title="$:/HistoryList" type="application/json" revision="1" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;Reading List&quot;
     },
     {
         &quot;title&quot;: &quot;Reading List&quot;
-    },
-    {
-        &quot;title&quot;: &quot;github&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 578.1875,
-            &quot;left&quot;: 125,
-            &quot;width&quot;: 42,
-            &quot;right&quot;: 167,
-            &quot;bottom&quot;: 595.1875,
-            &quot;height&quot;: 17
-        }
-    },
-    {
-        &quot;title&quot;: &quot;同时使用多个 Github 账户&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 681.1875,
-            &quot;left&quot;: 125,
-            &quot;width&quot;: 172,
-            &quot;right&quot;: 297,
-            &quot;bottom&quot;: 698.1875,
-            &quot;height&quot;: 17
-        }
-    },
-    {
-        &quot;title&quot;: &quot;apache&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 434.1875,
-            &quot;left&quot;: 125,
-            &quot;width&quot;: 49,
-            &quot;right&quot;: 174,
-            &quot;bottom&quot;: 451.1875,
-            &quot;height&quot;: 17
-        }
-    },
-    {
-        &quot;title&quot;: &quot;同时使用多个 Github 账户&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 555.1875,
-            &quot;left&quot;: 125,
-            &quot;width&quot;: 172,
-            &quot;right&quot;: 297,
-            &quot;bottom&quot;: 572.1875,
-            &quot;height&quot;: 17
-        }
-    },
-    {
-        &quot;title&quot;: &quot;.htaccess mod_rewrite 正则表达式&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 251.1875,
-            &quot;left&quot;: 125,
-            &quot;width&quot;: 232,
-            &quot;right&quot;: 357,
-            &quot;bottom&quot;: 268.1875,
-            &quot;height&quot;: 17
-        }
-    },
-    {
-        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
-        &quot;fromPageRect&quot;: {
-            &quot;top&quot;: 147,
-            &quot;left&quot;: 845.328125,
-            &quot;width&quot;: 38.328125,
-            &quot;right&quot;: 883.65625,
-            &quot;bottom&quot;: 175,
-            &quot;height&quot;: 28
-        }
     }
 ]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div created="20140630222838204" modified="20140630223641998" title="$:/Overview" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;tabs &quot;$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types&quot; &quot;$:/core/ui/MoreSideBar/All&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
+<div created="20140630222838204" modified="20140702093819585" title="$:/Overview" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;tabs &quot;$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
 </div>
 <div author="JeremyRuston" dependents="" description="Codemirror plugin" plugin-type="plugin" title="$:/plugins/tiddlywiki/codemirror" type="application/json" version="5.0.13-beta" revision="0" bag="default">
 <pre>{
@@ -4337,23 +4293,36 @@ AllTags</pre>
 <pre>Computer
 </pre>
 </div>
-<div modified="20140701215516761" title="$:/state/sidebar" revision="2" bag="default">
-<pre>yes</pre>
-</div>
-<div modified="20140701215631138" title="$:/state/tab-{794734817}" revision="1" bag="default">
-<pre>$:/plugins/tiddlywiki/tiddlyweb/ServerControlPanel</pre>
-</div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
 <pre>yes</pre>
 </div>
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="$:/ControlPanel" title="$:/StoryList" revision="8" bag="default">
+<div list="[[Reading List]]" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140701120044827" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Hello!</pre>
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140702110619361" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;h4 style=&quot;margin-bottom:0;&quot;&gt;Table of Contents [[·|$:/TableOfContents]]&lt;/h4&gt;
+
+&lt;div style=&quot;font-size:small;&quot;&gt;
+&lt;ol style=&quot;padding-left:2em;margin-top:0.6em;&quot;&gt;
+&lt;$list filter=&quot;[!is[system]tag[Topic]sort[title]]&quot;&gt;
+&lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ol&gt;
+
+&lt;hr/&gt;
+
+[[Show All Tags|$:/Overview]]
+
+&lt;/div&gt;
+
+{{$:/editions/server/download-offline-button}}
+</pre>
+</div>
+<div created="20140702091742782" list="$:/core/ui/SideBar/Tools $:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Orphans $:/core/ui/MoreSideBar/Types $:/core/ui/MoreSideBar/System $:/core/ui/MoreSideBar/Shadows" modified="20140702091747742" title="$:/tags/MoreSideBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20140630160800071" list="$:/core/ui/PageControls/new-tiddler $:/core/ui/PageControls/search $:/core/ui/PageControls/control-panel $:/core/ui/PageControls/save-wiki" modified="20140630161004012" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
@@ -4503,17 +4472,6 @@ tiddlerwidth: `686px`</pre>
 <div created="20140622204158124" modified="20140622204156956" title="$:/themes/tiddlywiki/vanilla/settings" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>fontfamily: `&quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
 </div>
-<div created="20140502181811988" modified="20140502184400293" title="AllTags" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;ol&gt;
-&lt;$list filter=&quot;[is[tag]sort[title]]&quot;&gt;
-&lt;li&gt;
-	&lt;$link&gt;
-    	&lt;$view field=&quot;title&quot;/&gt;
-	&lt;/$link&gt;
-&lt;/li&gt;
-&lt;/$list&gt;
-&lt;/ol&gt;</pre>
-</div>
 <div color="#ff2f92" created="20140502162157073" modified="20140502184517291" title="apache" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ol&gt;
 &lt;$list filter=&quot;[tag[apache]sort[title]]&quot;&gt;
@@ -4536,7 +4494,7 @@ tiddlerwidth: `686px`</pre>
 &lt;/$list&gt;
 &lt;/ol&gt;</pre>
 </div>
-<div created="20140626074906165" modified="20140626075320636" title="Reading List" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140626074906165" modified="20140702112124124" tags="Topic" title="Reading List" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! 语言
 
 * [[Scheme 语言概要（上）|http://www.ibm.com/developerworks/cn/linux/l-schm/index1.html]]
