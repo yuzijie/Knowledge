@@ -1,6 +1,6 @@
 caption: {{$:/language/SideBar/Tools/Caption}}
 created: 20140702091531846
-modified: 20140702103411244
+modified: 20140702231931870
 tags: $:/tags/MoreSideBar
 title: $:/core/ui/SideBar/Tools
 type: text/vnd.tiddlywiki
@@ -19,5 +19,13 @@ type: text/vnd.tiddlywiki
 ---
 
 {{$:/snippets/encryptionstatus}}
+
+---
+
+{{$:/create-new-template/word}}
+
+---
+
+{{$:/create-new-template/day}}
 
 ---
