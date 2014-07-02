@@ -1,0 +1,31 @@
+created: 20140702230311800
+modified: 20140702233405476
+tags: 背单词
+title: $:/_new-day-template
+type: text/vnd.tiddlywiki
+
+\define day-template(day,body)
+
+<$navigator story="SubStory-$day$" history="SubHistory-$day$">
+
+$body$
+
+<$list filter="[list[SubStory-$day$]]" history="SubHistory-$day$">
+
+---
+
+! <$view field="title"/> <span style="float:right;margin-right:1em;font-size:medium;"><$button message="tw-close-tiddler" class="btn-invisible">{{$:/core/images/close-button}}</$button></span>
+
+<$transclude mode="block"/>
+
+</$list>
+
+</$navigator>
+
+\end
+
+<<day-template " " "
+
+
+
+">>
