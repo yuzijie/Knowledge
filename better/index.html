@@ -4063,7 +4063,7 @@ Error message and password prompt
 <div created="20140630091251571" modified="20140701205315098" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[!is[system]tag[Topic]sort[title]limit[10]]</pre>
 </div>
-<div current-tiddler="How to Speed Read &amp; Comprehend" modified="20140702152958384" title="$:/HistoryList" type="application/json" revision="1" bag="default">
+<div current-tiddler="How to Speed Read &amp; Comprehend" modified="20140702210717769" title="$:/HistoryList" type="application/json" revision="1" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;How to Speed Read &amp; Comprehend&quot;
@@ -4417,27 +4417,27 @@ tiddlerwidth: `686px`</pre>
 <div created="20140622204158124" modified="20140622204156956" title="$:/themes/tiddlywiki/vanilla/settings" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>fontfamily: `&quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
 </div>
-<div created="20140701175811106" modified="20140701213657214" source="http://hackmystudy.com/how_to_speed_read_and_comprehend.html" tags="[[Speed Reading]]" title="Basic Techniques" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The three Basic Techniques to achieving 350 wpm are:
+<div created="20140701175811106" modified="20140702210201364" source="http://hackmystudy.com/how_to_speed_read_and_comprehend.html" tags="[[Speed Reading]]" title="Basic Techniques" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$navigator story=&quot;MySubStoryList&quot; history=&quot;MySubHistoryList&quot;&gt;
+
+The three Basic Techniques to achieving 350 wpm are:
 
 # [[Read Selectively]]
 # [[Optimize Your Reading Distance]]
 # [[Energize Your Eyes]]
 
----
-
-! Read Selectively
-{{Read Selectively}}
+&lt;$list filter=&quot;[list[MySubStoryList]]&quot; history=&quot;MySubHistoryList&quot;&gt;
 
 ---
 
-! Optimize Your Reading Distance
-{{Optimize Your Reading Distance}}
+! &lt;$view field=&quot;title&quot;/&gt; &lt;span style=&quot;float:right;margin-right:1em;font-size:smaller;&quot;&gt;&lt;$button message=&quot;tw-close-tiddler&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;&lt;/span&gt;
 
----
+&lt;$transclude mode=&quot;block&quot;/&gt;
 
-! Energize Your Eyes
-{{Energize Your Eyes}}</pre>
+&lt;/$list&gt;
+
+&lt;/$navigator&gt;
+</pre>
 </div>
 <div created="20140701091709376" modified="20140701203040294" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="Tip" title="Don't Excel In School, Excel In Life" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>School is meant to prepare you for your adult, working life. But it doesn't resemble an adult's working life. There are no exams, there are no teachers, there are no grades, there is no homework. Instead, there are interpersonal relationships, practical knowledge and experience, real-life consequences for mistakes, and self-lead experiments and projects.
@@ -4484,12 +4484,12 @@ If you often get lost when you read, you'll notice that this method will reduce 
 <div created="20140701091614979" modified="20140701102546295" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="Tip" title="Have a Hobby" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>School should never ever be your one and only thing in life. You should always have friends and you should always have a hobby. Universities and colleges are increasingly implementing broad based admissions standards that weigh extra-curricular activities just as importantly as academic performance. The same goes for employers. In fact, almost all employers look for experience, leadership and practical knowledge before your grades.</pre>
 </div>
-<div created="20140701194225372" modified="20140702110639364" source="http://hackmystudy.com/how_to_speed_read_and_comprehend.html" tags="Topic [[Speed Reading]]" title="How to Speed Read &amp; Comprehend" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140701194225372" modified="20140702210515086" source="http://hackmystudy.com/how_to_speed_read_and_comprehend.html" tags="Topic [[Speed Reading]]" title="How to Speed Read &amp; Comprehend" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>What if I told you that the way you have been reading your whole life is wrong. That you have learned to read in a way that prevents you from reading no more than 350 words per minute (wpm) and prevent you from achieving no more than 80% comprehension.
 
 The average person can read about 200 wpm. In this tutorial I'm going to show you how you can read at least two or three times your current reading speed and maintain or increase your comprehension level.
 
-This tutorial is divided into three parts:
+!!! This tutorial is divided into three parts:
 
 # [[Basic|Basic Techniques]] (200 -&gt; 350wpm) ''Fix how you read''
 # Intermediate (350 -&gt; 500 wpm) ''Read more efficiently''
