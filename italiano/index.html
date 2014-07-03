@@ -117,7 +117,7 @@ Error message and password prompt
 
 <p>This <a class='tw-tiddlylink-external' href='http://tiddlywiki.com' target='_blank'>TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
-<li>$:/_new-day-template</li>
+<li>$:/_create-new-word</li>
 
 <li>$:/_new-word-template</li>
 
@@ -139,15 +139,13 @@ Error message and password prompt
 
 <li>$:/core/ui/ViewToolbar/close-others</li>
 
-<li>$:/create-new-template/day</li>
-
-<li>$:/create-new-template/word</li>
-
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/HistoryList</li>
 
 <li>$:/isEncrypted</li>
+
+<li>$:/macros/newday</li>
 
 <li>$:/Overview</li>
 
@@ -291,34 +289,10 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20140702230311800" modified="20140702233405476" tags="背单词" title="$:/_new-day-template" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define day-template(day,body)
-
-&lt;$navigator story=&quot;SubStory-$day$&quot; history=&quot;SubHistory-$day$&quot;&gt;
-
-$body$
-
-&lt;$list filter=&quot;[list[SubStory-$day$]]&quot; history=&quot;SubHistory-$day$&quot;&gt;
-
----
-
-! &lt;$view field=&quot;title&quot;/&gt; &lt;span style=&quot;float:right;margin-right:1em;font-size:medium;&quot;&gt;&lt;$button message=&quot;tw-close-tiddler&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;&lt;/span&gt;
-
-&lt;$transclude mode=&quot;block&quot;/&gt;
-
-&lt;/$list&gt;
-
-&lt;/$navigator&gt;
-
-\end
-
-&lt;&lt;day-template &quot; &quot; &quot;
-
-
-
-&quot;&gt;&gt;</pre>
+<div created="20140703231402355" modified="20140703231554826" title="$:/_create-new-word" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$button message=&quot;tw-new-tiddler&quot; title=&quot;Create template for a new word&quot; class=&quot;btn-invisible&quot; param=&quot;$:/_new-word-template&quot;&gt;Create a new word&lt;/$button&gt;</pre>
 </div>
-<div created="20140702225059783" modified="20140702225608907" tags="单词" title="$:/_new-word-template" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140703231756399" modified="20140703231841396" tags="单词" title="$:/_new-word-template" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! 解释
 
 #
@@ -4122,13 +4096,10 @@ $body$
 
 ---
 
-{{$:/create-new-template/word}}
+{{$:/_create-new-word}}
 
 ---
-
-{{$:/create-new-template/day}}
-
----</pre>
+</pre>
 </div>
 <div created="20140702090524706" modified="20140702102452054" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tw-sidebar-lists&quot;&gt;
@@ -4166,17 +4137,11 @@ $body$
 <div created="20140630131636250" modified="20140630131851059" tags="$:/tags/ViewToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140702231817945" modified="20140702231906514" title="$:/create-new-template/day" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$button message=&quot;tw-new-tiddler&quot; title=&quot;Template for new words&quot; class=&quot;btn-invisible&quot; param=&quot;$:/_new-day-template&quot;&gt;Create a new day.&lt;/$button&gt;</pre>
-</div>
-<div created="20140702223752674" modified="20140702224239339" title="$:/create-new-template/word" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$button message=&quot;tw-new-tiddler&quot; title=&quot;Template for new words&quot; class=&quot;btn-invisible&quot; param=&quot;$:/_new-word-template&quot;&gt;Create a new word.&lt;/$button&gt;</pre>
-</div>
 <div created="20140622153913889" modified="20140625162834571" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[[背单词]]
 [[短文]]</pre>
 </div>
-<div current-tiddler="背单词" modified="20140702234157654" title="$:/HistoryList" type="application/json" revision="1" bag="default">
+<div current-tiddler="背单词" modified="20140703232057101" title="$:/HistoryList" type="application/json" revision="1" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;背单词&quot;
@@ -4188,6 +4153,26 @@ $body$
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
+</div>
+<div created="20140703220521969" modified="20140703230433403" tags="$:/tags/Macro" title="$:/macros/newday" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define newday(body)
+&lt;$navigator story={{!!title}} history=&lt;&lt;qualify &quot;History&quot;&gt;&gt;&gt;
+
+$body$
+
+&lt;$list filter=&quot;[list[]]&quot; history=&lt;&lt;qualify &quot;History&quot;&gt;&gt;&gt;
+
+---
+
+! &lt;$view field=&quot;title&quot;/&gt; &lt;span style=&quot;float:right;margin-right:1em;font-size:medium;&quot;&gt;&lt;$button message=&quot;tw-close-tiddler&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;&lt;/span&gt;
+
+&lt;$transclude mode=&quot;block&quot;/&gt;
+
+&lt;/$list&gt;
+
+&lt;/$navigator&gt;
+\end
+</pre>
 </div>
 <div created="20140630222838204" modified="20140702093819585" title="$:/Overview" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;tabs &quot;$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
@@ -4530,72 +4515,38 @@ tiddlerwidth: `686px`</pre>
 <div created="20140622204158124" modified="20140622204156956" title="$:/themes/tiddlywiki/vanilla/settings" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>fontfamily: `&quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif`</pre>
 </div>
-<div created="20140623184550297" modified="20140702221123152" tags="背单词" title="2014-06-23" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$navigator story=&quot;SubStory-2014-06-23&quot; history=&quot;SubHistory-2014-06-23&quot;&gt;
-
+<div created="20140623184550297" list="" modified="20140703224308707" tags="背单词" title="2014-06-23" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;newday &quot;
 # [[agricoltore]]
 # [[chimico]]
 # [[chirurgo]]
 # [[istruttore]]
 # [[informatico]]
 # [[ambulatorio]]
-
-&lt;$list filter=&quot;[list[SubStory-2014-06-23]]&quot; history=&quot;SubHistory-2014-06-23&quot;&gt;
-
----
-
-! &lt;$view field=&quot;title&quot;/&gt; &lt;span style=&quot;float:right;margin-right:1em;font-size:medium;&quot;&gt;&lt;$button message=&quot;tw-close-tiddler&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;&lt;/span&gt;
-
-&lt;$transclude mode=&quot;block&quot;/&gt;
-
-&lt;/$list&gt;
-
-&lt;/$navigator&gt;
+&quot;&gt;&gt;
 </pre>
 </div>
-<div created="20140625153809620" modified="20140702221117103" tags="背单词" title="2014-06-24" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$navigator story=&quot;SubStory-2014-06-24&quot; history=&quot;SubHistory-2014-06-24&quot;&gt;
-
+<div created="20140625153809620" list="" modified="20140703230817458" tags="背单词" title="2014-06-24" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;newday &quot;
 # [[antiquario]]
 # [[coltivare]]
 # [[meccanico]]
 # [[apparecchiare]]
 # [[contratto]]
 # [[pompiere]]
-
-&lt;$list filter=&quot;[list[SubStory-2014-06-24]]&quot; history=&quot;SubHistory-2014-06-24&quot;&gt;
-
----
-
-! &lt;$view field=&quot;title&quot;/&gt; &lt;span style=&quot;float:right;margin-right:1em;font-size:medium;&quot;&gt;&lt;$button message=&quot;tw-close-tiddler&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;&lt;/span&gt;
-
-&lt;$transclude mode=&quot;block&quot;/&gt;
-
-&lt;/$list&gt;
-
-&lt;/$navigator&gt;</pre>
+&quot;&gt;&gt;
+</pre>
 </div>
-<div created="20140625153818689" modified="20140702221104401" tags="背单词" title="2014-06-25" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$navigator story=&quot;SubStory-2014-06-25&quot; history=&quot;SubHistory-2014-06-25&quot;&gt;
-
+<div created="20140625153818689" list="" modified="20140703230905519" tags="背单词" title="2014-06-25" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;newday &quot;
 # [[barbiere]]
 # [[crema]]
 # [[prete]]
 # [[benzinaio]]
 # [[elettricista]]
 # [[psichiatra]]
-
-&lt;$list filter=&quot;[list[SubStory-2014-06-25]]&quot; history=&quot;SubHistory-2014-06-25&quot;&gt;
-
----
-
-! &lt;$view field=&quot;title&quot;/&gt; &lt;span style=&quot;float:right;margin-right:1em;font-size:medium;&quot;&gt;&lt;$button message=&quot;tw-close-tiddler&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-button}}&lt;/$button&gt;&lt;/span&gt;
-
-&lt;$transclude mode=&quot;block&quot;/&gt;
-
-&lt;/$list&gt;
-
-&lt;/$navigator&gt;</pre>
+&quot;&gt;&gt;
+</pre>
 </div>
 <div color="#531b93" created="20140408154639960" modified="20140408154639960" title="Aggettivo" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
