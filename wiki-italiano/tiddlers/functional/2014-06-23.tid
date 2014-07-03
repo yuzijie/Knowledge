@@ -1,26 +1,15 @@
 created: 20140623184550297
-modified: 20140702221123152
+list: 
+modified: 20140703224308707
 tags: 背单词
 title: 2014-06-23
 type: text/vnd.tiddlywiki
 
-<$navigator story="SubStory-2014-06-23" history="SubHistory-2014-06-23">
-
+<<newday "
 # [[agricoltore]]
 # [[chimico]]
 # [[chirurgo]]
 # [[istruttore]]
 # [[informatico]]
 # [[ambulatorio]]
-
-<$list filter="[list[SubStory-2014-06-23]]" history="SubHistory-2014-06-23">
-
----
-
-! <$view field="title"/> <span style="float:right;margin-right:1em;font-size:medium;"><$button message="tw-close-tiddler" class="btn-invisible">{{$:/core/images/close-button}}</$button></span>
-
-<$transclude mode="block"/>
-
-</$list>
-
-</$navigator>
+">>

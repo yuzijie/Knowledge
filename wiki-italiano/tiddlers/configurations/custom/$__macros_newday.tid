@@ -1,16 +1,15 @@
-created: 20140702230311800
-modified: 20140702233405476
-tags: 背单词
-title: $:/_new-day-template
+created: 20140703220521969
+modified: 20140703230433403
+tags: $:/tags/Macro
+title: $:/macros/newday
 type: text/vnd.tiddlywiki
 
-\define day-template(day,body)
-
-<$navigator story="SubStory-$day$" history="SubHistory-$day$">
+\define newday(body)
+<$navigator story={{!!title}} history=<<qualify "History">>>
 
 $body$
 
-<$list filter="[list[SubStory-$day$]]" history="SubHistory-$day$">
+<$list filter="[list[]]" history=<<qualify "History">>>
 
 ---
 
@@ -21,11 +20,4 @@ $body$
 </$list>
 
 </$navigator>
-
 \end
-
-<<day-template " " "
-
-
-
-">>

@@ -1,26 +1,15 @@
 created: 20140625153818689
-modified: 20140702221104401
+list: 
+modified: 20140703230905519
 tags: 背单词
 title: 2014-06-25
 type: text/vnd.tiddlywiki
 
-<$navigator story="SubStory-2014-06-25" history="SubHistory-2014-06-25">
-
+<<newday "
 # [[barbiere]]
 # [[crema]]
 # [[prete]]
 # [[benzinaio]]
 # [[elettricista]]
 # [[psichiatra]]
-
-<$list filter="[list[SubStory-2014-06-25]]" history="SubHistory-2014-06-25">
-
----
-
-! <$view field="title"/> <span style="float:right;margin-right:1em;font-size:medium;"><$button message="tw-close-tiddler" class="btn-invisible">{{$:/core/images/close-button}}</$button></span>
-
-<$transclude mode="block"/>
-
-</$list>
-
-</$navigator>
+">>

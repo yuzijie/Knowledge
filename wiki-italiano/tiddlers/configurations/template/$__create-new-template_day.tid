@@ -1,6 +1,0 @@
-created: 20140702231817945
-modified: 20140702231906514
-title: $:/create-new-template/day
-type: text/vnd.tiddlywiki
-
-<$button message="tw-new-tiddler" title="Template for new words" class="btn-invisible" param="$:/_new-day-template">Create a new day.</$button>
