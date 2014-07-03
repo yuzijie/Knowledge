@@ -1,0 +1,6 @@
+created: 20140703231402355
+modified: 20140703231554826
+title: $:/_create-new-word
+type: text/vnd.tiddlywiki
+
+<$button message="tw-new-tiddler" title="Create template for a new word" class="btn-invisible" param="$:/_new-word-template">Create a new word</$button>
