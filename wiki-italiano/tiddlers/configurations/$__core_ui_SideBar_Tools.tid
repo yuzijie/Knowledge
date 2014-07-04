@@ -1,12 +1,15 @@
 caption: {{$:/language/SideBar/Tools/Caption}}
 created: 20140702091531846
-modified: 20140702231931870
+modified: 20140704094736128
 tags: $:/tags/MoreSideBar
 title: $:/core/ui/SideBar/Tools
 type: text/vnd.tiddlywiki
 
-\define lingo-base() $:/language/ControlPanel/
-<<lingo Tools/Import/Prompt>> <$browse/>
+{{$:/_create-new-word}}
+
+---
+
+Import files: <$browse/>
 
 ---
 
@@ -14,14 +17,6 @@ type: text/vnd.tiddlywiki
 
 ---
 
-<<lingo Basics/Version/Prompt>> <<version>>
-
----
-
-{{$:/snippets/encryptionstatus}}
-
----
-
-{{$:/_create-new-word}}
+Current version: <<version>>
 
 ---
