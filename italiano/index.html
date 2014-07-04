@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
+<li>$:/macros/choose-en-it</li>
+
 <li>$:/macros/newday</li>
 
 <li>$:/Overview</li>
@@ -4143,7 +4145,7 @@ Error message and password prompt
 <pre>[[背单词]]
 [[短文]]</pre>
 </div>
-<div current-tiddler="背单词" modified="20140704083404972" title="$:/HistoryList" type="application/json" revision="1" bag="default">
+<div current-tiddler="背单词" modified="20140704091949320" title="$:/HistoryList" type="application/json" revision="1" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;背单词&quot;
@@ -4155,6 +4157,22 @@ Error message and password prompt
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
+</div>
+<div created="20140704090559800" modified="20140704091120202" tags="$:/tags/Macro" title="$:/macros/choose-en-it" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define choose-en-it(en,it)
+
+&lt;$select field=&quot;list&quot;&gt;
+&lt;option value=&quot;&quot;&gt;Choose&lt;/option&gt;
+&lt;option value=&quot;$en$&quot;&gt;English&lt;/option&gt;
+&lt;option value=&quot;$it$&quot;&gt;Italiano&lt;/option&gt;
+&lt;/$select&gt;
+
+&lt;$tiddler tiddler={{!!list}}&gt;
+&lt;$transclude mode='block'/&gt;
+&lt;/$tiddler&gt;
+
+\end
+</pre>
 </div>
 <div created="20140703220521969" modified="20140703230433403" tags="$:/tags/Macro" title="$:/macros/newday" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define newday(body)
@@ -4883,14 +4901,8 @@ tiddlerwidth: `686px`</pre>
 &lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
 &lt;/$list&gt;&lt;/ul&gt;</pre>
 </div>
-<div created="20140625162814967" modified="20140702112458113" tags="Topic" title="短文" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!!! 英文
-
-# [[Page-13-English]]
-
-!!! 意大利文
-
-# [[Page-13-Italiano]]
+<div created="20140625162814967" list="" modified="20140704091723597" tags="Topic" title="短文" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre># ''Page-13 &amp;#8658;'' &lt;&lt;choose-en-it &quot;Page-13-English&quot; &quot;Page-13-Italiano&quot;&gt;&gt;
 </pre>
 </div>
 <div created="20140625153642573" modified="20140702230544499" tags="Topic" title="背单词" type="text/vnd.tiddlywiki" revision="0" bag="default">
