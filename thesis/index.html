@@ -215,6 +215,8 @@ Error message and password prompt
 
 <li>企业税收效应研究</li>
 
+<li>企业遇到的问题</li>
+
 <li>促进我国企业自主创新的税收政策研究</li>
 
 <li>已阅读</li>
@@ -234,6 +236,8 @@ Error message and password prompt
 <li>美国R&amp;D税收激励政策——美国政府对跨国公司从事R&amp;D活动的政策调研</li>
 
 <li>英文</li>
+
+<li>论文写作大纲</li>
 
 <li>重要</li>
 
@@ -4092,7 +4096,7 @@ An Analysis of &quot;Tax Reduction Effect&quot;
 <div created="20140701112652516" modified="20140701112657424" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[!is[system]has[modified]!sort[modified]limit[10]]</pre>
 </div>
-<div current-tiddler="毕设/参考文献" modified="20140704140412269" title="$:/HistoryList" type="application/json" revision="1" bag="default">
+<div current-tiddler="毕设/参考文献" modified="20140704143005104" title="$:/HistoryList" type="application/json" revision="1" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;毕设/参考文献&quot;
@@ -4273,17 +4277,44 @@ An Analysis of &quot;Tax Reduction Effect&quot;
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="毕设/参考文献 毕业设计题目 毕设总览 已阅读 正在阅读 [[Does the alternate incremental credit affect firm R&amp;D?]] [[Firm size and R&amp;D tax incentives]] [[Do R&amp;D tax credits work? Evidence from a panel of countries 1979–1997]] [[How effective are fiscal incentives for R&amp;D? A review of the evidence]] 重要" title="$:/StoryList" revision="1" bag="default">
+<div list="毕设/参考文献 企业遇到的问题 论文写作大纲 毕业设计题目 毕设总览 已阅读 正在阅读 [[Does the alternate incremental credit affect firm R&amp;D?]] [[Firm size and R&amp;D tax incentives]] [[Do R&amp;D tax credits work? Evidence from a panel of countries 1979–1997]]" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140702110619361" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;h4 style=&quot;margin-bottom:0;&quot;&gt;Table of Contents [[·|$:/TableOfContents]]&lt;/h4&gt;
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140704141438162" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define toc-heading(caption)
+
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
+    $caption$
+  &lt;/$button&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;hide&quot; class=&quot;btn-invisible&quot;&gt;
+    ''$caption$''
+  &lt;/$button&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+&lt;ol&gt;
+    &lt;$list filter=&quot;[!is[system]tag[$caption$]sort[title]]&quot;&gt;
+      &lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;/$list&gt;
+&lt;/ol&gt;
+&lt;/$reveal&gt;
+
+\end
+
+&lt;h4 style=&quot;margin-bottom:0;&quot;&gt;Table of Contents [[·|$:/TableOfContents]]&lt;/h4&gt;
 
 &lt;div style=&quot;font-size:small;&quot;&gt;
+
 &lt;ol style=&quot;padding-left:2em;margin-top:0.6em;&quot;&gt;
-&lt;$list filter=&quot;[!is[system]tag[Topic]sort[title]]&quot;&gt;
-&lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
-&lt;/$list&gt;
+
+&lt;li&gt;&lt;&lt;toc-heading &quot;论文写作&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;资料整理&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;文献总结&quot;&gt;&gt;&lt;/li&gt;
+
 &lt;/ol&gt;
 
 &lt;hr/&gt;
@@ -4632,6 +4663,11 @@ Norwegian business spending on R&amp;D is low by OECD standards. To stimulate bu
 
 [[下载|https://www.dropbox.com/sh/nx2jmcwy3pjvk8l/DDfZK_dWUJ/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/%E4%BC%81%E4%B8%9A%E7%A8%8E%E6%94%B6%E6%95%88%E5%BA%94%E7%A0%94%E7%A9%B6.pdf]]</pre>
 </div>
+<div created="20140704142049257" modified="20140704142229148" tags="资料整理" title="企业遇到的问题" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre># Owing to the ''difficulty'' that firms have in appropriating ''all'' the benefits associated with an innovation, it is argued that society benefits from innovation ''more'' than the innovators.
+# Due to imperfect appropriation private firms invest ''less'' in innovation than is “socially desirable”.
+# the gap between ''the private return'' to the innovator and ''the cost of capital'' from external sources.</pre>
+</div>
 <div created="20140502204807287" modified="20140505140335673" tags="毕设/参考文献 中文" title="促进我国企业自主创新的税收政策研究" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>http://d.wanfangdata.com.cn/Thesis_Y1235741.aspx
 
@@ -4688,13 +4724,13 @@ Japan was one of the earliest countries in the world which introduced a R&amp;D 
 &lt;/ol&gt;
 </pre>
 </div>
-<div created="20140502192508933" modified="20140702113153177" tags="Topic" title="毕业设计题目" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20140502192508933" modified="20140704141517511" tags="论文写作" title="毕业设计题目" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;&lt;
 THE IMPACT OF R&amp;D TAX CREDITS ON INNOVATION ACTIVITIES AND PRODUCTIVE PERFORMANCES OF COMPANIES. AN INTERNATIONAL REVIEW.
 &lt;&lt;&lt;
 </pre>
 </div>
-<div color="#0096ff" created="20140502203334255" modified="20140702113207291" tags="Topic" title="毕设/参考文献" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div color="#0096ff" created="20140502203334255" modified="20140704142426397" tags="文献总结" title="毕设/参考文献" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ol&gt;
 &lt;$list filter=&quot;[tag[毕设/参考文献]sort[title]]&quot;&gt;
 &lt;li&gt;
@@ -4737,6 +4773,21 @@ R&amp;D Tax Credit Policy in US——U.S. government's policy research and inves
 &lt;/$list&gt;
 &lt;/ol&gt;
 </pre>
+</div>
+<div created="20140704141525905" modified="20140704141951180" tags="论文写作" title="论文写作大纲" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre># Economic rationales for R&amp;D tax credit
+
+## Financial Market Failures
+
+# Review of world wide policies of tax credits and public support for R&amp;D
+
+# The empirical analysis on the efficacy of R&amp;D tax credit
+
+## Review of papers
+
+# Discussion and suggestion
+
+''Note'': 在线搜索 OECD R&amp;D TAX CREDIT 就可以找到有用的数据。</pre>
 </div>
 <div color="#ff2600" created="20140505143942750" modified="20140506090844422" title="重要" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ol&gt;
