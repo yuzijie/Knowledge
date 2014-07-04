@@ -293,8 +293,8 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20140703231402355" modified="20140703231554826" title="$:/_create-new-word" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$button message=&quot;tw-new-tiddler&quot; title=&quot;Create template for a new word&quot; class=&quot;btn-invisible&quot; param=&quot;$:/_new-word-template&quot;&gt;Create a new word&lt;/$button&gt;</pre>
+<div created="20140703231402355" modified="20140704095513128" title="$:/_create-new-word" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$button message=&quot;tw-new-tiddler&quot; title=&quot;Create template for a new word&quot; class=&quot;btn-invisible&quot; param=&quot;$:/_new-word-template&quot;&gt;{{$:/core/images/new-button}}&lt;span style=&quot;font-size:1.4em;&quot;&gt;New Word&lt;/span&gt;&lt;/$button&gt;</pre>
 </div>
 <div created="20140703231756399" modified="20140703231841396" tags="单词" title="$:/_new-word-template" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!!! 解释
@@ -4082,9 +4082,12 @@ Error message and password prompt
 &lt;/div&gt;
 </pre>
 </div>
-<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20140702091531846" modified="20140702231931870" tags="$:/tags/MoreSideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define lingo-base() $:/language/ControlPanel/
-&lt;&lt;lingo Tools/Import/Prompt&gt;&gt; &lt;$browse/&gt;
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20140702091531846" modified="20140704094736128" tags="$:/tags/MoreSideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>{{$:/_create-new-word}}
+
+---
+
+Import files: &lt;$browse/&gt;
 
 ---
 
@@ -4092,15 +4095,7 @@ Error message and password prompt
 
 ---
 
-&lt;&lt;lingo Basics/Version/Prompt&gt;&gt; &lt;&lt;version&gt;&gt;
-
----
-
-{{$:/snippets/encryptionstatus}}
-
----
-
-{{$:/_create-new-word}}
+Current version: &lt;&lt;version&gt;&gt;
 
 ---
 </pre>
@@ -4145,7 +4140,7 @@ Error message and password prompt
 <pre>[[背单词]]
 [[短文]]</pre>
 </div>
-<div current-tiddler="背单词" modified="20140704091949320" title="$:/HistoryList" type="application/json" revision="1" bag="default">
+<div current-tiddler="背单词" modified="20140704095707610" title="$:/HistoryList" type="application/json" revision="1" bag="default">
 <pre>[
     {
         &quot;title&quot;: &quot;背单词&quot;
