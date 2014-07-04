@@ -88,3 +88,11 @@ li > pre {
 	float: right;
 	margin-left: 2em;
 }
+
+html button {
+	line-height: 1.3;
+}
+
+.tw-tab-buttons button {
+	padding: 3px 5px 4px 5px;
+}
