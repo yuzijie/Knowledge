@@ -1,5 +1,5 @@
 created: 20140704145514260
-modified: 20140704150248547
+modified: 20140704161053548
 tags: 文献总结
 title: 参考文献
 type: text/vnd.tiddlywiki
@@ -7,13 +7,20 @@ type: text/vnd.tiddlywiki
 ! 英文
 
 <ol>
-<$list filter="[tag[参考文献]tag[English]sort[title]]">
-<li>
-	<$link>
-    	<$view field="title"/>
-	</$link>
-</li>
-</$list>
+	<li>重要
+		<ol>
+		<$list filter="[tag[参考文献]tag[English]tag[重要]sort[title]]">
+			<li><$link><$view field="title"/></$link></li>
+		</$list>
+		</ol>
+	</li>
+	<li>其它
+		<ol>
+		<$list filter="[tag[参考文献]tag[English]!tag[重要]sort[title]]">
+			<li><$link><$view field="title"/></$link></li>
+		</$list>
+		</ol>
+	</li>
 </ol>
 
 ! 中文
