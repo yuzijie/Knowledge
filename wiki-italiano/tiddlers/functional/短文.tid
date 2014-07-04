@@ -1,13 +1,8 @@
 created: 20140625162814967
-modified: 20140702112458113
+list: 
+modified: 20140704091723597
 tags: Topic
 title: 短文
 type: text/vnd.tiddlywiki
 
-!!! 英文
-
-# [[Page-13-English]]
-
-!!! 意大利文
-
-# [[Page-13-Italiano]]
+# ''Page-13 &#8658;'' <<choose-en-it "Page-13-English" "Page-13-Italiano">>

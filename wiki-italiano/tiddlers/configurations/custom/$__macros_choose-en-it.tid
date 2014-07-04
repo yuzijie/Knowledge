@@ -1,0 +1,19 @@
+created: 20140704090559800
+modified: 20140704091120202
+tags: $:/tags/Macro
+title: $:/macros/choose-en-it
+type: text/vnd.tiddlywiki
+
+\define choose-en-it(en,it)
+
+<$select field="list">
+<option value="">Choose</option>
+<option value="$en$">English</option>
+<option value="$it$">Italiano</option>
+</$select>
+
+<$tiddler tiddler={{!!list}}>
+<$transclude mode='block'/>
+</$tiddler>
+
+\end
