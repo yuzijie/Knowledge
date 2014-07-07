@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140704204921304
+modified: 20140707195735167
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -36,6 +36,7 @@ type: text/vnd.tiddlywiki
 
 <li><<toc-heading "Finance">></li>
 <li><<toc-heading "Economics">></li>
+<li><<toc-heading "Statistics">></li>
 
 </ol>
 
