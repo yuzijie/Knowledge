@@ -1,0 +1,8 @@
+created: 20140707192414255
+modified: 20140707195054500
+tags: Statistics
+title: DummyVariable
+type: text/vnd.tiddlywiki
+url: http://en.wikipedia.org/wiki/Dummy_variable_(statistics)
+
+In statistics and econometrics, particularly in RegressionAnalysis, a DummyVariable (also known as an ''indicator variable'', ''design variable'', ''Boolean indicator'', ''categorical variable'', ''binary variable'', or ''qualitative variable'') is one that takes the value 0 or 1 to indicate the absence or presence of some categorical effect that may be expected to shift the outcome. Dummy variables are used as devices to sort data into mutually exclusive categories (such as smoker/non-smoker, etc.). For example, in econometric time series analysis, dummy variables may be used to indicate the occurrence of wars or major strikes. A dummy variable can thus be thought of as a truth value represented as a numerical value 0 or 1 (as is sometimes done in computer programming).

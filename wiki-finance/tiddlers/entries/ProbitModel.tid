@@ -1,0 +1,8 @@
+created: 20140707194003931
+modified: 20140707195015029
+tags: Statistics
+title: ProbitModel
+type: text/vnd.tiddlywiki
+url: http://en.wikipedia.org/wiki/Probit_model
+
+In statistics, a ''probit model'' is a type of regression where the dependent variable can only take two values, for example married or not married. The name is from ''prob''ability + un''it''. The purpose of the model is to estimate the probability that an observation with particular characteristics will fall into a specific one of the categories; moreover, if estimated probabilities greater than 1/2 are treated as classifying an observation into a predicted category, the probit model is a type of binary classification model.
