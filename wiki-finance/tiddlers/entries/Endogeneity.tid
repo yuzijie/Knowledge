@@ -1,0 +1,10 @@
+created: 20140707202554985
+modified: 20140707202936533
+tags: Statistics
+title: Endogeneity
+type: text/vnd.tiddlywiki
+url: http://en.wikipedia.org/wiki/Endogeneity_(applied_statistics)
+
+In a statistical model, a ''parameter'' or ''variable'' is said to be ''endogenous'' when there is a ''correlation'' between the ''parameter'' or ''variable'' and the ''error term''. Endogeneity can arise as a result of ''measurement error'', autoregression with autocorrelated errors, simultaneity and omitted variables. Broadly, a loop of causality between the independent and dependent variables of a model leads to endogeneity.
+
+For example, in a simple supply and demand model, when predicting the quantity demanded in equilibrium, the price is endogenous because producers change their price in response to demand and consumers change their demand in response to price. In this case, the price variable is said to have total endogeneity once the demand and supply curves are known. In contrast, a change in consumer tastes or preferences would be an exogenous change on the demand curve.

@@ -1,7 +1,8 @@
 created: 20140707194819873
-modified: 20140707194937218
+modified: 20140707202228818
 tags: Statistics
 title: NullHypothesis
 type: text/vnd.tiddlywiki
 url: http://en.wikipedia.org/wiki/Null_hypothesis
 
+In statistical inference of observed data of a scientific experiment, the ''null hypothesis'' refers to a general statement or default position that there is ''no relationship'' between two measured phenomena. Rejecting or disproving the null hypothesis – and thus concluding that there are grounds for believing that there is a relationship between two phenomena or that a potential treatment has a measurable effect – is a central task in the modern practice of science, and gives a precise sense in which a claim is capable of being proven false.
