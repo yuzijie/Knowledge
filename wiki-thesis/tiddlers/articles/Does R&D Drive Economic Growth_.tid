@@ -1,0 +1,54 @@
+created: 20140708190928103
+modified: 20140708195543781
+tags: 网络摘抄
+title: Does R&D Drive Economic Growth?
+type: text/vnd.tiddlywiki
+url: http://thebreakthrough.org/index.php/voices/roger-pielke-jr/tall-tales-of-economic-growth
+
+<p>It is a claim that you hear often in discussions of the role of research and development in the economy: “Federal investments in R&amp;D have fueled half of the nation’s economic growth since World War II.” This particular claim appeared in <a href="http://www.washingtonpost.com/opinions/its-time-to-get-serious-about-science/2012/09/09/5b5c1472-f129-11e1-892d-bc92fee603a7_story.html">a recent <em>Washington Post</em> op-ed</a> co-authored by a member of the US Congress and the chief executive of the American Association for the Advancement of Science. It would be remarkable if true. Unfortunately, it is not.</p>
+
+<p>Let’s take a look at some numbers to illustrate what follows from the claim. From 1953 to 2007 (<a href="http://www.aaas.org/spp/rd/usr07tb.pdf">the period of available data from the AAAS</a>) the United States invested a total of $3.9 trillion in federal R&amp;D. Over the same period US GDP grew from about $2.4 trillion to $13.9 trillion, representing an annual growth rate of 3.3% (data in 2007$ and available&nbsp;<a href="http://www.whitehouse.gov/sites/default/files/omb/budget/fy2013/assets/hist10z1.xls">here</a>&nbsp;in XLS). If we attribute half of that growth to federal R&amp;D, or 1.65% of that 3.3% annual GDP growth rate, then that would imply a 2007 GDP of about $6 trillion in the absence of such federal investments. In other words, from 1953 to 2007 the economy grew by a cumulative $153 trillion more than it would have otherwise, representing an implausibly staggering 40 to 1 return on the federal R&amp;D investment.</p>
+
+<p>Unfortunately, such claims and the economics that follow are part of an overly simplistic story that we tell ourselves over and over. In 2007, Leo Sveikauskas of the Bureau of Economic Analysis surveyed the economy-wide returns on R&amp;D (<a href="http://www.bls.gov/ore/pdf/ec070070.pdf">here</a>&nbsp;in PDF) and found far more sober results: “Returns to many forms of publicly financed R&amp;D are near zero … Many elements of university and government research have very low returns, overwhelmingly contribute to economic growth only indirectly, if at all, and do not belong in investment.” The exceptions that he cites include federal R&amp;D in health, agriculture and defense.</p>
+
+<p>Many would reject the idea that the contributions to economic growth of federal R&amp;D are “close to zero” as being as improbable as R&amp;D accounting for half of all economic growth. Whatever the actual rate-of-return, the existence of such diverse, even incommensurate, claims illustrates that the role of federal R&amp;D in economic growth is very poorly understood. More fundamentally, the mistaken focus on federal R&amp;D as a sort of control knob that might be used to modulate economic growth masks the fact that the broader mechanisms of economic growth remain poorly understood.</p>
+
+<p>Making discussion of these issues more difficult is a persistent post-World War II mythology that has married the political self-interests of the federal science lobby with a convenient misreading of economic theory.</p>
+
+<p><a href="http://rogerpielkejr.blogspot.com/2012/10/new-bridges-column-origins-of-basic.html">As has been well documented</a>, the publication of the 1945 report _<a href="http://www.nsf.gov/od/lpa/nsf50/vbush1945.htm">Science - The Endless Frontier_</a> marked a sea change in how science was viewed by government and the public. “Basic research” became accepted as an appropriate category of federal investment, and subsequently R&amp;D budgets increased by more than a factor of 10 over the next thirty years.</p>
+
+<p>The timing of the publication of <em>Science - The Endless Frontier</em> occurred after Joseph Schumpeter advanced his thesis of how “creative destruction” in the economy leads to economic growth and before Robert Solow formalized a model of economic growth that attributed about half of all growth to a concept that he called “technical change.” Both perspectives were readily adapted (and, arguably, modified substantially) by the science and technology policy community to elevate the importance of basic research as the linchpin of economic growth.</p>
+
+<p>An illustration of this adaptation can be found in an influential 2007 report on science policy by the US National Academy of Sciences, titled <em><a href="http://www.nap.edu/catalog.php?record_id=11463">Rising Above the Gathering Storm</a></em>, which repeated justifications for the government support of basic research that had been often repeated over a half-century. The report explained:</p>
+
+<blockquote>
+<p>Early in the 20th century, Joseph Schumpeter argued that innovation was the most important feature of the capitalist economy. Starting in the 1950s, Robert Solow and others developed methods of accounting for the sources of growth, leading to the observation that technologic change is responsible for over half the observed growth in labor productivity and national income.</p>
+</blockquote>
+
+<p>While such observations are sometimes accompanied by qualifications (the NRC report includes some deep in the report), inevitably the resulting policy recommendations focus narrowly on more government support for R&amp;D, and especially university-based basic research.</p>
+
+<p>Ironically, the frequent invocation of both Schumpeter and Solow in the context justifying government support for basic research finds little support in what Schumpeter and Solow actually argued.</p>
+
+<p>Schumpeter described the roles of invention, innovation and diffusion in the economy, concepts which others adapted to a linear model of innovation (see, e.g., Godin <a href="http://www.csiic.ca/PDF/Godin_30.pdf">here</a> in PDF for an in-depth treatment of this history). But Schumpeter explicated that he rejected any such linear model:</p>
+
+<blockquote>
+<p>It should be noticed at once that that concept [of innovation] is not synonymous with “invention”… It is entirely immaterial whether an innovation implies scientific novelty or not. Although most innovations can be traced to some conquest in realm of either theoretical or practical knowledge, there are many which cannot. Innovation is possible without anything we should identify as invention and invention does not necessarily induce innovation, but produces of itself no economically relevant effect at all&nbsp; (<a href="http://www.jstor.org/discover/10.2307/2113338?uid=3739568&uid=2129&uid=2&uid=70&uid=4&uid=3739256&sid=21101317042781">Schumpeter 1947</a>).</p>
+</blockquote>
+
+<p>Similarly, Solow used the term “technical change” to refer to any change in the economics of production, and not as a specific reference to “technology” as conventionally understood.&nbsp; Solow explained in 1957:</p>
+
+<blockquote>
+<p>I am using the phrase ‘technical change’ as a shorthand expression for any kind of shift in the production function. Thus slowdowns, speedups, improvements in the education of the labor force, and all sorts of things will appear as ‘technical change’ (<a href="http://www.jstor.org/discover/10.2307/1926047?uid=3739568&uid=2129&uid=2&uid=70&uid=4&uid=3739256&sid=21101317042781">Solow 1957</a>).</p>
+</blockquote>
+
+<p><a href="http://www.slate.com/blogs/moneybox/2012/08/06/nobody_knows_where_economic_growth_comes_from.html">Writing in Slate</a>, Matthew Ygelsias said of claims that “technology” causes economic growth, “it represents a statistical discrepency, not an inquiry into independently identifiable properties of technological growth. It’s like Molière’s doctors explaining that opium puts people to sleep because of its <em>virtus dormitiva</em>.”</p>
+
+<p>The integration of post-war science policy with a misinterpretation of neo-classical economic theory led to the creation of a mythology of innovation that persists today. Benoît Godin, the innovation scholar at the Institut National de la Recherche Scientifique in Montreal, explains (<a href="http://www.csiic.ca/PDF/TheMakingOfScience.pdf">here</a> in PDF) that this mythology has practical consequences:</p>
+
+<blockquote>
+<p>The problem is that the academic lobby has successfully claimed a monopoly on the creation of new knowledge, and that policy-makers have been persuaded to confuse the necessary with the sufficient condition that investment in basic research would by itself necessarily lead to successful applications. Be that as it may, the framework fed policy analyses by way of taxonomies and classifications of research and, above all, it was the framework most others compared to.</p>
+</blockquote>
+
+<p>So in our public debates, rather than examining innovation policies and the complexities of securing economic growth, our discussions typically devolve into simplistic appeals for more federal R&amp;D, such as found in the <em>Washington Post</em> op-ed that I opened with above.</p>
+
+<p>The enduring popularity of investments in federal R&amp;D among politicians of both parties and US intellectuals has helped to reinforce the narrowness of this conversation. Innovation, and thus economic growth, are related to complex issues well beyond R&amp;D like immigration, inequality, education, property rights, health care and beyond. A narrow discussion also helps to cover up the fact that neither Republicans nor Democrats (including both 2012 presidential candidates) has articulated a coherent theory of economic growth. This should not come as a surprise because for decades academics have paid little attention to the subject either – it is time that changed.</p>
