@@ -1,10 +1,6 @@
 created: 20140621160857357
-modified: 20140702152434460
+modified: 20140708180512740
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[[我要成为一个什么样的人]]
-[[现阶段主要任务]]
-[[现阶段次要任务]]
-[[现阶段要考虑的事情]]
-[[我从复习考试中收获了什么]]
+[!is[system]has[modified]!sort[modified]limit[7]]
