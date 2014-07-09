@@ -36,7 +36,7 @@ type: text/vnd.tiddlywiki
 
 body.tw-body .story-river .body {
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-	word-spacing: 2px;
+	word-spacing: 1.5px;
 }
 
 .tw-site-title,
