@@ -131,5 +131,5 @@ html button {
 }
 
 .tw-tab-buttons button {
-	padding: 3px 5px 4px 5px;
+	padding: 2px 5px 4px 5px;
 }
