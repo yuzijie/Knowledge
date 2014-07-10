@@ -76,6 +76,11 @@ hr {
 	padding-bottom: 6px;
 }
 
+.sidebar-header,
+.tw-sidebar-lists a.tw-tiddlylink {
+	color: #888888;
+}
+
 .tw-sidebar-lists .tw-search input {
 	border: 1px solid #dddddd;
 }
