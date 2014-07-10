@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140702110619361
+modified: 20140710211928453
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -9,12 +9,13 @@ type: text/vnd.tiddlywiki
 <h4 style="margin-bottom:0;">Table of Contents [[·|$:/TableOfContents]]</h4>
 
 <div style="font-size:small;">
+<div style="width:220px;">
 <ol style="padding-left:2em;margin-top:0.6em;">
 <$list filter="[!is[system]tag[Topic]sort[title]]">
 <li><$link to={{!!title}}><$view field="title"/></$link></li>
 </$list>
 </ol>
-
+</div>
 <hr/>
 
 [[Show All Tags|$:/Overview]]
