@@ -1,0 +1,146 @@
+title: $:/themes/zacwiki/styles.tid
+tags: $:/tags/stylesheet
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Regular.woff">>);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: normal;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Italic.woff">>);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Bold.woff">>);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: bold;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff">>);
+}
+
+body.tw-body .story-river .body {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	word-spacing: 1px;
+}
+
+.tw-site-title,
+.story-river .tw-tiddler-title .titlebar .title,
+.tw-tab-buttons button,
+.story-river .body h1,
+.story-river .body h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
+}
+
+body.tw-body {
+	background: #ececec url(<<datauri "$:/themes/zacwiki/background.png">>) repeat;
+}
+
+.tw-page-controls svg {
+	height: 1.6em;
+	padding-right: 0.6em;
+}
+
+.tw-tiddler-controls button svg {
+	height: 0.8em;
+	fill: #dddddd;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #dddddd;
+	padding: 0;
+}
+
+.titlebar {
+	font-size:2.1em;
+}
+
+.tw-search {
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+
+.sidebar-header,
+.tw-sidebar-lists a.tw-tiddlylink {
+	color: #888888;
+}
+
+.tw-sidebar-lists .tw-search input {
+	border: 1px solid #dddddd;
+}
+
+.tw-sidebar-lists .tw-tab-divider {
+	border-top: 1px solid #dddddd;
+}
+
+.tw-tiddler-frame {
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+code {
+	background-color: #ffffff;
+	border: none;
+	padding: 0;
+}
+
+pre {
+	border: 1px solid #dddddd;
+	background-color: #f8f8f8;
+}
+
+li > pre {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.tw-missing-tiddler-label {
+	padding-right: 0.5em;
+}
+
+.tw-topbar-right {
+	top: 5px;
+	right: 5px;
+}
+
+.border {
+	background: #fafafa;
+	padding: 8px;
+	border: 1px solid;
+	border-color: #e5e5e5 #dbdbdb #d2d2d2;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+
+.left {
+	float: left;
+	margin-right: 2em;
+}
+
+.right {
+	float: right;
+	margin-left: 2em;
+}
+
+html button {
+	line-height: 1.3;
+}
+
+.tw-tab-buttons button {
+	padding: 2px 5px 4px 5px;
+}

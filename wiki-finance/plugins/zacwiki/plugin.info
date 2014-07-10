@@ -1,0 +1,9 @@
+{
+	"title": "$:/themes/zacwiki",
+	"name": "Zac's Wiki",
+	"author": "YU Zijie",
+	"core-version": ">=5.0.0",
+	"plugin-type": "theme",
+	"description": "YU Zijie's personal theme",
+	"dependents": ["$:/themes/tiddlywiki/snowwhite"]
+}
