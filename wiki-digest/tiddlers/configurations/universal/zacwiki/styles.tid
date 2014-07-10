@@ -1,7 +1,5 @@
-created: 20140630215823406
-modified: 20140708223607246
+title: $:/themes/zacwiki/styles.tid
 tags: $:/tags/stylesheet
-title: $:/themes/Global
 type: text/vnd.tiddlywiki
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
@@ -10,28 +8,28 @@ type: text/vnd.tiddlywiki
   font-family: "Lato";
   font-style: normal;
   font-weight: normal;
-  src: url(<<datauri "$:/fonts/LatoLatin-Regular.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Regular.woff">>);
 }
 
 @font-face {
   font-family: "Lato";
   font-style: italic;
   font-weight: normal;
-  src: url(<<datauri "$:/fonts/LatoLatin-Italic.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Italic.woff">>);
 }
 
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: bold;
-  src: url(<<datauri "$:/fonts/LatoLatin-Bold.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Bold.woff">>);
 }
 
 @font-face {
   font-family: "Lato";
   font-style: italic;
   font-weight: bold;
-  src: url(<<datauri "$:/fonts/LatoLatin-Boldtalic.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff">>);
 }
 
 body.tw-body .story-river .body {
@@ -48,7 +46,7 @@ body.tw-body .story-river .body {
 }
 
 body.tw-body {
-	background: #ececec url(<<datauri "$:/themes/bg.png">>) repeat;
+	background: #ececec url(<<datauri "$:/themes/zacwiki/background.png">>) repeat;
 }
 
 .tw-page-controls svg {
