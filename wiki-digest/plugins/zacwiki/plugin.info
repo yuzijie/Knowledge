@@ -1,6 +1,6 @@
 {
 	"title": "$:/themes/zacwiki",
-	"name": "Zac's wiki theme",
+	"name": "Zac's Wiki",
 	"author": "YU Zijie",
 	"core-version": ">=5.0.0",
 	"plugin-type": "theme",
