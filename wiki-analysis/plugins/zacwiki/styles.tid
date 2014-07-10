@@ -45,8 +45,27 @@ body.tw-body .story-river .body {
 	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
 }
 
-body.tw-body {
+body.tw-body,
+.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
 	background: #ececec url(<<datauri "$:/themes/zacwiki/background.png">>) repeat;
+}
+
+.tw-sidebar-lists .tw-tab-buttons button {
+	background-color: #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+}
+
+.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {
+	border-bottom: 1px solid #d8d8d8;
+	border-top: 0px;
+	padding-top: 5px;
+}
+
+.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {
+	border-left: 1px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
 }
 
 .tw-page-controls svg {
@@ -63,7 +82,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #dddddd;
+	border-top: 1px solid #d8d8d8;
 	padding: 0;
 }
 
@@ -82,11 +101,11 @@ hr {
 }
 
 .tw-sidebar-lists .tw-search input {
-	border: 1px solid #dddddd;
+	border: 1px solid #d8d8d8;
 }
 
 .tw-sidebar-lists .tw-tab-divider {
-	border-top: 1px solid #dddddd;
+	border-top: 1px solid #d8d8d8;
 }
 
 .tw-tiddler-frame {
@@ -101,7 +120,7 @@ code {
 }
 
 pre {
-	border: 1px solid #dddddd;
+	border: 1px solid #d8d8d8;
 	background-color: #f8f8f8;
 }
 
@@ -142,5 +161,5 @@ html button {
 }
 
 .tw-tab-buttons button {
-	padding: 2px 5px 4px 5px;
+	padding: 2px 5px 5px 5px;
 }

@@ -11,11 +11,14 @@
     ],
     "build": {
         "index": [
-            "--savetiddlers","[tag[external-image]]","images",
-            "--setfield","[tag[external-image]]","_canonical_uri","$:/core/templates/canonical-uri-external-image","text/plain",
-            "--setfield","[tag[external-image]]","text","","text/plain",
+            "--savetiddlers","[is[image]!tag[theme]]","images",
+            "--setfield","[is[image]!tag[theme]]","_canonical_uri","$:/core/templates/canonical-uri-external-image","text/plain",
+            "--setfield","[is[image]!tag[theme]]","text","","text/plain",
             "--rendertiddler","$:/core/save/all","index.html","text/plain"],
         "favicon": [
             "--savetiddler","$:/themes/zacwiki/favicon.ico","favicon.ico"]
+    },
+    "config": {
+        "retain-original-tiddler-path": true
     }
 }

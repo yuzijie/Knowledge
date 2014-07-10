@@ -1,6 +1,5 @@
 {
     "plugins": [
-        "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
         "tiddlywiki/codemirror",
         "tiddlywiki/highlight"
@@ -11,9 +10,6 @@
     ],
     "build": {
         "index": [
-            "--savetiddlers","[is[image]!tag[theme]]","images",
-            "--setfield","[is[image]!tag[theme]]","_canonical_uri","$:/core/templates/canonical-uri-external-image","text/plain",
-            "--setfield","[is[image]!tag[theme]]","text","","text/plain",
             "--rendertiddler","$:/core/save/all","index.html","text/plain"],
         "favicon": [
             "--savetiddler","$:/themes/zacwiki/favicon.ico","favicon.ico"]
