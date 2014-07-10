@@ -49,5 +49,3 @@ type: text/vnd.tiddlywiki
 [[Show All Tags|$:/Overview]]
 
 </div>
-
-{{$:/editions/server/download-offline-button}}
