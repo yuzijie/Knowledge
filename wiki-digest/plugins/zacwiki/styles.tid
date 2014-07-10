@@ -56,14 +56,14 @@ body.tw-body {
 
 .tw-tiddler-controls button svg {
 	height: 0.8em;
-	fill: #ececec;
+	fill: #dddddd;
 }
 
 hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #e4e4e4;
+	border-top: 1px solid #dddddd;
 	padding: 0;
 }
 
@@ -78,6 +78,10 @@ hr {
 
 .tw-sidebar-lists .tw-search input {
 	border: 1px solid #dddddd;
+}
+
+.tw-sidebar-lists .tw-tab-divider {
+	border-top: 1px solid #dddddd;
 }
 
 .tw-tiddler-frame {
