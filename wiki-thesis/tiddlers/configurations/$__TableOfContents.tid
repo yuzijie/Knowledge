@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140708191007056
+modified: 20140710220558739
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -30,11 +30,10 @@ type: text/vnd.tiddlywiki
 
 \end
 
-<h4 style="margin-bottom:0;">Table of Contents [[·|$:/TableOfContents]]</h4>
-
 <div style="font-size:small;">
 
-<ol style="padding-left:2em;margin-top:0.6em;">
+<div style="width:220px;">
+<ol style="padding-left:1.5em;">
 
 <li><<toc-heading "论文写作">></li>
 <li><<toc-heading "资料整理">></li>
@@ -43,9 +42,9 @@ type: text/vnd.tiddlywiki
 <li><<toc-heading "working">></li>
 
 </ol>
-
+</div>
 <hr/>
 
-[[Show All Tags|$:/Overview]]
+[[Show All Tags|$:/Overview]] · [[Edit|$:/TableOfContents]]
 
 </div>
