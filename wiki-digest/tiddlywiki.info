@@ -17,5 +17,8 @@
             "--rendertiddler","$:/core/save/all","index.html","text/plain"],
         "favicon": [
             "--savetiddler","$:/themes/zacwiki/favicon.ico","favicon.ico"]
+    },
+    "config": {
+        "retain-original-tiddler-path": true
     }
 }
