@@ -23,6 +23,7 @@ type: text/vnd.tiddlywiki
 </$reveal>
 \end
 
+<$reveal type="match" state="$:/reference_state" text="">
 <div style="font-size:small;">
 
 <div style="width:220px;">
@@ -36,8 +37,19 @@ type: text/vnd.tiddlywiki
 
 </ol>
 </div>
+
 <hr/>
 
 [[Show All Tags|$:/Overview]] · [[Edit|$:/TableOfContents]]
 
 </div>
+</$reveal>
+
+<$reveal type="nomatch" state="$:/reference_state" text="">
+
+<div style="padding-left:12px;width:220px;font-family:'Lato','Hiragino Sans GB',STHeiti,'Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;" class="border">
+{{$:/reference_state}}
+<$button set="$:/reference_state" setTo="" class="btn-invisible"><span style="color:#dd1144;">↩</span></$button>
+</div>
+
+</$reveal>
