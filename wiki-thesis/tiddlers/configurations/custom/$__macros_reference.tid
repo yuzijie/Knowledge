@@ -1,19 +1,17 @@
-created: 20140709151243792
-modified: 20140709152149208
-tags: $:/tags/Macro
 title: $:/macros/reference
+tags: $:/tags/Macro
 type: text/vnd.tiddlywiki
 
 \define reference(num,content)
 <$reveal type="nomatch" state="$:/reference_state_$num$" text="show">
-<$button set="$:/reference_state_$num$" setTo="show" class="btn-invisible"><sup>[$num$]</sup></$button>
+<$button set="$:/reference_state_$num$" setTo="show" class="btn-invisible"><sup style="color: #5778d8;">[$num$]</sup></$button>
 </$reveal>
 <$reveal type="match" state="$:/reference_state_$num$" text="show">
-<$button set="$:/reference_state_$num$" setTo="hide" class="btn-invisible"><sup>[$num$]</sup></$button>
+<$button set="$:/reference_state_$num$" setTo="hide" class="btn-invisible"><sup style="color: #5778d8;">[$num$]</sup></$button>
 </$reveal>
 
 <$reveal type="match" state="$:/reference_state_$num$" text="show">
-<div class="tw-tiddler-info" style="margin-top:0.5em;">
+<div class="tw-tiddler-info" style="margin-top:0.5em;border: 1px solid #dddddd">
 $content$
 </div>
 </$reveal>
