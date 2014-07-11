@@ -47,7 +47,7 @@ body.tw-body .story-river .body {
 
 body.tw-body,
 .tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
-	background: #ececec url(<<datauri "$:/themes/zacwiki/background.png">>) repeat;
+	background: #ececec;
 }
 
 .tw-sidebar-lists .tw-tab-buttons button {
@@ -110,7 +110,8 @@ hr {
 
 .tw-tiddler-frame {
 	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);
+	padding: 34px 42px 42px 42px;
 }
 
 code {
