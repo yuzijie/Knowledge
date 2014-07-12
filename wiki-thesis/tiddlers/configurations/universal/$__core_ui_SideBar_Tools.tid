@@ -1,5 +1,7 @@
 caption: {{$:/language/SideBar/Tools/Caption}}
-tags: $:/tags/MoreSideBar
+created: 20140712202419609
+modified: 20140712203006786
+tags: $:/tags/SideBar
 title: $:/core/ui/SideBar/Tools
 type: text/vnd.tiddlywiki
 
@@ -17,6 +19,10 @@ Save this wiki: <$button message="tw-save-wiki" title={{$:/language/Buttons/Save
 ---
 
 Control Panel: <$button to="$:/ControlPanel" title={{$:/language/Buttons/ControlPanel/Hint}} aria-label={{$:/language/Buttons/ControlPanel/Caption}} class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/options-button}}</span></$button>
+
+---
+
+[[Update Table of Contents|$:/TableOfContents]]
 
 ---
 
