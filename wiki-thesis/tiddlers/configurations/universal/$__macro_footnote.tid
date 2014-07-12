@@ -1,0 +1,30 @@
+created: 20140712121649024
+modified: 20140712122819010
+tags: $:/tags/Macro
+title: $:/macro/footnote
+type: text/vnd.tiddlywiki
+
+\define ref(label)
+<$button popup="$:/state/$label$" class="btn-invisible"><sup style="color:#5778d8">$label$</sup></$button>
+\end
+
+\define definition(label,text)
+<$reveal type="popup" state="$:/state/$label$">
+<div>
+	<dl>
+		<dt>$label$</dt>
+		<dd>$text$</dd>
+	</dl>
+</div>
+</$reveal>
+\end
+
+\define footnote(label,text)
+<<ref "$label$">>
+<<definition "$label$" "$text$">>
+\end
+
+\define footnotes(label,text)
+<<definition "$label$" "$text$">>
+$label$ : $text$
+\end
