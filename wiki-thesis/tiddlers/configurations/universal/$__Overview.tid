@@ -1,4 +1,4 @@
 title: $:/Overview
 type: text/vnd.tiddlywiki
 
-<<tabs "$:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Types" "$:/core/ui/MoreSideBar/Tags" "$:/state/tab/overview">>
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]" "$:/core/ui/MoreSideBar/Tags" "$:/state/tab/overview">>
