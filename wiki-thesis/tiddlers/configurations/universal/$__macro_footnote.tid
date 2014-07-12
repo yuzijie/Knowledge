@@ -10,12 +10,11 @@ type: text/vnd.tiddlywiki
 
 \define definition(label,text)
 <$reveal type="popup" state="$:/state/$label$">
-<div>
-	<dl>
-		<dt>$label$</dt>
-		<dd>$text$</dd>
-	</dl>
-</div>
+
+@@.tw-drop-down
+$text$
+@@
+
 </$reveal>
 \end
 
@@ -26,5 +25,5 @@ type: text/vnd.tiddlywiki
 
 \define footnotes(label,text)
 <<definition "$label$" "$text$">>
-$label$ : $text$
+<sup style="color:#5778d8">$label$</sup> $text$
 \end
