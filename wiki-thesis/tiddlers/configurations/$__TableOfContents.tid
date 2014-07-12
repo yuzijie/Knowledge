@@ -21,7 +21,7 @@ type: text/vnd.tiddlywiki
 </$reveal>
 \end
 
-<$reveal type="match" state="$:/reference_state" text="">
+<$reveal type="match" state="$:/state/reference" text="">
 <div style="font-size:small;">
 
 <div style="width:220px;">
@@ -43,11 +43,11 @@ type: text/vnd.tiddlywiki
 </div>
 </$reveal>
 
-<$reveal type="nomatch" state="$:/reference_state" text="">
+<$reveal type="nomatch" state="$:/state/reference" text="">
 
 <div style="padding-left:12px;width:220px;font-family:'Lato','Hiragino Sans GB',STHeiti,'Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;" class="border">
-{{$:/reference_state}}
-<$button set="$:/reference_state" setTo="" class="btn-invisible"><span style="color:#dd1144;">↩</span></$button>
+{{$:/state/reference}}
+<$button set="$:/state/reference" setTo="" class="btn-invisible"><span style="color:#dd1144;">↩</span></$button>
 </div>
 
 </$reveal>

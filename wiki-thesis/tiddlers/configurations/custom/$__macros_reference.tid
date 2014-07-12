@@ -3,10 +3,10 @@ tags: $:/tags/Macro
 type: text/vnd.tiddlywiki
 
 \define reference(content)
-<$reveal type="nomatch" state="$:/reference_state" text="$content$">
-<$button title="$content$" set="$:/reference_state" setTo="$content$" class="btn-invisible"><sup style="color:#5778d8;">[From]</sup></$button>
+<$reveal type="nomatch" state="$:/state/reference" text="$content$">
+<$button title="$content$" set="$:/state/reference" setTo="$content$" class="btn-invisible"><sup style="color:#5778d8;">[From]</sup></$button>
 </$reveal>
-<$reveal type="match" state="$:/reference_state" text="$content$">
-<$button title="$content$" set="$:/reference_state" setTo="" class="btn-invisible"><span style="color:#dd1144;">↩</span></$button>
+<$reveal type="match" state="$:/state/reference" text="$content$">
+<$button title="$content$" set="$:/state/reference" setTo="" class="btn-invisible"><span style="color:#dd1144;">↩</span></$button>
 </$reveal>
 \end
