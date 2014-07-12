@@ -147,7 +147,7 @@ li > pre {
 }
 
 .tw-tab-buttons button {
-	padding: 3px 5px 6px 5px;
+	padding: 4px 7px 6px 7px;
 }
 
 .left {
