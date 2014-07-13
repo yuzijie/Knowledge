@@ -81,7 +81,7 @@ hr {
 }
 
 .tw-site-title, .titlebar {
-	font-size:2.2em;
+	font-size: 2.2em;
 }
 
 .tw-search {
@@ -148,7 +148,7 @@ li > pre {
 
 .tw-tag-label {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-	padding: 3px 8px 3px 7px;
+	padding: 3px 9px;
 	border-radius: 20px;
 	font-weight: 300;
 	background-color: #c0c0c0;
