@@ -4185,7 +4185,7 @@ Control Panel: &lt;$button to=&quot;$:/ControlPanel&quot; title={{$:/language/Bu
 <pre>[[Chapter 1: Economics Rationale]]
 [[已阅读文献列表]]</pre>
 </div>
-<div current-tiddler="Chapter 1: Economics Rationale" modified="20140713191524097" title="$:/HistoryList" type="application/json">
+<div current-tiddler="Chapter 1: Economics Rationale" modified="20140713223745931" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;Chapter 1: Economics Rationale&quot;
@@ -4281,10 +4281,14 @@ $text$
 <div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140713131119628" list-after="$:/core/ui/SideBar/Open" modified="20140713142655304" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
 <pre>\define toc-heading(caption)
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
-  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;$caption$&lt;/$button&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
+  &lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;$caption$&lt;/span&gt;
+  &lt;/$button&gt;
 &lt;/$reveal&gt;
 &lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
-  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;hide&quot; class=&quot;btn-invisible&quot;&gt;$caption$&lt;/$button&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;hide&quot; class=&quot;btn-invisible&quot;&gt;
+  &lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;$caption$&lt;/span&gt;
+  &lt;/$button&gt;
 &lt;/$reveal&gt;
 
 &lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
