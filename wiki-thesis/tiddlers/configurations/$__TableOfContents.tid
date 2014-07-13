@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140713131119628
 list-after: $:/core/ui/SideBar/Open
-modified: 20140713131205327
+modified: 20140713142655304
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -33,7 +33,8 @@ type: text/vnd.tiddlywiki
 <li><<toc-heading "资料整理">></li>
 <li><<toc-heading "文献总结">></li>
 <li><<toc-heading "网络摘抄">></li>
-<li><<toc-heading "working">></li>
+<li><<toc-heading "常用">></li>
+<li><<toc-heading "写作中">></li>
 
 </ol>
 </div>
