@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140707195735167
+modified: 20140713230335244
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -9,41 +9,37 @@ type: text/vnd.tiddlywiki
 \define toc-heading(caption)
 <$reveal type="nomatch" state=<<qualify "$:/state/toc/$caption$">> text="show">
   <$button set=<<qualify "$:/state/toc/$caption$">> setTo="show" class="btn-invisible">
-    $caption$
+  <span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">$caption$</span>
   </$button>
 </$reveal>
-
 <$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
   <$button set=<<qualify "$:/state/toc/$caption$">> setTo="hide" class="btn-invisible">
-    ''$caption$''
+  <span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">$caption$</span>
   </$button>
 </$reveal>
 
 <$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
-<ol>
+<ol style="padding-left: 20px;">
     <$list filter="[!is[system]tag[$caption$]sort[title]]">
-      <li><$link to={{!!title}}><$view field="title"/></$link></li>
+      <li style="line-height: 1.4em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
     </$list>
 </ol>
 </$reveal>
 \end
 
-<h4 style="margin-bottom:0;">Table of Contents [[·|$:/TableOfContents]]</h4>
-
 <div style="font-size:small;">
-
-<ol style="padding-left:2em;margin-top:0.6em;">
+<div style="width:228px;">
+<ol style="padding-left:1.5em;">
 
 <li><<toc-heading "Finance">></li>
 <li><<toc-heading "Economics">></li>
 <li><<toc-heading "Statistics">></li>
 
 </ol>
+</div>
 
 <hr/>
 
-[[Show All Tags|$:/Overview]]
+<$button message="tw-new-tiddler" title={{$:/language/Buttons/NewTiddler/Hint}} aria-label={{$:/language/Buttons/NewTiddler/Caption}} class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">New tiddler</span></$button> · [[Show all|$:/Overview]]
 
 </div>
-
-{{$:/editions/server/download-offline-button}}
