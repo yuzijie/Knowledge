@@ -1,17 +1,17 @@
 created: 20140709123940520
-modified: 20140711234424909
+modified: 20140713141611599
 tags: 论文写作
 title: Chapter 1: Economics Rationale
 type: text/vnd.tiddlywiki
 
 @@.red
-!! Importance of R&D to Economic Growth
+! Importance of R&D to Economic Growth
 @@
 
 Research and Development (R&D) activities tend to be publicly welcomed due to the perceived tax revenues, highly paid jobs, and trickle down effects for the local areas associated with large R&D investments. However, economists tend to view the benefits of R&D in terms of their contribution to productivity and thus to economic growth. This chapter describes the mechanisms by which R&D drives economic growth.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
 
 @@.green
-!!! Productivity Factors
+!! Productivity Factors
 @@
 
 The equation below shows a production function which describes total output in an economy (Y), and growth in output, as being determined by three components, namely human capital (L), physical capital (K) and total factor productivity (A):<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
@@ -33,7 +33,7 @@ The role of R&D in fuelling economic growth has been estimated in terms of its <
 The link between R&D in the Irish economy and economic growth has also been explored. Analysis has been conducted using the QUEST III endogenous growth model developed by the European Commission specifically for the task of examining structural reform. The research, published by the Department of Finance in the Stability Programme Update 2011, considered the effect of an R&D Tax Credit equal to 0.1% of GDP. In this model, the increase in business expenditure on R&D results in a permanent increase in GDP of 0.22% in the long-run.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
 
 @@.red
-!! Ways of increasing firm productivity due to R&D
+! Ways of increasing firm productivity due to R&D
 @@
 
 Increases in firm productivity due to R&D are generally seen to occur through two main avenues; innovations within a firm, as well as an increased capacity to understand and absorb new knowledge and innovations generated outside the firm (i.e. spillovers from innovations by other firms).<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
@@ -45,7 +45,7 @@ While this research <span class="blue">provides evidence for</span> both the eff
 It is important to note that <span class="yellow">R&D conducted by firms</span> is <span class="yellow">not</span> the only source of productivity growth in an economy. Governments directly spend significant amounts of money on publicly funded R&D that privately operating companies are unlikely to have the risk appetite or cash flows to engage in. As this paper is concerned with business expenditure on R&D, and government incentives for same, this issue is not investigated here. <<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
 
 @@.red
-!! Market Failure
+! Market Failure
 @@
 
 <span class="yellow">While the preceding section demonstrates the importance of R&D for economic growth, this does not automatically imply that the State should intervene to encourage R&D investment.</span> Economists usually require the existence of a <span class="yellow">market failure</span>, for instance underinvestment by the private sector relative to a societal optimum level, as a necessary condition for intervention. There is a significant body of literature describing the market failures which exist around firm investment in R&D and this is discussed below.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
@@ -53,6 +53,6 @@ It is important to note that <span class="yellow">R&D conducted by firms</span> 
 The literature identifies two main forms of market failure that arise with R&D, ''positive externalities'' and ''asymmetric information''.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
 
 @@.green
-!!! positive externalities
+!! positive externalities
 @@
 
