@@ -73,6 +73,7 @@ body.tw-body,
 }
 
 .tw-tiddler-controls button svg {
+	height: 0.8em;
 	fill: #dddddd;
 }
 
