@@ -24,13 +24,13 @@ type: text/vnd.tiddlywiki
 
 <$reveal state="$:/temp/search" type="nomatch" text="">
 
-<small>What: <$select tiddler="$:/state/search_option">
+<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">What&nbsp;</span> <$select tiddler="$:/state/search_option">
 <option value="!is[system]">All articles</option>
 <option value="is[system]">System</option>
 <option value="all[shadows]">Shadows</option>
 </$select></small>
 
-<small>How: <$select tiddler="$:/state/search_sort">
+<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;How&nbsp;</span> <$select tiddler="$:/state/search_sort">
 <option value="sort[title]">By title</option>
 <option value="!sort[modified]">By modified time</option>
 </$select></small>
