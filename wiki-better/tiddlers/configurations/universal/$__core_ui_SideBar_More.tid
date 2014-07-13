@@ -1,10 +1,6 @@
 caption: {{$:/language/SideBar/More/Caption}}
-created: 20140702091818059
-modified: 20140702091823864
-tags: $:/tags/SideBar
+created: 20140712225801964
+modified: 20140712225805085
 title: $:/core/ui/SideBar/More
 type: text/vnd.tiddlywiki
 
-<div class="tw-more-sidebar">
-<<tabs "[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]" "$:/core/ui/SideBar/Tools" "$:/state/tab/moresidebar" "tw-vertical">>
-</div>

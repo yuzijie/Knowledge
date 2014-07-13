@@ -68,9 +68,8 @@ body.tw-body,
 	border-top: 1px solid #d8d8d8;
 }
 
-.tw-page-controls svg {
-	height: 1.6em;
-	padding-right: 0.6em;
+.tw-page-controls {
+	margin: 0;
 }
 
 .tw-tiddler-controls button svg {
@@ -90,8 +89,8 @@ hr {
 }
 
 .tw-search {
-	padding-top: 10px;
-	padding-bottom: 6px;
+	padding-top: 16px;
+	padding-bottom: 8px;
 }
 
 .sidebar-header,

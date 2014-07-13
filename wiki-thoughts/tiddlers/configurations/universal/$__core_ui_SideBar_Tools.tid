@@ -1,0 +1,35 @@
+caption: {{$:/language/SideBar/Tools/Caption}}
+created: 20140712202419609
+modified: 20140712203006786
+tags: $:/tags/SideBar
+title: $:/core/ui/SideBar/Tools
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/ControlPanel/
+<<lingo Tools/Import/Prompt>> <$browse/>
+
+---
+
+{{$:/snippets/viewswitcher}}
+
+---
+
+Save this wiki: <$button message="tw-save-wiki" title={{$:/language/Buttons/SaveWiki/Hint}} aria-label={{$:/language/Buttons/SaveWiki/Caption}} class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/save-button}}</span></$button>
+
+---
+
+Control Panel: <$button to="$:/ControlPanel" title={{$:/language/Buttons/ControlPanel/Hint}} aria-label={{$:/language/Buttons/ControlPanel/Caption}} class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/options-button}}</span></$button>
+
+---
+
+[[Update Table of Contents|$:/TableOfContents]]
+
+---
+
+{{$:/snippets/encryptionstatus}}
+
+---
+
+<<lingo Basics/Version/Prompt>> <<version>>
+
+---

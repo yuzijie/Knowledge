@@ -1,7 +1,15 @@
-created: 20140702090524706
-modified: 20140702102452054
+created: 20140712230707392
+modified: 20140712231031798
 title: $:/core/ui/SideBarLists
 type: text/vnd.tiddlywiki
+
+\define search_bar(option:"!is[system]" sort:"sort[title]")
+
+//<small><$count filter="[$option$search{$:/temp/search}]"/> matches</small>//
+
+<$list filter="[$option$search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+
+\end
 
 <div class="tw-sidebar-lists">
 
@@ -16,11 +24,20 @@ type: text/vnd.tiddlywiki
 
 <$reveal state="$:/temp/search" type="nomatch" text="">
 
+<small>What: <$select tiddler="$:/state/search_option">
+<option value="!is[system]">All articles</option>
+<option value="is[system]">System</option>
+<option value="all[shadows]">Shadows</option>
+</$select></small>
+
+<small>How: <$select tiddler="$:/state/search_sort">
+<option value="sort[title]">By title</option>
+<option value="!sort[modified]">By modified time</option>
+</$select></small>
+
 <div class="tw-search-results">
 
-{{$:/language/Search/Matches}}
-
-<$list filter="[!is[system]search{$:/temp/search}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+<$macrocall $name="search_bar" option={{$:/state/search_option}} sort={{$:/state/search_sort}}/>
 
 </div>
 
