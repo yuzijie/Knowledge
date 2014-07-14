@@ -1,71 +1,25 @@
 created: 20140709123940520
-modified: 20140713141611599
+modified: 20140714155721437
 tags: 论文写作
 title: Chapter 1: Economics Rationale
 type: text/vnd.tiddlywiki
 
-! Importance of R&D to Economic Growth
+<<show "h1" "Importance of R&D to Economic Growth">>
 
-Research and Development (R&D) activities tend to be publicly welcomed due to the perceived tax revenues, highly paid jobs, and trickle down effects for the local areas associated with large R&D investments. However, economists tend to view the benefits of R&D in terms of their contribution to productivity and thus to economic growth. This chapter describes the mechanisms by which R&D drives economic growth.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+<<show "h2" "Productivity Factors">>
 
-!! Productivity Factors
+<<show "h1" "Ways of increasing firm productivity due to R&D">>
 
-The equation below shows a production function which describes total output in an economy (Y), and growth in output, as being determined by three components, namely human capital (L), physical capital (K) and total factor productivity (A):<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+<<show "h1" "Market Failure">>
 
-[img class="middle"[production-function.png]]
+<<show "h2" "positive externalities">>
 
-The early literature on economic growth focused only on ''human and physical capital'' with productivity considered to be exogenous (i.e. determined outside the model). The key finding from these ‘exogenous’ growth models was that growth occurs only through the accumulation of capital, which itself is determined by the level of savings and depreciation in an economy. Additions of capital to a fixed supply of labour result in decreasing returns to capital over time and a long run limit on the growth in living standards. <span class="blue">The drawback of</span> the exogenous growth model is that it ignored the critical driver of permanent increases in growth, namely productivity.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+<<show "h3" "patent">>
 
-More recent literature on growth models, known as ''endogenous growth models'', explicitly modelled improvements in productivity, thus allowing for sustained growth and an ''explanation'' of its sources. Endogenous models <span class="blue">focus on</span> the drivers of total factor productivity and include <span class="yellow">explicit models of improvements</span> in human capital, learning by doing, innovation, research and development and technology transfer.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+<<show "h3" "perfect appropriability">>
 
-Romer (1990) <span class="blue">introduced</span> models <span class="yellow">which had commercially oriented innovation efforts by firms that respond to economic incentives driving technological progress</span>. Aghion and Howitt (1992) <span class="blue">continued in this vein</span> by modelling growth based on the ‘Schumpeterian’ ideas of <span class="yellow">creative destruction</span>. In this model, <span class="yellow">new products and processes are developed, due to expenditure on research and development, which are superior to existing ones</span>, eventually replacing them. This continuous process of newer and more advanced processes replacing older approaches therefore improves the overall stock of technological know-how in an economy and boosts economy wide productivity. Aghion and Howitt’s paper also emphasised that a perfectly competitive market may not generate an optimal amount of R&D expenditure due to the externalities associated with it.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+<<show "h3" "Joint ventures">>
 
-While capital and labour in an economy are relatively easily measured, it remains a challenge to adequately measure technological progress and its effects on output. It is normally measured as a residual, often called the Solow residual, which accounts for effects on total output (Y) not caused by changes capital (K) or labour (L).<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+<<show "h2" "Asymmetric Information">>
 
-This residual is often referred to as ''~Multi-Factor Productivity'' (MFP).<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-The role of R&D in fuelling economic growth has been estimated in terms of its <span class="yellow">contribution to MFP</span>. Coe and Helpman (1995) investigate the effects of both own country and foreign country R&D capital stocks in increasing MFP, finding that that both domestic and foreign R&D make large contributions to MFP and importantly for Ireland; that <span class="yellow">foreign owned R&D capital</span> stocks have a <span class="yellow">particularly large effect on smaller, open economies</span>. Empirical research subsequently presented evidence that cumulative R&D expenditure was an important determinant of productivity (Coe and Moghadam, 1993).<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-The link between R&D in the Irish economy and economic growth has also been explored. Analysis has been conducted using the QUEST III endogenous growth model developed by the European Commission specifically for the task of examining structural reform. The research, published by the Department of Finance in the Stability Programme Update 2011, considered the effect of an R&D Tax Credit equal to 0.1% of GDP. In this model, the increase in business expenditure on R&D results in a permanent increase in GDP of 0.22% in the long-run.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-! Ways of increasing firm productivity due to R&D
-
-Increases in firm productivity due to R&D are generally seen to occur through two main avenues; innovations within a firm, as well as an increased capacity to understand and absorb new knowledge and innovations generated outside the firm (i.e. spillovers from innovations by other firms).<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-Evidence for both of these paths is provided by Griffith, Redding and Van Reenen (2000). Using a panel of 12 countries, they examine whether a country’s investment in R&D has an effect on MFP growth and on whether R&D’s effect on MFP growth is dependent on that country’s distance from the technological frontier. The authors find that the <span class="yellow">further</span> a country lies behind the technological frontier, the <span class="yellow">greater</span> the potential for R&D to increase MFP growth through technology transfer from more advanced countries. They also find that <span class="yellow">human capital plays a large role in innovation</span> but international trade much less so.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-While this research <span class="blue">provides evidence for</span> both the effects of R&D on productivity through <span class="yellow">innovations</span> and <span class="yellow">technological transfer</span>, Jaffe (1986) investigates at the firm level. Jaffe’s approach tests the effect of neighbouring firms R&D intensity on a firm’s own R&D success as measured by patents, finding a positive effect with a larger effect for those firms with higher R&D intensities. In addition, the effect of neighbouring firm’s R&D intensity on own firm’s profitability and market share is ''positive'' where the firm’s own R&D intensity is ''high'' and ''negative'' for those firms with relatively ''low'' R&D intensities. <<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-It is important to note that <span class="yellow">R&D conducted by firms</span> is <span class="yellow">not</span> the only source of productivity growth in an economy. Governments directly spend significant amounts of money on publicly funded R&D that privately operating companies are unlikely to have the risk appetite or cash flows to engage in. As this paper is concerned with business expenditure on R&D, and government incentives for same, this issue is not investigated here. <<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-! Market Failure
-
-<span class="yellow">While the preceding section demonstrates the importance of R&D for economic growth, this does not automatically imply that the State should intervene to encourage R&D investment.</span> Economists usually require the existence of a <span class="yellow">market failure</span>, for instance underinvestment by the private sector relative to a societal optimum level, as a necessary condition for intervention. There is a significant body of literature describing the market failures which exist around firm investment in R&D and this is discussed below.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-The literature identifies two main forms of market failure that arise with R&D, ''positive externalities'' and ''asymmetric information''.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-!! positive externalities
-
-The benefit to a private firm is lower than that available to society <span class="yellow">due to the inability of firms to fully capture all the benefits arising from R&D conducted internally.</span> This is due to the nature of R&D as a partially non-excludable good i.e. once an idea or innovation is introduced to the marketplace its use by other firms can no longer be restricted as effectively by the firm. The ability of firms to absorb and innovate using knowledge developed in other firms is a positive externality often described as a knowledge spillover.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-It is due to the <span class="yellow">existence of the externality</span> that the Mirrlees Review<<footnote "note" "the Economic Approach to Tax Design in ‘Tax by Design’, the Mirrlees Review, Institute of Fiscal Studies, London, 2011.">> explicitly identified the R&D tax incentives as one of the few areas that Government’s should depart from the concept of neutrality in terms of the concept of optimum taxation.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-!!! patent
-
-<span class="yellow">One of the ways in which companies are incentivised to invest in R&D is by the granting of patents</span>. Patents are designed to give the firm temporary monopoly power over their economic benefits from the research which increases the appropriability of the returns of R&D to the firm. This minimises the gap between social and private returns and serves to increase private R&D to a level closer to the social optimum. However, patents are <span class="blue">not without their own criticisms</span>. For example, Dasgupta and Stiglitz (1980) showed that in the presence of patents, firms would undertake socially excessive R&D expenditures in their attempts to deter entry to market with patented inventions.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-!!! perfect appropriability
-
-Spence (1984) argues that perfect appropriability of R&D returns <span class="yellow">would result in redundant and hence excessive levels of R&D at the industry level</span>. Thus there is a theoretical trade-off between the positive incentives to the individual firm of appropriability on the one hand and cost efficiency with which the industry as a whole innovates, on the other. Spillovers therefore have been described as having a positive partial effect on industry’s costs and a negative effect on incentives. On the whole Spence argued that potential industry performance is significantly better with high spillovers (or low appropriability) because the output of R&D is essentially a public good and if it is implicitly priced as a private good, the performance of the system will be adversely affected.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-!!! Joint ventures
-
-Joint ventures are a method available to firms to reduce the benefits escaping to third parties. In this scenario, a number of firms co-finance an R&D project with agreed upon rules for how the information from the project will be used by each party. Going in together allows the same information to be gained by an individual firm as paying all the costs themselves. <span class="yellow">However, this type of firm behaviour is limited in value in markets where there are many suppliers, the benefits of the research project are hard to define and/or divide up.</span><<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
-
-!! Asymmetric Information
-
-Another market failure is the presence of asymmetric information. Market transactions that would normally take place often break down when <span class="yellow">the seller knows more about a product than the buyer</span>. If the quality of a product is undistinguishable beforehand by the buyer (due to the asymmetry of information), incentives exist for the seller to pass off low-quality goods as higher-quality ones. The buyer, however, takes this incentive into consideration, and takes the quality of the goods to be uncertain.
-
-The presence of <span class="yellow">asymmetric information between R&D performers and financiers limits financing of R&D projects</span>. A research based project warrants ''secrecy'' to prevent rivals from undertaking similar work but project financing ''requires'' release of vital information to determine the quality of the research. In the absence of perfect information, many projects lapse due to lack of financing (Hall, 2002). This is clearly a more acute problem in smaller firms with poorer access to debt or equity than research divisions of large multi-nationals. This phenomenon may not be observable as discouraged firms may not choose to apply for finance at all.
-
-! Estimates of Private and Social Returns to R&D
+<<show "h1" "Estimates of Private and Social Returns to R&D">>

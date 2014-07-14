@@ -1,6 +1,9 @@
-created: 20140707131338684
-modified: 20140713142451328
+created: 20140714142828049
+modified: 20140714143037855
+tags: 一级 段落
 title: Market Failure
 type: text/vnd.tiddlywiki
 
-limited appropriability
+<span class="yellow">While the preceding section demonstrates the importance of R&D for economic growth, this does not automatically imply that the State should intervene to encourage R&D investment.</span> Economists usually require the existence of a <span class="yellow">market failure</span>, for instance underinvestment by the private sector relative to a societal optimum level, as a necessary condition for intervention. There is a significant body of literature describing the market failures which exist around firm investment in R&D and this is discussed below.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+
+The literature identifies two main forms of market failure that arise with R&D, ''positive externalities'' and ''asymmetric information''.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
