@@ -175,6 +175,10 @@ li > pre {
 	background-color: #c0c0c0;
 }
 
+.tw-tag-list-item {
+	margin-right: 3px;
+}
+
 .left {
 	float: left;
 	margin-right: 2em;
