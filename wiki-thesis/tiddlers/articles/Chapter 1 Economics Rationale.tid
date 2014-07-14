@@ -1,5 +1,5 @@
 created: 20140709123940520
-modified: 20140714155721437
+modified: 20140714173916845
 tags: 论文写作
 title: Chapter 1: Economics Rationale
 type: text/vnd.tiddlywiki
@@ -23,3 +23,5 @@ type: text/vnd.tiddlywiki
 <<show "h2" "Asymmetric Information">>
 
 <<show "h1" "Estimates of Private and Social Returns to R&D">>
+
+<<show "h1" "Government’s Means of Affecting Business Expenditure on R&D">>

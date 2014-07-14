@@ -1,6 +1,9 @@
 created: 20140714143642618
-modified: 20140714143649442
+modified: 20140714173519432
 tags: 一级 段落
 title: Estimates of Private and Social Returns to R&D
 type: text/vnd.tiddlywiki
 
+While previous research has made attempts to estimate the social return of R&D, it is generally acknowledged that there are serious methodological and data issues involved. Hall et al. (2010) <span class="blue">reviewed the literature</span> measuring both private and social returns to R&D. They find that the estimates of industry-level spillover returns from R&D can range from an upper bound of 80% to a statistically negligible estimate. However in most cases, the estimates are significant and indicate the existence of major spillovers of research from one industry to another. Hall et al. also gives the range of the private rate of return observed in the literature as being between 10% and 20%. Jones and Williams (1998) demonstrate that some estimates of the social return to R&D ranging from 71% to 100% derived from regressions of MFP on R&D intensity form lower bounds when taking into account dynamic general equilibrium effects such as intertemporal knowledge spillovers.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
+
+In addition, empirical evidence on international level spillovers produced by Coe and Helpman (1995) informs us that <span class="yellow">roughly a quarter of the benefits of conducting R&D accrue to a country’s trading partners</span>. This implies that Ireland benefits significantly from the R&D conducted in our R&D intensive trading partners i.e. US, UK and Germany.<<reference "[[Review of Ireland's research and development tax credit 2013]] - Chapter 4">>
