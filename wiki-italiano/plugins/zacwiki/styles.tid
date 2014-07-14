@@ -41,8 +41,25 @@ body.tw-body .story-river .body {
 .story-river .tw-tiddler-title .titlebar .title,
 .tw-tab-buttons button,
 .story-river .body h1,
-.story-river .body h2 {
+.story-river .body h2,
+.story-river .body h3 {
 	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
+}
+
+.story-river .body h1 {
+	font-size: 1.9em;
+}
+
+.story-river .body h2 {
+	font-size: 1.7em;
+}
+
+.story-river .body h3 {
+	font-size: 1.5em;
+}
+
+.story-river .body h4 {
+	font-size: 1.3em;
 }
 
 body.tw-body,
