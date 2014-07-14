@@ -1,18 +1,21 @@
 created: 20140714173749629
-modified: 20140714174055108
+modified: 20140714222344353
 tags: 论文写作
 title: Table of Contents
 type: text/vnd.tiddlywiki
 
-# [[Chapter 1: Economics Rationale]]
-## [[Importance of R&D to Economic Growth]]
-### [[Productivity Factors]]
-## [[Ways of increasing firm productivity due to R&D]]
-## [[Market Failure]]
-### [[positive externalities]]
-#### [[patent]]
-#### [[perfect appropriability]]
-#### [[Joint ventures]]
-### [[Asymmetric Information]]
-## [[Estimates of Private and Social Returns to R&D]]
-## [[Government’s Means of Affecting Business Expenditure on R&D]]
+* [[Chapter 1: Economics Rationale]]
+*# [[Importance of R&D to Economic Growth]]
+*## [[Productivity Factors]]
+*# [[Ways of increasing firm productivity due to R&D]]
+*# [[Market Failure]]
+*## [[positive externalities]]
+*### [[patent]]
+*### [[perfect appropriability]]
+*### [[Joint ventures]]
+*## [[Asymmetric Information]]
+*# [[Estimates of Private and Social Returns to R&D]]
+*# [[Government’s Means of Affecting Business Expenditure on R&D]]
+*## [[Patent law]]
+*## [[R&D Tax Credits and Grants]]
+*# [[Ability of Government to Correct the Market Failure]]
