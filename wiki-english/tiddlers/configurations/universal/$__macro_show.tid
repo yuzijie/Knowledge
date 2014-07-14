@@ -1,19 +1,13 @@
 created: 20140714132227814
-modified: 20140714141254170
+modified: 20140714160133100
 tags: $:/tags/Macro
 title: $:/macro/show
 type: text/vnd.tiddlywiki
 
-\define show(title,heading:"!")
-
-$heading$ $title$ <$reveal type="match" state=<<qualify "$:/state/history/$title$">> text="">
-<$button set=<<qualify "$:/state/history/$title$">> setTo="show" class="btn-invisible"><sup><small>[Show]</small></sup></$button>
-</$reveal><$reveal type="nomatch" state=<<qualify "$:/state/history/$title$">> text="">
-<$button set=<<qualify "$:/state/history/$title$">> setTo="" class="btn-invisible"><sup><small>[Hide]</small></sup></$button>
-</$reveal>
-
-<$reveal type="nomatch" state=<<qualify "$:/state/history/$title$">> text="">
+\define show(heading,title)
+<$heading$>
+$title$
+<span style="font-size:0.6em;"><$button message="tw-edit-tiddler" param="$title$" class="btn-invisible">{{$:/core/images/edit-button}}</$button></span>
+</$heading$>
 <$transclude tiddler="$title$" mode="block"/>
-</$reveal>
-
 \end
