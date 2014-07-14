@@ -68,6 +68,10 @@ body.tw-body,
 	border-top: 1px solid #d8d8d8;
 }
 
+.tw-sidebar-scrollable {
+	z-index: 2;	
+}
+
 .tw-page-controls {
 	margin: 0;
 }
