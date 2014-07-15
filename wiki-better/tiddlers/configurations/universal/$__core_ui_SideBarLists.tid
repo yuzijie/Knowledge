@@ -1,15 +1,15 @@
 created: 20140712230707392
-modified: 20140712231031798
+modified: 20140715110743342
 title: $:/core/ui/SideBarLists
 type: text/vnd.tiddlywiki
 
-\define search_bar(option:"!is[system]" sort:"sort[title]")
+\define search_bar(option:"!is[system]" sort:"sort[title]" tag:"")
 
-//<small><$count filter="[$option$search{$:/temp/search}]"/> matches</small>//
+//<small><$count filter="[$option$tag[$tag$]search{$:/temp/search}]"/> matches</small>//
 
 <hr>
 
-<$list filter="[$option$search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+<$list filter="[$option$tag[$tag$]search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
 
 \end
 
@@ -37,9 +37,16 @@ type: text/vnd.tiddlywiki
 <option value="!sort[modified]">By modified time</option>
 </$select></small>
 
+<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;Tag&nbsp;</span> <$select tiddler="$:/state/search_tag">
+<option value="">N/D</option>
+<$list filter='[tags[]!is[system]sort[title]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select></small>
+
 <div class="tw-search-results">
 
-<$macrocall $name="search_bar" option={{$:/state/search_option}} sort={{$:/state/search_sort}}/>
+<$macrocall $name="search_bar" option={{$:/state/search_option}} sort={{$:/state/search_sort}} tag={{$:/state/search_tag}}/>
 
 </div>
 
