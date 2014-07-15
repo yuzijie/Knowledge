@@ -40,7 +40,7 @@ type: text/vnd.tiddlywiki
 <small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;Tag&nbsp;</span> <$select tiddler="$:/state/search_tag">
 <option value="">N/D</option>
 <$list filter='[tags[]!is[system]sort[title]]'>
-<option><$view field='title'/></option>
+<option>tag[<$view field='title'/>]</option>
 </$list>
 </$select></small>
 
