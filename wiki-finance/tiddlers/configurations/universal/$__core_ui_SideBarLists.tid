@@ -5,11 +5,11 @@ type: text/vnd.tiddlywiki
 
 \define search_bar(option:"!is[system]" sort:"sort[title]" tag:"")
 
-//<small><$count filter="[$option$tag[$tag$]search{$:/temp/search}]"/> matches</small>//
+//<small><$count filter="[$option$$tag$search{$:/temp/search}]"/> matches</small>//
 
 <hr>
 
-<$list filter="[$option$tag[$tag$]search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+<$list filter="[$option$$tag$search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
 
 \end
 
@@ -40,7 +40,7 @@ type: text/vnd.tiddlywiki
 <small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;Tag&nbsp;</span> <$select tiddler="$:/state/search_tag">
 <option value="">N/D</option>
 <$list filter='[tags[]!is[system]sort[title]]'>
-<option><$view field='title'/></option>
+<option>tag[<$view field='title'/>]</option>
 </$list>
 </$select></small>
 
