@@ -1,0 +1,17 @@
+created: 20140715161703803
+modified: 20140715173140571
+tags: H2
+title: United Kingdom
+type: text/vnd.tiddlywiki
+
+A review of the United Kingdom’s R&D Tax Credit was carried out in 2010 by <span class="yellow">HMRC</span><<footnote "url" "HM Revenue & Customs: http://www.hmrc.gov.uk">>. The report is built on an earlier feasibility study by Oxera (2006) recommending <span class="yellow">the estimation of an elasticity of R&D expenditure to the credit</span> could provide the most accurate impacts of the R&D credit scheme. Oxera also <span class="blue">suggested</span> that a potential <span class="yellow">control group</span> could be formed through the identification of firms that have similar characteristics but do not claim R&D Tax Credits or the use of data from the same firms before the introduction of the policy. HMRC found <span class="yellow">difficulties</span> in developing a control group according to those methods outlined in the Oxera report.
+
+The HMRC model indirectly estimated the impact of the credit by estimating how changes in the user cost of R&D – a variable that is directly impacted by the credit – impact on levels of expenditure on R&D. <span class="yellow">Increasing the R&D credit rate, increases the tax cost and decreases the user cost of R&D</span>, correspondingly increasing the level of R&D investment. This is quantified by estimating <span class="yellow">an elasticity or semi-elasticity</span> (or both).
+
+The semi-elasticities derived for the UK’s large company scheme implied a <span class="yellow">benefit-cost ratio of between 0.93 and 1.85 in the long-run</span>. In other words, over time £1 of cost to the taxpayer returns between £0.93 and £1.85 of R&D investment. The estimates for the SME scheme were smaller if they are based on semi-elasticities (0.41 or 0.71), but much larger if they are derived from the elasticity estimates (2.33 and 3.37).<<footnote "note" "''Semi-elasticities'' measure the absolute change in R&D expenditure to a percentage change in the user cost of R&D, <br><br>whereas ''elasticities'' measure the percentage change in R&D expenditure to a percentage change in the user cost of R&D.">>
+
+<span class="yellow">Thus the HMRC analysis suggested that every £1 of tax foregone stimulates between £0.41 and £3.37 of additional R&D investment.</span>
+
+Their review also contained a qualitative element featuring interviews with managing directors, finance directors and the directors responsible for R&D in sixty-nine companies. The main purpose of these interviews was to assess the degree to which these companies would be engaged in R&D if not for the credit. The results of the interviews suggested that the credit had <span class="yellow">little effect on decisions to conduct individual pieces of R&D work</span>, a finding that would seem inconsistent with the quantitative results.
+
+The authors however believed that these views were a function of <span class="yellow">the timing of claims</span> (after the expenditure has been incurred), and by the communication gap between the R&D and the finance functions of companies. They also note a generally <span class="yellow">poor understanding of the operation of the credit</span> among interviewees.<<footnote "注" "这里是作者的个人观点">>
