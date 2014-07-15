@@ -5,11 +5,11 @@ type: text/vnd.tiddlywiki
 
 \define search_bar(option:"!is[system]" sort:"sort[title]" tag:"")
 
-//<small><$count filter="[$option$tag[$tag$]search{$:/temp/search}]"/> matches</small>//
+//<small><$count filter="[$option$$tag$search{$:/temp/search}]"/> matches</small>//
 
 <hr>
 
-<$list filter="[$option$tag[$tag$]search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+<$list filter="[$option$$tag$search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
 
 \end
 
