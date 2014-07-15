@@ -1,6 +1,6 @@
 caption: {{$:/language/SideBar/Tools/Caption}}
 created: 20140712202419609
-modified: 20140712203006786
+modified: 20140715152129488
 tags: $:/tags/SideBar
 title: $:/core/ui/SideBar/Tools
 type: text/vnd.tiddlywiki
@@ -22,7 +22,11 @@ Control Panel: <$button to="$:/ControlPanel" title={{$:/language/Buttons/Control
 
 ---
 
-[[Update Table of Contents|$:/TableOfContents]]
+Edit Table of Contents <$button message="tw-edit-tiddler" param="$:/TableOfContents" class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/edit-button}}</span></$button>
+
+---
+
+Edit Sidebar Lists <$button message="tw-edit-tiddler" param="$:/core/ui/SideBarLists" class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/edit-button}}</span></$button>
 
 ---
 

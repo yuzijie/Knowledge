@@ -1,5 +1,5 @@
 created: 20140712230707392
-modified: 20140715110743342
+modified: 20140715150108227
 title: $:/core/ui/SideBarLists
 type: text/vnd.tiddlywiki
 
@@ -37,8 +37,9 @@ type: text/vnd.tiddlywiki
 <option value="!sort[modified]">By modified time</option>
 </$select></small>
 
-<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;Tag&nbsp;</span> <$select tiddler="$:/state/search_tag">
+<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;Has&nbsp;</span> <$select tiddler="$:/state/search_tag">
 <option value="">N/D</option>
+<option value="untagged[]">no tags</option>
 <$list filter='[tags[]!is[system]sort[title]]'>
 <option>tag[<$view field='title'/>]</option>
 </$list>
