@@ -85,10 +85,6 @@ body.tw-body,
 	border-top: 1px solid #d8d8d8;
 }
 
-.tw-sidebar-scrollable {
-	z-index: 2;	
-}
-
 .tw-page-controls {
 	margin: 0;
 }
@@ -127,6 +123,15 @@ hr {
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);
 	padding: 34px 54px 42px 54px;
+}
+
+@media (min-width: 770px) {
+	.tw-tiddler-frame {
+		margin-left: 13px;
+	}
+	.story-river {
+		padding-right: 68px;
+	}
 }
 
 code {
