@@ -242,4 +242,5 @@ li > pre {
 	background: whitesmoke;
 	display: block;
 	white-space: normal;
+	min-width: 250px;
 }
