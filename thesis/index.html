@@ -183,6 +183,8 @@ Error message and password prompt
 
 <li>Asymmetric Information</li>
 
+<li>Canada</li>
+
 <li>Chapter 1: Economics Rationale</li>
 
 <li>Concerns for Tax Credit</li>
@@ -204,6 +206,8 @@ Error message and password prompt
 <li>Evaluating the impact of R&amp;D tax credits on innovation: A microeconometric study on Canadian firms</li>
 
 <li>Firm size and R&amp;D tax incentives</li>
+
+<li>France</li>
 
 <li>Government’s Means of Affecting Business Expenditure on R&amp;D</li>
 
@@ -243,6 +247,8 @@ Error message and password prompt
 
 <li>Reasons company is reluctant to conduct R&amp;D researches</li>
 
+<li>Results of Reviews of R&amp;D Incentives in Other Countries</li>
+
 <li>Review of Ireland's research and development tax credit 2013</li>
 
 <li>Table of Contents</li>
@@ -254,6 +260,10 @@ Error message and password prompt
 <li>The effects of R&amp;D tax credits on patenting and innovations</li>
 
 <li>The Financing of R&amp;D and Innovation</li>
+
+<li>The Unintended Consequences of Stimulating Private R&amp;D</li>
+
+<li>United Kingdom</li>
 
 <li>Ways of increasing firm productivity due to R&amp;D</li>
 
@@ -302,12 +312,14 @@ Error message and password prompt
 <pre>Ability of Government to Correct the Market Failure: articles/Ability of Government to Correct the Market Failure.tid
 Additionality: articles/Additionality.tid
 Asymmetric Information: articles/Asymmetric Information.tid
+Canada: articles/Canada.tid
 Chapter 1: Economics Rationale: articles/Chapter 1 Economics Rationale.tid
 Concerns for Tax Credit: articles/Concerns for Tax Credit.tid
 Does R&amp;D Drive Economic Growth?: articles/Does R&amp;D Drive Economic Growth.tid
 Economic Rationales: articles/Economic Rationales.tid
 Empirical Literature Analysis: articles/Empirical Literature Analysis.tid
 Estimates of Private and Social Returns to R&amp;D: articles/Estimates of Private and Social Returns to R&amp;D.tid
+France: articles/France.tid
 Government’s Means of Affecting Business Expenditure on R&amp;D: articles/Governments Means of Affecting Business Expenditure on R&amp;D.tid
 Importance of R&amp;D to Economic Growth: articles/Importance of R&amp;D to Economic Growth.tid
 Joint ventures: articles/Joint ventures.tid
@@ -317,7 +329,10 @@ Productivity Factors: articles/Productivity Factors.tid
 R&amp;D Tax Credits and Grants: articles/R&amp;D Tax Credits and Grants.tid
 R&amp;D is essential to a country's economic growth: articles/R&amp;D is essential to a country's economic growth.tid
 Reasons company is reluctant to conduct R&amp;D researches: articles/Reasons company is reluctant to conduct R&amp;D researches.tid
+Results of Reviews of R&amp;D Incentives in Other Countries: articles/Results of Reviews of R&amp;D Incentives in Other Countries.tid
 Table of Contents: articles/Table of Contents.tid
+The Unintended Consequences of Stimulating Private R&amp;D: articles/The Unintended Consequences of Stimulating Private R&amp;D.tid
+United Kingdom: articles/United Kingdom.tid
 Ways of increasing firm productivity due to R&amp;D: articles/Ways of increasing firm productivity due to R&amp;D.tid
 World Wide Policies: articles/World Wide Policies.tid
 patent: articles/patent.tid
@@ -4248,7 +4263,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <pre>[[Table of Contents]]
 [[Chapter 1: Economics Rationale]]</pre>
 </div>
-<div current-tiddler="Table of Contents" modified="20140715152955474" title="$:/HistoryList" type="application/json">
+<div current-tiddler="Table of Contents" modified="20140716112004059" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;Table of Contents&quot;
@@ -4259,12 +4274,12 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <pre>no</pre>
 </div>
 <div created="20140712121649024" modified="20140712122819010" tags="$:/tags/Macro" title="$:/macro/footnote" type="text/vnd.tiddlywiki">
-<pre>\define ref(label)
-&lt;$button popup=&quot;$:/state/$label$&quot; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt;&lt;/$button&gt;
+<pre>\define ref(label,text)
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt;&lt;/$button&gt;
 \end
 
 \define definition(label,text)
-&lt;$reveal type=&quot;popup&quot; state=&quot;$:/state/$label$&quot;&gt;
+&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt;&gt;
 
 @@.tw-drop-down
 $text$
@@ -4274,7 +4289,7 @@ $text$
 \end
 
 \define footnote(label,text)
-&lt;&lt;ref &quot;$label$&quot;&gt;&gt;
+&lt;&lt;ref &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
 &lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
 \end
 
@@ -4500,7 +4515,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff\&quot;&gt;&gt;);\n}\n\nbody.tw-body .story-river .body {\n\tfont-family: \&quot;Lato\&quot;, \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tword-spacing: 1px;\n}\n\n.tw-site-title,\n.story-river .tw-tiddler-title .titlebar .title,\n.tw-tab-buttons button,\n.story-river .body h1,\n.story-river .body h2,\n.story-river .body h3 {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\t\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.5em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.3em;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n\tpadding: 34px 54px 42px 54px;\n}\n\n.tw-tiddler-info {\n\tborder: 1px solid #e0e0e0;\n\tbox-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);\n\tmargin: 0 -54px 0 -54px;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: #c0c0c0;\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff\&quot;&gt;&gt;);\n}\n\nbody.tw-body .story-river .body {\n\tfont-family: \&quot;Lato\&quot;, \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tword-spacing: 1px;\n}\n\n.tw-site-title,\n.story-river .tw-tiddler-title .titlebar .title,\n.tw-tab-buttons button,\n.story-river .body h1,\n.story-river .body h2,\n.story-river .body h3 {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\t\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.5em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.3em;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tborder: 1px solid #e0e0e0;\n\tbox-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -54px 0 -54px;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: #c0c0c0;\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n&quot;
         }
     }
 }</pre>
@@ -4508,13 +4523,28 @@ tiddlerwidth: `660px`</pre>
 <div created="20140714221932381" modified="20140715111624484" tags="H1" title="Ability of Government to Correct the Market Failure" type="text/vnd.tiddlywiki">
 <pre>The existence of a gap between the private and social returns to R&amp;D as outlined previously is not sufficient in itself to justify a government support such as a tax credit. It is critical that R&amp;D Tax Credits &lt;span class=&quot;yellow&quot;&gt;induce&lt;/span&gt; firms to increase expenditure on R&amp;D rather than merely use them to &lt;span class=&quot;yellow&quot;&gt;replace&lt;/span&gt; expenditure they would have otherwise committed to R&amp;D. Where an R&amp;D credit replaces existing expenditure it imposes a deadweight loss on society. In addition, there are &lt;span class=&quot;yellow&quot;&gt;unintended consequences&lt;/span&gt; associated with government incentives for R&amp;D which are supported by empirical research.&lt;&lt;reference &quot;[[Review of Ireland's research and development tax credit 2013]] - Chapter 4&quot;&gt;&gt;</pre>
 </div>
-<div created="20140715100837050" modified="20140715111642209" tags="H1" title="Additionality" type="text/vnd.tiddlywiki">
-<pre>A significant concern with regard to government supports for R&amp;D is their efficacy in eliciting additional R&amp;D expenditure from firms. The danger is that firms may just be substituting the government funds for funds they would have otherwise invested themselves.</pre>
+<div created="20140715100837050" modified="20140715155243095" tags="H1" title="Additionality" type="text/vnd.tiddlywiki">
+<pre>A significant concern with regard to government supports for R&amp;D is their efficacy in eliciting additional R&amp;D expenditure from firms. The danger is that &lt;span class=&quot;yellow&quot;&gt;firms may just be substituting the government funds for funds they would have otherwise invested themselves.&lt;/span&gt;
+
+There is a large body of literature which attempts to evaluate the additionality of R&amp;D Tax Credits by calculating the &lt;span class=&quot;yellow&quot;&gt;benefit-to-cost ratio&lt;/span&gt;. This ratio gives the amount of firm R&amp;D expenditure induced for a given amount of tax foregone. In general, benefit-to-cost ratios greater than one are considered to be effective interventions.
+
+The body of literature which attempts to calculate a benefit-to-cost ratio is varied by methodology, jurisdiction, data type, time period etc. which makes any two comparisons between results difficult. However, a series of such evaluations reviewed by Her Majesty’s Revenue Commissioners (HMRC) in the UK found that for every one euro foregone in each jurisdiction, between €0.29 and €3.6 was induced from private firms. HMRC’s own analysis of the UK’s R&amp;D Tax Credit scheme found the benefit to cost ratio to be up to £3 in private R&amp;D expenditure for every £1 foregone in tax revenue.&lt;&lt;footnote &quot;注意&quot; &quot;这个地方可以扩充。&quot;&gt;&gt;
+
+However, this measure alone is not a complete endorsement of the R&amp;D Tax Credit. While ability of R&amp;D Tax Credits to effect an increase in private R&amp;D expenditures is crucial, &lt;span class=&quot;yellow&quot;&gt;other consequences&lt;/span&gt; both need to be considered in making a judgement on the ability of the R&amp;D credit to have a positive effect on the economy.&lt;&lt;reference &quot;[[Review of Ireland's research and development tax credit 2013]] - Chapter 4&quot;&gt;&gt;</pre>
 </div>
 <div created="20140714143516011" modified="20140715111655691" tags="H2" title="Asymmetric Information" type="text/vnd.tiddlywiki">
 <pre>Another market failure is the presence of asymmetric information. Market transactions that would normally take place often break down when &lt;span class=&quot;yellow&quot;&gt;the seller knows more about a product than the buyer&lt;/span&gt;. If the quality of a product is undistinguishable beforehand by the buyer (due to the asymmetry of information), incentives exist for the seller to pass off low-quality goods as higher-quality ones. The buyer, however, takes this incentive into consideration, and takes the quality of the goods to be uncertain.
 
 The presence of &lt;span class=&quot;yellow&quot;&gt;asymmetric information between R&amp;D performers and financiers limits financing of R&amp;D projects&lt;/span&gt;. A research based project warrants ''secrecy'' to prevent rivals from undertaking similar work but project financing ''requires'' release of vital information to determine the quality of the research. In the absence of perfect information, many projects lapse due to lack of financing (Hall, 2002). This is clearly a more acute problem in smaller firms with poorer access to debt or equity than research divisions of large multi-nationals. This phenomenon may not be observable as discouraged firms may not choose to apply for finance at all.</pre>
+</div>
+<div created="20140715213448346" modified="20140715221043301" tags="H2 写作中" title="Canada" type="text/vnd.tiddlywiki">
+<pre>Possibly the most comprehensively studied research and development tax credit is the Canadian tax credit. Parsons and Phillips (2008) review the literature on Canada for three key areas: &lt;span class=&quot;yellow&quot;&gt;spillover benefits of R&amp;D; opportunity cost of public funds; and administration and compliance costs&lt;/span&gt;. Using parameter values in these areas and the elasticity of R&amp;D to the credit the authors build a general equilibrium model of changes in welfare over three stages.
+
+&lt;span class=&quot;yellow&quot;&gt;The first stage&lt;/span&gt; views changes in welfare in a world where there are no externalities associated with R&amp;D and no tax distortions (or compliance costs) associated with the scheme. This scenario concludes that the R&amp;D credit is net welfare reducing. This result confirms that, in the absence of externalities, government subsidies lower welfare since the gain in producer surplus of R&amp;D subsidised firms is lower than the loss to other firms, which must pay for the subsidy.
+4.56 The next stages add in the welfare benefits of spillover effects from conducting R&amp;D as well as the distortionary impacts of taxation on the economy. Spillovers are included by adding the benefit private firms receive from R&amp;D conducted in other firms. The negative effects of taxation enter the model in two ways. Taxes taken from the economy distort allocation of resources and therefore impose a welfare loss on society. In addition, the increased R&amp;D generates its own tax revenue, thus reducing the need to raise taxes elsewhere, reducing the welfare loss of the endeavour. The authors also include administration and compliance costs, part of which also have to be financed by government, resulting in another welfare loss from distortionary taxes.
+4.57 The model requires estimates of key parameter values such as the long-run R&amp;D incrementality ratio, the spillover benefit from conducting R&amp;D and the cost from distorting allocation of resources on society.
+4.58 The general equilibrium model is used to estimate the welfare gain to society of subsidising private R&amp;D. The authors calculate that the net welfare gain per dollar of tax subsidy is 0.109. In other words the gross gain per dollar of subsidy is approximately $1.10
+</pre>
 </div>
 <div created="20140709123940520" modified="20140714213750761" tags="论文写作" title="Chapter 1: Economics Rationale" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;show &quot;h1&quot; &quot;Importance of R&amp;D to Economic Growth&quot;&gt;&gt;
@@ -4655,6 +4685,19 @@ This paper examines the effectiveness of R&amp;D tax credits using data on 904 J
 
 [[下载|https://www.dropbox.com/sh/nx2jmcwy3pjvk8l/lzRimyfLyF/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/Firm%20size%20and%20R%26D%20tax%20incentives.pdf]]</pre>
 </div>
+<div created="20140715181818890" modified="20140715211302037" tags="H2" title="France" type="text/vnd.tiddlywiki">
+<pre>France undertook a review of its R&amp;D Tax Credit as part of the &lt;span class=&quot;yellow&quot;&gt;French Evaluation Committee for Tax Expenditures and Social Contribution Exemptions (2011)&lt;/span&gt;. Their report produced by the Ministry of Finance was tasked with identifying tax expenditures with opportunities for reform. The authors evaluated the R&amp;D credit in general as well as the reforms of the scheme previously implemented in 2008.&lt;&lt;footnote &quot;分析&quot; &quot;谁写的，以及目的。&quot;&gt;&gt;
+
+At the time of their introduction the reforms were projected to have the capacity to raise GDP by 0.3% after 15 years. Acknowledging the dynamic process of R&amp;D investment and the early stage the reforms were in, in 2011, the Committee considered that any attempt to quantify its macroeconomic impact would be premature.
+
+The report also found that:
+
+* In many industrial sectors, R&amp;D expenditures as a percentage of the turnover improved between 2007 and 2008;
+* French affiliates of foreign companies increased their R&amp;D expenditures faster than other French companies. This suggests that tax credit improved France’s international attractiveness;
+* Corporate R&amp;D expenditures continued to grow in 2009 despite a sharp decline of GDP due to international crisis.
+
+As France has had a tax credit for R&amp;D since 1983 it has been studied more often than that of either Ireland or the UK which were introduced more recently. As such there are two papers in the economic literature which estimate the responsiveness of R&amp;D expenditure to changes in the credit. &lt;span class=&quot;yellow&quot;&gt;Mulkay and Mariesse (2004) find that the estimated impact of a €1 tax credit on R&amp;D expenditures to be in the range of €2 to €3.6 in the long term&lt;/span&gt;.</pre>
+</div>
 <div created="20140714173631101" modified="20140715111808881" tags="H1" title="Government’s Means of Affecting Business Expenditure on R&amp;D" type="text/vnd.tiddlywiki">
 <pre>There are a myriad of ways Governments influence the level of private R&amp;D expenditure in an economy. These range from the more direct and commonly known methods such as &lt;span class=&quot;yellow&quot;&gt;grants and tax credits&lt;/span&gt;, to the legal, regulatory and competitive environment fostered in a country through &lt;span class=&quot;yellow&quot;&gt;patent law&lt;/span&gt;; &lt;span class=&quot;yellow&quot;&gt;competition, tax, and immigration policy&lt;/span&gt;; and &lt;span class=&quot;yellow&quot;&gt;the efficiency of public administration&lt;/span&gt;. In addition, the ability of a country to supply highly educated staff through its &lt;span class=&quot;yellow&quot;&gt;higher education system&lt;/span&gt; is critical. The three most prominent methods, patent laws, grants and tax credits, are outlined below taking into account their efficacy as assessed by the empirical literature.</pre>
 </div>
@@ -4787,6 +4830,14 @@ Tax incentives are a &lt;span class=&quot;yellow&quot;&gt;market-orientated&lt;/
 # [[Externalities]]
 # [[Asymmetric Information]]</pre>
 </div>
+<div created="20140715160639506" modified="20140715161105130" tags="H1" title="Results of Reviews of R&amp;D Incentives in Other Countries" type="text/vnd.tiddlywiki">
+<pre>别的国家对于 R&amp;D Tax Credits 效果的研究 
+
+The &lt;span class=&quot;yellow&quot;&gt;difficulty&lt;/span&gt; surrounding measurement of the &lt;span class=&quot;yellow&quot;&gt;benefits and causation&lt;/span&gt; of R&amp;D schemes results in several lines of research among these authors. The most common are concerned with &lt;span class=&quot;yellow&quot;&gt;the responsiveness of business expenditure on R&amp;D&lt;/span&gt; to changes in the credit regime. As such most of the reviews below deal with some aspect of this measure.
+
+Most econometric studies of R&amp;D tax incentive programmes determine their &lt;span class=&quot;yellow&quot;&gt;effectiveness&lt;/span&gt; by evaluating &lt;span class=&quot;yellow&quot;&gt;the ratio of R&amp;D expenditure induced by the scheme to its tax cost&lt;/span&gt;. This ratio is called either the &lt;span class=&quot;yellow&quot;&gt;benefit-cost ratio&lt;/span&gt;, &lt;span class=&quot;yellow&quot;&gt;incrementality ratio&lt;/span&gt;, &lt;span class=&quot;yellow&quot;&gt;tax sensitivity ratio&lt;/span&gt; or the 'bang for the buck'. If the ratio is &lt;span class=&quot;yellow&quot;&gt;greater than one&lt;/span&gt;, more industrial R&amp;D expenditure is stimulated by the tax incentive than it costs to the taxpayer and the scheme can be considered cost effective. In the UK review, the HMRC point out that this ratio &lt;span class=&quot;yellow&quot;&gt;does not&lt;/span&gt; take into account &lt;span class=&quot;yellow&quot;&gt;all of the costs&lt;/span&gt; (such as administration) and benefits (for example, the social returns on the R&amp;D investment) of the R&amp;D subsidies, so simply determining if the scheme is cost effective based on this ratio may be &lt;span class=&quot;yellow&quot;&gt;misleading&lt;/span&gt;.
+</pre>
+</div>
 <div created="20140505144606247" modified="20140704160318042" tags="参考文献 English 已阅读 重要" title="Review of Ireland's research and development tax credit 2013" type="text/vnd.tiddlywiki">
 <pre>!! Preface
 
@@ -4806,7 +4857,7 @@ The work of Crowe Horwath, who were appointed following a competitive tendering 
 
 这是老师给我的，非常重要！！！</pre>
 </div>
-<div created="20140714173749629" modified="20140715101537828" tags="论文写作" title="Table of Contents" type="text/vnd.tiddlywiki">
+<div created="20140714173749629" modified="20140715213525948" tags="论文写作" title="Table of Contents" type="text/vnd.tiddlywiki">
 <pre>* [[Chapter 1: Economics Rationale]]
 *# [[Importance of R&amp;D to Economic Growth]]
 *## [[Productivity Factors]]
@@ -4822,7 +4873,12 @@ The work of Crowe Horwath, who were appointed following a competitive tendering 
 *## [[Patent law]]
 *## [[R&amp;D Tax Credits and Grants]]
 *# [[Ability of Government to Correct the Market Failure]]
-*# [[Additionality]]</pre>
+*# [[Additionality]]
+*# [[The Unintended Consequences of Stimulating Private R&amp;D]]
+*# [[Results of Reviews of R&amp;D Incentives in Other Countries]]
+*## [[United Kingdom]]
+*## [[France]]
+*## [[Canada]]</pre>
 </div>
 <div created="20140505135116308" modified="20140704150803396" tags="参考文献 English" title="Tax incentives and R&amp;D activity: Firm-level evidence from Taiwan" type="text/vnd.tiddlywiki">
 <pre>!! Abstract
@@ -4861,6 +4917,28 @@ Norwegian business spending on R&amp;D is low by OECD standards. To stimulate bu
 </div>
 <div created="20140704155846971" modified="20140704160328860" tags="参考文献 English 已阅读 重要" title="The Financing of R&amp;D and Innovation" type="text/vnd.tiddlywiki">
 <pre>&gt; Evidence on the “funding gap“ for investment innovation is surveyed. The focus is on financial market reasons for underinvestment that exist even when externality-induced underinvestment is absent. We conclude that while small and new innovative firms experience high costs of capital that are only partly mitigated by the presence of venture capital, the evidence for high costs of R&amp;D capital for large firms is mixed. Neverthless, large established firms do appear to prefer internal funds for financing such investments and they manage their cash flow to ensure this. Evidence shows that there are limits to venture capital as a solution to the funding gap, especially in countries where public equity markets for VC exit are not highly developed. We conclude by suggesting areas for further research.</pre>
+</div>
+<div created="20140715155438595" modified="20140715160347900" tags="H1" title="The Unintended Consequences of Stimulating Private R&amp;D" type="text/vnd.tiddlywiki">
+<pre>一些不好的结果。
+
+A classic concern raised by Goolsbee (1998) is that that tax credits along with other similar government incentives only serve to &lt;span class=&quot;yellow&quot;&gt;increase the wages of scientists and researchers&lt;/span&gt; &lt;span class=&quot;blue&quot;&gt;as opposed to&lt;/span&gt; &lt;span class=&quot;yellow&quot;&gt;increasing knowledge creation&lt;/span&gt; in firms. While this phenomenon would fail to result in the normal benefits associated with an increase in research activity, in the long-run the increased wages may induce people into the technical and research based careers serving to reduce wages and increase output of scientific research and commercial innovation.
+
+Evidence presented in Bloom, Griffith and Van Reenen (1999) suggests that &lt;span class=&quot;yellow&quot;&gt;the location of R&amp;D&lt;/span&gt; may be affected by tax-induced changes in &lt;span class=&quot;yellow&quot;&gt;the cost of R&amp;D&lt;/span&gt;. So while tax credits may demonstrate themselves to increase R&amp;D activity within a given jurisdiction, this may not result in as large a net increase globally. This concern was raised recently by the OECD who add to the argument by exploring the consequences of firm’s tax strategies on the development and use of &lt;span class=&quot;yellow&quot;&gt;knowledge-based capital (KBC)&lt;/span&gt;.
+
+Firms may be incentivised to produce KBC, embed it in production and hold the patent rights, all in different countries. In this scenario it is unclear how the spillover benefits from R&amp;D are distributed. In addition, the OECD argue that domestic firms will be at a disadvantage due to their limitations in accessing the benefits of tax-planning via multiple jurisdictions which would limit their ability to compete and grow in a globalised world.</pre>
+</div>
+<div created="20140715161703803" modified="20140715173140571" tags="H2" title="United Kingdom" type="text/vnd.tiddlywiki">
+<pre>A review of the United Kingdom’s R&amp;D Tax Credit was carried out in 2010 by &lt;span class=&quot;yellow&quot;&gt;HMRC&lt;/span&gt;&lt;&lt;footnote &quot;url&quot; &quot;HM Revenue &amp; Customs: http://www.hmrc.gov.uk&quot;&gt;&gt;. The report is built on an earlier feasibility study by Oxera (2006) recommending &lt;span class=&quot;yellow&quot;&gt;the estimation of an elasticity of R&amp;D expenditure to the credit&lt;/span&gt; could provide the most accurate impacts of the R&amp;D credit scheme. Oxera also &lt;span class=&quot;blue&quot;&gt;suggested&lt;/span&gt; that a potential &lt;span class=&quot;yellow&quot;&gt;control group&lt;/span&gt; could be formed through the identification of firms that have similar characteristics but do not claim R&amp;D Tax Credits or the use of data from the same firms before the introduction of the policy. HMRC found &lt;span class=&quot;yellow&quot;&gt;difficulties&lt;/span&gt; in developing a control group according to those methods outlined in the Oxera report.
+
+The HMRC model indirectly estimated the impact of the credit by estimating how changes in the user cost of R&amp;D – a variable that is directly impacted by the credit – impact on levels of expenditure on R&amp;D. &lt;span class=&quot;yellow&quot;&gt;Increasing the R&amp;D credit rate, increases the tax cost and decreases the user cost of R&amp;D&lt;/span&gt;, correspondingly increasing the level of R&amp;D investment. This is quantified by estimating &lt;span class=&quot;yellow&quot;&gt;an elasticity or semi-elasticity&lt;/span&gt; (or both).
+
+The semi-elasticities derived for the UK’s large company scheme implied a &lt;span class=&quot;yellow&quot;&gt;benefit-cost ratio of between 0.93 and 1.85 in the long-run&lt;/span&gt;. In other words, over time £1 of cost to the taxpayer returns between £0.93 and £1.85 of R&amp;D investment. The estimates for the SME scheme were smaller if they are based on semi-elasticities (0.41 or 0.71), but much larger if they are derived from the elasticity estimates (2.33 and 3.37).&lt;&lt;footnote &quot;note&quot; &quot;''Semi-elasticities'' measure the absolute change in R&amp;D expenditure to a percentage change in the user cost of R&amp;D, &lt;br&gt;&lt;br&gt;whereas ''elasticities'' measure the percentage change in R&amp;D expenditure to a percentage change in the user cost of R&amp;D.&quot;&gt;&gt;
+
+&lt;span class=&quot;yellow&quot;&gt;Thus the HMRC analysis suggested that every £1 of tax foregone stimulates between £0.41 and £3.37 of additional R&amp;D investment.&lt;/span&gt;
+
+Their review also contained a qualitative element featuring interviews with managing directors, finance directors and the directors responsible for R&amp;D in sixty-nine companies. The main purpose of these interviews was to assess the degree to which these companies would be engaged in R&amp;D if not for the credit. The results of the interviews suggested that the credit had &lt;span class=&quot;yellow&quot;&gt;little effect on decisions to conduct individual pieces of R&amp;D work&lt;/span&gt;, a finding that would seem inconsistent with the quantitative results.
+
+The authors however believed that these views were a function of &lt;span class=&quot;yellow&quot;&gt;the timing of claims&lt;/span&gt; (after the expenditure has been incurred), and by the communication gap between the R&amp;D and the finance functions of companies. They also note a generally &lt;span class=&quot;yellow&quot;&gt;poor understanding of the operation of the credit&lt;/span&gt; among interviewees.&lt;&lt;footnote &quot;注&quot; &quot;这里是作者的个人观点&quot;&gt;&gt;</pre>
 </div>
 <div created="20140714142655541" modified="20140715112014206" tags="H1" title="Ways of increasing firm productivity due to R&amp;D" type="text/vnd.tiddlywiki">
 <pre>Increases in firm productivity due to R&amp;D are generally seen to occur through two main avenues; innovations within a firm, as well as an increased capacity to understand and absorb new knowledge and innovations generated outside the firm (i.e. spillovers from innovations by other firms).&lt;&lt;reference &quot;[[Review of Ireland's research and development tax credit 2013]] - Chapter 4&quot;&gt;&gt;

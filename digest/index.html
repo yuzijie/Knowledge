@@ -117,6 +117,8 @@ Error message and password prompt
 
 <p>This <a class='tw-tiddlylink-external' href='http://tiddlywiki.com' target='_blank'>TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/_new_digest</li>
+
 <li>$:/config/AnimationDuration</li>
 
 <li>$:/config/OriginalTiddlerPaths</li>
@@ -146,6 +148,8 @@ Error message and password prompt
 <li>$:/isEncrypted</li>
 
 <li>$:/macro/footnote</li>
+
+<li>$:/macro/show</li>
 
 <li>$:/Overview</li>
 
@@ -215,6 +219,8 @@ Error message and password prompt
 
 <li>2014-07-09-21.jpg</li>
 
+<li>All Articles</li>
+
 <li>luoyonghao-interview.jpg</li>
 
 <li>事起害生无事为福</li>
@@ -225,9 +231,13 @@ Error message and password prompt
 
 <li>意所偶全物出天然</li>
 
+<li>智能手机改变了什么</li>
+
 <li>牛顿的另一面: 卑鄙的天才, 无德的科学家</li>
 
 <li>罗永浩在 Smartisan T1 发布之后的采访</li>
+
+<li>透过这样的问题能看到什么</li>
 
 </ul>
 </p>
@@ -239,6 +249,14 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div author="" created="20140716103000039" modified="20140716103130699" tags="topic" title="$:/_new_digest" type="text/vnd.tiddlywiki" url="">
+<pre>
+
+
+---
+* Author: {{!!author}}
+* Source: {{!!url}}</pre>
+</div>
 <div created="20140701112228257" modified="20140712164807845" title="$:/config/AnimationDuration" type="text/vnd.tiddlywiki">
 <pre>250</pre>
 </div>
@@ -247,12 +265,15 @@ Error message and password prompt
 你看到的都是招数，不是内功: articles/你看到的都是招数，不是内功.tid
 如何提高外语交流能力: articles/如何提高外语交流能力.tid
 意所偶全物出天然: articles/意所偶全物出天然.tid
+智能手机改变了什么: articles/智能手机改变了什么.tid
 牛顿的另一面: 卑鄙的天才, 无德的科学家: articles/牛顿的另一面 卑鄙的天才, 无德的科学家.tid
 罗永浩在 Smartisan T1 发布之后的采访: articles/罗永浩在 Smartisan T1 发布之后的采访.tid
+透过这样的问题能看到什么: articles/透过这样的问题能看到什么.tid
 $:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
 $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
 $:/TableOfContents: configurations/$__TableOfContents.tid
+$:/_new_digest: configurations/custom/$___new_digest.tid
 $:/Overview: configurations/universal/$__Overview.tid
 $:/config/AnimationDuration: configurations/universal/$__config_AnimationDuration.tid
 $:/core/images/close-others-button: configurations/universal/$__core_images_close-others-button.tid
@@ -264,10 +285,12 @@ $:/core/ui/SideBar/More: configurations/universal/$__core_ui_SideBar_More.tid
 $:/core/ui/SideBar/Tools: configurations/universal/$__core_ui_SideBar_Tools.tid
 $:/core/ui/ViewToolbar/close-others: configurations/universal/$__core_ui_ViewToolbar_close-others.tid
 $:/macro/footnote: configurations/universal/$__macro_footnote.tid
+$:/macro/show: configurations/universal/$__macro_show.tid
 $:/tags/ViewToolbar: configurations/universal/$__tags_ViewToolbar.tid
 $:/theme: configurations/universal/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/$__themes_tiddlywiki_vanilla_metrics.tid
 $:/themes/tiddlywiki/vanilla/settings: configurations/universal/$__themes_tiddlywiki_vanilla_settings.tid
+All Articles: functional/All Articles.tid
 2014-07-09-01.jpg: images/2014-07-09-01.jpg
 2014-07-09-02.jpg: images/2014-07-09-02.jpg
 2014-07-09-03.jpg: images/2014-07-09-03.jpg
@@ -4062,7 +4085,7 @@ luoyonghao-interview.jpg: images/luoyonghao-interview.jpg
 <div caption="{{$:/language/SideBar/More/Caption}}" created="20140712225801964" modified="20140712225805085" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20140712202419609" modified="20140712203006786" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20140712202419609" modified="20140715152129488" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki">
 <pre>\define lingo-base() $:/language/ControlPanel/
 &lt;&lt;lingo Tools/Import/Prompt&gt;&gt; &lt;$browse/&gt;
 
@@ -4080,7 +4103,11 @@ Control Panel: &lt;$button to=&quot;$:/ControlPanel&quot; title={{$:/language/Bu
 
 ---
 
-[[Update Table of Contents|$:/TableOfContents]]
+Edit Table of Contents &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$:/TableOfContents&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;fill:#5778d8;&quot;&gt;{{$:/core/images/edit-button}}&lt;/span&gt;&lt;/$button&gt;
+
+---
+
+Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$:/core/ui/SideBarLists&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;fill:#5778d8;&quot;&gt;{{$:/core/images/edit-button}}&lt;/span&gt;&lt;/$button&gt;
 
 ---
 
@@ -4093,14 +4120,14 @@ Control Panel: &lt;$button to=&quot;$:/ControlPanel&quot; title={{$:/language/Bu
 ---
 </pre>
 </div>
-<div created="20140712230707392" modified="20140712231031798" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki">
-<pre>\define search_bar(option:&quot;!is[system]&quot; sort:&quot;sort[title]&quot;)
+<div created="20140712230707392" modified="20140715150108227" title="$:/core/ui/SideBarLists" type="text/vnd.tiddlywiki">
+<pre>\define search_bar(option:&quot;!is[system]&quot; sort:&quot;sort[title]&quot; tag:&quot;&quot;)
 
-//&lt;small&gt;&lt;$count filter=&quot;[$option$search{$:/temp/search}]&quot;/&gt; matches&lt;/small&gt;//
+//&lt;small&gt;&lt;$count filter=&quot;[$option$$tag$search{$:/temp/search}]&quot;/&gt; matches&lt;/small&gt;//
 
 &lt;hr&gt;
 
-&lt;$list filter=&quot;[$option$search{$:/temp/search}$sort$limit[250]]&quot; template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
+&lt;$list filter=&quot;[$option$$tag$search{$:/temp/search}$sort$limit[250]]&quot; template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
 
 \end
 
@@ -4128,9 +4155,17 @@ Control Panel: &lt;$button to=&quot;$:/ControlPanel&quot; title={{$:/language/Bu
 &lt;option value=&quot;!sort[modified]&quot;&gt;By modified time&lt;/option&gt;
 &lt;/$select&gt;&lt;/small&gt;
 
+&lt;small&gt;&lt;span style=&quot;font-family:'Courier New', Courier, 'Liberation Mono', monospace;&quot;&gt;&amp;nbsp;Has&amp;nbsp;&lt;/span&gt; &lt;$select tiddler=&quot;$:/state/search_tag&quot;&gt;
+&lt;option value=&quot;&quot;&gt;N/D&lt;/option&gt;
+&lt;option value=&quot;untagged[]&quot;&gt;no tags&lt;/option&gt;
+&lt;$list filter='[tags[]!is[system]sort[title]]'&gt;
+&lt;option&gt;tag[&lt;$view field='title'/&gt;]&lt;/option&gt;
+&lt;/$list&gt;
+&lt;/$select&gt;&lt;/small&gt;
+
 &lt;div class=&quot;tw-search-results&quot;&gt;
 
-&lt;$macrocall $name=&quot;search_bar&quot; option={{$:/state/search_option}} sort={{$:/state/search_sort}}/&gt;
+&lt;$macrocall $name=&quot;search_bar&quot; option={{$:/state/search_option}} sort={{$:/state/search_sort}} tag={{$:/state/search_tag}}/&gt;
 
 &lt;/div&gt;
 
@@ -4148,13 +4183,13 @@ Control Panel: &lt;$button to=&quot;$:/ControlPanel&quot; title={{$:/language/Bu
 <div created="20140630131636250" modified="20140707201132308" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140621142053766" modified="20140709220644806" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>[!is[system]has[modified]!sort[modified]field:type[text/vnd.tiddlywiki]limit[8]]</pre>
+<div created="20140621142053766" modified="20140716090242927" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>[!is[system]has[modified]!sort[created]field:type[text/vnd.tiddlywiki]limit[5]]</pre>
 </div>
-<div current-tiddler="如何提高外语交流能力" modified="20140714092344099" title="$:/HistoryList" type="application/json">
+<div current-tiddler="智能手机改变了什么" modified="20140716111957430" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;如何提高外语交流能力&quot;
+        &quot;title&quot;: &quot;智能手机改变了什么&quot;
     }
 ]</pre>
 </div>
@@ -4162,12 +4197,12 @@ Control Panel: &lt;$button to=&quot;$:/ControlPanel&quot; title={{$:/language/Bu
 <pre>no</pre>
 </div>
 <div created="20140712121649024" modified="20140712122819010" tags="$:/tags/Macro" title="$:/macro/footnote" type="text/vnd.tiddlywiki">
-<pre>\define ref(label)
-&lt;$button popup=&quot;$:/state/$label$&quot; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt;&lt;/$button&gt;
+<pre>\define ref(label,text)
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt;&lt;/$button&gt;
 \end
 
 \define definition(label,text)
-&lt;$reveal type=&quot;popup&quot; state=&quot;$:/state/$label$&quot;&gt;
+&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt;&gt;
 
 @@.tw-drop-down
 $text$
@@ -4177,13 +4212,23 @@ $text$
 \end
 
 \define footnote(label,text)
-&lt;&lt;ref &quot;$label$&quot;&gt;&gt;
+&lt;&lt;ref &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
 &lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
 \end
 
 \define footnotes(label,text)
 &lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
 &lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt; $text$
+\end
+</pre>
+</div>
+<div created="20140714132227814" modified="20140714160133100" tags="$:/tags/Macro" title="$:/macro/show" type="text/vnd.tiddlywiki">
+<pre>\define show(heading,title)
+&lt;$heading$&gt;
+$title$
+&lt;span style=&quot;font-size:0.6em;&quot;&gt;&lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$title$&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/edit-button}}&lt;/$button&gt;&lt;/span&gt;
+&lt;/$heading$&gt;
+&lt;$transclude tiddler=&quot;$title$&quot; mode=&quot;block&quot;/&gt;
 \end
 </pre>
 </div>
@@ -4230,21 +4275,24 @@ $text$
 <div created="20140621142421257" modified="20140621142422894" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Digest</pre>
 </div>
-<div list="如何提高外语交流能力 你看到的都是招数，不是内功 [[罗永浩在 Smartisan T1 发布之后的采访]] 意所偶全物出天然 事起害生无事为福 [[牛顿的另一面: 卑鄙的天才, 无德的科学家]]" title="$:/StoryList">
+<div list="智能手机改变了什么 透过这样的问题能看到什么 [[All Articles]] 如何提高外语交流能力 你看到的都是招数，不是内功" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140710231020316" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140716103205509" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
 <pre>&lt;div style=&quot;font-size:small;&quot;&gt;
-&lt;div style=&quot;width:220px;&quot;&gt;
+&lt;div style=&quot;width:228px;&quot;&gt;
 &lt;ol style=&quot;padding-left:1.5em;&quot;&gt;
-&lt;$list filter=&quot;[!is[system]tag[Topic]!sort[modified]]&quot;&gt;
+
+&lt;$list filter=&quot;[!is[system]tag[topic]limit[15]!sort[created]]&quot;&gt;
 &lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
 &lt;/$list&gt;
+
 &lt;/ol&gt;
 &lt;/div&gt;
+
 &lt;hr/&gt;
 
-[[Show All Tags|$:/Overview]] · [[Edit|$:/TableOfContents]]
+[[所有文章 All Articles|All Articles]]&lt;br&gt;&lt;$button message=&quot;tw-new-tiddler&quot; title={{$:/language/Buttons/NewTiddler/Hint}} aria-label={{$:/language/Buttons/NewTiddler/Caption}} param=&quot;$:/_new_digest&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;New tiddler&lt;/span&gt;&lt;/$button&gt; · [[Show all|$:/Overview]]
 
 &lt;/div&gt;
 </pre>
@@ -4344,7 +4392,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff\&quot;&gt;&gt;);\n}\n\nbody.tw-body .story-river .body {\n\tfont-family: \&quot;Lato\&quot;, \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tword-spacing: 1px;\n}\n\n.tw-site-title,\n.story-river .tw-tiddler-title .titlebar .title,\n.tw-tab-buttons button,\n.story-river .body h1,\n.story-river .body h2 {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\t\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n\tpadding: 34px 52px 42px 52px;\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: #c0c0c0;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff\&quot;&gt;&gt;);\n}\n\nbody.tw-body .story-river .body {\n\tfont-family: \&quot;Lato\&quot;, \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tword-spacing: 1px;\n}\n\n.tw-site-title,\n.story-river .tw-tiddler-title .titlebar .title,\n.tw-tab-buttons button,\n.story-river .body h1,\n.story-river .body h2,\n.story-river .body h3 {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\t\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.5em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.3em;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tborder: 1px solid #e0e0e0;\n\tbox-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -54px 0 -54px;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: #c0c0c0;\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n&quot;
         }
     }
 }</pre>
@@ -4412,10 +4460,23 @@ tiddlerwidth: `660px`</pre>
 <div _canonical_uri="./images/2014-07-09-21.jpg" created="20140709215023674" modified="20140710173246027" title="2014-07-09-21.jpg" type="image/jpeg">
 <pre></pre>
 </div>
+<div created="20140716085311464" modified="20140716094213206" title="All Articles" type="text/vnd.tiddlywiki">
+<pre>&lt;$list filter=&quot;[!is[system]tag[topic]has[modified]!sort[created]eachday[created]]&quot;&gt;
+&lt;div class=&quot;tw-menu-list-item&quot;&gt;
+    &lt;$view field=&quot;created&quot; format=&quot;date&quot; template={{$:/language/RecentChanges/DateFormat}}/&gt;
+    &lt;$list filter=&quot;[sameday:created{!!created}tag[topic]!is[system]!sort[modified]]&quot;&gt;
+        &lt;div class=&quot;tw-menu-list-subitem&quot;&gt;
+            &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
+        &lt;/div&gt;
+    &lt;/$list&gt;
+&lt;/div&gt;
+&lt;/$list&gt;
+</pre>
+</div>
 <div _canonical_uri="./images/luoyonghao-interview.jpg" created="20140621154648410" modified="20140710172944241" title="luoyonghao-interview.jpg" type="image/jpeg">
 <pre></pre>
 </div>
-<div created="20140704121935246" modified="20140709223048267" tags="小故事 Topic" title="事起害生无事为福" type="text/vnd.tiddlywiki" url="http://www.xiexingcun.com/lizhi/A/48/135.htm">
+<div created="20140704121935246" modified="20140716085953698" tags="topic" title="事起害生无事为福" type="text/vnd.tiddlywiki" url="http://www.xiexingcun.com/lizhi/A/48/135.htm">
 <pre>一事起则一害生，故天下常以无事为福。读前人诗云：“劝君莫话封侯事，一将功成万骨枯。”又云：“天下常令万事平，匣中不惜千年死。”虽有雄心猛气，不觉化为冰霰矣。
 
 前人：指唐代诗人曹松，字梦徵，唐舒州人，七十余岁中进士，善诗，有诗集。
@@ -4426,7 +4487,7 @@ tiddlerwidth: `660px`</pre>
 “六言六弊”是古时候的一个成语。六言就是六个字，即：仁、知、信、直、刚、勇，是六种好品德或好名声。事物是辩证的，一长必有一短，优点同时也就是缺点。尢其是如果没有一定的学问，不明白六种好品德之所以成为好品德的原因，就必然会带来六个方面的问题。
 </pre>
 </div>
-<div created="20140710224739877" modified="20140710224932043" tags="Topic" title="你看到的都是招数，不是内功" type="text/vnd.tiddlywiki" url="http://www.douban.com/note/260671415/">
+<div created="20140710224739877" modified="20140716090015986" tags="topic" title="你看到的都是招数，不是内功" type="text/vnd.tiddlywiki" url="http://www.douban.com/note/260671415/">
 <pre>作者：王路
 
 鸠摩智上少林寺挑衅，使遍七十二绝技，方丈群僧无不骇然。这时，小和尚虚竹跑过来，只瞅了一眼，就说：“这位大师用的明明是小无相功嘛。”鸠摩智慌了。一般人看到的是招数，厉害的人看到的是内功。
@@ -4455,7 +4516,7 @@ tiddlerwidth: `660px`</pre>
 
 所由、所以、所安，这些都是内功。你把招数丢掉，去看内功，这人就没有什么可以隐藏的了。但有一个前提，你的内功要比他高。</pre>
 </div>
-<div created="20140710225208984" modified="20140711103644180" tags="Topic" title="如何提高外语交流能力" type="text/vnd.tiddlywiki">
+<div created="20140710225208984" modified="20140716090029216" tags="topic" title="如何提高外语交流能力" type="text/vnd.tiddlywiki">
 <pre>以下是我从一些文章里面节选的方法：
 
 # 如果有条件，多看电视，多听广播。
@@ -4493,7 +4554,7 @@ tiddlerwidth: `660px`</pre>
 ## Infinito
 # 意大利语发音最重要的不是音节、也不是单双辅音：是重音。每次背诵单词、学动词都要养成把重音给标出来的好习惯，并靠重音去听词、学词、背词。</pre>
 </div>
-<div created="20140704113649296" modified="20140709223056989" tags="小故事 Topic" title="意所偶全物出天然" type="text/vnd.tiddlywiki" url="http://www.xiexingcun.com/lizhi/A/48/135.htm">
+<div created="20140704113649296" modified="20140716090046115" tags="topic" title="意所偶全物出天然" type="text/vnd.tiddlywiki" url="http://www.xiexingcun.com/lizhi/A/48/135.htm">
 <pre>&gt;意所偶会便成佳境，物出天然才见真机，若加一分调停布置，趣意便减矣。白氏云：“意随无事适，风逐自然清。”有味哉，其言之也！
 &gt;（真机：真正的机用。白氏：唐代诗人白居易。）
 
@@ -4506,7 +4567,64 @@ tiddlerwidth: `660px`</pre>
 祥蕊和尚有一次出寺访问一位酿酒商。两人以前就是朋友，所以酿酒商好好款待了祥蕊一顿，并留下他住宿。第二天早晨，祥蕊欢欢喜喜说：“你这地方没有蚊虫，真是太好了，昨夜睡得真香，好久没睡这么香了。”“都到冬月了，难道还有蚊虫吗？”酿酒商觉得挺奇怪，问祥蕊：“你那里还有蚊虫吗？”“还有。”正好当天酿酒商要出门办事，他就伴着祥蕊同行回去，晚上暂住在寺里。只见僧房内，尘土扑鼻，经书和家俱都乱糟糟地摆着，房中挂有蚊帐。酿酒商掀起蚊帐，扇了两三下，就有好几只蚊子从帐子中飞出来。这则故事说明和尚好自在呀！物贵天然，人贵自然，这种不加任何雕琢造作的境界，也许就是本来面目的真实体现吧！当然，这里只能从意义上去抽象地理解，但不能从具体形式上去盲目仿效。
 </pre>
 </div>
-<div created="20140709213150552" modified="20140709223025677" tags="Topic" title="牛顿的另一面: 卑鄙的天才, 无德的科学家" type="text/vnd.tiddlywiki">
+<div author="Kryptoners" created="20140716104136677" modified="20140716104822853" tags="topic" title="智能手机改变了什么" type="text/vnd.tiddlywiki" url="http://www.36kr.com/p/213769.html">
+<pre>!!! 智能手机改变了什么？看看纽约一家知名餐厅的控诉
+
+纽约市有一家餐厅，生意兴隆，却老是有客人因为服务速度太慢而给差评。因此，该餐厅的老板决定雇一个公司来替他们进行调查，看看到底原因何在。他们对比了 2004 年和 2014 年这两年的营业场景监控录像，有了惊人的发现！以下就是该餐厅在 [[Craigslist|http://newyork.craigslist.org/mnh/rnr/4562386373.html]] 上发表的控诉！
+
+---
+
+我们是纽约当地一家颇受欢迎的餐厅，不论是本地人还是游客，都喜爱光顾。在多年的经营中，我们注意到，尽管现在我们每天服务的客人数量并没有增多，几乎和 10 年前一样，但客人老是抱怨我们的服务速度超慢的，即使我们增加了员工，并且简化了菜单项目……
+
+在网上有大量针对我们饭店的投诉，当然还有这个区的许多其他饭店也是，其中最常见的是：服务太慢了，等位的时间太长了。
+
+我们决心聘请一个公司来解决这个迷思。毫不意外的是，他们首先怪罪的是员工，认为他们需要更多的培训，同时他们认为也许厨房的人员无法胜任同时给这么多客人提供餐食。
+
+就像纽约市的大多数餐厅一样，我们有一套监控系统，现今是数字化的年代了，但 10 年前我们使用大容量的磁带来记录所有的活动。那时，我们有 4 套索尼的记录装置来记录多个摄像机的拍摄。我们会把录像存储 90 天，以防万一。
+
+于是我们雇佣的公司建议我们找一些旧磁带来看看，对比一下 10 年前与现在员工们的行为表现。于是我们去储藏室找，可哪都找不到任何的磁带。幸运的是，我们还有记录设备，每台设备里都还存有一盒磁带，是当时升级到新的数字系统时忘了拿出来的！
+
+旧影片上的日期显示是 2004 年 7 月 1 日星期四。那天，餐厅客人很多。我们并排放着两台显示器，同时播放 04 年和 2014 年 7 月 3 日星期四的录像。这两天，都是星期四，客人数量相当，只是隔了 10 年。
+
+''2004 年:''
+
+* 客人走进店来。
+* 他们被领到位子上，送上了菜单，45 桌客人中的 3 组提出要换位子。
+* 客人们平均花费 8 分钟来浏览餐单，然后表示可以开始点菜了。
+* 服务员立刻做出回应。
+* 第一道菜会在 6 分钟内准备好，当然工序复杂的菜会需要长一点的时间。
+* 45 桌客人有 2 桌让菜送回厨房重新加热。
+* 服务员随时留意他们所负责的餐桌，如果客人有需要，他们可以迅速作出反应。
+* 客人吃完后，送上账单，在 5 分钟内客人结账离开。
+* 从客人进餐厅到离开的平均时间为 1:05。
+
+''2014 年:''
+
+* 客人走进店来。
+* 他们被领到位子上，送上了菜单，45 桌客人中的 18 组不满意被安排的位子。
+* 在打开菜单前，他们会把手机拿出来，有些人在打电话，而其他人则可能是简单的浏览手机或者玩游戏（对不起，我们不知道他们具体在做什么，我们不会监控客人的 ~WiFi）。
+* 45 桌中的 7 组客人会让服务员马上过来，然后给他看手机上的什么，平均花费 5 分钟。鉴于这是最近的事情才有的事情，我们找服务生了解情况，他们解释说这些客人对连接餐厅的 ~WiFi 有疑问，为此而寻求帮助。
+* 最后，服务员会主动走到餐桌边问客人想点些什么。大多数人这时甚至还没有打开过菜单，他们会要求服务员再稍等一下。
+* 客人打开菜单，可是手里依旧是手机，他们在继续做他们自己的事情。
+* 服务员回来看客人是否已经准备好点菜，或者是不是有其他问题。客人要求再等等。
+* 他们终于要点菜了。
+* 从客人坐下到他们把菜点上，平均需要 21 分钟。
+* 第一道菜会在 6 分钟内端上，当然工序复杂的菜会需要长一点的时间。
+* 45 桌客人中的 26 组开吃前会花上 3 分钟来给食物拍照。
+* 其中的 14 组会替彼此拍照：把菜摆在面前或者摆出正在吃的样子。这平均需要花费 4 分钟，因为他们还要检查照片的效果，必要的时候还要重拍。
+* 45 桌客人中的 9 组会要求把菜送回厨房重新加热。如果他们不是一直管着手机而忘了吃饭的话，食物是不需要再加热的。
+* 45 桌客户中的 27 组会要求与服务员合影。这当中的 14 组还会要求重拍一张，因为他们不喜欢第一次的照片。这整个过程，包括与服务员闲聊和检查照片需要再一个 5 分钟，而后果显然是让服务员无暇顾及其他餐桌的客人。
+* 在大多数情况下，由于还可以玩手机，从客人吃完到要求买单，平均要花费 20 分钟。此外，就算账单交到他们手上，直到他们离开，所花的时间也比 10 年前要多 15 分钟。
+* 此外，在进出餐厅时，45 桌客人中的 8 组会撞到其他客人，其中一次是服务员（这位客人边走路边发短信）。
+* 从进餐厅到离开的平均时间为：1:55。
+
+非常感谢大家能来我们的餐厅用餐，毕竟你们还可以有其他选择。但是，请你们能不能再体谅我们多一点点？
+
+---
+* Author: {{!!author}}
+* Source: {{!!url}}</pre>
+</div>
+<div created="20140709213150552" modified="20140716090057589" tags="topic" title="牛顿的另一面: 卑鄙的天才, 无德的科学家" type="text/vnd.tiddlywiki">
 <pre>牛顿的伟大似乎已毋庸置疑，有人认为，如果当时有诺贝尔奖，那么牛顿至少能得三次：万有引力定律、光学和化学的贡献，另外由于他在微积分上的造诣，还能得一次菲尔兹奖（数学最高奖），但事实果真如此吗，长久以来，一直有史学家在质疑牛顿的成就和贡献。
 
 [img class=&quot;border&quot;[2014-07-09-01.jpg]]
@@ -4594,8 +4712,33 @@ tiddlerwidth: `660px`</pre>
 [img class=&quot;border&quot;[2014-07-09-21.jpg]]
 </pre>
 </div>
-<div created="20140621143517715" modified="20140709223105887" tags="Topic" title="罗永浩在 Smartisan T1 发布之后的采访" type="text/vnd.tiddlywiki">
+<div created="20140621143517715" modified="20140716090108701" tags="topic" title="罗永浩在 Smartisan T1 发布之后的采访" type="text/vnd.tiddlywiki">
 <pre>[img[luoyonghao-interview.jpg]]</pre>
+</div>
+<div author="萧秋水" created="20140716095130396" modified="20140716095933768" tags="topic" title="透过这样的问题能看到什么" type="text/vnd.tiddlywiki" url="http://www.xiaoqiushui.com/archives/8948.html">
+<pre>知乎，有人邀请我去回答一个问题：
+
+&gt; 如何通过勤奋兼职在短时间内实现每天赚100元？
+&gt; 30岁了，基层公务员。遇到了一些事情深受打击，觉得不能无所事事了。要尽快多赚些钱。我交际不广，喜欢网络。每天工作五六个小时，所以业余时间比较多。现阶段目标不想定太高，只想实现每天能赚额外的100元钱。求高人指点。
+
+我去看了，回复说：
+
+&gt; 谢邀。但是，很抱歉，我对于这类问题并不擅长。
+
+这类问题有个共性：要求在短期达到较高的收入。
+但是，并没有说明自己具备怎样的资源、技能，是否愿意受苦，钱多事少离家近，这样的活，人人都希望，但未必人人都拥有。想寻找捷径的心理，往往决定了，事情难成。
+
+原则上来说，日赚百元，不是问题，以新浪微博自媒体顾中一来算，他6月份半月的收入是1.5W，差不多每天1000元。但是，题主能否做到他那样呢？粉丝何来？发什么内容？要运营微博至少两年，限定条件很多，所以不容易复制
+
+日赚百元，真的不是难题，其实难的在于那个积累的过程往往难以忽略。钱不是从天上掉下来，需要知识、技能、体力，有时候甚至需要尊严去赚取。只想靠别人告诉一些方法，而不是自己尝试，或者因为太着急，尝试的都是一些不太正的路子，我不确定会不会拿到想要的结果。也许有的人的确一夜暴富了，但那样的又有几个？
+
+微信朋友圈卖佛牌在泰国赚下几套房子、卖大米三个月赚二百万……这些传奇故事，本身的欺骗性不太被人注意，光环效应下很多人趋之若鹜，踏踏实实做事的行为被视为傻，我并不愿意去抨击这个社会如何，对我来说，那些和我的关系不大，世界浮躁，我自有我的安宁。
+
+我没有强烈的赚钱渴望，所以，我也没有进了别人的圈套。普通人，凭自己的能力赚钱，提升自己的生活品质，照顾家人，不是可耻的事，只是，要点在于“能力”，而能力的提升，有时候，并无捷径。
+
+---
+* Author: {{!!author}}
+* Source: {{!!url}}</pre>
 </div>
 
 </div>
