@@ -1,0 +1,14 @@
+author: 
+created: 20140716103000039
+modified: 20140716103130699
+tags: topic
+title: $:/_new_digest
+type: text/vnd.tiddlywiki
+url: 
+
+
+
+
+---
+* Author: {{!!author}}
+* Source: {{!!url}}
