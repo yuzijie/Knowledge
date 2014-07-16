@@ -1,21 +1,24 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140710231020316
+modified: 20140716094707914
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
 
 <div style="font-size:small;">
-<div style="width:220px;">
+<div style="width:228px;">
 <ol style="padding-left:1.5em;">
-<$list filter="[!is[system]tag[Topic]!sort[modified]]">
+
+<$list filter="[!is[system]tag[topic]limit[15]!sort[created]]">
 <li><$link to={{!!title}}><$view field="title"/></$link></li>
 </$list>
+
 </ol>
 </div>
+
 <hr/>
 
-[[Show All Tags|$:/Overview]] · [[Edit|$:/TableOfContents]]
+[[所有文章 All Articles|All Articles]]<br><$button message="tw-new-tiddler" title={{$:/language/Buttons/NewTiddler/Hint}} aria-label={{$:/language/Buttons/NewTiddler/Caption}} class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">New tiddler</span></$button> · [[Show all|$:/Overview]]
 
 </div>
