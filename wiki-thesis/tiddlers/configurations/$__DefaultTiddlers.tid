@@ -1,7 +1,6 @@
 created: 20140701112652516
-modified: 20140714211523628
+modified: 20140716160440974
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[[Table of Contents]]
-[[Chapter 1: Economics Rationale]]
+[!is[system]has[modified]!sort[modified]tag[TOC]]
