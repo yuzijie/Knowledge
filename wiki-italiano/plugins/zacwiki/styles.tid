@@ -222,29 +222,29 @@ li > pre {
 .yellow {
 	background-color: rgba(252, 243, 88, 0.8);
 	border-radius: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 
 .blue {
 	background-color: rgba(68, 147, 248, 0.36);
 	border-radius: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 
 .red {
 	background-color: rgba(248, 74, 74, 0.57);
 	border-radius: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 
 .green {
 	background-color: rgba(163, 223, 55, 0.61);
 	border-radius: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 
 .red-line {
