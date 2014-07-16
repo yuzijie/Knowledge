@@ -247,6 +247,11 @@ li > pre {
 	padding-right: 2px;
 }
 
+.red-line {
+	border-bottom: 1px solid #ff0000;
+	text-decoration: none;
+}
+
 .tw-drop-down {
 	padding: 8px 20px 12px 16px;
 	box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
