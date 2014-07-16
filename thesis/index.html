@@ -147,6 +147,8 @@ Error message and password prompt
 
 <li>$:/macro/footnote</li>
 
+<li>$:/macro/mark</li>
+
 <li>$:/macro/show</li>
 
 <li>$:/macros/reference</li>
@@ -224,6 +226,8 @@ Error message and password prompt
 <li>Joint ventures</li>
 
 <li>Market Failure</li>
+
+<li>Netherlands</li>
 
 <li>patent</li>
 
@@ -324,6 +328,7 @@ Government’s Means of Affecting Business Expenditure on R&amp;D: articles/Gove
 Importance of R&amp;D to Economic Growth: articles/Importance of R&amp;D to Economic Growth.tid
 Joint ventures: articles/Joint ventures.tid
 Market Failure: articles/Market Failure.tid
+Netherlands: articles/Netherlands.tid
 Patent law: articles/Patent law.tid
 Productivity Factors: articles/Productivity Factors.tid
 R&amp;D Tax Credits and Grants: articles/R&amp;D Tax Credits and Grants.tid
@@ -358,6 +363,7 @@ $:/core/ui/SideBar/More: configurations/universal/$__core_ui_SideBar_More.tid
 $:/core/ui/SideBar/Tools: configurations/universal/$__core_ui_SideBar_Tools.tid
 $:/core/ui/ViewToolbar/close-others: configurations/universal/$__core_ui_ViewToolbar_close-others.tid
 $:/macro/footnote: configurations/universal/$__macro_footnote.tid
+$:/macro/mark: configurations/universal/$__macro_mark.tid
 $:/macro/show: configurations/universal/$__macro_show.tid
 $:/tags/ViewToolbar: configurations/universal/$__tags_ViewToolbar.tid
 $:/theme: configurations/universal/$__theme.tid
@@ -4263,7 +4269,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <pre>[[Table of Contents]]
 [[Chapter 1: Economics Rationale]]</pre>
 </div>
-<div current-tiddler="Table of Contents" modified="20140716112004059" title="$:/HistoryList" type="application/json">
+<div current-tiddler="Table of Contents" modified="20140716140437954" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;Table of Contents&quot;
@@ -4296,6 +4302,28 @@ $text$
 \define footnotes(label,text)
 &lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
 &lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt; $text$
+\end
+</pre>
+</div>
+<div created="20140716130346842" modified="20140716131144762" tags="$:/tags/Macro" title="$:/macro/mark" type="text/vnd.tiddlywiki">
+<pre>\define hlr(text)
+&lt;span class=&quot;red&quot;&gt;$text$&lt;/span&gt;
+\end
+
+\define hly(text)
+&lt;span class=&quot;yellow&quot;&gt;$text$&lt;/span&gt;
+\end
+
+\define hlb(text)
+&lt;span class=&quot;blue&quot;&gt;$text$&lt;/span&gt;
+\end
+
+\define hlg(text)
+&lt;span class=&quot;green&quot;&gt;$text$&lt;/span&gt;
+\end
+
+\define under(text)
+&lt;span class=&quot;red-line&quot;&gt;$text$&lt;/span&gt;
 \end
 </pre>
 </div>
@@ -4515,7 +4543,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff\&quot;&gt;&gt;);\n}\n\nbody.tw-body .story-river .body {\n\tfont-family: \&quot;Lato\&quot;, \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tword-spacing: 1px;\n}\n\n.tw-site-title,\n.story-river .tw-tiddler-title .titlebar .title,\n.tw-tab-buttons button,\n.story-river .body h1,\n.story-river .body h2,\n.story-river .body h3 {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\t\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.5em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.3em;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tborder: 1px solid #e0e0e0;\n\tbox-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -54px 0 -54px;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: #c0c0c0;\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 2px;\n\tpadding-right: 2px;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff\&quot;&gt;&gt;);\n}\n\nbody.tw-body .story-river .body {\n\tfont-family: \&quot;Lato\&quot;, \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tword-spacing: 1px;\n}\n\n.tw-site-title,\n.story-river .tw-tiddler-title .titlebar .title,\n.tw-tab-buttons button,\n.story-river .body h1,\n.story-river .body h2,\n.story-river .body h3 {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\t\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.5em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.3em;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tborder: 1px solid #e0e0e0;\n\tbox-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -54px 0 -54px;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tfont-family: \&quot;Helvetica Neue\&quot;, Helvetica, Arial, \&quot;Hiragino Sans GB\&quot;, STHeiti, \&quot;Microsoft YaHei\&quot;, \&quot;WenQuanYi Micro Hei\&quot;, sans-serif;\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: #c0c0c0;\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
         }
     }
 }</pre>
@@ -4537,13 +4565,16 @@ However, this measure alone is not a complete endorsement of the R&amp;D Tax Cre
 
 The presence of &lt;span class=&quot;yellow&quot;&gt;asymmetric information between R&amp;D performers and financiers limits financing of R&amp;D projects&lt;/span&gt;. A research based project warrants ''secrecy'' to prevent rivals from undertaking similar work but project financing ''requires'' release of vital information to determine the quality of the research. In the absence of perfect information, many projects lapse due to lack of financing (Hall, 2002). This is clearly a more acute problem in smaller firms with poorer access to debt or equity than research divisions of large multi-nationals. This phenomenon may not be observable as discouraged firms may not choose to apply for finance at all.</pre>
 </div>
-<div created="20140715213448346" modified="20140715221043301" tags="H2 写作中" title="Canada" type="text/vnd.tiddlywiki">
+<div created="20140715213448346" modified="20140716125610931" tags="H2 写作中" title="Canada" type="text/vnd.tiddlywiki">
 <pre>Possibly the most comprehensively studied research and development tax credit is the Canadian tax credit. Parsons and Phillips (2008) review the literature on Canada for three key areas: &lt;span class=&quot;yellow&quot;&gt;spillover benefits of R&amp;D; opportunity cost of public funds; and administration and compliance costs&lt;/span&gt;. Using parameter values in these areas and the elasticity of R&amp;D to the credit the authors build a general equilibrium model of changes in welfare over three stages.
 
 &lt;span class=&quot;yellow&quot;&gt;The first stage&lt;/span&gt; views changes in welfare in a world where there are no externalities associated with R&amp;D and no tax distortions (or compliance costs) associated with the scheme. This scenario concludes that the R&amp;D credit is net welfare reducing. This result confirms that, in the absence of externalities, government subsidies lower welfare since the gain in producer surplus of R&amp;D subsidised firms is lower than the loss to other firms, which must pay for the subsidy.
-4.56 The next stages add in the welfare benefits of spillover effects from conducting R&amp;D as well as the distortionary impacts of taxation on the economy. Spillovers are included by adding the benefit private firms receive from R&amp;D conducted in other firms. The negative effects of taxation enter the model in two ways. Taxes taken from the economy distort allocation of resources and therefore impose a welfare loss on society. In addition, the increased R&amp;D generates its own tax revenue, thus reducing the need to raise taxes elsewhere, reducing the welfare loss of the endeavour. The authors also include administration and compliance costs, part of which also have to be financed by government, resulting in another welfare loss from distortionary taxes.
-4.57 The model requires estimates of key parameter values such as the long-run R&amp;D incrementality ratio, the spillover benefit from conducting R&amp;D and the cost from distorting allocation of resources on society.
-4.58 The general equilibrium model is used to estimate the welfare gain to society of subsidising private R&amp;D. The authors calculate that the net welfare gain per dollar of tax subsidy is 0.109. In other words the gross gain per dollar of subsidy is approximately $1.10
+
+&lt;span class=&quot;yellow&quot;&gt;The next stages&lt;/span&gt; add in the welfare benefits of spillover effects from conducting R&amp;D as well as the distortionary impacts of taxation on the economy. Spillovers are included by adding the benefit private firms receive from R&amp;D conducted in other firms. &lt;span class=&quot;yellow&quot;&gt;The negative effects of taxation enter the model in two ways.&lt;/span&gt; Taxes taken from the economy distort allocation of resources and therefore &lt;span class=&quot;yellow&quot;&gt;impose a welfare loss on society&lt;/span&gt;. In addition, the increased R&amp;D generates its own tax revenue, thus &lt;span class=&quot;yellow&quot;&gt;reducing the need to raise taxes elsewhere&lt;/span&gt;, reducing the welfare loss of the endeavour. The authors also include administration and compliance costs, part of which also have to be financed by government, resulting in another welfare loss from distortionary taxes.
+
+The model requires estimates of key parameter values such as &lt;span class=&quot;yellow&quot;&gt;the long-run R&amp;D incrementality ratio&lt;/span&gt;, &lt;span class=&quot;yellow&quot;&gt;the spillover benefit from conducting R&amp;D&lt;/span&gt; and &lt;span class=&quot;yellow&quot;&gt;the cost from distorting allocation of resources on society&lt;/span&gt;.
+
+&lt;span class=&quot;yellow&quot;&gt;The general equilibrium model&lt;/span&gt; is used to estimate the welfare gain to society of subsidising private R&amp;D&lt;&lt;footnote &quot;提示&quot; &quot;指出用了什么计算方法，但是并没有说明具体计算过程。&quot;&gt;&gt;. The authors calculate that the net welfare gain per dollar of tax subsidy is 0.109. In other words the gross gain per dollar of subsidy is approximately $1.10
 </pre>
 </div>
 <div created="20140709123940520" modified="20140714213750761" tags="论文写作" title="Chapter 1: Economics Rationale" type="text/vnd.tiddlywiki">
@@ -4742,6 +4773,16 @@ Is public R&amp;D spending complementary and thus ‘‘additional’’ to priv
 
 The literature identifies two main forms of market failure that arise with R&amp;D, ''positive externalities'' and ''asymmetric information''.&lt;&lt;reference &quot;[[Review of Ireland's research and development tax credit 2013]] - Chapter 4&quot;&gt;&gt;</pre>
 </div>
+<div created="20140716125737617" modified="20140716135923459" tags="H2" title="Netherlands" type="text/vnd.tiddlywiki">
+<pre>&lt;&lt;under &quot;Lokshin and Mohnen (2010)&quot;&gt;&gt; review the credit as it exists in the Netherlands, covering a period from &lt;&lt;under &quot;1996-2004&quot;&gt;&gt; estimating the &lt;&lt;under &quot;elasticity of firm R&amp;D capital accumulation to its user cost.&quot;&gt;&gt; The authors use this as an input to a cost benefit analysis which is based around the idea that a firm’s response is dynamic over time encountering delays such as project proposal and financing. As such the impacts of the scheme are measured throughout time. Included in these impacts are the &lt;&lt;under &quot;compliance costs for companies as well as the government’s opportunity costs for the tax expenditure itself&quot;&gt;&gt; which are often excluded from credit evaluations.&lt;&lt;footnote &quot;解说&quot; &quot;
+# 研究员
+# 被研究的时间段
+# 研究指标、内容
+# 这篇报告特别的地方
+&quot;&gt;&gt;
+
+Their findings &lt;&lt;hlb &quot;conclude&quot;&gt;&gt; that there is additionality in the scheme but that crowding out can only be rejected for smaller firms. This is reflective of a situation where smaller firms may not have the same access to finance as large firms with internal financing functions and greater capacity to supply collateral. The authors also find that in the short-term the scheme is effective however the long-term the impacts of the scheme fall due to &lt;&lt;under &quot;the level based nature&quot;&gt;&gt; of the incentive.</pre>
+</div>
 <div created="20140714143251412" modified="20140715111856472" tags="H3" title="patent" type="text/vnd.tiddlywiki">
 <pre>&lt;span class=&quot;yellow&quot;&gt;One of the ways in which companies are incentivised to invest in R&amp;D is by the granting of patents&lt;/span&gt;. Patents are designed to give the firm temporary monopoly power over their economic benefits from the research which increases the appropriability of the returns of R&amp;D to the firm. This minimises the gap between social and private returns and serves to increase private R&amp;D to a level closer to the social optimum. However, patents are &lt;span class=&quot;blue&quot;&gt;not without their own criticisms&lt;/span&gt;. For example, Dasgupta and Stiglitz (1980) showed that in the presence of patents, firms would undertake socially excessive R&amp;D expenditures in their attempts to deter entry to market with patented inventions.&lt;&lt;reference &quot;[[Review of Ireland's research and development tax credit 2013]] - Chapter 4&quot;&gt;&gt;</pre>
 </div>
@@ -4857,7 +4898,7 @@ The work of Crowe Horwath, who were appointed following a competitive tendering 
 
 这是老师给我的，非常重要！！！</pre>
 </div>
-<div created="20140714173749629" modified="20140715213525948" tags="论文写作" title="Table of Contents" type="text/vnd.tiddlywiki">
+<div created="20140714173749629" modified="20140716125711570" tags="论文写作" title="Table of Contents" type="text/vnd.tiddlywiki">
 <pre>* [[Chapter 1: Economics Rationale]]
 *# [[Importance of R&amp;D to Economic Growth]]
 *## [[Productivity Factors]]
@@ -4878,7 +4919,8 @@ The work of Crowe Horwath, who were appointed following a competitive tendering 
 *# [[Results of Reviews of R&amp;D Incentives in Other Countries]]
 *## [[United Kingdom]]
 *## [[France]]
-*## [[Canada]]</pre>
+*## [[Canada]]
+*## [[Netherlands]]</pre>
 </div>
 <div created="20140505135116308" modified="20140704150803396" tags="参考文献 English" title="Tax incentives and R&amp;D activity: Firm-level evidence from Taiwan" type="text/vnd.tiddlywiki">
 <pre>!! Abstract
