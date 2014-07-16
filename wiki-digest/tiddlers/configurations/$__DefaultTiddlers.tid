@@ -1,6 +1,6 @@
 created: 20140621142053766
-modified: 20140716090242927
+modified: 20140716204917664
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[!is[system]has[modified]!sort[created]field:type[text/vnd.tiddlywiki]limit[5]]
+[!is[system]has[modified]!sort[created]field:type[text/vnd.tiddlywiki]tag[topic]limit[5]]
