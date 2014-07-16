@@ -262,3 +262,8 @@ li > pre {
 	white-space: normal;
 	min-width: 250px;
 }
+
+ol.tw-drop-down,
+ul.tw-drop-down {
+	padding-left: 2.5em;
+}
