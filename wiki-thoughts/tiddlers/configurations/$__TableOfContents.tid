@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140715211920730
+modified: 20140716163738913
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 
 <$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
 <ol style="padding-left: 20px;">
-    <$list filter="[!is[system]tag[$caption$]sort[title]]">
+    <$list filter="[!is[system]tag[$caption$]!sort[modified]]">
       <li style="line-height: 1.35em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
     </$list>
 </ol>
