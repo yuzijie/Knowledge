@@ -47,6 +47,10 @@ html {
 	letter-spacing: normal;
 }
 
+.tw-subtitle {
+	color: #aaaaaa;
+}
+
 .story-river .body h1 {
 	font-size: 1.9em;
 }
