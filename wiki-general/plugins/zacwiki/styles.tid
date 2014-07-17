@@ -22,14 +22,14 @@ type: text/vnd.tiddlywiki
   font-family: "Lato";
   font-style: normal;
   font-weight: bold;
-  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Bold.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinBlack-Regular.woff">>);
 }
 
 @font-face {
   font-family: "Lato";
   font-style: italic;
   font-weight: bold;
-  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinBlack-Italic.woff">>);
 }
 
 @font-face {
