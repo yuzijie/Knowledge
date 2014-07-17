@@ -39,19 +39,6 @@ type: text/vnd.tiddlywiki
   src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff">>);
 }
 
-body.tw-body .story-river .body {
-	word-spacing: 1px;
-}
-
-.tw-site-title,
-.story-river .tw-tiddler-title .titlebar .title,
-.tw-tab-buttons button,
-.story-river .body h1,
-.story-river .body h2,
-.story-river .body h3 {
-	font-family: Lato, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
-}
-
 .story-river .body h1 {
 	font-size: 1.9em;
 }
@@ -131,8 +118,7 @@ hr {
 }
 
 .tw-tiddler-info {
-	border: 1px solid #e0e0e0;
-	box-shadow: inset 0px 2px 3px rgba(0,0,0,0.1);
+	box-shadow: none;
 }
 
 @media (min-width: 770px) {
@@ -149,13 +135,14 @@ hr {
 		padding: 34px 54px 42px 54px;
 	}
 	.tw-tiddler-info {
-		margin: 0 -54px 0 -54px;
+		margin: 0 -55px 0 -55px;
 	}
 }
 
 @media (max-width: 480px) {
 	.tw-tiddler-info {
 		padding: 10px;
+		margin: 0 -15px 0 -15px;
 	}
 }
 
