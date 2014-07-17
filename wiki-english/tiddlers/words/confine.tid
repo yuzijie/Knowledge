@@ -1,5 +1,5 @@
 created: 20140525164406096
-modified: 20140530225254319
+modified: 20140717204017872
 title: confine
 type: text/vnd.tiddlywiki
 
@@ -8,10 +8,10 @@ type: text/vnd.tiddlywiki
 ; Examples
 : to confine [something] to [something]
 : 将某事物限制在某范围内
-: please ''confine'' your comments to the matter in hand
+: please //confine// your comments to the matter in hand
 : 请就眼下的问题发表评论
 ; Examples
-: to be ''confined'' to [something]
+: to be //confined// to [something]
 : «problem, activity»局限于‹topic, area›
-: the problem is not ''confined'' to old people
+: the problem is not //confined// to old people
 : 这个问题并不限于老年人
