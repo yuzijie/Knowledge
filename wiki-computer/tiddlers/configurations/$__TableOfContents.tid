@@ -1,24 +1,24 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140702110619361
+modified: 20140717192111836
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
 
-<h4 style="margin-bottom:0;">Table of Contents [[·|$:/TableOfContents]]</h4>
-
 <div style="font-size:small;">
-<ol style="padding-left:2em;margin-top:0.6em;">
-<$list filter="[!is[system]tag[Topic]sort[title]]">
-<li><$link to={{!!title}}><$view field="title"/></$link></li>
+<div style="width:228px;">
+<ol style="padding-left:1.5em;">
+
+<$list filter="[!is[system]tag[Topic]!sort[created]]">
+<li style="line-height: 1.5em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
 </$list>
+
 </ol>
+</div>
 
 <hr/>
 
-[[Show All Tags|$:/Overview]]
+<$button message="tw-new-tiddler" title={{$:/language/Buttons/NewTiddler/Hint}} aria-label={{$:/language/Buttons/NewTiddler/Caption}} param="$:/_new_digest" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">New tiddler</span></$button> · [[Show all|$:/Overview]]
 
 </div>
-
-{{$:/editions/server/download-offline-button}}
