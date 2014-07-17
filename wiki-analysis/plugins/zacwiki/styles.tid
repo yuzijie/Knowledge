@@ -40,7 +40,7 @@ type: text/vnd.tiddlywiki
 }
 
 html {
-	letter-spacing: 0.01em;
+	letter-spacing: 0.015em;
 }
 
 .story-river .body h1 {
