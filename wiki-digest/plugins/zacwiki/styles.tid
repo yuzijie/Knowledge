@@ -39,6 +39,10 @@ type: text/vnd.tiddlywiki
   src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff">>);
 }
 
+html {
+	letter-spacing: 0.01em;
+}
+
 .story-river .body h1 {
 	font-size: 1.9em;
 }
