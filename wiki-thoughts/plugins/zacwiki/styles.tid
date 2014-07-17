@@ -32,8 +32,14 @@ type: text/vnd.tiddlywiki
   src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Boldtalic.woff">>);
 }
 
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff">>);
+}
+
 body.tw-body .story-river .body {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 	word-spacing: 1px;
 }
 
@@ -43,7 +49,7 @@ body.tw-body .story-river .body {
 .story-river .body h1,
 .story-river .body h2,
 .story-river .body h3 {
-	font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
+	font-family: Lato, Arial, STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
 }
 
 .story-river .body h1 {
@@ -192,7 +198,6 @@ li > pre {
 }
 
 .tw-tag-label {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 	padding: 3px 9px;
 	border-radius: 20px;
 	font-weight: 300;
