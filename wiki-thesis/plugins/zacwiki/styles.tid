@@ -43,6 +43,10 @@ html {
 	letter-spacing: 0.015em;
 }
 
+.tw-site-title, .titlebar {
+	letter-spacing: normal;
+}
+
 .story-river .body h1 {
 	font-size: 1.9em;
 }
