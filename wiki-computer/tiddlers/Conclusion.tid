@@ -1,0 +1,22 @@
+created: 20140717202816441
+modified: 20140717203656005
+title: Conclusion
+type: text/vnd.tiddlywiki
+
+The study shows a clear set of common practices and guidelines for setting type in Web design. Note, though, that these findings are not scientific and should serve only as rough guidelines:
+
+# Either serif or sans-serif fonts are fine for body copy and headings, but sans-serif fonts are still more popular for both.
+# Common choices for ''headlines'' are <<under "Georgia, Arial and Helvetica.">>
+# Common choices for ''body'' copy are <<under "Georgia, Arial, Verdana and Lucida Grande.">>
+# The most popular font size for ''headings'' is a range <<under "between 18 and 29 pixels.">>
+# The most popular font size for ''body'' copy is a range <<under "between 12 and 14 pixels.">>
+# Header font size ÷ Body copy font size = ''1.96''.
+# Line height (pixels) ÷ body copy font size (pixels) = ''1.48''.
+# Line length (pixels) ÷ line height (pixels) = ''27.8''.
+# Space between paragraphs (pixels) ÷ line height (pixels) = ''0.754''.
+# The ''optimal number of characters per line'' is <<under "between 55 and 75,">> but <<under "between 75 and 85 characters">> per line is more popular,
+# Body text is left-aligned, image replacement is rarely used and links are either underlined or highlighted with bold or color.
+
+Of course these “rules” aren’t set in stone. Rather, they are a set of ''rough guidelines'' that you can use as a basis for setting typography. Every website is unique, and you may want to modify your choices at each stage of your design to suit your layout. You can also [[take a look at the spreadsheet of the study|http://spreadsheets.google.com/ccc?key=0AsK4MoYiBVMldE12V3FJYk95YVRUZ18xNDJNOVRrSHc&hl=de]] and export its data for further analysis.
+
+''Next:'' [[Other Findings]]

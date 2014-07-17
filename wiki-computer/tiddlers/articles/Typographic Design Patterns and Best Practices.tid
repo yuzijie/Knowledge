@@ -1,6 +1,6 @@
 created: 20140704123353724
 date: August 20th, 2009
-modified: 20140717191838138
+modified: 20140717203641968
 tags: [[web design]] Topic
 title: Typographic Design Patterns and Best Practices
 type: text/vnd.tiddlywiki
@@ -28,27 +28,4 @@ Ultimately, we identified ''13 general typographic problems'' and issues related
 
 We ended up with solid data, which we evaluated and prepared for this article. Based on the statistics, we have identified several “rules of thumb” for working with type. Please note that these rules can often, but not always, be considered best practice.
 
-! Conclusion
-
-The study shows a clear set of common practices and guidelines for setting type in Web design. Note, though, that these findings are not scientific and should serve only as rough guidelines:
-
-# Either serif or sans-serif fonts are fine for body copy and headings, but sans-serif fonts are still more popular for both.
-# Common choices for headlines are ''Georgia, Arial and Helvetica''.
-# Common choices for body copy are ''Georgia, Arial, Verdana and Lucida Grande''.
-# The most popular font size for headings is a range ''between 18 and 29'' pixels.
-# The most popular font size for body copy is a range ''between 12 and 14'' pixels.
-# Header font size ÷ Body copy font size = ''1.96''.
-# Line height (pixels) ÷ body copy font size (pixels) = ''1.48''.
-# Line length (pixels) ÷ line height (pixels) = ''27.8''.
-# Space between paragraphs (pixels) ÷ line height (pixels) = ''0.754''.
-# The optimal number of characters per line is ''between 55 and 75'', but ''between 75 and 85'' characters per line is more popular,
-# Body text is left-aligned, image replacement is rarely used and links are either underlined or highlighted with bold or color.
-
-Of course these “rules” aren’t set in stone. Rather, they are a set of ''rough guidelines'' that you can use as a basis for setting typography. Every website is unique, and you may want to modify your choices at each stage of your design to suit your layout. You can also [[take a look at the spreadsheet of the study|http://spreadsheets.google.com/ccc?key=0AsK4MoYiBVMldE12V3FJYk95YVRUZ18xNDJNOVRrSHc&hl=de]] and export its data for further analysis.
-
-!! Other Findings
-
-* 46% of websites underlined the links in their body copy, while the others highlighted only with color or a bold font weight.
-* 6% of websites used some kind of image replacement for headings or body copy (e.g. Monocle, New Yorker, Newsweek).
-* 96% of websites do not justify text.
-* Websites gave their text a left padding of on average 11.7 pixels (counting from the left content area border).
+''Next:'' [[Conclusion]]

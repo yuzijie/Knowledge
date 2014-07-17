@@ -1,0 +1,9 @@
+created: 20140717203511188
+modified: 20140717203525538
+title: Other Findings
+type: text/vnd.tiddlywiki
+
+* 46% of websites underlined the links in their body copy, while the others highlighted only with color or a bold font weight.
+* 6% of websites used some kind of image replacement for headings or body copy (e.g. Monocle, New Yorker, Newsweek).
+* 96% of websites do not justify text.
+* Websites gave their text a left padding of on average 11.7 pixels (counting from the left content area border).
