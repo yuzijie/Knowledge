@@ -51,6 +51,10 @@ html {
 	color: #aaaaaa;
 }
 
+a.tw-tiddlylink {
+	font-weight: inherit;
+}
+
 .story-river .body h1 {
 	font-size: 1.9em;
 }
