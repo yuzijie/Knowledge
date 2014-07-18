@@ -1,12 +1,12 @@
 created: 20140716085311464
-modified: 20140716094213206
+modified: 20140718075547000
 title: All Articles
 type: text/vnd.tiddlywiki
 
-<$list filter="[!is[system]tag[topic]has[modified]!sort[created]eachday[created]]">
+<$list filter="[!is[system]tag[Topic]has[modified]!sort[created]eachday[created]]">
 <div class="tw-menu-list-item">
     <$view field="created" format="date" template={{$:/language/RecentChanges/DateFormat}}/>
-    <$list filter="[sameday:created{!!created}tag[topic]!is[system]!sort[modified]]">
+    <$list filter="[sameday:created{!!created}tag[Topic]!is[system]!sort[modified]]">
         <div class="tw-menu-list-subitem">
             <$link to={{!!title}}><$view field="title"/></$link>
         </div>
