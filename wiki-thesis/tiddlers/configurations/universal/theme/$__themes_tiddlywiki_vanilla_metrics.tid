@@ -4,7 +4,7 @@ title: $:/themes/tiddlywiki/vanilla/metrics
 type: application/x-tiddler-dictionary
 
 fontsize: `15px`
-lineheight: `24px`
+lineheight: `25px`
 storyleft: `0px`
 storytop: `0px`
 storyright: `770px`
