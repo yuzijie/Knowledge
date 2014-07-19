@@ -22,14 +22,14 @@ type: text/vnd.tiddlywiki
   font-family: "Lato";
   font-style: normal;
   font-weight: bold;
-  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinBlack-Regular.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Bold.woff">>);
 }
 
 @font-face {
   font-family: "Lato";
   font-style: italic;
   font-weight: bold;
-  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinBlack-Italic.woff">>);
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff">>);
 }
 
 @font-face {
@@ -47,12 +47,9 @@ html {
 	letter-spacing: normal;
 }
 
+.tw-subtitle,
 .tw-site-subtitle {
 	color: rgba(24, 41, 85, 0.5);
-}
-
-.tw-subtitle {
-	color: rgba(24, 41, 85, 0.7);
 }
 
 a.tw-tiddlylink {
@@ -78,6 +75,14 @@ a.tw-tiddlylink {
 body.tw-body,
 .tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
 	background: #ececec;
+}
+
+body.tw-body {
+	color: #555555;
+}
+
+b, strong {
+	color: #111111;
 }
 
 .tw-sidebar-lists .tw-tab-buttons button {
