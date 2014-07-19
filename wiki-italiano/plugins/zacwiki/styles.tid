@@ -48,7 +48,7 @@ html {
 }
 
 .tw-subtitle {
-	color: #aaaaaa;
+	color: rgba(24, 41, 85, 0.7);
 }
 
 a.tw-tiddlylink {
@@ -96,6 +96,10 @@ body.tw-body,
 
 .tw-page-controls {
 	margin: 0;
+}
+
+.tw-tiddler-controls button svg {
+	fill: rgba(24, 41, 85, 0.3);
 }
 
 hr {
@@ -153,6 +157,9 @@ hr {
 	.tw-tiddler-info {
 		margin: 0 -55px 0 -55px;
 	}
+	.tw-tiddler-frame .tw-tiddler-controls {
+		margin-left: 0.8em;
+	}
 }
 
 @media (max-width: 480px) {
@@ -204,7 +211,7 @@ li > pre {
 	padding: 3px 9px;
 	border-radius: 20px;
 	font-weight: 300;
-	background-color: #c0c0c0;
+	background-color: rgba(24, 41, 85, 0.3);
 }
 
 .tw-tag-list-item {
