@@ -47,6 +47,10 @@ html {
 	letter-spacing: normal;
 }
 
+.tw-site-subtitle {
+	color: rgba(24, 41, 85, 0.5);
+}
+
 .tw-subtitle {
 	color: rgba(24, 41, 85, 0.7);
 }
