@@ -1,12 +1,10 @@
 author: Heidixie
 created: 20140719205753056
-modified: 20140719213500669
+modified: 20140719220334521
 tags: Topic
 title: 高效工作的信息搜集及管理术
 type: text/vnd.tiddlywiki
 url: http://heidixie.blog.sohu.com/247551250.html
-
-''编者按：''文章选自[[Heidi格物志]]。
 
 !! 写在前面
 
@@ -26,4 +24,5 @@ url: http://heidixie.blog.sohu.com/247551250.html
 
 ---
 * Author: {{!!author}}
+* About: [[Heidi]]
 * Source: {{!!url}}
