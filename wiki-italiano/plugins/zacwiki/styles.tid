@@ -99,7 +99,7 @@ body.tw-body,
 }
 
 .tw-tiddler-controls button svg {
-	fill: rgba(24, 41, 85, 0.3);
+	fill: rgba(24, 41, 85, 0.2);
 }
 
 hr {
