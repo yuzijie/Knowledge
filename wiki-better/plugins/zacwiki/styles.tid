@@ -59,6 +59,7 @@ a.tw-tiddlylink {
 .story-river .body h1 {
 	font-size: 1.9em;
 	margin: 1em 0;
+	font-weight: bold;
 }
 
 .story-river .body h2 {
