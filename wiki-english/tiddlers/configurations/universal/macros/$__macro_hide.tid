@@ -1,19 +1,15 @@
 created: 20140720132241792
-modified: 20140720134611359
+modified: 20140720170032543
 tags: $:/tags/Macro
 title: $:/macro/hide
 type: text/vnd.tiddlywiki
 
 \define hide(heading,title)
 <$reveal type="nomatch" state=<<qualify "$:/state/$title$">> text="show">
-<$heading$>
-<$button set=<<qualify "$:/state/$title$">> setTo="show" class="btn-invisible">$title$</$button>
-</$heading$>
+<$heading$><$button set=<<qualify "$:/state/$title$">> setTo="show" class="btn-invisible" style="text-align:left;">$title$</$button></$heading$>
 </$reveal>
 <$reveal type="match" state=<<qualify "$:/state/$title$">> text="show">
-<$heading$>
-<$button set=<<qualify "$:/state/$title$">> setTo="hide" class="btn-invisible">$title$</$button>
-</$heading$>
+<$heading$><$button set=<<qualify "$:/state/$title$">> setTo="hide" class="btn-invisible" style="text-align:left;">$title$</$button></$heading$>
 <$transclude tiddler="$title$" mode="block"/>
 </$reveal>
 \end
