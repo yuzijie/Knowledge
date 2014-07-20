@@ -88,6 +88,11 @@ body.tw-body .story-river .body p {
 	margin: 1.3em 0;
 }
 
+body.tw-body .story-river .body ol,
+body.tw-body .story-river .body ul {
+	margin: 1.5em 0;
+}
+
 b, strong {
 	color: #111111;
 }
