@@ -1,0 +1,10 @@
+created: 20140720150757534
+modified: 20140720172059007
+source: http://www.oecd.org/sti/rd-tax-stats.htm
+tags: 资料整理
+title: Measuring R&D Tax Incentives
+type: text/vnd.tiddlywiki
+
+R&D tax incentives have become an important policy instrument in several OECD countries and partner economies to encourage firms to invest in R&D. This page provides the latest indicators on R&D tax incentives featured in the [[OECD Science, Technology and Industry Scoreboard 2013|http://www.oecd.org/sti/scoreboard.htm]].
+
+<$macrocall $name="listof" tag={{!!title}}>

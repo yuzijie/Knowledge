@@ -1,0 +1,35 @@
+created: 20140720155026965
+modified: 20140720164026062
+pdf: http://www.oecd-ilibrary.org/deliver/fulltext/9209031ec031.pdf
+source: http://www.oecd-ilibrary.org/sites/sti_scoreboard-2009-en/02/14/index.html?itemId=/content/chapter/sti_scoreboard-2009-31-en
+tags: 句子和公式
+title: The B index
+type: text/vnd.tiddlywiki
+
+!! Tax treatment of R&D
+
+Research and development (R&D) tax concessions are extensively used by OECD countries as an indirect way of encouraging business R&D expenditures. Special tax treatment for R&D expenditures includes immediate write-off of current R&D expenditures and various types of tax relief, such as tax credits or allowances against taxable income. Depreciation allowances are a third type.
+
+''The amount of tax subsidy for R&D is calculated as 1 minus the B index'' (Warda, 2001). The B index is defined as the present value of before tax income necessary to cover the initial cost of R&D investment and to pay corporate income tax, so that it is profitable to perform research activities.
+
+''In 2008, 21 OECD countries had R&D tax credits, up from 18 in 2004.'' It is an increasingly popular measure among OECD and non-OECD governments. France and Spain provide the largest subsidies and make no distinction between large and small firms. Canada and the Netherlands continue to be significantly more generous to small firms than to large ones. Emerging economies are also implementing these policy instruments to encourage R&D investments. Brazil, India, South Africa and China provide a generous and competitive tax environment for investment in R&D.
+
+Tax subsidies for R&D by large firms increased significantly between 1999 and 2008 in France and Norway, and to a lesser extent in Italy, Portugal, the United Kingdom, Belgium and Japan. Elsewhere, the tax subsidy rate remained stable, except in Mexico and Denmark, where it decreased. Italy showed the largest decrease in tax subsidies for R&D for small and medium-sized enterprises. The scheme introduced in New Zealand in 2008 was discontinued in 2009.
+
+!! The B index
+
+Algebraically, the B index is equal to the after-tax cost of an expenditure of USD 1 on R&D divided by one minus the corporate income tax rate. The after-tax cost is the net cost of investing in R&D, taking into account all the available tax incentives.
+
+[img[B-index.gif]]
+
+where ''A = the net present discounted value of depreciation allowances, tax credits and special allowances on R&D assets''; and //tau// = the statutory corporate income tax rate (CITR). In a country with full [[write-off]] of current R&D expenditure and no R&D tax incentive scheme, A = //tau//, and consequently B = 1. The more favourable a country's tax treatment of R&D, the lower its B index.
+
+''The B index is a unique tool for comparing the generosity of the tax treatment of R&D in different countries.'' However, its computation requires some simplifying assumptions. It should therefore be examined together with a set of other relevant policy indicators. Furthermore, its "synthetic" nature does not allow for distinguishing the relative importance of the various policy tools it takes into account (e.g. depreciation allowances, special R&D allowances, tax credit, CITR). B indexes have been calculated under the assumption that the "representative firm" is taxable and may enjoy the full benefit of the tax allowance or credit. For incremental tax credits, calculation of the B index implicitly assumes that R&D investment is fully eligible for the credit and does not exceed the ceiling if there is one. Some detailed features of R&D tax schemes (e.g. refunding, carry-back and carry-forward of unused tax credit, or flow-through mechanisms) are therefore not taken into account.
+
+The effective impact of the R&D tax allowance or credit on the after-tax cost of R&D is affected by the level of the CITR. ''An increase in the CITR reduces the B index only in those countries with the most generous R&D tax treatment.'' If tax credits are taxable, the effect of the CITR on the B index depends only on the level of the depreciation allowance. If the latter is over 100% for the total R&D expenditure, an increase in the CITR will reduce the B index. ''For countries with less generous R&D tax treatment, the B index is positively related to the CITR.''
+
+!! Further reading
+
+http://www.oecd.org/sti/b-index.pdf
+
+> The B-index is a measure of the level of pre-tax profit a “representative” company needs to ''generate to break even on a marginal, unitary outlay on R&D'' (Warda, 2001), taking into account provisions in the tax system that allow for special treatment of R&D expenditures. It is customary to present this indicator in the form of an implied subsidy rate, namely //one minus the B index//. More generous provisions imply a lower breakeven point and therefore a higher subsidy. 
