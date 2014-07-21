@@ -165,6 +165,8 @@ Error message and password prompt
 
 <li>$:/macro/mark</li>
 
+<li>$:/macro/navi</li>
+
 <li>$:/macro/show</li>
 
 <li>$:/Overview</li>
@@ -203,6 +205,12 @@ Error message and password prompt
 
 <li>05.jpg</li>
 
+<li>06.jpg</li>
+
+<li>07.jpg</li>
+
+<li>08.jpg</li>
+
 <li>1.信息搜集及整理循环图</li>
 
 <li>2.1 建立你的主题关键词</li>
@@ -210,6 +218,10 @@ Error message and password prompt
 <li>2.2 用好你的搜索引擎</li>
 
 <li>2.2.1 找准关键词，事半功倍</li>
+
+<li>2.2.2 更换语言，别有洞天</li>
+
+<li>2.2.3 更换搜索方式，殊途同归</li>
 
 <li>2.高效搜索术</li>
 
@@ -394,6 +406,8 @@ Error message and password prompt
 2.1 建立你的主题关键词: articles/2.1 建立你的主题关键词.tid
 2.2 用好你的搜索引擎: articles/2.2 用好你的搜索引擎.tid
 2.2.1 找准关键词，事半功倍: articles/2.2.1 找准关键词，事半功倍.tid
+2.2.2 更换语言，别有洞天: articles/2.2.2 更换语言，别有洞天.tid
+2.2.3 更换搜索方式，殊途同归: articles/2.2.3 更换搜索方式，殊途同归.tid
 2.高效搜索术: articles/2.高效搜索术.tid
 3.便捷的集成: articles/3.便捷的集成.tid
 4.养成定期整理的好习惯: articles/4.养成定期整理的好习惯.tid
@@ -448,6 +462,7 @@ $:/macro/footnote: configurations/universal/macros/$__macro_footnote.tid
 $:/macro/hide: configurations/universal/macros/$__macro_hide.tid
 $:/macro/listof: configurations/universal/macros/$__macro_listof.tid
 $:/macro/mark: configurations/universal/macros/$__macro_mark.tid
+$:/macro/navi: configurations/universal/macros/$__macro_navi.tid
 $:/macro/show: configurations/universal/macros/$__macro_show.tid
 $:/theme: configurations/universal/theme/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/theme/$__themes_tiddlywiki_vanilla_metrics.tid
@@ -458,6 +473,9 @@ All Articles: functional/All Articles.tid
 03.jpg: images/03.jpg
 04.jpg: images/04.jpg
 05.jpg: images/05.jpg
+06.jpg: images/06.jpg
+07.jpg: images/07.jpg
+08.jpg: images/08.jpg
 2014-07-09-01.jpg: images/2014-07-09-01.jpg
 2014-07-09-02.jpg: images/2014-07-09-02.jpg
 2014-07-09-03.jpg: images/2014-07-09-03.jpg
@@ -4399,7 +4417,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140621142053766" modified="20140717233212330" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[created]field:type[text/vnd.tiddlywiki]tag[Topic]limit[5]]</pre>
 </div>
-<div current-tiddler="高效工作的信息搜集及管理术" modified="20140720210004793" title="$:/HistoryList" type="application/json">
+<div current-tiddler="高效工作的信息搜集及管理术" modified="20140721002138415" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;高效工作的信息搜集及管理术&quot;
@@ -4474,6 +4492,23 @@ $text$
 
 \define under(text)
 &lt;span class=&quot;red-line&quot;&gt;$text$&lt;/span&gt;
+\end
+</pre>
+</div>
+<div created="20140720231335336" modified="20140720233224422" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
+<pre>\define navi(title)
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;$list filter=&quot;[[$title$]listed[]!is[system]]&quot;&gt;
+    &lt;li&gt;Up: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
+        &lt;li&gt;Previous: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;/$list&gt;
+    &lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
+        &lt;li&gt;Next: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;/$list&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
 \end
 </pre>
 </div>
@@ -4652,7 +4687,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -55px 0 -55px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -55px 0 -55px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
         }
     }
 }</pre>
@@ -4672,7 +4707,16 @@ tiddlerwidth: `660px`</pre>
 <div _canonical_uri="./images/05.jpg" created="20140719215131617" modified="20140719215131617" title="05.jpg" type="image/jpeg">
 <pre></pre>
 </div>
-<div created="20140719210801211" modified="20140720140531320" tags="高效工作的信息搜集及管理术" title="1.信息搜集及整理循环图" type="text/vnd.tiddlywiki">
+<div _canonical_uri="./images/06.jpg" created="20140720235030459" modified="20140720235030459" title="06.jpg" type="image/jpeg">
+<pre></pre>
+</div>
+<div _canonical_uri="./images/07.jpg" created="20140720235107940" modified="20140720235107940" title="07.jpg" type="image/jpeg">
+<pre></pre>
+</div>
+<div _canonical_uri="./images/08.jpg" created="20140721000003703" modified="20140721000003703" title="08.jpg" type="image/jpeg">
+<pre></pre>
+</div>
+<div created="20140719210801211" modified="20140720233534740" title="1.信息搜集及整理循环图" type="text/vnd.tiddlywiki">
 <pre>[img class=&quot;border&quot;[01.jpg]]&lt;br&gt;
 图1：信息搜集及整理术循环图
 
@@ -4684,9 +4728,7 @@ tiddlerwidth: `660px`</pre>
 
 最初你需要一定的动力去尝试开始做这件事情，而一旦兴趣产生，再加以坚持， 这就已经成为习惯，和你密不可分了。
 
----
-
-Next: [[2.高效搜索术]]</pre>
+&lt;$macrocall $name=&quot;navi&quot; title={{!!title}}&gt;&gt;</pre>
 </div>
 <div created="20140719211130113" modified="20140720135241847" title="2.1 建立你的主题关键词" type="text/vnd.tiddlywiki">
 <pre>建立自己关注的核心关键词是重要的一步。
@@ -4708,14 +4750,16 @@ Next: [[2.高效搜索术]]</pre>
 
 主题词建好之后，并不是一成不变，需要定期结合自己的工作评估及更新。比如我近一年对商务智能（Business intelligence）很感兴趣，也会定期查阅相关的资讯，但是去年此刻，我对此几乎不了解。</pre>
 </div>
-<div created="20140719213731581" modified="20140720135641409" title="2.2 用好你的搜索引擎" type="text/vnd.tiddlywiki">
+<div created="20140719213731581" list="[[2.2.1 找准关键词，事半功倍]] [[2.2.2 更换语言，别有洞天]] [[2.2.3 更换搜索方式，殊途同归]] [[2.2.4 别忘记了专业网站]] [[2.2.5 向书籍里找搜索提示]]" modified="20140721000928767" title="2.2 用好你的搜索引擎" type="text/vnd.tiddlywiki">
 <pre>主题关键词让我们知道自己时刻应该关注什么，而接下来我们就要更高效去找这些信息！
 
 搜索引擎是非常重要的信息获取入口，至于我用的技巧真算不上高级，欢迎搜索达人们和我交流下省力更有效的搜索手段。
 
-&lt;&lt;hide &quot;h3&quot; &quot;2.2.1 找准关键词，事半功倍&quot;&gt;&gt;</pre>
+&lt;$list filter=&quot;[list[2.2 用好你的搜索引擎]]&quot;&gt;
+&lt;$macrocall $name=&quot;hide&quot; heading=&quot;h3&quot; title={{!!title}}/&gt;
+&lt;/$list&gt;</pre>
 </div>
-<div created="20140719213835988" modified="20140720135830921" tags="高效工作的信息搜集及管理术" title="2.2.1 找准关键词，事半功倍" type="text/vnd.tiddlywiki">
+<div created="20140719213835988" modified="20140720234922711" title="2.2.1 找准关键词，事半功倍" type="text/vnd.tiddlywiki">
 <pre>很早之前，我偶然看到两张图片。我很喜欢这两个图片，所以我希望看到更多类似的图片。
 
 [img class=&quot;border&quot;[03.jpg]]&lt;br&gt;图3：用何种关键图去检索这两类图片呢？
@@ -4732,13 +4776,35 @@ Next: [[2.高效搜索术]]</pre>
 
 所以，在搜索中，要不断地更换更贴切的关键词，而不是一直打擦边球。如何找到贴切的关键词呢？从你觉得可行的第一个关键词开始，不要轻言放弃，根据每次搜索结果出来的线索跟踪，不断更换关键词，直至拿到结果。</pre>
 </div>
-<div created="20140719213531888" modified="20140720140308510" tags="高效工作的信息搜集及管理术" title="2.高效搜索术" type="text/vnd.tiddlywiki">
+<div created="20140720235003468" modified="20140720235227814" title="2.2.2 更换语言，别有洞天" type="text/vnd.tiddlywiki">
+<pre>有时更换为英语能够让你获取更精准的结果。所以这也是为什么，我的主题词要中英双语版。既然很多中文的结果是从英文翻译过来的，直接查看源文章显而易见信息遗漏较少。
+
+[img class=&quot;border&quot;[06.jpg]]&lt;br&gt;图6：用英文搜索“可视化思考”得到的结果
+
+以此类推，每多一种语言就打开一扇新的了解世界的窗口。就拿家庭收纳来讲，用中文“收纳”去搜索文章，几乎只是一些零碎的图片和社区网站为了招徕用户拼凑而成的收纳技巧。而用日语“収納”去搜索，看日本的某些网站，我们能够看到很多关于收纳术的经验、文档和教程。有些教程的丰富性不亚于出版的书籍，更好过于我们国内那些拼凑出来的家居整理学了。如：http://www.iris-interior.com/mainichi/ 网站提供的本多先生每日收纳教程：
+
+[img class=&quot;border&quot;[07.jpg]]&lt;br&gt;图7：用日语収納检索到的专业网站
+
+关于收纳学的网站，大家有兴趣可以用日语“収納”搜搜试试，不可以找我要。</pre>
+</div>
+<div created="20140720235339831" modified="20140721000146921" title="2.2.3 更换搜索方式，殊途同归" type="text/vnd.tiddlywiki">
+<pre>若网页搜索不能获得所要结果，可以变换搜索类型，比如搜索图片，再通过图片链接到有价值的网站。
+
+我常用的则是文件搜索，与普通网页相比，这些文档通常意味着更好的更系统化的组织，从而让你的信息获取更加有效。
+
+如何利用搜索引擎搜索文档呢？
+
+只要在搜索词前加入 `filetype:pdf` 就可以搜索 `pdf` 格式的文档。（Google 和百度均适用。）&lt;&lt;footnote &quot;注&quot; &quot;原文介绍得不详细且不准确，下面链接可以学习更多 Google 的搜索方法。http://www.googleguide.com/advanced_operators_reference.html&quot;&gt;&gt;
+
+如用百度搜商务智能的相关文档：
+
+[img class=&quot;border&quot;[08.jpg]]&lt;br&gt;图8：用百度搜索文档</pre>
+</div>
+<div created="20140719213531888" list="[[2.1 建立你的主题关键词]] [[2.2 用好你的搜索引擎]]" modified="20140720234300666" title="2.高效搜索术" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;hide &quot;h2&quot; &quot;2.1 建立你的主题关键词&quot;&gt;&gt;
 &lt;&lt;hide &quot;h2&quot; &quot;2.2 用好你的搜索引擎&quot;&gt;&gt;
 
----
-
-Next: [[3.便捷的集成]]</pre>
+&lt;$macrocall $name=&quot;navi&quot; title={{!!title}}&gt;&gt;</pre>
 </div>
 <div _canonical_uri="./images/2014-07-09-01.jpg" created="20140709214118835" modified="20140710173050693" title="2014-07-09-01.jpg" type="image/jpeg">
 <pre></pre>
@@ -4803,7 +4869,7 @@ Next: [[3.便捷的集成]]</pre>
 <div _canonical_uri="./images/2014-07-09-21.jpg" created="20140709215023674" modified="20140710173246027" title="2014-07-09-21.jpg" type="image/jpeg">
 <pre></pre>
 </div>
-<div created="20140720110614502" modified="20140720140445829" title="3.便捷的集成" type="text/vnd.tiddlywiki">
+<div created="20140720110614502" modified="20140720233717324" title="3.便捷的集成" type="text/vnd.tiddlywiki">
 <pre>集成是信息的集中归档。搜索引擎固然方便，可是若一些常用的东西，未必每次都需要搜索。而是可以在自己的电脑上建立个人资料库。不管是否有网络，都能够随时查阅。
 
 我会习惯将搜索到有价值的文档、网页、图片存储在自己的电脑里，可是，我们也会发现，这些资料一旦存到硬盘里，却石沉大海。下次若需要，却还是求助于搜索引擎。而另一方面，电脑文件夹却又日渐庞大，要经常删除文档以腾挪出空间。这种方法还有一个弊端，那就是多台电脑使用时，就要借助移动硬盘或U盘，从而一份东西，居然要三处备份。
@@ -4816,20 +4882,16 @@ Next: [[3.便捷的集成]]</pre>
 * ''高效检索'' —— 能够对所集成的文档加标签，关键词，甚至能够全文检索。
 * ''云端、客户端同步。''
 
----
-
-Next: [[4.养成定期整理的好习惯]]</pre>
+&lt;$macrocall $name=&quot;navi&quot; title={{!!title}}&gt;&gt;</pre>
 </div>
-<div created="20140720131544846" modified="20140720140427740" tags="高效工作的信息搜集及管理术" title="4.养成定期整理的好习惯" type="text/vnd.tiddlywiki">
+<div created="20140720131544846" modified="20140721001049290" title="4.养成定期整理的好习惯" type="text/vnd.tiddlywiki">
 <pre>能够高效获取信息，又能够将信息方便集成，但是若没有定期的整理，难免这些信息时间长了又会趋于杂 乱。所以，就如我们要定期打扫收拾家务一样，这是必不可少的重要一步。“整理”一词包含了“检查并调整 归类”，“删除不需要的文档”，“添加可便搜索的标签或关键词”等。
 
 平时，电脑文件夹或者 Evernote 笔记本里，我都会设置一个“临时文件夹”，以便存放一些暂时无法归类的 文档或资料，而定期就要着重看一下这些临时文件夹，将里面的文档妥善安置到对应的分类里，以免临时 文件夹名不副实，成了一个大杂烩。
 
----
-
-Next: [[5.结语]]</pre>
+&lt;$macrocall $name=&quot;navi&quot; title={{!!title}}&gt;&gt;</pre>
 </div>
-<div created="20140720131714111" modified="20140720140407994" tags="高效工作的信息搜集及管理术" title="5.结语" type="text/vnd.tiddlywiki">
+<div created="20140720131714111" modified="20140721002112324" title="5.结语" type="text/vnd.tiddlywiki">
 <pre>信息的搜集再多，信息的整理再有条理，若不学以致用，也顶多是建立了一个丰富的个人知识库罢了。
 
 所以最重要的是真正用好这些信息，结合自己的工作、生活，勤思考，多实践，消化这些信息为自己所用，然后沉淀出自己的知识来。
@@ -4838,7 +4900,9 @@ Next: [[5.结语]]</pre>
 
 ''仅个人有限经验，愿大家都有所得。''
 
-完（[[返回|高效工作的信息搜集及管理术]]）</pre>
+完
+
+&lt;$macrocall $name=&quot;navi&quot; title={{!!title}}&gt;&gt;</pre>
 </div>
 <div _canonical_uri="./images/akira.jpg" created="20140718055943379" modified="20140718055943379" title="akira.jpg" type="image/jpeg">
 <pre></pre>
@@ -5521,7 +5585,7 @@ Eric：欣喜堂的《[[活字字体的基础讲座|http://www.typeisbeautiful.c
 * Author: {{!!author}}
 * Source: {{!!url}}</pre>
 </div>
-<div author="Heidixie" created="20140719205753056" modified="20140720140157022" tags="Topic" title="高效工作的信息搜集及管理术" type="text/vnd.tiddlywiki" url="http://heidixie.blog.sohu.com/247551250.html">
+<div author="Heidixie" created="20140719205753056" list="1.信息搜集及整理循环图 2.高效搜索术 3.便捷的集成 4.养成定期整理的好习惯 5.结语" modified="20140720213722370" tags="Topic" title="高效工作的信息搜集及管理术" type="text/vnd.tiddlywiki" url="http://heidixie.blog.sohu.com/247551250.html">
 <pre>!! 写在前面
 
 几个月前，团队邀我做次内部的分享，主题是如何有效搜索信息。这是因为平时工作中，我经常会分享一些专业学习文档，而这些文档的出现往往很及时，回应一些我们自己项目的困惑，所以大家会好奇我如何及时找得到那么专业且对口的参考资料。
