@@ -1,0 +1,22 @@
+created: 20140721061305955
+modified: 20140721074508859
+title: 2.2.5 向书籍里找搜索提示
+type: text/vnd.tiddlywiki
+
+一个小提示，没有关键词灵感的时候，还可以从书的目录去获取关键词提示。 除了目录，专业书籍里面隐含很宝贵的可供挖掘的信息。
+
+下面就是一个利用书籍提供的信息不断发掘，进而找到真正所需的信息的案例：
+
+最近我读《Excel图表之道》这本书，在 P152 页提到的图表类型选择指南的原作者是 Andrew Abela。这个人名就是一个很宝贵的关键词！这个关键词可能代表着：数据，数据分析，商务智能，沟通演示等等主题。
+
+所以搜索此人，看到此人的博客是：http://extremepresentation.typepad.com/。这个博客是专业博客，主题是复杂信息的沟通及演示。
+
+而这个博客在为一本书做广告，这本书正是出于 Andrew Abela, 《Advanced Presentations by Design: Creating Communications that Dirves Action》，此书的中文版在大陆有售，中文翻译为《说服力演说是怎样炼成的—如何设计当场成交的 PPT》。
+
+进而又通过博客这本书的网站：http://www.extremepresentation.com/。这个网站有一些相当不错的信息，推荐对于演示有兴趣的同学们看看。比如以下两个图表也来自该网站：
+
+[img class="border"[09.jpg]]<br>图9：extremepresentation.com 的配图
+
+当然，被《Excel 图表之道》作者刘万祥老师引用的图表类型选择指南的图英文原版也在这个网站中有大图可以下载。另外，我们的信息挖掘还没有结束哦！注意，他还提供了另外一个在线的工具：[[www.chartchooser.com|http://labs.juiceanalytics.com/chartchooser/index.html]]，此网站可供数据分析师们根据自己的需求选择不同的图表展现，该网站出自 [[Juiceanalytics]]。而进入 [[Juiceanalytics]] 网站的白皮书栏目，我找到了《设计人人都爱的信息仪表盘指南》（A Guide to Creating Dashboards People Love to Use） <<footnote "链接" "http://www.juiceanalytics.com/white-papers-guides-and-more/">>，这本白皮书恰好能够解答我对于近期工作的一些迷惑。
+
+如果特意去找，反而不容易有所收获，而如果知道自己的主题关键词，你的信息嗅觉就会非常灵敏，在某个契机下，抓住线索不放，往往不经意中探得捷径。

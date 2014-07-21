@@ -1,5 +1,6 @@
 created: 20140720110614502
-modified: 20140720233717324
+list: [[3.1 Evernote 便捷集成]] [[3.2 用花瓣网集成图片]]
+modified: 20140721075220845
 title: 3.便捷的集成
 type: text/vnd.tiddlywiki
 
@@ -15,4 +16,8 @@ type: text/vnd.tiddlywiki
 * ''高效检索'' —— 能够对所集成的文档加标签，关键词，甚至能够全文检索。
 * ''云端、客户端同步。''
 
-<$macrocall $name="navi" title={{!!title}}>>
+<$list filter="[list[3.便捷的集成]]">
+<$macrocall $name="hide" heading="h2" title={{!!title}}/>
+</$list>
+
+<$macrocall $name="navi" title={{!!title}}/>
