@@ -163,6 +163,8 @@ Error message and password prompt
 
 <li>$:/macro/mark</li>
 
+<li>$:/macro/navi</li>
+
 <li>$:/macro/show</li>
 
 <li>$:/Overview</li>
@@ -297,6 +299,7 @@ $:/macro/footnote: configurations/universal/macros/$__macro_footnote.tid
 $:/macro/hide: configurations/universal/macros/$__macro_hide.tid
 $:/macro/listof: configurations/universal/macros/$__macro_listof.tid
 $:/macro/mark: configurations/universal/macros/$__macro_mark.tid
+$:/macro/navi: configurations/universal/macros/$__macro_navi.tid
 $:/macro/show: configurations/universal/macros/$__macro_show.tid
 $:/theme: configurations/universal/theme/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/theme/$__themes_tiddlywiki_vanilla_metrics.tid
@@ -4227,10 +4230,10 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140609201038140" modified="20140704211058867" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[modified]limit[8]]</pre>
 </div>
-<div current-tiddler="Endogeneity" modified="20140720203554485" title="$:/HistoryList" type="application/json">
+<div current-tiddler="InstitutionalFund" modified="20140721003226249" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;Endogeneity&quot;
+        &quot;title&quot;: &quot;InstitutionalFund&quot;
     }
 ]</pre>
 </div>
@@ -4305,6 +4308,23 @@ $text$
 \end
 </pre>
 </div>
+<div created="20140720231335336" modified="20140720233224422" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
+<pre>\define navi(title)
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;$list filter=&quot;[[$title$]listed[]!is[system]]&quot;&gt;
+    &lt;li&gt;Up: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
+        &lt;li&gt;Previous: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;/$list&gt;
+    &lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
+        &lt;li&gt;Next: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;/$list&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+\end
+</pre>
+</div>
 <div created="20140714132227814" modified="20140714160133100" tags="$:/tags/Macro" title="$:/macro/show" type="text/vnd.tiddlywiki">
 <pre>\define show(heading,title)
 &lt;$heading$&gt;
@@ -4358,7 +4378,7 @@ $title$
 <div created="20140609201017384" modified="20140714000247442" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>E&amp;F</pre>
 </div>
-<div list="Endogeneity NullHypothesis ChildTaxCredit OfficialReserves DiscretionaryAccrual LiquidityConstraint PeckingOrder LimitedPartnership" title="$:/StoryList">
+<div list="InstitutionalFund WealthEffect PoisonPill GeneralPartner MutualFund AgencyProblem Endogeneity NullHypothesis" title="$:/StoryList">
 <pre></pre>
 </div>
 <div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140713230335244" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
@@ -4501,17 +4521,17 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body ol,\nbody.tw-body .story-river .body ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -55px 0 -55px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -55px 0 -55px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
         }
     }
 }</pre>
 </div>
-<div created="20140704211245596" modified="20140707193738508" tags="[[corporate governance]] Finance" title="AgencyProblem" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/a/agencyproblem.asp">
-<pre>Definition of 'Agency Problem'
+<div created="20140704211245596" modified="20140721003004400" tags="[[corporate governance]] Finance" title="AgencyProblem" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/a/agencyproblem.asp">
+<pre>!! Definition of 'Agency Problem'
 
 A ''conflict'' of interest inherent in any relationship where one party is expected to act in another's best interests. The problem is that the agent who is supposed to make the decisions that would best serve the principal is naturally motivated by ''self-interest'', and the agent's own best interests may differ from the principal's best interests. The agency problem is also known as the &quot;''principal–agent problem''&quot;. 
 
-Investopedia explains 'Agency Problem'
+!! Investopedia explains 'Agency Problem'
 
 In corporate finance, the agency problem usually refers to a conflict of interest between a company's management and the company's stockholders. The manager, acting as the agent for the shareholders, or principals, is supposed to make decisions that will maximize shareholder wealth. However, it is in the manager's own best interest to maximize his own wealth. While it is not possible to eliminate the agency problem completely, the manager can be motivated to act in the shareholders' best interests through incentives such as ''performance-based compensation'', ''direct influence'' by shareholders, the threat of ''firing'' and the threat of ''takeovers''. </pre>
 </div>
@@ -4565,22 +4585,22 @@ For example, in a simple supply and demand model, when predicting the quantity d
 <div color="#0096ff" created="20140704205230681" modified="20140704205230681" title="Finance" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div created="20140704213612548" modified="20140707193141611" tags="Finance partnership" title="GeneralPartner" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/g/generalpartner.asp">
-<pre>! Definition of 'General Partner'
+<div created="20140704213612548" modified="20140721003038758" tags="Finance partnership" title="GeneralPartner" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/g/generalpartner.asp">
+<pre>!! Definition of 'General Partner'
 
 Owners of a partnership who have ''unlimited liability''. A general partner is also commonly a ''managing partner'', which means that this person is ''active in the day-to-day operations of the business''. Because any partner in a general partnership can act on behalf of the entire business ''without'' the knowledge or permission of the other partners, being a general partner offers ''poor asset protection''. 
 
-! Investopedia explains 'General Partner'
+!! Investopedia explains 'General Partner'
 
 If a general partner is ever required to meet the partnership's financial obligations, his or her personal assets may be subject to liquidation. In the case of a limited partnership, only one of the partners will be the general partner and have unlimited liability. The other partners will have limited liability as long as they do not take an active role in managing the business, so their personal assets will not be at risk. 
 </pre>
 </div>
-<div created="20140704212821502" modified="20140707193803743" tags="Finance fund" title="InstitutionalFund" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/i/institutionalfund.asp">
-<pre>! Definition of 'Institutional Fund'
+<div created="20140704212821502" modified="20140721003220829" tags="Finance fund" title="InstitutionalFund" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/i/institutionalfund.asp">
+<pre>!! Definition of 'Institutional Fund'
 
 A fund that targets high value investors with low management fees, but very ''high'' minimum investing requirements. Institutional funds refers to funds that aim to manage money for large institutional investors, such as ''pension'' or ''endowment'' funds. These funds will typically offer ''much lower'' MERs (Management Expense Ratio) than retail funds, but also mandate a minimum investment much greater than most other funds, some hedge and private equity funds withstanding. 
 
-! Investopedia explains 'Institutional Fund'
+!! Investopedia explains 'Institutional Fund'
 
 These funds must indicate within their prospectuses or name that they're institutional and typically solicit managers of retirement plans, institutional investors and large endowment trusts. These funds can take almost any form, be it a mutual fund, private equity fund, hedge fund or venture capital fund. The defining trait of institutional funds are the clientele they cater their services to. </pre>
 </div>
@@ -4630,12 +4650,12 @@ Whereas labor productivity measures the output per unit of labor input, multifac
 
 {{Labor Productivity Formular}}</pre>
 </div>
-<div created="20140704213224270" modified="20140707193756271" tags="Finance fund" title="MutualFund" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/m/mutualfund.asp">
-<pre>! Definition of 'Mutual Fund 共同基金'
+<div created="20140704213224270" modified="20140721003020415" tags="Finance fund" title="MutualFund" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/m/mutualfund.asp">
+<pre>!! Definition of 'Mutual Fund 共同基金'
 
 An investment vehicle that is made up of ''a pool of funds collected from many investors'' for the purpose of investing in securities such as stocks, bonds, money market instruments and similar assets. Mutual funds are operated by money managers, who invest the fund's capital and attempt to produce capital gains and income for the fund's investors. A mutual fund's portfolio is structured and maintained to match the investment objectives stated in its prospectus.
 
-! Investopedia explains 'Mutual Fund'
+!! Investopedia explains 'Mutual Fund'
 
 One of the main advantages of mutual funds is that they give small investors access to professionally managed, diversified portfolios of equities, bonds and other securities, which would be quite difficult (if not impossible) to create with a small amount of capital. Each shareholder participates proportionally in the gain or loss of the fund. Mutual fund units, or shares, are issued and can typically be purchased or redeemed as needed at the fund's current net asset value (NAV) per share, which is sometimes expressed as NAVPS.</pre>
 </div>
@@ -4679,8 +4699,8 @@ http://www.investopedia.com/terms/o/open-endfund.asp</pre>
 <div created="20140707115749859" modified="20140707193150998" title="PeripheryCountries" type="text/vnd.tiddlywiki">
 <pre>In World Systems Theory, the ''Periphery Countries'' (sometimes referred to as just ''the periphery'') are those that are less developed than the semi-periphery and core countries. These countries usually receive a disproportionately small share of global wealth. They have weak state institutions and are dependent on – according to some, exploited by – more developed countries. These countries are usually behind because of obstacles such as lack of technology, unstable government, and poor education and health systems. In some instances the exploitation of periphery countries' agriculture, cheap labor, and natural resources aid core countries in remaining dominant. This is best described by dependency theory, which is one theory on how globalization can affect the world and the countries in it. It is, however, possible for periphery countries to rise out of their status and move into semi-periphery or core status. This can be done by doing things such as industrializing, stabilizing the government, etc.</pre>
 </div>
-<div created="20140704202815100" modified="20140707193716103" tags="Finance [[mergers and acquisitions]]" title="PoisonPill" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/p/poisonpill.asp">
-<pre>! Definition of 'Poison Pill'
+<div created="20140704202815100" modified="20140721003110826" tags="Finance [[mergers and acquisitions]]" title="PoisonPill" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/p/poisonpill.asp">
+<pre>!! Definition of 'Poison Pill'
 
 A strategy used by corporations to discourage ''hostile'' takeovers. With a poison pill, the target company attempts to make its stock less attractive to the acquirer. There are two types of poison pills: 
 
@@ -4688,7 +4708,7 @@ A strategy used by corporations to discourage ''hostile'' takeovers. With a pois
 
 # A &quot;flip-over&quot; allows stockholders to buy the acquirer's shares at a ''discounted price'' after the merger. 
 
-! Investopedia explains 'Poison Pill'
+!! Investopedia explains 'Poison Pill'
 
 # By purchasing more shares cheaply (flip-in), investors get instant profits and, more importantly, they dilute the shares held by the acquirer. This makes the takeover attempt more difficult and more expensive. 
 
@@ -4721,12 +4741,12 @@ Regression analysis is widely used for prediction and forecasting, where its use
 <div created="20140406111537434" modified="20140707193823827" tags="Finance term" title="TurnOver" type="text/vnd.tiddlywiki">
 <pre>''Turn over'' is the total sales of a company over a stated peroids.</pre>
 </div>
-<div created="20140704210705593" modified="20140707193658299" tags="Economics indicator" title="WealthEffect" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/w/wealtheffect.asp">
-<pre>! Definition of 'The Wealth Effect'
+<div created="20140704210705593" modified="20140721003135837" tags="Economics indicator" title="WealthEffect" type="text/vnd.tiddlywiki" url="http://www.investopedia.com/terms/w/wealtheffect.asp">
+<pre>!! Definition of 'The Wealth Effect'
 
 The premise that ''when the value of stock portfolios rises due to escalating stock prices, investors feel more comfortable and secure about their wealth, causing them to spend more''. For example, economists in 1968 were baffled when a 10% tax hike failed to slow down consumer spending. Later this continued spending was attributed to the wealth effect. While disposable income fell as a result of increased taxes, wealth was rising sharply as the stock market moved up. Undaunted, consumers continued their spending spree.
 
-! Investopedia explains 'The Wealth Effect'
+!! Investopedia explains 'The Wealth Effect'
 
 The wealth effect helps to power economies during bull markets. Big gains in people's portfolios can make them feel more secure about their wealth and their spending. However, the relationship between spending and stock market performance is a double-edged sword as poor stock prices in bear markets hurt economic confidence. </pre>
 </div>
