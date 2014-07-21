@@ -1,6 +1,5 @@
 created: 20140720131544846
-modified: 20140720140427740
-tags: 高效工作的信息搜集及管理术
+modified: 20140721001049290
 title: 4.养成定期整理的好习惯
 type: text/vnd.tiddlywiki
 
@@ -8,6 +7,4 @@ type: text/vnd.tiddlywiki
 
 平时，电脑文件夹或者 Evernote 笔记本里，我都会设置一个“临时文件夹”，以便存放一些暂时无法归类的 文档或资料，而定期就要着重看一下这些临时文件夹，将里面的文档妥善安置到对应的分类里，以免临时 文件夹名不副实，成了一个大杂烩。
 
----
-
-Next: [[5.结语]]
+<$macrocall $name="navi" title={{!!title}}>>

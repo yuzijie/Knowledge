@@ -1,0 +1,16 @@
+created: 20140720235339831
+modified: 20140721000146921
+title: 2.2.3 更换搜索方式，殊途同归
+type: text/vnd.tiddlywiki
+
+若网页搜索不能获得所要结果，可以变换搜索类型，比如搜索图片，再通过图片链接到有价值的网站。
+
+我常用的则是文件搜索，与普通网页相比，这些文档通常意味着更好的更系统化的组织，从而让你的信息获取更加有效。
+
+如何利用搜索引擎搜索文档呢？
+
+只要在搜索词前加入 `filetype:pdf` 就可以搜索 `pdf` 格式的文档。（Google 和百度均适用。）<<footnote "注" "原文介绍得不详细且不准确，下面链接可以学习更多 Google 的搜索方法。http://www.googleguide.com/advanced_operators_reference.html">>
+
+如用百度搜商务智能的相关文档：
+
+[img class="border"[08.jpg]]<br>图8：用百度搜索文档

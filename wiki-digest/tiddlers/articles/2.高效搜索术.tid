@@ -1,12 +1,10 @@
 created: 20140719213531888
-modified: 20140720140308510
-tags: 高效工作的信息搜集及管理术
+list: [[2.1 建立你的主题关键词]] [[2.2 用好你的搜索引擎]]
+modified: 20140720234300666
 title: 2.高效搜索术
 type: text/vnd.tiddlywiki
 
 <<hide "h2" "2.1 建立你的主题关键词">>
 <<hide "h2" "2.2 用好你的搜索引擎">>
 
----
-
-Next: [[3.便捷的集成]]
+<$macrocall $name="navi" title={{!!title}}>>

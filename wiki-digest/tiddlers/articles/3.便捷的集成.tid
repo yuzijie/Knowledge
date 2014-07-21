@@ -1,5 +1,5 @@
 created: 20140720110614502
-modified: 20140720140445829
+modified: 20140720233717324
 title: 3.便捷的集成
 type: text/vnd.tiddlywiki
 
@@ -15,6 +15,4 @@ type: text/vnd.tiddlywiki
 * ''高效检索'' —— 能够对所集成的文档加标签，关键词，甚至能够全文检索。
 * ''云端、客户端同步。''
 
----
-
-Next: [[4.养成定期整理的好习惯]]
+<$macrocall $name="navi" title={{!!title}}>>

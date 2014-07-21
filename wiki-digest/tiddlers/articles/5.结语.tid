@@ -1,6 +1,5 @@
 created: 20140720131714111
-modified: 20140720140407994
-tags: 高效工作的信息搜集及管理术
+modified: 20140721001054582
 title: 5.结语
 type: text/vnd.tiddlywiki
 
@@ -12,4 +11,4 @@ type: text/vnd.tiddlywiki
 
 ''仅个人有限经验，愿大家都有所得。''
 
-完（[[返回|高效工作的信息搜集及管理术]]）
+<$macrocall $name="navi" title={{!!title}}>>
