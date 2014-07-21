@@ -1,6 +1,6 @@
 created: 20140721203323600
-list: [[Why do governments support business R&D?]] [[The policy mix: direct versus indirect funding of R&D]]
-modified: 20140721215333199
+list: [[1 Why do governments support business R&D?]] [[2 The policy mix: Direct versus Indirect funding of R&D]] [[3 The first internationally comparable “quantitative” estimates of R&D-related tax expenditures]]
+modified: 20140721233209194
 tags: 写作中 资料整理
 title: R&D tax incentives: rationale, design, evaluation
 type: text/vnd.tiddlywiki
@@ -13,7 +13,7 @@ Governments can choose among various tools to leverage business research and dev
 
 ! Table of Contents
 
-<ul>
+<ul style="list-style-type:square;">
 <$list filter="[list{!!title}!is[system]]">
 <li><$link to={{!!title}}><$view field="title"/></$link></li>
 </$list>
