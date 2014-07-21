@@ -1,0 +1,12 @@
+created: 20140721142825243
+modified: 20140721143000931
+title: Expense Base
+type: text/vnd.tiddlywiki
+
+Type of R&D costs allowed by scheme.
+
+* C: Current
+* ME: Machinery and equipment
+* B: Buildings
+* MED: Machinery and equipment depreciation
+* BD: Building depreciation

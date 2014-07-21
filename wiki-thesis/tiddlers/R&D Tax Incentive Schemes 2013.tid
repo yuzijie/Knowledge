@@ -1,0 +1,22 @@
+created: 20140720113002371
+modified: 20140721133220721
+tags: 资料整理
+title: R&D Tax Incentive Schemes 2013
+type: text/vnd.tiddlywiki
+
+* 出处：[[SUMMARY DESCRIPTION OF R&D TAX INCENTIVE SCHEMES FOR OECD COUNTRIES AND SELECTED ECONOMIES, 2013|http://www.oecd.org/sti/2013OECD-NESTI%20RDTaxIncentiveSummaryDescription_03Apr2014.pdf]]
+* For further information: http://www.oecd.org/sti/rd-tax-stats.htm
+
+This file contains information on the ''design'', ''scope'' and ''approval'' of R&D tax incentive relief for OECD countries and selected economies with reference to tax relief provided for R&D expenditures incurred in 2013. It is based on the results of the 2013 OECD Questionnaire launched in spring 2013 by the OECD Working Party of National Experts on Science and Technology Indicators (NESTI). The 2013 ~OECD-NESTI questionnaires were prefilled with information from past NESTI questionnaires, selected results from the OECD's Centre for Tax Policy's 2012 KNOWCAP questionnaire and other relevant, publicly available information.
+
+''Please cite as:'' OECD (2014). Summary description of R&D tax incentive schemes for OECD countries and selected economies, 2013, www.oecd.org/sti/rd-tax- stats.htm, retrieved on <<DD/MM/YY>>.
+
+''Note:'' Tax credit and allowance rates (measured in %) generally denote enhanced rates of tax support measured relative to a common benchmark (full deductibility of current R&D (100%) expenditures and a country’s baseline treatment of capital investments).
+
+---
+
+<ul>
+<$list filter="[tag{!!title}!is[system]]">
+<li><$link to={{!!title}}><$view field="title"/></$link></li>
+</$list>
+</ul>
