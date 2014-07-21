@@ -119,6 +119,8 @@ Error message and password prompt
 
 <li>$:/config/AnimationDuration</li>
 
+<li>$:/config/Navigation/UpdateHistory</li>
+
 <li>$:/config/OriginalTiddlerPaths</li>
 
 <li>$:/core</li>
@@ -270,6 +272,9 @@ Error message and password prompt
 <div created="20140701112228257" modified="20140712164807845" title="$:/config/AnimationDuration" type="text/vnd.tiddlywiki">
 <pre>250</pre>
 </div>
+<div created="20140721080100651" title="$:/config/Navigation/UpdateHistory" type="text/vnd.tiddlywiki">
+<pre>yes</pre>
+</div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
 <pre>Keywords: articles/Keywords.tid
 一切以目标为中心: articles/一切以目标为中心.tid
@@ -309,6 +314,7 @@ $:/SiteTitle: configurations/$__SiteTitle.tid
 $:/TableOfContents: configurations/$__TableOfContents.tid
 $:/Overview: configurations/universal/$__Overview.tid
 $:/config/AnimationDuration: configurations/universal/$__config_AnimationDuration.tid
+$:/config/Navigation/UpdateHistory: configurations/universal/$__config_Navigation_UpdateHistory.tid
 $:/core/ui/PageControls/control-panel: configurations/universal/$__core_ui_PageControls_control-panel.tid
 $:/core/ui/PageControls/new-tiddler: configurations/universal/$__core_ui_PageControls_new-tiddler.tid
 $:/core/ui/PageControls/save-wiki: configurations/universal/$__core_ui_PageControls_save-wiki.tid
@@ -4224,7 +4230,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140621160857357" modified="20140708180512740" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[modified]limit[7]]</pre>
 </div>
-<div current-tiddler="互联网思维对我的启示" modified="20140721002911177" title="$:/HistoryList" type="application/json">
+<div current-tiddler="互联网思维对我的启示" modified="20140721081248030" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;互联网思维对我的启示&quot;
@@ -4302,18 +4308,18 @@ $text$
 \end
 </pre>
 </div>
-<div created="20140720231335336" modified="20140720233224422" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
+<div created="20140720231335336" modified="20140721054626552" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
 <pre>\define navi(title)
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;$list filter=&quot;[[$title$]listed[]!is[system]]&quot;&gt;
-    &lt;li&gt;Up: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
-    &lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
-        &lt;li&gt;Previous: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
-    &lt;/$list&gt;
-    &lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
-        &lt;li&gt;Next: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
-    &lt;/$list&gt;
+&lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
+&lt;li&gt;Next: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+&lt;/$list&gt;
+&lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
+&lt;li&gt;Previous: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+&lt;/$list&gt;
+&lt;li&gt;Up: &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;
 \end
