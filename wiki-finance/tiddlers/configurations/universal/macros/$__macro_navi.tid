@@ -1,5 +1,5 @@
 created: 20140720231335336
-modified: 20140721054626552
+modified: 20140721222310820
 tags: $:/tags/Macro
 title: $:/macro/navi
 type: text/vnd.tiddlywiki
@@ -9,12 +9,12 @@ type: text/vnd.tiddlywiki
 <ul>
 <$list filter="[[$title$]listed[]!is[system]]">
 <$list filter="[[$title$]next{!!title}]">
-<li>Next: <$link to={{!!title}}><$view field="title"/></$link></li>
+<li><i>Next:</i> “<$link to={{!!title}}><$view field="title"/></$link>”</li>
 </$list>
 <$list filter="[[$title$]previous{!!title}]">
-<li>Previous: <$link to={{!!title}}><$view field="title"/></$link></li>
+<li><i>Previous:</i> “<$link to={{!!title}}><$view field="title"/></$link>”</li>
 </$list>
-<li>Up: <$link to={{!!title}}><$view field="title"/></$link></li>
+<li><i>Up:</i> “<$link to={{!!title}}><$view field="title"/></$link>”</li>
 </$list>
 </ul>
 \end
