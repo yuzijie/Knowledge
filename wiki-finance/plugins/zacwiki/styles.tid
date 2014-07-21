@@ -300,6 +300,10 @@ li > pre {
 	min-width: 250px;
 }
 
+body.tw-body .story-river .body p.tw-drop-down {
+	margin: 0;
+}
+
 ol.tw-drop-down,
 ul.tw-drop-down {
 	padding-left: 2.5em;
