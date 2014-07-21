@@ -1,0 +1,20 @@
+created: 20140721203323600
+list: [[Why do governments support business R&D?]] [[The policy mix: direct versus indirect funding of R&D]]
+modified: 20140721215333199
+tags: 写作中 资料整理
+title: R&D tax incentives: rationale, design, evaluation
+type: text/vnd.tiddlywiki
+
+[img class="middle"[title.png]]
+
+@@font-size:14px;line-height:23px;text-align:justify;
+Governments can choose among various tools to leverage business research and development (R&D). They can offer direct support via grants or procurement or they can use fiscal incentives, such as R&D tax incentives. More countries are now using tax incentives than a decade ago and the schemes are more generous than ever. As of today more than 20 OECD governments provide fiscal incentives to sustain business R&D, up from 12 in 1995 and 18 in 2004. Of the countries that do not have R&D tax incentives, Germany and Finland are currently discussing their introduction. This note sets out key considerations for the rationale, design and evaluation of such measures.
+@@
+
+! Table of Contents
+
+<ul>
+<$list filter="[list{!!title}!is[system]]">
+<li><$link to={{!!title}}><$view field="title"/></$link></li>
+</$list>
+</ul>
