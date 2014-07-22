@@ -1,10 +1,14 @@
 created: 20140721232837386
-modified: 20140721233145753
+modified: 20140722135345222
 title: 3 The first internationally comparable “quantitative” estimates of R&D-related tax expenditures
 type: text/vnd.tiddlywiki
 
-Estimates of R&D-related tax expenditures by central government have been compiled by the OECD. While international comparisons are not perfect due to the heterogeneity of tax incentives covered and methods used in estimating them, this new indicator gives a rather different picture of international comparisons of public support to R&D than has previously been understood.
+Estimates of R&D-related tax expenditures by central government have been compiled by the OECD. While international comparisons are not perfect due to the heterogeneity of tax incentives covered and methods used in estimating them, ''this new indicator'' gives a rather different picture of international comparisons of public support to R&D than has previously been understood.
 
-This new indicator on R&D tax incentives - which measures forgone tax revenue - sheds new light on country support for business R&D. For instance, in each of the United States, Japan, Canada and Korea, forgone tax revenues amount to more than USD 2 billion (Figure 2). In France and the United Kingdom forgone tax revenues are in the range of USD 1-2 billion. In France, the amount for 2009 will jump up to USD 6 billion, due to the introduction of a new scheme, as well as a temporary additional incentive for R&D introduced as part of the stimulus package.
+This new indicator on R&D tax incentives - which ''measures forgone tax revenue'' - sheds new light on country support for business R&D. For instance, <<hlb "in each of the United States, Japan, Canada and Korea, forgone tax revenues amount to more than USD 2 billion (Figure 2). In France and the United Kingdom forgone tax revenues are in the range of USD 1-2 billion. In France, the amount for 2009 will jump up to USD 6 billion, due to the introduction of a new scheme, as well as a temporary additional incentive for R&D introduced as part of the stimulus package.">><<footnote "注" "介绍各国的 forgone revenue">>
+
+//''Figure 2.'' Indirect government funding of business R&D through tax incentives for R&D, 2004 and 2008//
+
+[img[forgone revenue.png]]
 
 <$macrocall $name="navi" title={{!!title}}/>
