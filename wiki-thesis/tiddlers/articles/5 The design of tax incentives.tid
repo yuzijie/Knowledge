@@ -1,5 +1,5 @@
 created: 20140722154254000
-modified: 20140722160009813
+modified: 20140722224407351
 title: 5 The design of tax incentives
 type: text/vnd.tiddlywiki
 
@@ -12,3 +12,5 @@ R&D tax incentives may apply to all qualified R&D expenditures (volume-based cre
 !! Several issues have to be considered when designing R&D tax incentives.
 
 ''The general fiscal environment'' plays a role in deciding whether to use fiscal measures at all, as fiscal incentives are less effective in a country with a ''low'' rate of corporate income tax. In addition, ''target groups'' need to be selected, ''eligible expenses'' must be defined and a ''choice'' must be made between a tax credit that applies on all R&D outlays (volume) and a credit based on additional spending on R&D (incremental). ([[Additional Reading|Design considerations - fiscal support for business R&D]])
+
+<$macrocall $name="navi" title={{!!title}}/>

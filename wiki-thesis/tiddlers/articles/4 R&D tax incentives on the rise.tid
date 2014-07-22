@@ -1,5 +1,5 @@
 created: 20140722142828914
-modified: 20140722143240179
+modified: 20140722224343620
 title: 4 R&D tax incentives on the rise
 type: text/vnd.tiddlywiki
 
@@ -8,3 +8,5 @@ More countries are now using tax incentives than a decade ago and the schemes ar
 ~Non-OECD countries such as Brazil, China, India, Singapore and South Africa also provide a generous and competitive tax environment for investment in R&D. China provides generous (general) tax reductions for R&D firms located in certain new technology zones or investing in key areas such as biotech, ICT and other high tech fields.
 
 ''注：''这段介绍各国都在积极推出自己的 Indirect Tax Incentives
+
+<$macrocall $name="navi" title={{!!title}}/>
