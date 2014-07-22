@@ -212,6 +212,11 @@ li > pre {
 	margin-bottom: 0.5em;
 }
 
+table th, table td {
+	line-height: 23px;
+	padding: 3px 7px 3px 7px;
+}
+
 .tw-missing-tiddler-label {
 	padding-right: 0.5em;
 }
