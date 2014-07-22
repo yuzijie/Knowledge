@@ -265,6 +265,8 @@ Error message and password prompt
 
 <li>France</li>
 
+<li>Frascati Manual</li>
+
 <li>Government’s Means of Affecting Business Expenditure on R&amp;D</li>
 
 <li>How effective are fiscal incentives for R&amp;D? A review of the evidence</li>
@@ -394,7 +396,8 @@ Error message and password prompt
 <pre>yes</pre>
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
-<pre>1 Why do governments support business R&amp;D?: articles/1 Why do governments support business R&amp;D_.tid
+<pre>Frascati Manual: Frascati Manual.tid
+1 Why do governments support business R&amp;D?: articles/1 Why do governments support business R&amp;D_.tid
 2 The policy mix: Direct versus Indirect funding of R&amp;D: articles/2 The policy mix_ Direct versus Indirect funding of R&amp;D.tid
 3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures: articles/3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures.tid
 4 R&amp;D tax incentives on the rise: articles/4 R&amp;D tax incentives on the rise.tid
@@ -4479,18 +4482,18 @@ $text$
 \end
 </pre>
 </div>
-<div created="20140720231335336" modified="20140721224528113" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
+<div created="20140720231335336" modified="20140722234039910" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
 <pre>\define navi(title)
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;$list filter=&quot;[[$title$]listed[]!is[system]]&quot;&gt;
 &lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
-&lt;li&gt;&lt;b&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/b&gt;&lt;/li&gt;
+&lt;li style=&quot;margin:0px;&quot;&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
-&lt;li&gt;Previous: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
+&lt;li style=&quot;margin:0;&quot;&gt;Previous: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
 &lt;/$list&gt;
-&lt;li&gt;Up: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
+&lt;li style=&quot;margin:0;&quot;&gt;Up: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;
 \end
@@ -4717,7 +4720,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 28px 44px 40px 44px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -45px 0 -45px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 10px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nbody.tw-body .story-river .body li {\n\tmargin: 4px 0;\n\tline-height: 24px;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 28px 44px 40px 44px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -45px 0 -45px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\ntable th, table td {\n\tline-height: 23px;\n\tpadding: 3px 7px 3px 7px;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 10px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
         }
     }
 }</pre>
@@ -4769,14 +4772,16 @@ This new indicator on R&amp;D tax incentives - which ''measures forgone tax reve
 
 &lt;$macrocall $name=&quot;navi&quot; title={{!!title}}/&gt;</pre>
 </div>
-<div created="20140722142828914" modified="20140722143240179" title="4 R&amp;D tax incentives on the rise" type="text/vnd.tiddlywiki">
+<div created="20140722142828914" modified="20140722224343620" title="4 R&amp;D tax incentives on the rise" type="text/vnd.tiddlywiki">
 <pre>More countries are now using tax incentives than a decade ago and the schemes are more generous than ever. As of today ''more than 20 OECD governments'' provide fiscal incentives to sustain business R&amp;D, up from 12 in 1995 and 18 in 2004. Of the countries that do not have R&amp;D tax incentives, Germany and Finland are currently discussing their introduction.
 
 ~Non-OECD countries such as Brazil, China, India, Singapore and South Africa also provide a generous and competitive tax environment for investment in R&amp;D. China provides generous (general) tax reductions for R&amp;D firms located in certain new technology zones or investing in key areas such as biotech, ICT and other high tech fields.
 
-''注：''这段介绍各国都在积极推出自己的 Indirect Tax Incentives</pre>
+''注：''这段介绍各国都在积极推出自己的 Indirect Tax Incentives
+
+&lt;$macrocall $name=&quot;navi&quot; title={{!!title}}/&gt;</pre>
 </div>
-<div created="20140722154254000" modified="20140722160009813" title="5 The design of tax incentives" type="text/vnd.tiddlywiki">
+<div created="20140722154254000" modified="20140722224407351" title="5 The design of tax incentives" type="text/vnd.tiddlywiki">
 <pre>Most countries provide fiscal incentives through tax credits or enhanced allowances.&lt;&lt;footnote &quot;1&quot; &quot;Other mechanisms used by countries are full deduction of current R&amp;D expenditures (treating all current R&amp;D as current expenses and deducting them from taxable income) and accelerated depreciation (capital depreciation at a higher rate than the usual accounting practice). Given they are used almost uniformly by all countries and provide only weak stimuli, these two mechanisms are not considered important measures relative to countries’ R&amp;D tax incentive schemes.&quot;&gt;&gt; ''Tax credits'' allow a direct ''deduction'' from the ''tax payable'', while ''enhanced allowances'' represent a ''deduction'' (above the normal deduction rate of 100%) from the ''corporate taxable income''. &lt;&lt;hlb &quot;The main difference between the two mechanisms is that the former directly reduces the tax liability, while in the latter the reduction in tax liability depends on corporate income tax rates.&quot;&gt;&gt;&lt;&lt;footnote &quot;注&quot; &quot;后者依赖于税率的大小&quot;&gt;&gt;
 
 !!! Incremental versus volume based tax credits
@@ -4785,7 +4790,9 @@ R&amp;D tax incentives may apply to all qualified R&amp;D expenditures (volume-b
 
 !! Several issues have to be considered when designing R&amp;D tax incentives.
 
-''The general fiscal environment'' plays a role in deciding whether to use fiscal measures at all, as fiscal incentives are less effective in a country with a ''low'' rate of corporate income tax. In addition, ''target groups'' need to be selected, ''eligible expenses'' must be defined and a ''choice'' must be made between a tax credit that applies on all R&amp;D outlays (volume) and a credit based on additional spending on R&amp;D (incremental). ([[Additional Reading|Design considerations - fiscal support for business R&amp;D]])</pre>
+''The general fiscal environment'' plays a role in deciding whether to use fiscal measures at all, as fiscal incentives are less effective in a country with a ''low'' rate of corporate income tax. In addition, ''target groups'' need to be selected, ''eligible expenses'' must be defined and a ''choice'' must be made between a tax credit that applies on all R&amp;D outlays (volume) and a credit based on additional spending on R&amp;D (incremental). ([[Additional Reading|Design considerations - fiscal support for business R&amp;D]])
+
+&lt;$macrocall $name=&quot;navi&quot; title={{!!title}}/&gt;</pre>
 </div>
 <div created="20140720164154038" modified="20140720200649340" tags="[[Measuring R&amp;D Tax Incentives]]" title="A more complete picture of government support for business R&amp;D" type="text/vnd.tiddlywiki">
 <pre>In addition to providing grants, contracts and loans, many governments contribute to business R&amp;D through tax incentives. In 2013, 27 OECD countries gave preferential tax treatment to business R&amp;D expenditures. In 2011, the Russian Federation, Korea, France and Slovenia provided the most combined support for business R&amp;D as a percentage of GDP. R&amp;D tax credits were worth USD 8.3 billion in the United States, followed by France and China.
@@ -4961,17 +4968,19 @@ http://www.scitax.com/pdf/Introduction.to.R&amp;D.Tax.Credits.in.Canada.SCITAX.p
 <div created="20140720210349382" modified="20140720210948576" tags="[[Measuring R&amp;D Tax Incentives]]" title="Definitions and measurement" type="text/vnd.tiddlywiki">
 <pre>New estimates of the cost of R&amp;D tax incentives have been combined with data on direct R&amp;D funding (R&amp;D grants and purchases), as reported by firms, to provide a more complete picture of government efforts to promote business R&amp;D. Across countries, R&amp;D intensity in the business sector is significantly correlated with total government support for business R&amp;D. This does not imply a causal relationship and there are notable exceptions. Germany and Korea have relatively high business R&amp;D intensity compared to their degree of government support, while Canada, the Russian Federation and Turkey have high rates of support relative to countries with similar //R&amp;D to GDP ratios//. In 2011, Finland, Germany, Sweden and Switzerland did not offer tax incentives but had very R&amp;D-intensive business sectors. In 2013, Finland introduced an R&amp;D tax allowance for the first time.</pre>
 </div>
-<div created="20140722160045298" modified="20140722173546308" title="Design considerations - fiscal support for business R&amp;D" type="text/vnd.tiddlywiki">
-<pre>The target group: Governments can make fiscal support accessible to all companies, or make support more 
-generous for target groups of firms (e.g. SMEs). This can be done by:
-  • Placing upper limits on the amount of tax credit that can be claimed (upper limits are more likely to be 
-    attained by larger companies than by SMEs).
-  • Giving higher tax credit rates for SMEs, and/or greater flexibility e.g. cash refunds or unused credits. 
-Minimum thresholds can increase the efficiency of policy as administrative costs can be high for small 
-applications.
-Labeling of activities and claiming the tax credit: The definition of R&amp;D is typically based on the Frascati 
-Manual (OECD, 2002). However, most countries have produced their own lists of types of R&amp;D that qualify.
-Qualified R&amp;D expenditure: Three types of expenditure can qualify for fiscal incentives:
+<div created="20140722160045298" modified="20140722224730408" title="Design considerations - fiscal support for business R&amp;D" type="text/vnd.tiddlywiki">
+<pre>''The target group:'' Governments can make fiscal support accessible to all companies, or make support more 
+generous for target groups of firms (//e.g.// SMEs). This can be done by:
+
+* Placing upper limits on the amount of tax credit that can be claimed (upper limits are more likely to be attained by larger companies than by SMEs).
+* Giving higher tax credit rates for SMEs, and/or greater flexibility //e.g.// cash refunds or unused credits. 
+
+Minimum thresholds can increase the efficiency of policy as //administrative costs can be high for small applications.//
+
+''Labeling of activities and claiming the tax credit:'' The definition of R&amp;D is typically based on the [[Frascati Manual]] (OECD, 2002). However, most countries have produced their own lists of types of R&amp;D that qualify.
+
+''Qualified R&amp;D expenditure:'' Three types of expenditure can qualify for fiscal incentives:
+
   • Expenditure on wages related to R&amp;D. This reduces social security and wage taxes and gives an incentive 
     for investment in human capital.
   • Current R&amp;D expenditure. This includes wages and all consumables used in the R&amp;D process.
@@ -5126,6 +5135,17 @@ The report also found that:
 * Corporate R&amp;D expenditures continued to grow in 2009 despite a sharp decline of GDP due to international crisis.
 
 As France has had a tax credit for R&amp;D since 1983 it has been studied more often than that of either Ireland or the UK which were introduced more recently. As such there are two papers in the economic literature which estimate the responsiveness of R&amp;D expenditure to changes in the credit. &lt;span class=&quot;yellow&quot;&gt;Mulkay and Mariesse (2004) find that the estimated impact of a €1 tax credit on R&amp;D expenditures to be in the range of €2 to €3.6 in the long term&lt;/span&gt;.</pre>
+</div>
+<div created="20140722234748651" modified="20140722234759698" title="Frascati Manual" type="text/vnd.tiddlywiki">
+<pre>The Frascati Manual is a document setting forth the methodology for collecting statistics about research and development. The Manual was prepared and published by the Organisation for Economic Co-operation and Development.
+
+In June 1963, OECD experts met with the NESTI group (National Experts on Science and Technology Indicators) at the Villa Falconieri in Frascati, Italy. Based on a background document by Christopher Freeman they drafted the first version of Frascati Manual, which is officially known as The Proposed Standard Practice for Surveys of Research and Experimental Development. In 2002 the 6th edition was published.
+
+The manual gives definitions for: basic research, applied research, Research and development; research personnel: researchers, technicians, auxiliary personnel. It also organizes Field of science into main and sub-categories.
+
+It deals primarily with measuring the expenditure and personnel resources devoted to R&amp;D in the industry sectors performing it: higher education, government, business, and private non-profit organisations.
+
+The definitions provided in the Frascati Manual have been adopted by many governments and serve as a common language for discussions of science and technology policy and economic development policy. Originally an OECD standard, it has become an acknowledged standard in R&amp;D studies all over the world and is widely used by various organisations associated with the United Nations and European Union.</pre>
 </div>
 <div created="20140714173631101" modified="20140715111808881" tags="H1" title="Government’s Means of Affecting Business Expenditure on R&amp;D" type="text/vnd.tiddlywiki">
 <pre>There are a myriad of ways Governments influence the level of private R&amp;D expenditure in an economy. These range from the more direct and commonly known methods such as &lt;span class=&quot;yellow&quot;&gt;grants and tax credits&lt;/span&gt;, to the legal, regulatory and competitive environment fostered in a country through &lt;span class=&quot;yellow&quot;&gt;patent law&lt;/span&gt;; &lt;span class=&quot;yellow&quot;&gt;competition, tax, and immigration policy&lt;/span&gt;; and &lt;span class=&quot;yellow&quot;&gt;the efficiency of public administration&lt;/span&gt;. In addition, the ability of a country to supply highly educated staff through its &lt;span class=&quot;yellow&quot;&gt;higher education system&lt;/span&gt; is critical. The three most prominent methods, patent laws, grants and tax credits, are outlined below taking into account their efficacy as assessed by the empirical literature.</pre>
