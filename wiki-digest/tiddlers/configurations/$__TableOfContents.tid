@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140717232229074
+modified: 20140722193951810
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 <ol style="padding-left:1.5em;">
 
 <$list filter="[!is[system]tag[Topic]limit[15]!sort[created]]">
-<li><$link to={{!!title}}><$view field="title"/></$link></li>
+<li style="line-height: 1.5em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
 </$list>
 
 </ol>
