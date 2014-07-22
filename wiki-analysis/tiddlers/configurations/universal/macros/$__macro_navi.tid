@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 <ul>
 <$list filter="[[$title$]listed[]!is[system]]">
 <$list filter="[[$title$]next{!!title}]">
-<li>Next: “<$link to={{!!title}}><$view field="title"/></$link>”</li>
+<li><b>Next: “<$link to={{!!title}}><$view field="title"/></$link>”</b></li>
 </$list>
 <$list filter="[[$title$]previous{!!title}]">
 <li>Previous: “<$link to={{!!title}}><$view field="title"/></$link>”</li>
