@@ -1,7 +1,7 @@
 created: 20140611084212041
-modified: 20140702112354094
+modified: 20140722223215518
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
 [[Reading List]]
-[!is[system]has[modified]!sort[modified]limit[10]]
+[!is[system]has[modified]!sort[modified]tag[Topic]limit[10]]
