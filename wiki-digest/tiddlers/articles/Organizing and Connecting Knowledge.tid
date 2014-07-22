@@ -1,0 +1,20 @@
+author: holdenlee
+created: 20140722190920409
+list: [[Organizing and Connecting Knowledge]] [[Organizing and Connecting Knowledge - Part 2]] [[Organizing and Connecting Knowledge - Part 3]] [[Organizing and Connecting Knowledge - Part 4]] [[Organizing and Connecting Knowledge - Part 5]] [[Organizing and Connecting Knowledge - Part 6]] [[Organizing and Connecting Knowledge - Part 7]]
+modified: 20140722194248570
+tags: Topic
+title: Organizing and Connecting Knowledge
+type: text/vnd.tiddlywiki
+url: http://holdenlee.wordpress.com/2013/02/20/organizing-and-connecting-knowledge/
+
+Last Thursday I went to a talk by Stone Librande, lead designer for the new SimCity. He worked on the game for the past 3.5 years. His team revamped the whole system; in his own words,
+
+> Previous versions of SimCity used statistics to determine the state of the city; in essence the entire simulation was like a spreadsheet that could be analyzed by simply looking at the stored data. In contrast, the upcoming SimCity game relies on thousands of agents carrying information from one building to the next as they travel along player-created road networks. This makes it next to impossible to understand the simulation by looking at a static data set. In fact, the only way to truly understand the simulation is to keep the agents in motion.
+
+In other words, ''information is not stored statically, but in the agents'' (people, water, sewage, crime alert) ''that travel between different parts of the city.'' This post summarizes key ideas in the talk.
+
+''Next: [[Organizing and Connecting Knowledge - Part 2]]''
+
+---
+* Author: {{!!author}}
+* Source: {{!!url}}
