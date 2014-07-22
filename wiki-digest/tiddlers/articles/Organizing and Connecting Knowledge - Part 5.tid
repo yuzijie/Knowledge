@@ -1,9 +1,7 @@
 created: 20140722200147969
-modified: 20140722200534457
+modified: 20140722204517460
 title: Organizing and Connecting Knowledge - Part 5
 type: text/vnd.tiddlywiki
-
-Compare this with how a statistics teacher at Harvard starts each class with a huge diagram: this is the road map for the entire course, and this is where you are now. My education professor, Justin Reich, says “Whenever I see something like this, it fills me with awe.”
 
 ''By creating a road map for students, a teacher allows students to know where to place each new piece of knowledge they learn into their minds, and speeds up the process of learning.''
 
@@ -12,5 +10,7 @@ Often the amount of //technical content// that has to be covered prevents the te
 On the flip side,
 
 ''If you’re learning by yourself, organizing the knowledge you learn into such a roadmap helps you retain the material and know what each piece of knowledge is //for//.''
+
+For instance, here is a roadmap I made of the [[prime number theorem]] a while ago (the blanks are meant to be filled in). But really, I think this should be fitted into a larger roadmap for analytic number theory which I hope to make, dividing it into the essential questions that we ask (for instance, distribution of primes, subdivided into what kind of distribution), and what techniques or objects can be used for each type of estimate (L-functions? Sieve methods?). [[Here|http://www.lmfdb.org/bigpicture]] is a great diagram showing the connections between L-functions, algebraic varieties, and automorphic forms (the thrust of much research in current number theory).
 
 <$macrocall $name="navi" title={{!!title}}/>

@@ -1,6 +1,18 @@
 created: 20140722200623741
-modified: 20140722200650080
+modified: 20140722210410883
 title: Organizing and Connecting Knowledge - Part 6
 type: text/vnd.tiddlywiki
 
-To be continue......
+Another reason preventing roadmapping is the following: ''When you are organizing knowledge, it seems on the outside that you are not making any progress!'' You’re not “learning new things.” This is exactly analogous to Librande making a diagram at the start of making SimCity, and the boss thinking, they’re not making any progress on the game! But if Librande’s team hadn’t so carefully planned out the entire system, they would waste time later tripping over a basic game framework they never made clear. When you don’t stop to organize knowledge, you forget it.
+
+I think it is a serious misconception that the main ingredient of becoming smarter is gaining more knowledge. ''The main ingredient of becoming smarter is making connections between knowledge you already have.''
+
+This idea has been substantiated by child psychologists, and given a name.
+
+> ''Papert’s Principle:'' Some of the most crucial steps in mental growth are based not simply on acquiring new skills, but on acquiring new administrative ways to use what one already knows.
+
+In other words, ''knowledge is stored in isolated facts, but in the connections between them,'' just like in the new SimCity the state of the system is not stored in the buildings like numbers in a spreadsheet, but rather in the agents that move between them. A piece of math becomes “easy” for me once I see the facts connected in multiple ways. If I forget one connection, another one is still there to help me remember. Everything can be derived from simpler things.
+
+As an example of Papert’s Principle, Piaget made the following experiment: pour water from a cup into a taller and thinner beaker and ask, was there more water before or after? The 7-year olds said the same; the 5-year-olds said more. Both 5-year olds and 7-year olds understood that taller means more, wider means more, and “conservation of water” when explained. It wasn’t exactly knowledge 7-year-olds lacked, but the right organization of knowledge about space: they had “tall/short” as a priority before “fat/thin,” before conservation. Minsky ([[Society of Mind|http://books.google.com/books?id=bLDLllfRpdkC&printsec=frontcover&dq=society+of+mind&hl=en&sa=X&ei=R18kUcvfNIuo9gTWpYGYAw&ved=0CDAQuwUwAA#v=onepage&q=society%20of%20mind&f=false]], 10.1-4) gives one hypothesis: 7-year olds group height/width into a concept called appearance with a “noncompromise” principle.
+
+<$macrocall $name="navi" title={{!!title}}/>
