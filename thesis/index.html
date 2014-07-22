@@ -201,6 +201,10 @@ Error message and password prompt
 
 <li>3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures</li>
 
+<li>4 R&amp;D tax incentives on the rise</li>
+
+<li>5 The design of tax incentives</li>
+
 <li>A more complete picture of government support for business R&amp;D</li>
 
 <li>Ability of Government to Correct the Market Failure</li>
@@ -233,6 +237,8 @@ Error message and password prompt
 
 <li>Definitions and measurement</li>
 
+<li>Design considerations - fiscal support for business R&amp;D</li>
+
 <li>Do R&amp;D tax credits work? Evidence from a panel of countries 1979–1997</li>
 
 <li>Do subsidies to commercial R&amp;D reduce market failures?</li>
@@ -254,6 +260,8 @@ Error message and password prompt
 <li>Fig1.png</li>
 
 <li>Firm size and R&amp;D tax incentives</li>
+
+<li>forgone revenue.png</li>
 
 <li>France</li>
 
@@ -386,9 +394,11 @@ Error message and password prompt
 <pre>yes</pre>
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
-<pre>1 Why do governments support business R&amp;D?: 1 Why do governments support business R&amp;D_.tid
-2 The policy mix: Direct versus Indirect funding of R&amp;D: 2 The policy mix_ Direct versus Indirect funding of R&amp;D.tid
-3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures: 3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures.tid
+<pre>1 Why do governments support business R&amp;D?: articles/1 Why do governments support business R&amp;D_.tid
+2 The policy mix: Direct versus Indirect funding of R&amp;D: articles/2 The policy mix_ Direct versus Indirect funding of R&amp;D.tid
+3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures: articles/3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures.tid
+4 R&amp;D tax incentives on the rise: articles/4 R&amp;D tax incentives on the rise.tid
+5 The design of tax incentives: articles/5 The design of tax incentives.tid
 A more complete picture of government support for business R&amp;D: articles/A more complete picture of government support for business R&amp;D.tid
 AUSTRALIA Scheme: articles/AUSTRALIA Scheme.tid
 Ability of Government to Correct the Market Failure: articles/Ability of Government to Correct the Market Failure.tid
@@ -404,6 +414,7 @@ Chapter 1: Economics Rationale (2): articles/Chapter 1_ Economics Rationale (2).
 Comparison of Canada and United States R&amp;D Tax Credits: articles/Comparison of Canada and United States R&amp;D Tax Credits.tid
 Concerns for Tax Credit: articles/Concerns for Tax Credit.tid
 Definitions and measurement: articles/Definitions and measurement.tid
+Design considerations - fiscal support for business R&amp;D: articles/Design considerations - fiscal support for business R&amp;D.tid
 Does R&amp;D Drive Economic Growth?: articles/Does R&amp;D Drive Economic Growth.tid
 Economic Rationales: articles/Economic Rationales.tid
 Empirical Literature Analysis: articles/Empirical Literature Analysis.tid
@@ -478,6 +489,7 @@ $:/themes/tiddlywiki/vanilla/settings: configurations/universal/theme/$__themes_
 B-index.gif: images/B-index.gif.tid
 Fig1.png: images/Fig1.png.tid
 Indirect government support through RnD tax incentives.png: images/Indirect government support through RnD tax incentives.png.tid
+forgone revenue.png: images/forgone revenue.png.tid
 production-function.png: images/production-function.png.tid
 tax subsidy rates on RnD 2013.png: images/tax subsidy rates on RnD 2013.png.tid
 title.png: images/title.png.tid
@@ -4473,7 +4485,7 @@ $text$
 &lt;ul&gt;
 &lt;$list filter=&quot;[[$title$]listed[]!is[system]]&quot;&gt;
 &lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
-&lt;li&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/b&gt;&lt;/li&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
 &lt;li&gt;Previous: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
@@ -4705,7 +4717,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -55px 0 -55px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 28px 44px 40px 44px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -45px 0 -45px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 10px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
         }
     }
 }</pre>
@@ -4735,10 +4747,10 @@ Knowledge spills over to other firms and organisations which did not bear the co
 
 &lt;$macrocall $name=&quot;navi&quot; title={{!!title}}/&gt;</pre>
 </div>
-<div created="20140721215356132" modified="20140721232329578" title="2 The policy mix: Direct versus Indirect funding of R&amp;D" type="text/vnd.tiddlywiki">
-<pre>Governments can choose among various tools to leverage business R&amp;D. They can offer direct support via grants or procurement or they can use fiscal incentives, such as R&amp;D tax incentives. Direct R&amp;D grants/subsidies can target specific projects with high potential social returns while ''tax credits reduce the marginal cost of R&amp;D spending and allow private firms to choose which projects to fund.''
+<div created="20140721215356132" modified="20140722134519884" title="2 The policy mix: Direct versus Indirect funding of R&amp;D" type="text/vnd.tiddlywiki">
+<pre>Governments can choose among various tools to leverage business R&amp;D. They can offer direct support via grants or procurement or they can use fiscal incentives, such as R&amp;D tax incentives. &lt;&lt;hlg &quot;Direct R&amp;D grants/subsidies can target specific projects with high potential social returns while ''tax credits reduce the marginal cost of R&amp;D spending and allow private firms to choose which projects to fund.''&quot;&gt;&gt;&lt;&lt;footnote &quot;注&quot; &quot;两种方式的优势&quot;&gt;&gt;
 
-Countries differ in their use of direct and indirect support (Figure 1). The United States (through competitive R&amp;D contracts) and Spain rely more on direct support, while Canada and Japan mostly use indirect support to foster industrial R&amp;D. The optimal balance of direct and indirect R&amp;D support varies from country to country, as each tool addresses different market failures and stimulates different types of R&amp;D. On the one hand, R&amp;D tax credits are not targeted to a specific group of firms or projects, but rather to all (potential) R&amp;D performers. They are therefore industry, region and firm-neutral. Grants, on the other hand, can be directed to specific projects that the government/innovation agencies consider to have high social returns and are more dependent on discretionary decisions by governments. In general, ''tax credits'' are used mostly to encourage ''short-term'' applied research, while ''direct'' subsidies are directed more to ''long-term'' research.
+&lt;&lt;hlb &quot;Countries differ in their use of direct and indirect support (Figure 1). The United States (through competitive R&amp;D contracts) and Spain rely more on direct support, while Canada and Japan mostly use indirect support to foster industrial R&amp;D.&quot;&gt;&gt;&lt;&lt;footnote &quot;注&quot; &quot;介绍不同国家使用情况&quot;&gt;&gt; The optimal balance of direct and indirect R&amp;D support varies from country to country, as each tool addresses different market failures and stimulates different types of R&amp;D. &lt;&lt;hlg &quot;On the one hand, R&amp;D tax credits are not targeted to a specific group of firms or projects, but rather to all (potential) R&amp;D performers. They are therefore industry, region and firm-neutral. Grants, on the other hand, can be directed to specific projects that the government/innovation agencies consider to have high social returns and are more dependent on discretionary decisions by governments.&quot;&gt;&gt;&lt;&lt;footnote &quot;注&quot; &quot;个自的优势&quot;&gt;&gt; &lt;&lt;hlb &quot;In general, ''tax credits'' are used mostly to encourage ''short-term'' applied research, while ''direct'' subsidies are directed more to ''long-term'' research.&quot;&gt;&gt;&lt;&lt;footnote &quot;注&quot; &quot;什么时候用 Direct 和 Indirect&quot;&gt;&gt;
 
 //''Figure 1.'' Direct and indirect government funding of business R&amp;D and tax incentives for R&amp;D, 2008 As a percentage of GDP//
 
@@ -4746,12 +4758,34 @@ Countries differ in their use of direct and indirect support (Figure 1). The Uni
 
 &lt;$macrocall $name=&quot;navi&quot; title={{!!title}}/&gt;</pre>
 </div>
-<div created="20140721232837386" modified="20140721233145753" title="3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures" type="text/vnd.tiddlywiki">
-<pre>Estimates of R&amp;D-related tax expenditures by central government have been compiled by the OECD. While international comparisons are not perfect due to the heterogeneity of tax incentives covered and methods used in estimating them, this new indicator gives a rather different picture of international comparisons of public support to R&amp;D than has previously been understood.
+<div created="20140721232837386" modified="20140722135345222" title="3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures" type="text/vnd.tiddlywiki">
+<pre>Estimates of R&amp;D-related tax expenditures by central government have been compiled by the OECD. While international comparisons are not perfect due to the heterogeneity of tax incentives covered and methods used in estimating them, ''this new indicator'' gives a rather different picture of international comparisons of public support to R&amp;D than has previously been understood.
 
-This new indicator on R&amp;D tax incentives - which measures forgone tax revenue - sheds new light on country support for business R&amp;D. For instance, in each of the United States, Japan, Canada and Korea, forgone tax revenues amount to more than USD 2 billion (Figure 2). In France and the United Kingdom forgone tax revenues are in the range of USD 1-2 billion. In France, the amount for 2009 will jump up to USD 6 billion, due to the introduction of a new scheme, as well as a temporary additional incentive for R&amp;D introduced as part of the stimulus package.
+This new indicator on R&amp;D tax incentives - which ''measures forgone tax revenue'' - sheds new light on country support for business R&amp;D. For instance, &lt;&lt;hlb &quot;in each of the United States, Japan, Canada and Korea, forgone tax revenues amount to more than USD 2 billion (Figure 2). In France and the United Kingdom forgone tax revenues are in the range of USD 1-2 billion. In France, the amount for 2009 will jump up to USD 6 billion, due to the introduction of a new scheme, as well as a temporary additional incentive for R&amp;D introduced as part of the stimulus package.&quot;&gt;&gt;&lt;&lt;footnote &quot;注&quot; &quot;介绍各国的 forgone revenue&quot;&gt;&gt;
+
+//''Figure 2.'' Indirect government funding of business R&amp;D through tax incentives for R&amp;D, 2004 and 2008//
+
+[img[forgone revenue.png]]
 
 &lt;$macrocall $name=&quot;navi&quot; title={{!!title}}/&gt;</pre>
+</div>
+<div created="20140722142828914" modified="20140722143240179" title="4 R&amp;D tax incentives on the rise" type="text/vnd.tiddlywiki">
+<pre>More countries are now using tax incentives than a decade ago and the schemes are more generous than ever. As of today ''more than 20 OECD governments'' provide fiscal incentives to sustain business R&amp;D, up from 12 in 1995 and 18 in 2004. Of the countries that do not have R&amp;D tax incentives, Germany and Finland are currently discussing their introduction.
+
+~Non-OECD countries such as Brazil, China, India, Singapore and South Africa also provide a generous and competitive tax environment for investment in R&amp;D. China provides generous (general) tax reductions for R&amp;D firms located in certain new technology zones or investing in key areas such as biotech, ICT and other high tech fields.
+
+''注：''这段介绍各国都在积极推出自己的 Indirect Tax Incentives</pre>
+</div>
+<div created="20140722154254000" modified="20140722160009813" title="5 The design of tax incentives" type="text/vnd.tiddlywiki">
+<pre>Most countries provide fiscal incentives through tax credits or enhanced allowances.&lt;&lt;footnote &quot;1&quot; &quot;Other mechanisms used by countries are full deduction of current R&amp;D expenditures (treating all current R&amp;D as current expenses and deducting them from taxable income) and accelerated depreciation (capital depreciation at a higher rate than the usual accounting practice). Given they are used almost uniformly by all countries and provide only weak stimuli, these two mechanisms are not considered important measures relative to countries’ R&amp;D tax incentive schemes.&quot;&gt;&gt; ''Tax credits'' allow a direct ''deduction'' from the ''tax payable'', while ''enhanced allowances'' represent a ''deduction'' (above the normal deduction rate of 100%) from the ''corporate taxable income''. &lt;&lt;hlb &quot;The main difference between the two mechanisms is that the former directly reduces the tax liability, while in the latter the reduction in tax liability depends on corporate income tax rates.&quot;&gt;&gt;&lt;&lt;footnote &quot;注&quot; &quot;后者依赖于税率的大小&quot;&gt;&gt;
+
+!!! Incremental versus volume based tax credits
+
+R&amp;D tax incentives may apply to all qualified R&amp;D expenditures (volume-based credits) or only to the additional amount of R&amp;D expenditure above a certain base amount (incremental credits).
+
+!! Several issues have to be considered when designing R&amp;D tax incentives.
+
+''The general fiscal environment'' plays a role in deciding whether to use fiscal measures at all, as fiscal incentives are less effective in a country with a ''low'' rate of corporate income tax. In addition, ''target groups'' need to be selected, ''eligible expenses'' must be defined and a ''choice'' must be made between a tax credit that applies on all R&amp;D outlays (volume) and a credit based on additional spending on R&amp;D (incremental). ([[Additional Reading|Design considerations - fiscal support for business R&amp;D]])</pre>
 </div>
 <div created="20140720164154038" modified="20140720200649340" tags="[[Measuring R&amp;D Tax Incentives]]" title="A more complete picture of government support for business R&amp;D" type="text/vnd.tiddlywiki">
 <pre>In addition to providing grants, contracts and loans, many governments contribute to business R&amp;D through tax incentives. In 2013, 27 OECD countries gave preferential tax treatment to business R&amp;D expenditures. In 2011, the Russian Federation, Korea, France and Slovenia provided the most combined support for business R&amp;D as a percentage of GDP. R&amp;D tax credits were worth USD 8.3 billion in the United States, followed by France and China.
@@ -4927,6 +4961,35 @@ http://www.scitax.com/pdf/Introduction.to.R&amp;D.Tax.Credits.in.Canada.SCITAX.p
 <div created="20140720210349382" modified="20140720210948576" tags="[[Measuring R&amp;D Tax Incentives]]" title="Definitions and measurement" type="text/vnd.tiddlywiki">
 <pre>New estimates of the cost of R&amp;D tax incentives have been combined with data on direct R&amp;D funding (R&amp;D grants and purchases), as reported by firms, to provide a more complete picture of government efforts to promote business R&amp;D. Across countries, R&amp;D intensity in the business sector is significantly correlated with total government support for business R&amp;D. This does not imply a causal relationship and there are notable exceptions. Germany and Korea have relatively high business R&amp;D intensity compared to their degree of government support, while Canada, the Russian Federation and Turkey have high rates of support relative to countries with similar //R&amp;D to GDP ratios//. In 2011, Finland, Germany, Sweden and Switzerland did not offer tax incentives but had very R&amp;D-intensive business sectors. In 2013, Finland introduced an R&amp;D tax allowance for the first time.</pre>
 </div>
+<div created="20140722160045298" modified="20140722173546308" title="Design considerations - fiscal support for business R&amp;D" type="text/vnd.tiddlywiki">
+<pre>The target group: Governments can make fiscal support accessible to all companies, or make support more 
+generous for target groups of firms (e.g. SMEs). This can be done by:
+  • Placing upper limits on the amount of tax credit that can be claimed (upper limits are more likely to be 
+    attained by larger companies than by SMEs).
+  • Giving higher tax credit rates for SMEs, and/or greater flexibility e.g. cash refunds or unused credits. 
+Minimum thresholds can increase the efficiency of policy as administrative costs can be high for small 
+applications.
+Labeling of activities and claiming the tax credit: The definition of R&amp;D is typically based on the Frascati 
+Manual (OECD, 2002). However, most countries have produced their own lists of types of R&amp;D that qualify.
+Qualified R&amp;D expenditure: Three types of expenditure can qualify for fiscal incentives:
+  • Expenditure on wages related to R&amp;D. This reduces social security and wage taxes and gives an incentive 
+    for investment in human capital.
+  • Current R&amp;D expenditure. This includes wages and all consumables used in the R&amp;D process.
+  • Current and capital R&amp;D expenditure. This enlarges the incentive for companies, but increases the public 
+    cost of the policy.
+The base amount of incremental tax credit: can take two forms:
+  • Rolling average base. The base amount is computed as the average R&amp;D expenditure of the previous x 
+    years.
+  • Fixed base. The base amount equals the average R&amp;D expenditures during a fixed reference period. This 
+    average can then be indexed to sales or inflation to stay relevant.
+Carry-over provisions and cash refunds: These provisions allow unused portions of the credit to be carried 
+forward or backward to previous fiscal years. Carry forward provisions are particularly important for SMEs, as 
+these tend to have limited current corporate income against which the credit can be applied, while many 
+younger firms are carrying losses from previous periods. Cash refunds can also replace carry forward provisions. 
+The time value of funds should be taken into account when calculating refunds. Delays in effecting cash refunds 
+need to be avoided in order to making this tool efficient.
+Source: Van Pottelsberghe et al. (2003).</pre>
+</div>
 <div created="20140503132758252" modified="20140704161141801" tags="参考文献 English 已阅读" title="Do R&amp;D tax credits work? Evidence from a panel of countries 1979–1997" type="text/vnd.tiddlywiki">
 <pre>!! Abstract
 
@@ -5047,6 +5110,9 @@ This paper examines the effectiveness of R&amp;D tax credits using data on 904 J
 &lt;&lt;&lt;
 
 [[下载|https://www.dropbox.com/sh/nx2jmcwy3pjvk8l/lzRimyfLyF/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/Firm%20size%20and%20R%26D%20tax%20incentives.pdf]]</pre>
+</div>
+<div _canonical_uri="./images/forgone%2520revenue.png" created="20140722135115753" modified="20140722135115753" title="forgone revenue.png" type="image/png">
+<pre></pre>
 </div>
 <div created="20140715181818890" modified="20140715211302037" tags="H2" title="France" type="text/vnd.tiddlywiki">
 <pre>France undertook a review of its R&amp;D Tax Credit as part of the &lt;span class=&quot;yellow&quot;&gt;French Evaluation Committee for Tax Expenditures and Social Contribution Exemptions (2011)&lt;/span&gt;. Their report produced by the Ministry of Finance was tasked with identifying tax expenditures with opportunities for reform. The authors evaluated the R&amp;D credit in general as well as the reforms of the scheme previously implemented in 2008.&lt;&lt;footnote &quot;分析&quot; &quot;谁写的，以及目的。&quot;&gt;&gt;
@@ -5224,7 +5290,7 @@ This file contains information on the ''design'', ''scope'' and ''approval'' of 
 &lt;/$list&gt;
 &lt;/ul&gt;</pre>
 </div>
-<div created="20140721203323600" list="[[1 Why do governments support business R&amp;D?]] [[2 The policy mix: Direct versus Indirect funding of R&amp;D]] [[3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures]]" modified="20140721233209194" tags="写作中 资料整理" title="R&amp;D tax incentives: rationale, design, evaluation" type="text/vnd.tiddlywiki">
+<div created="20140721203323600" list="[[1 Why do governments support business R&amp;D?]] [[2 The policy mix: Direct versus Indirect funding of R&amp;D]] [[3 The first internationally comparable “quantitative” estimates of R&amp;D-related tax expenditures]] [[4 R&amp;D tax incentives on the rise]] [[5 The design of tax incentives]]" modified="20140722154156533" tags="写作中 资料整理" title="R&amp;D tax incentives: rationale, design, evaluation" type="text/vnd.tiddlywiki">
 <pre>[img class=&quot;middle&quot;[title.png]]
 
 @@font-size:14px;line-height:23px;text-align:justify;
