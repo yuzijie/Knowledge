@@ -1,7 +1,7 @@
 created: 20140701193715093
-modified: 20140701211703972
+modified: 20140722140821364
 tags: [[Speed Reading]]
-title: Energize Your Eyes
+title: 1.3 Energize Your Eyes
 type: text/vnd.tiddlywiki
 
 Oftentimes, your eyes are just lazy. They can read faster, but they don't want to. (You know exactly what I'm talking about =P )
@@ -33,3 +33,5 @@ The pointer method has three distinct advantages:
 # ''It reduces distractions.''
 
 If you often get lost when you read, you'll notice that this method will reduce or eliminate that problem. This is explained by the fact that your eyes are actually distracted by the lines directly above and below the line you are reading. You probably don't notice it, but your eyes are not actually moving an a straight line, they move in a ''wavy'', up and down motion. By using a pointer to guide your eyes in a straight line, you are eliminating that problem.
+
+<$macrocall $name="navi" title={{!!title}}/>

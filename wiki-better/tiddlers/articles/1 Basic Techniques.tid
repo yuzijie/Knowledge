@@ -1,0 +1,17 @@
+created: 20140701175811106
+list: [[1.1 Read Selectively]] [[1.2 Optimize Your Reading Distance]] [[1.3 Energize Your Eyes]]
+modified: 20140722140735291
+source: http://hackmystudy.com/how_to_speed_read_and_comprehend.html
+tags: [[Speed Reading]]
+title: 1 Basic Techniques
+type: text/vnd.tiddlywiki
+
+The three Basic Techniques to achieving 350 wpm are:
+
+<ul style="list-style-type:square;">
+<$list filter="[list{!!title}!is[system]]">
+<li><$link to={{!!title}}><$view field="title"/></$link></li>
+</$list>
+</ul>
+
+<$macrocall $name="navi" title={{!!title}}/>

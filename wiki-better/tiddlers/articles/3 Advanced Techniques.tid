@@ -1,0 +1,6 @@
+created: 20140722140652275
+modified: 20140722140746727
+title: 3 Advanced Techniques
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="navi" title={{!!title}}/>

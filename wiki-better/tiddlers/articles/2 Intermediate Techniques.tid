@@ -1,0 +1,6 @@
+created: 20140722140646861
+modified: 20140722140741892
+title: 2 Intermediate Techniques
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="navi" title={{!!title}}/>

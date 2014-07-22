@@ -1,7 +1,7 @@
 created: 20140701192806453
-modified: 20140702212751290
+modified: 20140722140809297
 tags: [[Speed Reading]]
-title: Optimize Your Reading Distance
+title: 1.2 Optimize Your Reading Distance
 type: text/vnd.tiddlywiki
 
 ''Faster readers read from farther away than slower readers.''
@@ -23,3 +23,5 @@ The fastest readers typically have a much better idea of what the ''optimal'' re
 The reading "sweet spot" is different for every situation. You must compensate for text size, font and lighting. But, with enough practice, you'll adjust naturally to each situation.
 
 A good starting point is to place your book on the table and read from a seated upright position.
+
+<$macrocall $name="navi" title={{!!title}}/>

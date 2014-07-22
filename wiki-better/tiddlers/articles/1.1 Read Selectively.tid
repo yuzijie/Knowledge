@@ -1,7 +1,7 @@
 created: 20140701192250594
-modified: 20140701195403681
+modified: 20140722140800384
 tags: [[Speed Reading]]
-title: Read Selectively
+title: 1.1 Read Selectively
 type: text/vnd.tiddlywiki
 
 ''Slow readers read word-for-word. Fast readers do not.''
@@ -19,3 +19,5 @@ Now, it might seem counter-intuitive that skipping words will increase comprehen
 Your brain can only hold so much information at any given time. So spending time trying to remember the words like `the at in a I but and me` could instead have been spent on more important, relevant key word. If you ask anyone in journalism, psychology or advertising, they'll confirm this for you. Simplicity actually leads to greater comprehension.
 
 The challenge is to do this without the assistance of the bolded words. Here's a general rule of thumb: ''If it's three letters or less, skip it''.
+
+<$macrocall $name="navi" title={{!!title}}/>
