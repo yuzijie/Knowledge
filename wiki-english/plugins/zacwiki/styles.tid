@@ -94,6 +94,11 @@ body.tw-body .story-river .body > ul {
 	margin: 1.5em 0;
 }
 
+body.tw-body .story-river .body li {
+	margin: 4px 0;
+	line-height: 24px;
+}
+
 b, strong {
 	color: #111111;
 }
