@@ -1,0 +1,39 @@
+created: 20140716130346842
+modified: 20140716131144762
+tags: $:/tags/Macro
+title: $:/macro/annotate
+type: text/vnd.tiddlywiki
+
+\define hlr(text,comment:"")
+<span class="red">$text$</span><<annotate "$comment$" "red">>
+\end
+
+\define hly(text,comment:"")
+<span class="yellow">$text$</span><<annotate "$comment$" "yellow">>
+\end
+
+\define hlb(text,comment:"")
+<span class="blue">$text$</span><<annotate "$comment$" "blue">>
+\end
+
+\define hlg(text,comment:"")
+<span class="green">$text$</span><<annotate "$comment$" "green">>
+\end
+
+\define under(text,comment:"")
+<span class="red-line">$text$</span><<annotate "$comment$" "red">>
+\end
+
+\define annotate(comment,color)
+<$reveal type="nomatch" state="Comment $comment$" text="">
+<$button popup=<<qualify "$:/state/comment/$comment$">> class="btn-invisible"><sup style="color:$color$">&dagger;</sup></$button>
+</$reveal>
+
+<$reveal type="popup" state=<<qualify "$:/state/comment/$comment$">>>
+
+@@.tw-drop-down
+<$transclude tiddler="Comment $comment$" mode="block"/>
+@@
+
+</$reveal>
+\end
