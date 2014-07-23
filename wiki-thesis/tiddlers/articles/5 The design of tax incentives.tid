@@ -1,9 +1,9 @@
 created: 20140722154254000
-modified: 20140722224407351
+modified: 20140723153141763
 title: 5 The design of tax incentives
 type: text/vnd.tiddlywiki
 
-Most countries provide fiscal incentives through tax credits or enhanced allowances.<<footnote "1" "Other mechanisms used by countries are full deduction of current R&D expenditures (treating all current R&D as current expenses and deducting them from taxable income) and accelerated depreciation (capital depreciation at a higher rate than the usual accounting practice). Given they are used almost uniformly by all countries and provide only weak stimuli, these two mechanisms are not considered important measures relative to countries’ R&D tax incentive schemes.">> ''Tax credits'' allow a direct ''deduction'' from the ''tax payable'', while ''enhanced allowances'' represent a ''deduction'' (above the normal deduction rate of 100%) from the ''corporate taxable income''. <<hlb "The main difference between the two mechanisms is that the former directly reduces the tax liability, while in the latter the reduction in tax liability depends on corporate income tax rates.">><<footnote "注" "后者依赖于税率的大小">>
+Most countries provide fiscal incentives through tax credits or enhanced allowances<<footnote "1" "Other mechanisms used by countries are full deduction of current R&D expenditures (treating all current R&D as current expenses and deducting them from taxable income) and accelerated depreciation (capital depreciation at a higher rate than the usual accounting practice). Given they are used almost uniformly by all countries and provide only weak stimuli, these two mechanisms are not considered important measures relative to countries’ R&D tax incentive schemes.">>. ''Tax credits'' allow a direct ''deduction'' from the ''tax payable'', while ''enhanced allowances'' represent a ''deduction'' (above the normal deduction rate of 100%) from the ''corporate taxable income''. <<hlb "The main difference between the two mechanisms is that the former directly reduces the tax liability, while in the latter the reduction in tax liability depends on corporate income tax rates.">><<footnote "注" "后者依赖于税率的大小">>
 
 !!! Incremental versus volume based tax credits
 
