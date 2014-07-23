@@ -295,7 +295,7 @@ table th, table td {
 }
 
 .red-line {
-	border-bottom: 1px solid #ff0000;
+	border-bottom: 1px dashed #ff0000;
 	text-decoration: none;
 }
 
