@@ -299,6 +299,13 @@ table th, table td {
 	text-decoration: none;
 }
 
+.dict {
+	text-decoration: none;
+	color: #5778d8;
+	font-weight: inherit;
+	-webkit-user-select: inherit;
+}
+
 .tw-drop-down {
 	padding: 8px 20px 10px 16px;
 	box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
@@ -312,6 +319,11 @@ table th, table td {
 
 body.tw-body .story-river .body p.tw-drop-down {
 	margin: 0;
+}
+
+body.tw-body .story-river .body .tw-drop-down p {
+	margin: 0.4em 0;
+	line-height: 24px;
 }
 
 ol.tw-drop-down,
