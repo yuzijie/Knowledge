@@ -1,0 +1,54 @@
+created: 20140716130346842
+modified: 20140716131144762
+tags: $:/tags/Macro
+title: $:/macro/annotate
+type: text/vnd.tiddlywiki
+
+\define hlr(text,comment:"")
+<span class="red">$text$</span><<annotate "$comment$">>
+\end
+
+\define hly(text,comment:"")
+<span class="yellow">$text$</span><<annotate "$comment$">>
+\end
+
+\define hlb(text,comment:"")
+<span class="blue">$text$</span><<annotate "$comment$">>
+\end
+
+\define hlg(text,comment:"")
+<span class="green">$text$</span><<annotate "$comment$">>
+\end
+
+\define under(text,comment:"")
+<span class="red-line">$text$</span><<annotate "$comment$">>
+\end
+
+\define annotate(comment)
+<$reveal type="nomatch" state="#:$comment$" text="">
+<$button popup=<<qualify "$:/state/comment/$comment$">> class="btn-invisible"><sup style="color:red;">&dagger;</sup></$button>
+</$reveal>
+<$reveal type="popup" state=<<qualify "$:/state/comment/$comment$">>>
+
+@@.tw-drop-down.inline-link
+<$transclude tiddler="#:$comment$" mode="block"/>
+<p style="text-align:right;">[[#:$comment$]]</p>
+@@
+
+</$reveal>
+\end
+
+\define dict(word,random)
+<$view tiddler="$word$" field="title"/>
+<$button popup=<<qualify "$:/state/comment/$word$-$random$">> class="btn-invisible">
+<sup style="color:#5778d8">?</sup>
+</$button>
+<$reveal type="popup" state=<<qualify "$:/state/comment/$word$-$random$">>>
+
+@@.tw-drop-down.inline-link
+<p>[[$word$]]</p>
+<$transclude tiddler="$word$" mode="block"/>
+@@
+
+</$reveal>
+\end
