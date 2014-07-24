@@ -1,5 +1,5 @@
 created: 20140720235339831
-modified: 20140724004630185
+modified: 20140724113305662
 title: 2.2.3 更换搜索方式，殊途同归
 type: text/vnd.tiddlywiki
 
@@ -9,7 +9,8 @@ type: text/vnd.tiddlywiki
 
 如何利用搜索引擎搜索文档呢？
 
-<<under "只要在搜索词前加入 `filetype:pdf` 就可以搜索 `pdf` 格式的文档。（Google 和百度均适用。）" "1">>
+<span class="red-line">只要在搜索词前加入 `filetype:pdf` 就可以搜索 `pdf` 格式的文档。（Google 和百度均适用。）</span><<footnote tiddler:"#:1">>
+
 如用百度搜商务智能的相关文档：
 
 [img class="border"[08.jpg]]<br>图8：用百度搜索文档

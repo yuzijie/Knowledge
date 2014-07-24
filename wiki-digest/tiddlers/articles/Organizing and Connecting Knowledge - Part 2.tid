@@ -1,11 +1,11 @@
 created: 20140722191527548
-modified: 20140722205857127
+modified: 20140724132051243
 title: Organizing and Connecting Knowledge - Part 2
 type: text/vnd.tiddlywiki
 
 ''//How did Librande build something as complex as SimCity knowing nothing about the game when he started?//'' His team spent the first month making the master plan for entire game: ''diagrams/flowcharts'' for how the residential, commercial, and industrial zones worked.
 
-For instance, here is a quick summary of the diagram for the residential zones: start with potential lower-class, middle-class, and upper-class residents. They filter through the availability of transportation to get into the city (roads for lower-class, ships and airplane for upper-class) and availability of cheap/luxury housing, and like in a pachinko machine, find one of 9 possible housing types to settle down ({low, medium, high density}x{low, middle, upper class} housing); if they can’t find housing they don’t come in the city. Parks and shops give people happiness, and lots of things give people unhappiness (cf. [[Anna Karenina]]). When Sims are unhappy, they put their house on sale; if no one replaces them the house becomes abandoned, increases crime, and decreases neighborhood desirability. If they can’t find a job, they become homeless.
+For instance, here is a quick summary of the diagram for the residential zones: start with potential lower-class, middle-class, and upper-class residents. They filter through the availability of transportation to get into the city (roads for lower-class, ships and airplane for upper-class) and availability of cheap/luxury housing, and like in a pachinko machine, find one of 9 possible housing types to settle down ({low, medium, high density}x{low, middle, upper class} housing); if they can’t find housing they don’t come in the city. Parks and shops give people happiness, and lots of things give people unhappiness (cf. @@.red-line Anna Karenina@@<<footnote tiddler:"Anna Karenina">>). When Sims are unhappy, they put their house on sale; if no one replaces them the house becomes abandoned, increases crime, and decreases neighborhood desirability. If they can’t find a job, they become homeless.
 
 There are also diagrams for commerce, industry, production, and a day in the life of a Sim. //If you can’t draw the diagram in a nice way, then it is probably too complicated,// Librande said. They simplified the day of a Sim diagram until every day a Sim woke up as either a worker or a shopper (or sick).
 

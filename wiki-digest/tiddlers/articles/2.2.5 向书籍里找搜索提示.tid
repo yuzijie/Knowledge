@@ -1,5 +1,5 @@
 created: 20140721061305955
-modified: 20140724004433082
+modified: 20140724113642775
 title: 2.2.5 向书籍里找搜索提示
 type: text/vnd.tiddlywiki
 
@@ -17,6 +17,6 @@ type: text/vnd.tiddlywiki
 
 [img class="border"[09.jpg]]<br>图9：extremepresentation.com 的配图
 
-当然，被《Excel 图表之道》作者刘万祥老师引用的图表类型选择指南的图英文原版也在这个网站中有大图可以下载。另外，我们的信息挖掘还没有结束哦！注意，他还提供了另外一个在线的工具：[[www.chartchooser.com|http://labs.juiceanalytics.com/chartchooser/index.html]]，此网站可供数据分析师们根据自己的需求选择不同的图表展现，该网站出自 [[Juiceanalytics]]。而进入 [[Juiceanalytics]] 网站的白皮书栏目，我找到了<<under "《设计人人都爱的信息仪表盘指南》(A Guide to Creating Dashboards People Love to Use)" "link-1">>，这本白皮书恰好能够解答我对于近期工作的一些迷惑。
+当然，被《Excel 图表之道》作者刘万祥老师引用的图表类型选择指南的图英文原版也在这个网站中有大图可以下载。另外，我们的信息挖掘还没有结束哦！注意，他还提供了另外一个在线的工具：[[www.chartchooser.com|http://labs.juiceanalytics.com/chartchooser/index.html]]，此网站可供数据分析师们根据自己的需求选择不同的图表展现，该网站出自 [[Juiceanalytics]]。而进入 [[Juiceanalytics]] 网站的白皮书栏目，我找到了<span class="red-line">《设计人人都爱的信息仪表盘指南》（A Guide to Creating Dashboards People Love to Use）</span><<footnote tiddler:"#:link-1">>，这本白皮书恰好能够解答我对于近期工作的一些迷惑。
 
 如果特意去找，反而不容易有所收获，而如果知道自己的主题关键词，你的信息嗅觉就会非常灵敏，在某个契机下，抓住线索不放，往往不经意中探得捷径。
