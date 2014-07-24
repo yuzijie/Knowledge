@@ -1,10 +1,10 @@
 created: 20140715161703803
-modified: 20140724015335958
+modified: 20140724143731742
 tags: H2
 title: United Kingdom
 type: text/vnd.tiddlywiki
 
-A review of the United Kingdom’s R&D Tax Credit was carried out in 2010 by <<dict "HMRC" "395">>. The report is built on an earlier feasibility study by Oxera (2006) recommending <span class="yellow">the estimation of an elasticity of R&D expenditure to the credit</span> could provide the most accurate impacts of the R&D credit scheme. Oxera also <span class="blue">suggested</span> that a potential <span class="yellow">control group</span> could be formed through the identification of firms that have similar characteristics but do not claim R&D Tax Credits or the use of data from the same firms before the introduction of the policy. HMRC found <span class="yellow">difficulties</span> in developing a control group according to those methods outlined in the Oxera report.
+A review of the United Kingdom’s R&D Tax Credit was carried out in 2010 by @@.nolink [[HMRC]]@@<<dict "HMRC" "711">>. The report is built on an earlier feasibility study by Oxera (2006) recommending <span class="yellow">the estimation of an elasticity of R&D expenditure to the credit</span> could provide the most accurate impacts of the R&D credit scheme. Oxera also <span class="blue">suggested</span> that a potential <span class="yellow">control group</span> could be formed through the identification of firms that have similar characteristics but do not claim R&D Tax Credits or the use of data from the same firms before the introduction of the policy. HMRC found <span class="yellow">difficulties</span> in developing a control group according to those methods outlined in the Oxera report.
 
 The HMRC model indirectly estimated the impact of the credit by estimating how changes in the user cost of R&D – a variable that is directly impacted by the credit – impact on levels of expenditure on R&D. <span class="yellow">Increasing the R&D credit rate, increases the tax cost and decreases the user cost of R&D</span>, correspondingly increasing the level of R&D investment. This is quantified by estimating <span class="yellow">an elasticity or semi-elasticity</span> (or both).
 
