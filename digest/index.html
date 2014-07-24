@@ -117,6 +117,10 @@ Error message and password prompt
 
 <p>This <a class='tw-tiddlylink-external' href='http://tiddlywiki.com' target='_blank'>TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>#:1</li>
+
+<li>#:link-1</li>
+
 <li>$:/_new_digest</li>
 
 <li>$:/config/AnimationDuration</li>
@@ -159,13 +163,11 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
-<li>$:/macro/footnote</li>
+<li>$:/macro/annotate</li>
 
 <li>$:/macro/hide</li>
 
 <li>$:/macro/listof</li>
-
-<li>$:/macro/mark</li>
 
 <li>$:/macro/navi</li>
 
@@ -433,6 +435,10 @@ Error message and password prompt
 
 <li>柒</li>
 
+<li>校园里有几座山的大学</li>
+
+<li>橙色的公司</li>
+
 <li>牛顿的另一面: 卑鄙的天才, 无德的科学家</li>
 
 <li>玖</li>
@@ -473,6 +479,16 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20140724005132332" modified="20140724005207600" title="#:1" type="text/vnd.tiddlywiki">
+<pre>原文介绍得不详细且不准确，下面链接可以学习更多 Google 的搜索方法。
+
+http://www.googleguide.com/advanced_operators_reference.html</pre>
+</div>
+<div created="20140724004119573" modified="20140724004445499" title="#:link-1" type="text/vnd.tiddlywiki">
+<pre>A Guide to Creating Dashboards People Love to Use
+
+http://www.juiceanalytics.com/white-papers-guides-and-more/</pre>
+</div>
 <div author="" created="20140716103000039" modified="20140717232747825" tags="Topic" title="$:/_new_digest" type="text/vnd.tiddlywiki" url="">
 <pre>
 
@@ -536,6 +552,8 @@ Organizing and Connecting Knowledge: articles/Organizing and Connecting Knowledg
 陆: articles/陆.tid
 雕爷牛腩：餐饮业的互联网新玩法: articles/雕爷牛腩：餐饮业的互联网新玩法.tid
 高效工作的信息搜集及管理术: articles/高效工作的信息搜集及管理术.tid
+#:1: comments/#_1.tid
+#:link-1: comments/#_link-1.tid
 $:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
 $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
@@ -558,10 +576,9 @@ $:/core/images/close-others-button: configurations/universal/buttons/$__core_ima
 $:/core/images/done-button: configurations/universal/buttons/$__core_images_done-button.tid
 $:/core/images/edit-button: configurations/universal/buttons/$__core_images_edit-button.tid
 $:/core/images/info-button: configurations/universal/buttons/$__core_images_info-button.tid
-$:/macro/footnote: configurations/universal/macros/$__macro_footnote.tid
+$:/macro/annotate: configurations/universal/macros/$__macro_annotate.tid
 $:/macro/hide: configurations/universal/macros/$__macro_hide.tid
 $:/macro/listof: configurations/universal/macros/$__macro_listof.tid
-$:/macro/mark: configurations/universal/macros/$__macro_mark.tid
 $:/macro/navi: configurations/universal/macros/$__macro_navi.tid
 $:/macro/show: configurations/universal/macros/$__macro_show.tid
 $:/theme: configurations/universal/theme/$__theme.tid
@@ -648,6 +665,8 @@ SlideShare: terms/SlideShare.tid
 VisualThinking: terms/VisualThinking.tid
 prime number theorem: terms/prime number theorem.tid
 typeisbeautiful.com: terms/typeisbeautiful.com.tid
+校园里有几座山的大学: terms/校园里有几座山的大学.tid
+橙色的公司: terms/橙色的公司.tid
 珞珈山: terms/珞珈山.tid
 维基百科: terms/维基百科.tid
 花瓣网: terms/花瓣网.tid
@@ -4543,7 +4562,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140621142053766" modified="20140717233212330" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[created]field:type[text/vnd.tiddlywiki]tag[Topic]limit[5]]</pre>
 </div>
-<div current-tiddler="Organizing and Connecting Knowledge" modified="20140722233436433" title="$:/HistoryList" type="application/json">
+<div current-tiddler="Organizing and Connecting Knowledge" modified="20140724013038095" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;Organizing and Connecting Knowledge&quot;
@@ -4553,29 +4572,54 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20140712121649024" modified="20140712122819010" tags="$:/tags/Macro" title="$:/macro/footnote" type="text/vnd.tiddlywiki">
-<pre>\define ref(label,text)
-&lt;$button popup=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt;&lt;/$button&gt;
+<div created="20140716130346842" modified="20140716131144762" tags="$:/tags/Macro" title="$:/macro/annotate" type="text/vnd.tiddlywiki">
+<pre>\define hlr(text,comment:&quot;&quot;)
+&lt;span class=&quot;red&quot;&gt;$text$&lt;/span&gt;&lt;&lt;annotate &quot;$comment$&quot;&gt;&gt;
 \end
 
-\define definition(label,text)
-&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt;&gt;
+\define hly(text,comment:&quot;&quot;)
+&lt;span class=&quot;yellow&quot;&gt;$text$&lt;/span&gt;&lt;&lt;annotate &quot;$comment$&quot;&gt;&gt;
+\end
 
-@@.tw-drop-down
-$text$
+\define hlb(text,comment:&quot;&quot;)
+&lt;span class=&quot;blue&quot;&gt;$text$&lt;/span&gt;&lt;&lt;annotate &quot;$comment$&quot;&gt;&gt;
+\end
+
+\define hlg(text,comment:&quot;&quot;)
+&lt;span class=&quot;green&quot;&gt;$text$&lt;/span&gt;&lt;&lt;annotate &quot;$comment$&quot;&gt;&gt;
+\end
+
+\define under(text,comment:&quot;&quot;)
+&lt;span class=&quot;red-line&quot;&gt;$text$&lt;/span&gt;&lt;&lt;annotate &quot;$comment$&quot;&gt;&gt;
+\end
+
+\define annotate(comment)
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;#:$comment$&quot; text=&quot;&quot;&gt;
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/comment/$comment$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:red;&quot;&gt;&amp;dagger;&lt;/sup&gt;&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/comment/$comment$&quot;&gt;&gt;&gt;
+
+@@.tw-drop-down.inline-link
+&lt;$transclude tiddler=&quot;#:$comment$&quot; mode=&quot;block&quot;/&gt;
+&lt;p style=&quot;text-align:right;&quot;&gt;[[#:$comment$]]&lt;/p&gt;
 @@
 
 &lt;/$reveal&gt;
 \end
 
-\define footnote(label,text)
-&lt;&lt;ref &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
-&lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
-\end
+\define dict(word,random)
+&lt;$view tiddler=&quot;$word$&quot; field=&quot;title&quot;/&gt;
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/comment/$word$-$random$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;
+&lt;sup style=&quot;color:#5778d8&quot;&gt;?&lt;/sup&gt;
+&lt;/$button&gt;
+&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/comment/$word$-$random$&quot;&gt;&gt;&gt;
 
-\define footnotes(label,text)
-&lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
-&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt; $text$
+@@.tw-drop-down.inline-link
+&lt;p&gt;[[$word$]]&lt;/p&gt;
+&lt;$transclude tiddler=&quot;$word$&quot; mode=&quot;block&quot;/&gt;
+@@
+
+&lt;/$reveal&gt;
 \end
 </pre>
 </div>
@@ -4599,35 +4643,13 @@ $text$
 \end
 </pre>
 </div>
-<div created="20140716130346842" modified="20140716131144762" tags="$:/tags/Macro" title="$:/macro/mark" type="text/vnd.tiddlywiki">
-<pre>\define hlr(text)
-&lt;span class=&quot;red&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define hly(text)
-&lt;span class=&quot;yellow&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define hlb(text)
-&lt;span class=&quot;blue&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define hlg(text)
-&lt;span class=&quot;green&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define under(text)
-&lt;span class=&quot;red-line&quot;&gt;$text$&lt;/span&gt;
-\end
-</pre>
-</div>
-<div created="20140720231335336" modified="20140722232553404" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
+<div created="20140720231335336" modified="20140722234039910" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
 <pre>\define navi(title)
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;$list filter=&quot;[[$title$]listed[]!is[system]]&quot;&gt;
 &lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
-&lt;li style=&quot;margin-bottom:5px;&quot;&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
+&lt;li style=&quot;margin:0px;&quot;&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
 &lt;li style=&quot;margin:0;&quot;&gt;Previous: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
@@ -4813,7 +4835,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nbody.tw-body .story-river .body li {\n\tmargin: 4px 0;\n\tline-height: 24px;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 28px 44px 40px 44px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -45px 0 -45px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\ntable th, table td {\n\tline-height: 23px;\n\tpadding: 3px 7px 3px 7px;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 10px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nbody.tw-body .story-river .body li {\n\tmargin: 4px 0;\n\tline-height: 24px;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 28px 44px 40px 44px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -45px 0 -45px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: inherit;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\ntable th, table td {\n\tline-height: 23px;\n\tpadding: 3px 7px 3px 7px;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px dashed #ff0000 !important;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 18px 10px 14px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 300px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nbody.tw-body .story-river .body .tw-drop-down p {\n\tmargin: 0.5em 0;\n\tline-height: 24px;\n}\n\n.tw-drop-down.inline-link a {\n\tdisplay: inline;\n\tpadding: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n\nbutton sup {\n\tmargin-left: -3px;\n}\n&quot;
         }
     }
 }</pre>
@@ -4946,15 +4968,14 @@ tiddlerwidth: `660px`</pre>
 
 关于收纳学的网站，大家有兴趣可以用日语“収納”搜搜试试，不可以找我要。</pre>
 </div>
-<div created="20140720235339831" modified="20140721000146921" title="2.2.3 更换搜索方式，殊途同归" type="text/vnd.tiddlywiki">
+<div created="20140720235339831" modified="20140724004630185" title="2.2.3 更换搜索方式，殊途同归" type="text/vnd.tiddlywiki">
 <pre>若网页搜索不能获得所要结果，可以变换搜索类型，比如搜索图片，再通过图片链接到有价值的网站。
 
 我常用的则是文件搜索，与普通网页相比，这些文档通常意味着更好的更系统化的组织，从而让你的信息获取更加有效。
 
 如何利用搜索引擎搜索文档呢？
 
-只要在搜索词前加入 `filetype:pdf` 就可以搜索 `pdf` 格式的文档。（Google 和百度均适用。）&lt;&lt;footnote &quot;注&quot; &quot;原文介绍得不详细且不准确，下面链接可以学习更多 Google 的搜索方法。http://www.googleguide.com/advanced_operators_reference.html&quot;&gt;&gt;
-
+&lt;&lt;under &quot;只要在搜索词前加入 `filetype:pdf` 就可以搜索 `pdf` 格式的文档。（Google 和百度均适用。）&quot; &quot;1&quot;&gt;&gt;
 如用百度搜商务智能的相关文档：
 
 [img class=&quot;border&quot;[08.jpg]]&lt;br&gt;图8：用百度搜索文档</pre>
@@ -4966,7 +4987,7 @@ tiddlerwidth: `660px`</pre>
 * [[MBA 智库]] —— 专注于经管领域的资料库。你可以在这里搜到很多经管领域的各种术语解释，文档等。
 * [[维基百科]] —— 如果在墙外或者会翻墙的话。很多被国内是敏感词的，在这里能够看到非常翔实的前因后果各种脉络。当然，若非敏感词的话，百度百科也是不错的资源。</pre>
 </div>
-<div created="20140721061305955" modified="20140721074508859" title="2.2.5 向书籍里找搜索提示" type="text/vnd.tiddlywiki">
+<div created="20140721061305955" modified="20140724004433082" title="2.2.5 向书籍里找搜索提示" type="text/vnd.tiddlywiki">
 <pre>一个小提示，没有关键词灵感的时候，还可以从书的目录去获取关键词提示。 除了目录，专业书籍里面隐含很宝贵的可供挖掘的信息。
 
 下面就是一个利用书籍提供的信息不断发掘，进而找到真正所需的信息的案例：
@@ -4981,7 +5002,7 @@ tiddlerwidth: `660px`</pre>
 
 [img class=&quot;border&quot;[09.jpg]]&lt;br&gt;图9：extremepresentation.com 的配图
 
-当然，被《Excel 图表之道》作者刘万祥老师引用的图表类型选择指南的图英文原版也在这个网站中有大图可以下载。另外，我们的信息挖掘还没有结束哦！注意，他还提供了另外一个在线的工具：[[www.chartchooser.com|http://labs.juiceanalytics.com/chartchooser/index.html]]，此网站可供数据分析师们根据自己的需求选择不同的图表展现，该网站出自 [[Juiceanalytics]]。而进入 [[Juiceanalytics]] 网站的白皮书栏目，我找到了《设计人人都爱的信息仪表盘指南》（A Guide to Creating Dashboards People Love to Use） &lt;&lt;footnote &quot;链接&quot; &quot;http://www.juiceanalytics.com/white-papers-guides-and-more/&quot;&gt;&gt;，这本白皮书恰好能够解答我对于近期工作的一些迷惑。
+当然，被《Excel 图表之道》作者刘万祥老师引用的图表类型选择指南的图英文原版也在这个网站中有大图可以下载。另外，我们的信息挖掘还没有结束哦！注意，他还提供了另外一个在线的工具：[[www.chartchooser.com|http://labs.juiceanalytics.com/chartchooser/index.html]]，此网站可供数据分析师们根据自己的需求选择不同的图表展现，该网站出自 [[Juiceanalytics]]。而进入 [[Juiceanalytics]] 网站的白皮书栏目，我找到了&lt;&lt;under &quot;《设计人人都爱的信息仪表盘指南》(A Guide to Creating Dashboards People Love to Use)&quot; &quot;link-1&quot;&gt;&gt;，这本白皮书恰好能够解答我对于近期工作的一些迷惑。
 
 如果特意去找，反而不容易有所收获，而如果知道自己的主题关键词，你的信息嗅觉就会非常灵敏，在某个契机下，抓住线索不放，往往不经意中探得捷径。
 </pre>
@@ -5280,14 +5301,14 @@ Initially available as a sans serif, it was later expanded to include ornamental
 <div _canonical_uri="./images/Frutiger.png" created="20140718064606734" modified="20140718064618273" title="Frutiger.png" type="image/png">
 <pre></pre>
 </div>
-<div created="20140719210159838" modified="20140721073839789" title="Heidi" type="text/vnd.tiddlywiki">
-<pre>2006 年毕业于一所校园里有几座山的大学，其中一座山名为[[珞珈山]]， 其中有一条路，叫樱花大道。&lt;&lt;footnote &quot;注&quot; &quot;武汉大学&quot;&gt;&gt;
+<div created="20140719210159838" modified="20140724003806998" title="Heidi" type="text/vnd.tiddlywiki">
+<pre>2006 年毕业于一所&lt;&lt;dict &quot;校园里有几座山的大学&quot; &quot;144&quot;&gt;&gt;，其中一座山名为&lt;&lt;dict &quot;珞珈山&quot; &quot;425&quot;&gt;&gt;， 其中有一条路，叫樱花大道。
 
 [img class=&quot;border right&quot;[Heidixie.jpg]]
 
 2006 年到 2008 年，在武汉工作，从传统行业进入互联网，进而接触过 e-learning。在做教学设计、课件策划时，发现对用户分析、以用户为中心的设计产生浓厚兴趣。
 
-2008 年中，来到杭州，加入一家有激情有梦想的橙色的公司&lt;&lt;footnote &quot;注&quot; &quot;淘宝&quot;&gt;&gt;，开始混迹 e-business，电商圈。
+2008 年中，来到杭州，加入一家有激情有梦想的&lt;&lt;dict &quot;橙色的公司&quot; &quot;856&quot;&gt;&gt;，开始混迹 e-business，电商圈。
 
 在这家公司，工作至今，主要做交互设计，也是这期间，开始撰写有关交互的一些心得体会。
 
@@ -5534,14 +5555,14 @@ website: http://www.simcity.com/</pre>
 
 完</pre>
 </div>
-<div created="20140716202425994" modified="20140716204140826" title="产品定位：少而精的单品数" type="text/vnd.tiddlywiki">
-<pre>一家好餐厅的精髓不在于菜品数的多少，而在于产品的精良和用户体验的不断优化。“我绝不认为，在互联网上发个团购券，就叫O2O。”雕爷认为，真正的O2O，应该是从产品定位开始就是互联网式的。
+<div created="20140716202425994" modified="20140724011704626" title="产品定位：少而精的单品数" type="text/vnd.tiddlywiki">
+<pre>一家好餐厅的精髓不在于菜品数的多少，而在于产品的精良和用户体验的不断优化。“我绝不认为，在互联网上发个团购券，就叫&lt;&lt;dict &quot;O2O&quot; &quot;761&quot;&gt;&gt;。”雕爷认为，真正的~O2O，应该是从产品定位开始就是互联网式的。
 
-在他看来，苹果公司产品线很少，微软的核心产品也只有两三个，但他们却成就了世界上最赚钱的公司。&lt;&lt;under &quot;“不追求多的[[SKU]]，但追求极致的用户体验是互联网精神之一。”&quot;&gt;&gt;雕爷表示,围绕着这样的产品精神，雕爷牛腩也只有12个[[SKU]]。　
+在他看来，苹果公司产品线很少，微软的核心产品也只有两三个，但他们却成就了世界上最赚钱的公司。&lt;&lt;under &quot;“不追求多的SKU，但追求极致的用户体验是互联网精神之一。”&quot;&gt;&gt;雕爷表示,围绕着这样的产品精神，雕爷牛腩也只有12个&lt;&lt;dict &quot;SKU&quot; &quot;287&quot;&gt;&gt;。　
 
-一家餐厅只有12个菜，比麦当劳的菜品还要少。创立之初，一些美食界人士认为，这样做是找死，而雕爷却一意孤行。之所以做这么少的[[SKU]]，是基于雕爷自己的消费体验和理论支撑：&lt;&lt;under &quot;一个消费者第一次吃到某家餐厅自己比较满意，如果下次再来，通常点菜与第一次的重合率高达八成，这是人们潜意识路径依赖的结果。&quot;&gt;&gt;
+一家餐厅只有12个菜，比麦当劳的菜品还要少。创立之初，一些美食界人士认为，这样做是找死，而雕爷却一意孤行。之所以做这么少的&lt;&lt;dict &quot;SKU&quot; &quot;772&quot;&gt;&gt;，是基于雕爷自己的消费体验和理论支撑：&lt;&lt;under &quot;一个消费者第一次吃到某家餐厅自己比较满意，如果下次再来，通常点菜与第一次的重合率高达八成，这是人们潜意识路径依赖的结果。&quot;&gt;&gt;
 
-''雕爷很喜欢北京的两家餐厅''，一家鼎泰丰，一家是大董烤鸭，''但自己一年也就去三四次而已''。于是，雕爷为牛腩定位的目标客户群是中产阶层，他们的消费面比较宽，很少会频繁地光顾一家餐厅。因此，&lt;&lt;under &quot;即使[[SKU]]很少，只要保持每个季度更换菜单，就足以满足老客户再来所需要的新鲜感&quot;&gt;&gt;。
+''雕爷很喜欢北京的两家餐厅''，一家鼎泰丰，一家是大董烤鸭，''但自己一年也就去三四次而已''。于是，雕爷为牛腩定位的目标客户群是中产阶层，他们的消费面比较宽，很少会频繁地光顾一家餐厅。因此，&lt;&lt;under &quot;即使SKU很少，只要保持每个季度更换菜单，就足以满足老客户再来所需要的新鲜感&quot;&gt;&gt;。
 
 雕爷认为，&lt;&lt;under &quot;一家好餐厅的精髓不在于菜品数的多少，而在于产品的精良和用户体验的不断优化&quot;&gt;&gt;。在互联网上，产品的不断升级和优化早已经深入互联网人意识，大到操作系统，小到手机上的APP。
 
@@ -5773,6 +5794,12 @@ website: http://www.simcity.com/</pre>
 [img[Fig5-Lecture.jpg]]
 
 ''Next:'' [[捌]]</pre>
+</div>
+<div created="20140724003538995" modified="20140724003556625" title="校园里有几座山的大学" type="text/vnd.tiddlywiki">
+<pre>武汉大学</pre>
+</div>
+<div created="20140724003650646" modified="20140724003659443" title="橙色的公司" type="text/vnd.tiddlywiki">
+<pre>淘宝</pre>
 </div>
 <div created="20140709213150552" modified="20140717232715812" tags="Topic" title="牛顿的另一面: 卑鄙的天才, 无德的科学家" type="text/vnd.tiddlywiki">
 <pre>牛顿的伟大似乎已毋庸置疑，有人认为，如果当时有诺贝尔奖，那么牛顿至少能得三次：万有引力定律、光学和化学的贡献，另外由于他在微积分上的造诣，还能得一次菲尔兹奖（数学最高奖），但事实果真如此吗，长久以来，一直有史学家在质疑牛顿的成就和贡献。
@@ -6023,7 +6050,7 @@ Eric：欣喜堂的《[[活字字体的基础讲座|http://www.typeisbeautiful.c
 
 ''Next:'' [[柒]]</pre>
 </div>
-<div author="刘晓午" created="20140716200211664" modified="20140717232650129" tags="Topic" title="雕爷牛腩：餐饮业的互联网新玩法" type="text/vnd.tiddlywiki" url="微信公众平台账号：iliuxiaowu">
+<div author="刘晓午" created="20140716200211664" modified="20140724010639296" tags="Topic" title="雕爷牛腩：餐饮业的互联网新玩法" type="text/vnd.tiddlywiki" url="微信公众平台账号：iliuxiaowu">
 <pre>近一年来，餐饮行业几乎没什么好消息。在哀鸿遍野的市场环境下，在淘宝平台上已做到化妆品第一的阿芙精油的创始人雕爷却杀入了餐饮行业，创办了一家名为雕爷牛腩的餐厅，开始了他的二次创业。
 
 作为一个毫无餐饮行业经验的外行，雕爷牛腩开业仅两个月就实现了所在商场餐厅单位平效第一名。而且，仅凭两家店，雕爷牛腩就已获投资6000万元，风投给出的估值高达4亿元。
@@ -6038,7 +6065,7 @@ Eric：欣喜堂的《[[活字字体的基础讲座|http://www.typeisbeautiful.c
 
 在创业中，雕爷坚信“热爱”才是生产力，但热爱也要选对行业。“电子产品领域是不敢进入的，因为这个行业聚集了全世界最聪明的人。”
 
-雕爷表示，餐饮之所以可以尝试，是因为：尽管相对于精油及化妆品行业来说，餐饮是个绝对的苦力活，但这件事却能激起他的激情。“不疯魔，不成活”。尽管餐饮是个最传统的行业，但从产品定位到营销传播，雕爷都把互联网的玩法统统嫁接到餐厅的经营当中，开始了O2O餐饮的征程。
+雕爷表示，餐饮之所以可以尝试，是因为：尽管相对于精油及化妆品行业来说，餐饮是个绝对的苦力活，但这件事却能激起他的激情。“不疯魔，不成活”。尽管餐饮是个最传统的行业，但从产品定位到营销传播，雕爷都把互联网的玩法统统嫁接到餐厅的经营当中，开始了 &lt;&lt;dict &quot;O2O&quot; &quot;828&quot;&gt;&gt;餐饮的征程。
 
 继续阅读：
 
