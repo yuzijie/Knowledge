@@ -197,7 +197,7 @@ hr {
 }
 
 code {
-	background-color: #ffffff;
+	background-color: inherit;
 	border: none;
 	padding: 0;
 }
@@ -295,12 +295,12 @@ table th, table td {
 }
 
 .red-line {
-	border-bottom: 1px dashed #ff0000;
+	border-bottom: 1px dashed #ff0000 !important;
 	text-decoration: none;
 }
 
 .tw-drop-down {
-	padding: 8px 20px 10px 14px;
+	padding: 8px 18px 10px 14px;
 	box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
 	border-radius: 2px;
 	border: none;

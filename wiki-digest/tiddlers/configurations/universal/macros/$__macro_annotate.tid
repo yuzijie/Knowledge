@@ -32,7 +32,7 @@ type: text/vnd.tiddlywiki
 
 @@.tw-drop-down.inline-link
 <$transclude tiddler="#:$comment$" mode="block"/>
-<p style="text-align:right;">[[more|#:$comment$]]</p>
+<p style="text-align:right;">[[#:$comment$]]</p>
 @@
 
 </$reveal>
