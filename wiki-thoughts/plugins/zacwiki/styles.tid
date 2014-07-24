@@ -329,6 +329,11 @@ ul.tw-drop-down {
 	padding-left: 2.5em;
 }
 
-button sup {
-	margin-left: -3px;
+.nolink {
+	pointer-events: none;
+	cursor: default;
+}
+
+.nolink a {
+	color: orchid;
 }

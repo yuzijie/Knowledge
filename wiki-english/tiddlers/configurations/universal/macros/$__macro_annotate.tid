@@ -5,7 +5,7 @@ title: $:/macro/annotate
 type: text/vnd.tiddlywiki
 
 \define footnote(comment:"",tiddler:"")
-<$button popup=<<qualify "$:/state/comment/$comment$_$tiddler$">> class="btn-invisible"><sup style="color:red;">&dagger;</sup></$button>
+<$button popup=<<qualify "$:/state/comment/$comment$_$tiddler$">> class="btn-invisible"><sup style="color:orangered;">&dagger;</sup></$button>
 <$reveal type="popup" state=<<qualify "$:/state/comment/$comment$_$tiddler$">>>
 
 @@.tw-drop-down.inline-link
@@ -20,10 +20,7 @@ $comment$
 \end
 
 \define dict(word,random)
-<$view tiddler="$word$" field="title"/>
-<$button popup=<<qualify "$:/state/comment/$word$_$random$">> class="btn-invisible">
-<sup style="color:#5778d8">?</sup>
-</$button>
+<$button popup=<<qualify "$:/state/comment/$word$_$random$">> class="btn-invisible"><sup style="color:orchid;">?</sup></$button>
 <$reveal type="popup" state=<<qualify "$:/state/comment/$word$_$random$">>>
 
 @@.tw-drop-down.inline-link
