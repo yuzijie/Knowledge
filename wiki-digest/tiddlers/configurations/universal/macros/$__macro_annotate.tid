@@ -5,26 +5,26 @@ title: $:/macro/annotate
 type: text/vnd.tiddlywiki
 
 \define hlr(text,comment:"")
-<span class="red">$text$</span><<annotate "$comment$">>
+<span class="red">$text$</span><<footnote "$comment$">>
 \end
 
 \define hly(text,comment:"")
-<span class="yellow">$text$</span><<annotate "$comment$">>
+<span class="yellow">$text$</span><<footnote "$comment$">>
 \end
 
 \define hlb(text,comment:"")
-<span class="blue">$text$</span><<annotate "$comment$">>
+<span class="blue">$text$</span><<footnote "$comment$">>
 \end
 
 \define hlg(text,comment:"")
-<span class="green">$text$</span><<annotate "$comment$">>
+<span class="green">$text$</span><<footnote "$comment$">>
 \end
 
 \define under(text,comment:"")
-<span class="red-line">$text$</span><<annotate "$comment$">>
+<span class="red-line">$text$</span><<footnote "$comment$">>
 \end
 
-\define annotate(comment)
+\define footnote(comment)
 <$reveal type="nomatch" state="#:$comment$" text="">
 <$button popup=<<qualify "$:/state/comment/$comment$">> class="btn-invisible"><sup style="color:red;">&dagger;</sup></$button>
 </$reveal>
