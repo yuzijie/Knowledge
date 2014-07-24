@@ -37,11 +37,3 @@ Edit Sidebar Lists <$button message="tw-edit-tiddler" param="$:/core/ui/SideBarL
 <<lingo Basics/Version/Prompt>> <<version>>
 
 ---
-
-List of Comments: <$button message="tw-new-tiddler" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">(+New)</span></$button>
-
-<$list filter='[!is[system]search[#:]]'>
-<$link><$view field='title'/></$link>; 
-</$list>
-
----

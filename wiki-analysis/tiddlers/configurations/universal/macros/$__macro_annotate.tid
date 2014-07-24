@@ -4,35 +4,16 @@ tags: $:/tags/Macro
 title: $:/macro/annotate
 type: text/vnd.tiddlywiki
 
-\define hlr(text,comment:"")
-<span class="red">$text$</span><<footnote "$comment$">>
-\end
-
-\define hly(text,comment:"")
-<span class="yellow">$text$</span><<footnote "$comment$">>
-\end
-
-\define hlb(text,comment:"")
-<span class="blue">$text$</span><<footnote "$comment$">>
-\end
-
-\define hlg(text,comment:"")
-<span class="green">$text$</span><<footnote "$comment$">>
-\end
-
-\define under(text,comment:"")
-<span class="red-line">$text$</span><<footnote "$comment$">>
-\end
-
-\define footnote(comment)
-<$reveal type="nomatch" state="#:$comment$" text="">
-<$button popup=<<qualify "$:/state/comment/$comment$">> class="btn-invisible"><sup style="color:red;">&dagger;</sup></$button>
-</$reveal>
-<$reveal type="popup" state=<<qualify "$:/state/comment/$comment$">>>
+\define footnote(comment:"",tiddler:"")
+<$button popup=<<qualify "$:/state/comment/$comment$_$tiddler$">> class="btn-invisible"><sup style="color:red;">&dagger;</sup></$button>
+<$reveal type="popup" state=<<qualify "$:/state/comment/$comment$_$tiddler$">>>
 
 @@.tw-drop-down.inline-link
-<$transclude tiddler="#:$comment$" mode="block"/>
-<p style="text-align:right;">[[#:$comment$]]</p>
+$comment$
+<$reveal type="nomatch" state="$tiddler$" text="">
+<$transclude tiddler="$tiddler$" mode="block"/>
+<p style="text-align:right;">[[$tiddler$]]</p>
+</$reveal>
 @@
 
 </$reveal>
@@ -40,10 +21,10 @@ type: text/vnd.tiddlywiki
 
 \define dict(word,random)
 <$view tiddler="$word$" field="title"/>
-<$button popup=<<qualify "$:/state/comment/$word$-$random$">> class="btn-invisible">
+<$button popup=<<qualify "$:/state/comment/$word$_$random$">> class="btn-invisible">
 <sup style="color:#5778d8">?</sup>
 </$button>
-<$reveal type="popup" state=<<qualify "$:/state/comment/$word$-$random$">>>
+<$reveal type="popup" state=<<qualify "$:/state/comment/$word$_$random$">>>
 
 @@.tw-drop-down.inline-link
 <p>[[$word$]]</p>
