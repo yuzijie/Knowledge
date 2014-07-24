@@ -299,22 +299,15 @@ table th, table td {
 	text-decoration: none;
 }
 
-.dict {
-	text-decoration: none;
-	color: #5778d8;
-	font-weight: inherit;
-	-webkit-user-select: inherit;
-}
-
 .tw-drop-down {
-	padding: 8px 20px 10px 16px;
+	padding: 8px 20px 10px 14px;
 	box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
 	border-radius: 2px;
 	border: none;
 	background: whitesmoke;
 	display: block;
 	white-space: normal;
-	min-width: 250px;
+	min-width: 300px;
 }
 
 body.tw-body .story-river .body p.tw-drop-down {
@@ -322,11 +315,20 @@ body.tw-body .story-river .body p.tw-drop-down {
 }
 
 body.tw-body .story-river .body .tw-drop-down p {
-	margin: 0.4em 0;
+	margin: 0.5em 0;
 	line-height: 24px;
+}
+
+.tw-drop-down.inline-link a {
+	display: inline;
+	padding: 0;
 }
 
 ol.tw-drop-down,
 ul.tw-drop-down {
 	padding-left: 2.5em;
+}
+
+button sup {
+	margin-left: -3px;
 }

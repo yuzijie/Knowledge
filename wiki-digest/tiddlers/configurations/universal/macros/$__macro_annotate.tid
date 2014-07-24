@@ -26,26 +26,28 @@ type: text/vnd.tiddlywiki
 
 \define annotate(comment)
 <$reveal type="nomatch" state="#:$comment$" text="">
-<$button popup=<<qualify "$:/state/comment/$comment$">> class="btn-invisible"><sup style="color:red">&dagger;</sup></$button>
+<$button popup=<<qualify "$:/state/comment/$comment$">> class="btn-invisible"><sup style="color:red;">&dagger;</sup></$button>
 </$reveal>
-
 <$reveal type="popup" state=<<qualify "$:/state/comment/$comment$">>>
 
-@@.tw-drop-down
+@@.tw-drop-down.inline-link
 <$transclude tiddler="#:$comment$" mode="block"/>
-[[#:$comment$]]
+<p style="text-align:right;">[[more|#:$comment$]]</p>
 @@
 
 </$reveal>
 \end
 
 \define dict(word,random)
-<$button popup=<<qualify "$:/state/comment/$word$-$random$">> class="btn-invisible dict">$word$</$button>
+<$view tiddler="$word$" field="title"/>
+<$button popup=<<qualify "$:/state/comment/$word$-$random$">> class="btn-invisible">
+<sup style="color:#5778d8">?</sup>
+</$button>
 <$reveal type="popup" state=<<qualify "$:/state/comment/$word$-$random$">>>
 
-@@.tw-drop-down
+@@.tw-drop-down.inline-link
+<p>[[$word$]]</p>
 <$transclude tiddler="$word$" mode="block"/>
-[[$word$]]
 @@
 
 </$reveal>
