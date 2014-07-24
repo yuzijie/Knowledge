@@ -267,28 +267,28 @@ table th, table td {
 }
 
 .yellow {
-	background-color: rgba(252, 243, 88, 0.8);
+	background-color: rgba(252, 243, 88, 0.7);
 	border-radius: 2px;
 	padding-left: 1px;
 	padding-right: 1px;
 }
 
 .blue {
-	background-color: rgba(68, 147, 248, 0.36);
+	background-color: rgba(68, 147, 248, 0.3);
 	border-radius: 2px;
 	padding-left: 1px;
 	padding-right: 1px;
 }
 
 .red {
-	background-color: rgba(248, 74, 74, 0.57);
+	background-color: rgba(248, 74, 74, 0.5);
 	border-radius: 2px;
 	padding-left: 1px;
 	padding-right: 1px;
 }
 
 .green {
-	background-color: rgba(163, 223, 55, 0.61);
+	background-color: rgba(163, 223, 55, 0.5);
 	border-radius: 2px;
 	padding-left: 1px;
 	padding-right: 1px;
