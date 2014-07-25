@@ -335,5 +335,5 @@ ul.tw-drop-down {
 }
 
 .nolink a {
-	color: orchid;
+	color: crimson;
 }
