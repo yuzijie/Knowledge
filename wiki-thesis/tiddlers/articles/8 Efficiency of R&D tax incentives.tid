@@ -1,0 +1,28 @@
+created: 20140727124140394
+modified: 20140727152605352
+title: 8 Efficiency of R&D tax incentives
+type: text/vnd.tiddlywiki
+
+!! Incremental vs. level-based schemes
+
+* Incremental tax credits are more efficient for the government (they minimise the amount of "subsidised" R&D that would have been undertaken even in the absence of support), however, they are also more complex to implement.
+* Volume-based schemes are more straightforward, less subject to fluctuations but costlier and tend to finance larger firms.
+* The design of schemes (incremental or volume) depends on policy objectives but also the tax base and capacity constraints (number of R&D staff).
+* Generally, most countries are moving to volume-based incentives.
+
+Using a volume-based scheme has the advantage, for firms claiming incentives, to be simple and generous. However, from the government perspective, this approach might be costly as it 
+subsidises a portion of all R&D performed, even the amount that would have been performed without any R&D tax incentives. In addition, @@.red-line a strict volume-based approach does not provide a strong incentive to perform additional R&D.@@
+
+The main advantage of using only incremental R&D as the eligible base is that it ensures that the cost incurred by government is compensated by an increase in R&D. @@.nolink [[As such]]@@<<dict "As such" "264">>, @@.red-line it minimises the amount of "subsidised" R&D that would have been undertaken even in the absence of support.@@ However, the use of incremental-based schemes is ''more complex to design and to use''. The complexity issue should not be underestimated as it can significantly increase the cost of applying the tax credit and even deter some firms to apply if application costs are, or are perceived to be, higher than the uncertain benefits.
+
+From a policy point of view, a volume-based scheme would be more appropriate if the objective is to increase the overall level of R&D in the country, while an incremental-based scheme may be considered if the objective instead is @@.red-line to support firms with high R&D growth@@. A combination of volume and incremental tax incentives (hybrid schemes) may be considered when the objective is to maintain the level of, and reward high growth of, R&D (Criscuolo et al., 2009).
+
+!! Tax credit for R&D wages
+
+* It reduces the @@.nolink [[tax wedge]]@@<<dict "tax wedge" "707">>, e.g. the difference between what it costs to pay workers (wages, social security/withholding taxes) and wages of workers.
+* It acts as a subsidy to early stage costs whereas tax credits for R&D expenditures generally subsidise later-stage profits, which can be seen as a reward for successful innovation.
+* It may be easier to control and may be less subject to accounting manipulation than company profits.
+* It is well suited for small firms.
+* It helps build/retain human talent.
+
+A recent trend in OECD countries has been to employ fiscal R&D incentives for labour social charges (e.g. social security and other social taxes on labour). The rationale is that by reducing social charges, companies can reduce monthly operating costs and therefore increase cash flow. This is particularly important since wages typically make up a large part of total R&D costs. Increasing cash flow is particularly important for small, research-intensive firms with little revenue but high investment in intellectual and human capital. Furthermore, by subsiding human capital, the incentives may contribute to retaining human talent.
