@@ -129,6 +129,10 @@ b, strong {
 	fill: rgba(24, 41, 85, 0.2);
 }
 
+.tw-tags-wrapper {
+	margin: 4px 0 26px 0;
+}
+
 hr {
 	display: block;
 	height: 1px;
