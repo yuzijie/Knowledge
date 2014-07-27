@@ -1,5 +1,5 @@
 created: 20140722160045298
-modified: 20140722224730408
+modified: 20140727104302845
 title: Design considerations - fiscal support for business R&D
 type: text/vnd.tiddlywiki
 
@@ -15,20 +15,15 @@ Minimum thresholds can increase the efficiency of policy as //administrative cos
 
 ''Qualified R&D expenditure:'' Three types of expenditure can qualify for fiscal incentives:
 
-  • Expenditure on wages related to R&D. This reduces social security and wage taxes and gives an incentive 
-    for investment in human capital.
-  • Current R&D expenditure. This includes wages and all consumables used in the R&D process.
-  • Current and capital R&D expenditure. This enlarges the incentive for companies, but increases the public 
-    cost of the policy.
+* Expenditure on wages related to R&D. This reduces social security and wage taxes and gives an incentive for investment in human capital.
+* Current R&D expenditure. This includes wages and all consumables used in the R&D process.
+* Current and capital R&D expenditure. This enlarges the incentive for companies, but increases the public cost of the policy.
+
 The base amount of incremental tax credit: can take two forms:
-  • Rolling average base. The base amount is computed as the average R&D expenditure of the previous x 
-    years.
-  • Fixed base. The base amount equals the average R&D expenditures during a fixed reference period. This 
-    average can then be indexed to sales or inflation to stay relevant.
-Carry-over provisions and cash refunds: These provisions allow unused portions of the credit to be carried 
-forward or backward to previous fiscal years. Carry forward provisions are particularly important for SMEs, as 
-these tend to have limited current corporate income against which the credit can be applied, while many 
-younger firms are carrying losses from previous periods. Cash refunds can also replace carry forward provisions. 
-The time value of funds should be taken into account when calculating refunds. Delays in effecting cash refunds 
-need to be avoided in order to making this tool efficient.
+
+* Rolling average base. The base amount is computed as the average R&D expenditure of the previous x years.
+* Fixed base. The base amount equals the average R&D expenditures during a fixed reference period. This average can then be indexed to sales or inflation to stay relevant.
+
+''Carry-over provisions and cash refunds:'' These provisions allow unused portions of the credit to be carried forward or backward to previous fiscal years. @@.red-line Carry forward provisions are particularly important for SMEs, as these tend to have limited current corporate income against which the credit can be applied, while many younger firms are carrying losses from previous periods.@@ Cash refunds can also replace carry forward provisions. The time value of funds should be taken into account when calculating refunds. Delays in effecting cash refunds need to be avoided in order to making this tool efficient.
+
 Source: Van Pottelsberghe et al. (2003).
