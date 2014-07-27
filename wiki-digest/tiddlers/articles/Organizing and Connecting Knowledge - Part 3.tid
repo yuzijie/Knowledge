@@ -1,14 +1,32 @@
 created: 20140722193150015
-modified: 20140722210018687
+modified: 20140727104716357
 title: Organizing and Connecting Knowledge - Part 3
 type: text/vnd.tiddlywiki
-
-After that month, every staff member received a huge poster—replete with iconic artwork—of the diagram to hang on the wall, and Librande still refers to it. This way, he said, //no one would trip over abstractions in their head.// The month of organization made the (iterative) process of game development a lot more efficient.
-
-If you take away just one thing from the talk, he said, let it be this: ''to be a game designer you have to establish clear communication with the team from the start.''
 
 But this is an important skill not just for game designers, but anyone who wants to transmit information—especially people working in education and research. Below the fold I’ll discuss why it is so important to organize and connect up knowledge like Librande’s team did in planning SimCity, why traditional classes and books fail to follow this paradigm, and what we can do about it.
 
 > Organizing and crystallizing knowledge saves time down the road—both for you and others.
+
+In the book [[How Students Learn]], the authors propose three basic principles of learning. Here is one of them.
+
+> 2. To develop competence in an area of inquiry, students must (a) have a deep foundation of factual knowledge, (b) understand facts and ideas in the context of a conceptual framework, and (c) organize knowledge in ways that facilitate retrieval and application.
+
+I.e., ''Facts must be organized in a conceptual framework.''
+
+Here I’ll just convince you of one step in organizing knowledge: ''making a diagram.'' Although this is not the only way, this is an obvious and easy way, and (oddly enough) an underused way.
+
+How many classes/textbooks actually make explicit a conceptual framework: this is how all the different concepts you learn in this course connect? Most courses, after giving you a syllabus (which is a list of topics), marches down the list of topics in a linear fashion. The task of connecting these different pieces of knowledge, and relating them to other subjects, is entirely left up to the student. It’s often assumed that the student will automatically do so after being fed all the knowledge.
+
+Compare this with how a statistics teacher at Harvard starts each class with a huge diagram: this is the road map for the entire course, and this is where you are now. My education professor, Justin Reich, says “Whenever I see something like this, it fills me with awe.”
+
+''By creating a road map for students, a teacher allows students to know where to place each new piece of knowledge they learn into their minds, and speeds up the process of learning.''
+
+Often the amount of //technical content// that has to be covered prevents the teacher or student from “roadmapping.” We often think a course is complete when all of the content is there (and this maybe takes 80% of the work), when the 20% of the teacher’s effort that makes the most effect is ''organizing'' that content (which should really be done at the beginning, rather than the end). (Focus on content is one of the “two big sins” of curriculum constructions according to [[Wiggins and McTighe|http://www.amazon.com/Understanding-Design-Expanded-Grant-Wiggins/dp/0131950843]].)
+
+On the flip side,
+
+''If you’re learning by yourself, organizing the knowledge you learn into such a roadmap helps you retain the material and know what each piece of knowledge is //for//.''
+
+For instance, here is a roadmap I made of the [[prime number theorem]] a while ago (the blanks are meant to be filled in). But really, I think this should be fitted into a larger roadmap for analytic number theory which I hope to make, dividing it into the essential questions that we ask (for instance, distribution of primes, subdivided into what kind of distribution), and what techniques or objects can be used for each type of estimate (L-functions? Sieve methods?). [[Here|http://www.lmfdb.org/bigpicture]] is a great diagram showing the connections between L-functions, algebraic varieties, and automorphic forms (the thrust of much research in current number theory).
 
 <$macrocall $name="navi" title={{!!title}}/>

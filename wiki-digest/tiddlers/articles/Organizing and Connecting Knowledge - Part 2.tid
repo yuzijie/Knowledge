@@ -1,5 +1,5 @@
 created: 20140722191527548
-modified: 20140724132051243
+modified: 20140727104545416
 title: Organizing and Connecting Knowledge - Part 2
 type: text/vnd.tiddlywiki
 
@@ -10,5 +10,9 @@ For instance, here is a quick summary of the diagram for the residential zones: 
 There are also diagrams for commerce, industry, production, and a day in the life of a Sim. //If you can’t draw the diagram in a nice way, then it is probably too complicated,// Librande said. They simplified the day of a Sim diagram until every day a Sim woke up as either a worker or a shopper (or sick).
 
 The people in charge thought we were getting nothing done the first month, he added—//they were drawing diagrams instead of making “visible” progress in programming.//
+
+After that month, every staff member received a huge poster—replete with iconic artwork—of the diagram to hang on the wall, and Librande still refers to it. This way, he said, //no one would trip over abstractions in their head.// The month of organization made the (iterative) process of game development a lot more efficient.
+
+If you take away just one thing from the talk, he said, let it be this: ''to be a game designer you have to establish clear communication with the team from the start.''
 
 <$macrocall $name="navi" title={{!!title}}/>
