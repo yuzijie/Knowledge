@@ -1,6 +1,6 @@
 created: 20140727181130655
-modified: 20140727182527341
-title: 11 R&D tax incentives for G7 countries and other selected countries, 2009
+modified: 20140727183408763
+title: 11) R&D tax incentives for G7 countries and other selected countries, 2009
 type: text/vnd.tiddlywiki
 
 |!Country / ~MainTax Incentive|!Description of Tax Incentive|<|<|!Forgone tax revenue|
@@ -9,3 +9,5 @@ type: text/vnd.tiddlywiki
 |SR&ED Tax Credit (permanent program)|35% on volume for small Canadian-owned firms for first $3M R&D and 20% afterward. 20% for large firms.|Current and machinery and equipment (M&E)|Tax payable (benefit is taxable). No ceiling on R&D eligible (at lower rate).|2002: CAD 2.3B (0.21%&nbsp;GDP) 2008: CAD 3.2B (0.22%&nbsp;GDP)|
 |~|''Other characteristics of the main tax incentive:'' Cash refund for small Canadian-owned firms. Carry-back (3 years) and carry-forward (20 years) available for all firms. Complete write-off of all current expenditures.|<|<|<|
 |~|''Recent significant changes:'' in 2008: Tax ceiling to benefit the 35% rate has been increased from $2M to $3M; enlarged SMEs definition to claim the 35% rate. Up to 10% of R&D carried out outside of Canada is now eligible for the credit.|<|<|<|
+
+<$macrocall $name="navi" title={{!!title}}/>
