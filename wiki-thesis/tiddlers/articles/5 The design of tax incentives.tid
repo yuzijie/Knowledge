@@ -1,5 +1,5 @@
 created: 20140722154254000
-modified: 20140724142832389
+modified: 20140727115500766
 title: 5 The design of tax incentives
 type: text/vnd.tiddlywiki
 
@@ -12,5 +12,16 @@ R&D tax incentives may apply to all qualified R&D expenditures (volume-based cre
 !! Several issues have to be considered when designing R&D tax incentives.
 
 ''The general fiscal environment'' plays a role in deciding whether to use fiscal measures at all, as fiscal incentives are less effective in a country with a ''low'' rate of corporate income tax. In addition, ''target groups'' need to be selected, ''eligible expenses'' must be defined and a ''choice'' must be made between a tax credit that applies on all R&D outlays (volume) and a credit based on additional spending on R&D (incremental). ([[Additional Reading|Design considerations - fiscal support for business R&D]])
+
+The most common scheme used by countries is a volume-based tax incentive with current R&D (e.g. United Kingdom (Figure 3a), Czech Republic, Norway, Denmark) or current and machinery and equipment (M&E) R&D as eligible expenditures (e.g. Canada (Figure 3b), Australia, Austria, France and Italy). These countries usually also provide more generous support to SMEs through higher tax exemption rates. Referring to the examples in Figure 3a and 3b, it can be calculated that a small British firm would reduce its corporate tax liability by 0.16 for each unit of eligible R&D, while in Canada, the tax credit of 35% would reduce the corporate tax liability of a small firm by 0.35 for each unit of eligible R&D (up to a limit of CAD 3 million), and 0.20 unit thereafter.<<footnote "
+For enhanced allowance, corporate income tax rate must be taken into account to estimate the tax liability reduction. For a small UK firm with a corporate income tax rate of 21%: [175% -100% (normal deduction rate)]*21% = 0.16 unit in reduction of income tax liability.">>
+
+//''Figure 3.'' Examples of simple R&D tax incentive schemes//
+[img class="border"[Fig3a.png]][img class="border"[Fig3b.png]]
+
+Other approaches also exist. For example, some countries consider only incremental current R&D as eligible R&D for tax purposes (e.g. The United States and Ireland) or to use a hybrid scheme considering both volume and incremental R&D as eligible expenditures (e.g. Portugal (Figure 4a), Japan, Spain). Alternatively, and somewhat more different still from the schemes in Figure 3, some countries consider only R&D wages as eligible R&D and deductions would apply to the "corporate wage and social contribution" tax instead of the general corporate income tax (e.g. Belgium and Netherlands, see Figure 4b).
+
+//''Figure 4.'' Example of main deviations from simple R&D tax incentive schemes//
+[img class="border"[Fig4a.png]][img class="border"[Fig4b.png]]
 
 <$macrocall $name="navi" title={{!!title}}/>
