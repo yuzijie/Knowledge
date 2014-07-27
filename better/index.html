@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/core/ui/SideBar/More</li>
 
+<li>$:/core/ui/SideBar/Open</li>
+
 <li>$:/core/ui/SideBar/Tools</li>
 
 <li>$:/core/ui/SideBarLists</li>
@@ -157,13 +159,11 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
-<li>$:/macro/footnote</li>
+<li>$:/macro/annotate</li>
 
 <li>$:/macro/hide</li>
 
 <li>$:/macro/listof</li>
-
-<li>$:/macro/mark</li>
 
 <li>$:/macro/navi</li>
 
@@ -286,6 +286,7 @@ $:/core/ui/PageControls/new-tiddler: configurations/universal/$__core_ui_PageCon
 $:/core/ui/PageControls/save-wiki: configurations/universal/$__core_ui_PageControls_save-wiki.tid
 $:/core/ui/SideBarLists: configurations/universal/$__core_ui_SideBarLists.tid
 $:/core/ui/SideBar/More: configurations/universal/$__core_ui_SideBar_More.tid
+$:/core/ui/SideBar/Open: configurations/universal/$__core_ui_SideBar_Open.tid
 $:/core/ui/SideBar/Tools: configurations/universal/$__core_ui_SideBar_Tools.tid
 $:/core/ui/ViewToolbar/close-others: configurations/universal/$__core_ui_ViewToolbar_close-others.tid
 $:/tags/ViewToolbar: configurations/universal/$__tags_ViewToolbar.tid
@@ -295,10 +296,9 @@ $:/core/images/close-others-button: configurations/universal/buttons/$__core_ima
 $:/core/images/done-button: configurations/universal/buttons/$__core_images_done-button.tid
 $:/core/images/edit-button: configurations/universal/buttons/$__core_images_edit-button.tid
 $:/core/images/info-button: configurations/universal/buttons/$__core_images_info-button.tid
-$:/macro/footnote: configurations/universal/macros/$__macro_footnote.tid
+$:/macro/annotate: configurations/universal/macros/$__macro_annotate.tid
 $:/macro/hide: configurations/universal/macros/$__macro_hide.tid
 $:/macro/listof: configurations/universal/macros/$__macro_listof.tid
-$:/macro/mark: configurations/universal/macros/$__macro_mark.tid
 $:/macro/navi: configurations/universal/macros/$__macro_navi.tid
 $:/macro/show: configurations/universal/macros/$__macro_show.tid
 $:/theme: configurations/universal/theme/$__theme.tid
@@ -4102,7 +4102,20 @@ Leo's Top Ten Study Tips: topics/Leo's Top Ten Study Tips.tid
 <div caption="{{$:/language/SideBar/More/Caption}}" created="20140712225801964" modified="20140712225805085" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div caption="More" created="20140712202419609" modified="20140717123908471" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Open/Caption}}" created="20140727091131708" modified="20140727094643207" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki">
+<pre>\define lingo-base() $:/language/CloseAll/
+&lt;$list filter=&quot;[list[$:/StoryList]]&quot; history=&quot;$:/HistoryList&quot; storyview=&quot;pop&quot;&gt;
+
+@@.tw-menu-list-item
+&lt;$button message=&quot;tw-close-tiddler&quot; title={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=&quot;btn-invisible btn-mini&quot;&gt;&amp;times;&lt;/$button&gt; &lt;$link to={{!!title}}&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/span&gt;&lt;/$link&gt;
+@@
+
+&lt;/$list&gt;
+
+&lt;$button message=&quot;tw-close-all-tiddlers&quot; class=&quot;btn-invisible btn-mini&quot;&gt;&lt;&lt;lingo Button&gt;&gt;&lt;/$button&gt;
+</pre>
+</div>
+<div caption="More" created="20140712202419609" modified="20140724100517166" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki">
 <pre>\define lingo-base() $:/language/ControlPanel/
 &lt;&lt;lingo Tools/Import/Prompt&gt;&gt; &lt;$browse/&gt;
 
@@ -4203,7 +4216,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140630091251571" modified="20140701205315098" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]tag[Topic]sort[title]limit[10]]</pre>
 </div>
-<div current-tiddler="How to Speed Read &amp; Comprehend" modified="20140722142254013" title="$:/HistoryList" type="application/json">
+<div current-tiddler="How to Speed Read &amp; Comprehend" modified="20140727100123576" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;How to Speed Read &amp; Comprehend&quot;
@@ -4213,29 +4226,32 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20140712121649024" modified="20140712122819010" tags="$:/tags/Macro" title="$:/macro/footnote" type="text/vnd.tiddlywiki">
-<pre>\define ref(label,text)
-&lt;$button popup=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt;&lt;/$button&gt;
-\end
+<div created="20140716130346842" modified="20140716131144762" tags="$:/tags/Macro" title="$:/macro/annotate" type="text/vnd.tiddlywiki">
+<pre>\define footnote(comment:&quot;&quot;,tiddler:&quot;&quot;)
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/comment/$comment$_$tiddler$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:orangered;&quot;&gt;&amp;dagger;&lt;/sup&gt;&lt;/$button&gt;
+&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/comment/$comment$_$tiddler$&quot;&gt;&gt;&gt;
 
-\define definition(label,text)
-&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/$label$/$text$&quot;&gt;&gt;&gt;
-
-@@.tw-drop-down
-$text$
+@@.tw-drop-down.inline-link
+$comment$
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;$tiddler$&quot; text=&quot;&quot;&gt;
+&lt;$transclude tiddler=&quot;$tiddler$&quot; mode=&quot;block&quot;/&gt;
+&lt;p style=&quot;text-align:right;&quot;&gt;[[$tiddler$]]&lt;/p&gt;
+&lt;/$reveal&gt;
 @@
 
 &lt;/$reveal&gt;
 \end
 
-\define footnote(label,text)
-&lt;&lt;ref &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
-&lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
-\end
+\define dict(word,random)
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/comment/$word$_$random$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:#149FED;&quot;&gt;?&lt;/sup&gt;&lt;/$button&gt;
+&lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/comment/$word$_$random$&quot;&gt;&gt;&gt;
 
-\define footnotes(label,text)
-&lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
-&lt;sup style=&quot;color:#5778d8&quot;&gt;$label$&lt;/sup&gt; $text$
+@@.tw-drop-down.inline-link
+&lt;p&gt;[[$word$]]&lt;/p&gt;
+&lt;$transclude tiddler=&quot;$word$&quot; mode=&quot;block&quot;/&gt;
+@@
+
+&lt;/$reveal&gt;
 \end
 </pre>
 </div>
@@ -4259,40 +4275,18 @@ $text$
 \end
 </pre>
 </div>
-<div created="20140716130346842" modified="20140716131144762" tags="$:/tags/Macro" title="$:/macro/mark" type="text/vnd.tiddlywiki">
-<pre>\define hlr(text)
-&lt;span class=&quot;red&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define hly(text)
-&lt;span class=&quot;yellow&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define hlb(text)
-&lt;span class=&quot;blue&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define hlg(text)
-&lt;span class=&quot;green&quot;&gt;$text$&lt;/span&gt;
-\end
-
-\define under(text)
-&lt;span class=&quot;red-line&quot;&gt;$text$&lt;/span&gt;
-\end
-</pre>
-</div>
-<div created="20140720231335336" modified="20140721224528113" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
+<div created="20140720231335336" modified="20140722234039910" tags="$:/tags/Macro" title="$:/macro/navi" type="text/vnd.tiddlywiki">
 <pre>\define navi(title)
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;$list filter=&quot;[[$title$]listed[]!is[system]]&quot;&gt;
 &lt;$list filter=&quot;[[$title$]next{!!title}]&quot;&gt;
-&lt;li&gt;&lt;b&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/b&gt;&lt;/li&gt;
+&lt;li style=&quot;margin:0px;&quot;&gt;Next: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[[$title$]previous{!!title}]&quot;&gt;
-&lt;li&gt;Previous: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
+&lt;li style=&quot;margin:0;&quot;&gt;Previous: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
 &lt;/$list&gt;
-&lt;li&gt;Up: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
+&lt;li style=&quot;margin:0;&quot;&gt;Up: “&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;”&lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;
 \end
@@ -4474,7 +4468,7 @@ tiddlerwidth: `660px`</pre>
             &quot;title&quot;: &quot;$:/themes/zacwiki/styles.tid&quot;,
             &quot;tags&quot;: &quot;$:/tags/stylesheet&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 34px 54px 42px 54px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -55px 0 -55px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: #ffffff;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.8);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.36);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.57);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.61);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px solid #ff0000;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 20px 12px 16px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 250px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n&quot;
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Regular.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: normal;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Italic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-Bold.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: italic;\n  font-weight: bold;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff\&quot;&gt;&gt;);\n}\n\n@font-face {\n  font-family: \&quot;Lato\&quot;;\n  font-style: normal;\n  font-weight: 300;\n  src: url(&lt;&lt;datauri \&quot;$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff\&quot;&gt;&gt;);\n}\n\nhtml {\n\tletter-spacing: 0.01em;\n}\n\n.tw-site-title, .titlebar {\n\tletter-spacing: normal;\n}\n\n.tw-subtitle,\n.tw-site-subtitle {\n\tcolor: rgba(24, 41, 85, 0.5);\n}\n\na.tw-tiddlylink {\n\tfont-weight: inherit;\n}\n\n.story-river .body h1 {\n\tfont-size: 1.9em;\n\tmargin: 1em 0;\n\tcolor: #111111;\n}\n\n.story-river .body h2 {\n\tfont-size: 1.7em;\n\tmargin: 0.9em 0;\n}\n\n.story-river .body h3 {\n\tfont-size: 1.4em;\n}\n\n.story-river .body h4 {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n}\n\nbody.tw-body,\n.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {\n\tbackground: #ececec;\n}\n\nbody.tw-body {\n\tcolor: #555555;\n}\n\nbody.tw-body .story-river .body p {\n\tmargin: 1.3em 0;\n}\n\nbody.tw-body .story-river .body &gt; ol,\nbody.tw-body .story-river .body &gt; ul {\n\tmargin: 1.5em 0;\n}\n\nbody.tw-body .story-river .body li {\n\tmargin: 4px 0;\n\tline-height: 24px;\n}\n\nb, strong {\n\tcolor: #111111;\n}\n\n.tw-sidebar-lists .tw-tab-buttons button {\n\tbackground-color: #d8d8d8;\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n\tborder-right: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {\n\tborder-bottom: 1px solid #d8d8d8;\n\tborder-top: 0px;\n\tpadding-top: 5px;\n}\n\n.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {\n\tborder-left: 1px solid #d8d8d8;\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-page-controls {\n\tmargin: 0;\n}\n\n.tw-tiddler-controls button svg {\n\tfill: rgba(24, 41, 85, 0.2);\n}\n\nhr {\n\tdisplay: block;\n\theight: 1px;\n\tborder: 0;\n\tborder-top: 1px solid #d8d8d8;\n\tpadding: 0;\n}\n\n.tw-site-title, .titlebar {\n\tfont-size: 2.1em;\n}\n\n.tw-search {\n\tpadding-top: 8px;\n\tpadding-bottom: 2px;\n}\n\n.sidebar-header,\n.tw-sidebar-lists a.tw-tiddlylink {\n\tcolor: #888888;\n}\n\n.tw-sidebar-lists .tw-search input {\n\tborder: 1px solid #d8d8d8;\n}\n\n.tw-sidebar-lists .tw-tab-divider {\n\tborder-top: 1px solid #d8d8d8;\n}\n\n.tw-tiddler-frame {\n\tborder-radius: 4px;\n\tbox-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);\n}\n\n.tw-tiddler-info {\n\tbox-shadow: none;\n}\n\n@media (min-width: 770px) {\n\t.tw-tiddler-frame {\n\t\tmargin-left: 13px;\n\t}\n\t.story-river {\n\t\tpadding-right: 68px;\n\t}\n}\n\n@media (min-width: 480px) {\n\t.tw-tiddler-frame {\n\t\tpadding: 28px 44px 40px 44px;\n\t}\n\t.tw-tiddler-info {\n\t\tmargin: 0 -45px 0 -45px;\n\t}\n\t.tw-tiddler-frame .tw-tiddler-controls {\n\t\tmargin-left: 0.8em;\n\t}\n}\n\n@media (max-width: 480px) {\n\t.tw-tiddler-info {\n\t\tpadding: 10px;\n\t\tmargin: 0 -15px 0 -15px;\n\t}\n}\n\ncode {\n\tbackground-color: inherit;\n\tborder: none;\n\tpadding: 0;\n}\n\npre {\n\tborder: 1px solid #d8d8d8;\n\tbackground-color: #f8f8f8;\n}\n\nli &gt; pre {\n\tmargin-top: 0.5em;\n\tmargin-bottom: 0.5em;\n}\n\ntable th, table td {\n\tline-height: 23px;\n\tpadding: 3px 7px 3px 7px;\n}\n\n.tw-missing-tiddler-label {\n\tpadding-right: 0.5em;\n}\n\n.tw-topbar-right {\n\ttop: 5px;\n\tright: 5px;\n}\n\n.border {\n\tbackground: #fafafa;\n\tpadding: 8px;\n\tborder: 1px solid;\n\tborder-color: #e5e5e5 #dbdbdb #d2d2d2;\n\tbox-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;\n}\n\n.tw-tab-buttons button {\n\tpadding: 2px 7px 3px 7px;\n\tline-height: 1.6;\n}\n\n.tw-tag-label {\n\tpadding: 3px 9px;\n\tborder-radius: 20px;\n\tfont-weight: 300;\n\tbackground-color: rgba(24, 41, 85, 0.3);\n}\n\n.tw-tag-list-item {\n\tmargin-right: 3px;\n}\n\n.left {\n\tfloat: left;\n\tmargin-right: 2em;\n}\n\n.right {\n\tfloat: right;\n\tmargin-left: 2em;\n}\n\n.middle {\n\tdisplay: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.yellow {\n\tbackground-color: rgba(252, 243, 88, 0.7);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.blue {\n\tbackground-color: rgba(68, 147, 248, 0.3);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red {\n\tbackground-color: rgba(248, 74, 74, 0.5);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.green {\n\tbackground-color: rgba(163, 223, 55, 0.5);\n\tborder-radius: 2px;\n\tpadding-left: 1px;\n\tpadding-right: 1px;\n}\n\n.red-line {\n\tborder-bottom: 1px dashed #ff0000 !important;\n\ttext-decoration: none;\n}\n\n.tw-drop-down {\n\tpadding: 8px 18px 10px 14px;\n\tbox-shadow: 1px 3px 10px rgba(0,0,0,0.3);\n\tborder-radius: 2px;\n\tborder: none;\n\tbackground: whitesmoke;\n\tdisplay: block;\n\twhite-space: normal;\n\tmin-width: 300px;\n}\n\nbody.tw-body .story-river .body p.tw-drop-down {\n\tmargin: 0;\n}\n\nbody.tw-body .story-river .body .tw-drop-down p {\n\tmargin: 0.5em 0;\n\tline-height: 24px;\n}\n\n.tw-drop-down.inline-link a {\n\tdisplay: inline;\n\tpadding: 0;\n}\n\nol.tw-drop-down,\nul.tw-drop-down {\n\tpadding-left: 2.5em;\n}\n\n.nolink {\n\tpointer-events: none;\n\tcursor: default;\n}\n\n.nolink a {\n\tcolor: #149FED;\n}\n&quot;
         }
     }
 }</pre>
