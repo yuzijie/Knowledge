@@ -20,7 +20,7 @@ $comment$
 \end
 
 \define dict(word,random)
-<$button popup=<<qualify "$:/state/comment/$word$_$random$">> class="btn-invisible"><sup style="color:crimson;">?</sup></$button>
+<$button popup=<<qualify "$:/state/comment/$word$_$random$">> class="btn-invisible"><sup style="color:#149FED;">?</sup></$button>
 <$reveal type="popup" state=<<qualify "$:/state/comment/$word$_$random$">>>
 
 @@.tw-drop-down.inline-link
