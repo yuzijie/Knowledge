@@ -1,5 +1,5 @@
 created: 20140727124140394
-modified: 20140727152605352
+modified: 20140727163002555
 title: 8 Efficiency of R&D tax incentives
 type: text/vnd.tiddlywiki
 
@@ -25,4 +25,20 @@ From a policy point of view, a volume-based scheme would be more appropriate if 
 * It is well suited for small firms.
 * It helps build/retain human talent.
 
-A recent trend in OECD countries has been to employ fiscal R&D incentives for labour social charges (e.g. social security and other social taxes on labour). The rationale is that by reducing social charges, companies can reduce monthly operating costs and therefore increase cash flow. This is particularly important since wages typically make up a large part of total R&D costs. Increasing cash flow is particularly important for small, research-intensive firms with little revenue but high investment in intellectual and human capital. Furthermore, by subsiding human capital, the incentives may contribute to retaining human talent.
+A recent trend in OECD countries has been to employ fiscal R&D incentives for labour social charges (e.g. social security and other social taxes on labour). @@.red-line The rationale is that by reducing social charges, companies can reduce monthly operating costs and therefore increase cash flow.@@ This is particularly important since wages typically make up a large part of total R&D costs. @@.red-line Increasing cash flow is particularly important for small, research-intensive firms with little revenue but high investment in intellectual and human capital.@@ Furthermore, by subsiding human capital, the incentives may contribute to retaining human talent.
+
+However, if the number of scientists and engineers workers is stable over time (or "inelastic"), an increase in R&D due to the tax incentive would be captured by higher wages for R&D workers, @@.red-line instead of higher quantity of inventive activities@@. While this "wage effect" can also arise with the more traditional R&D tax scheme, the effect might be @@.nolink [[acerbated]]@@<<dict "acerbated" "306">> when the only R&D eligible activity is R&D wages. Econometric studies seem to @@.nolink [[corroborate]]@@<<dict "corroborate" "721">> the assumption of a "wage effect". It should be noted however that, for most of those studies, it could not be ruled out that the increase in R&D wages could correspond to a change in quality of researchers (e.g. more experienced scientists; higher skilled composition of scientists), in which case the increased in cost would be related to a real increase in innovative activities. More empirical studies are needed to analyse this impact.
+
+Finally, the question of level or incremental eligible expenditures can also apply to R&D wage bill incentives. Governments can choose between providing tax incentives for the employment of all R&D workers or only for newly hired researchers (at a given time). The trade-off between simplifying the scheme and minimising the amount of "subsidised" R&D would still need to be taken into account.
+
+!! Temporary vs. permanent programmes
+
+Efficiency of tax incentive programmes can also be affected by whether it is a temporary or a permanent programme. While the generosity of a tax incentive is believed to have an impact on the amount and location of R&D performed, another important aspect in firms' R&D decisions is for how long the tax incentive will continue. Some projects might just be undertaken to benefit from temporary tax incentives, while other potentially more promising R&D projects might be delayed or performed abroad if the planning horizon for those projects extends beyond the scheduled end of the tax incentive programme. However, not all R&D firms would be affected in the same way by a temporary programme. Firms undertaking R&D projects to be completed within a year (or a few years) would be less likely affected than those with R&D projects covering several years (Guenther, 2008).
+
+!! Presence of sub-national R&D tax incentive programmes
+
+The presence of sub-national R&D tax incentive programmes increases the overall generosity of the tax relief provided to the firm. While these additional tax reliefs provided by sub-national governments are believed to increase R&D performed by local firms, the overall effect is not clear, in particular whether the net effect would still be positive if one takes into account the (supposedly decreasing) R&D performance in neighbouring regions.
+
+The few (mostly American) studies looking at this issue seem to conclude that while the introduction of state-level RD tax incentives do increase R&D within the state, this increase would mostly come from drawing away R&D in neighboring states rather than increasing the national level of R&D. This would lead to a nearly zero sum game (gain in one state would be off-set in another state). While the net national effect of combining national and sub-national R&D incentives need further study, the same issue also arises at the country level where international competition for attracting R&D from MNEs is increasing.
+
+<$macrocall $name="navi" title={{!!title}}/>
