@@ -1,6 +1,6 @@
 caption: {{$:/language/SideBar/Open/Caption}}
 created: 20140727091131708
-modified: 20140727091158675
+modified: 20140727094643207
 tags: $:/tags/SideBar
 title: $:/core/ui/SideBar/Open
 type: text/vnd.tiddlywiki
@@ -8,7 +8,9 @@ type: text/vnd.tiddlywiki
 \define lingo-base() $:/language/CloseAll/
 <$list filter="[list[$:/StoryList]]" history="$:/HistoryList" storyview="pop">
 
+@@.tw-menu-list-item
 <$button message="tw-close-tiddler" title={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class="btn-invisible btn-mini">&times;</$button> <$link to={{!!title}}><span style="font-size:14px;"><$view field="title"/></span></$link>
+@@
 
 </$list>
 
