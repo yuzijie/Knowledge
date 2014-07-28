@@ -1,12 +1,18 @@
 created: 20140727122243198
-modified: 20140727183312969
+modified: 20140728173124707
 title: 7) Recent changes in R&D tax incentive schemes
 type: text/vnd.tiddlywiki
 
-The general trend among OECD countries has been to adjust their R&D tax incentive to make them more generous and simpler to use. For instance, France (in 2008) and Australia (in 2010) replaced their more complex hybrid volume and incremental-based schemes with simpler and more generous volume-based schemes. Belgium, Ireland, Korea, Norway, Portugal and the United Kingdom have increased and sustained their tax credit rates or the ceilings of eligible R&D in recent years. Canada has introduced new administrative rules to facilitate access to their R&D tax credit programme, improve its consistency and predictability, and enhance the quality of the claims process.
+The general trend among OECD countries has been to adjust their R&D tax incentive to make them ''more generous and simpler to use''. For instance, France (in 2008) and Australia (in 2010) replaced their more complex hybrid volume and incremental-based schemes with simpler and more generous volume-based schemes. Belgium, Ireland, Korea, Norway, Portugal and the United Kingdom have increased and sustained their tax credit rates or the ceilings of eligible R&D in recent years. Canada has introduced new administrative rules to facilitate access to their R&D tax credit programme, improve its consistency and predictability, and enhance the quality of the claims process.
 
-Contrary to the general trend, Mexico and New Zealand have repealed their R&D tax credit recently. Mexico converted its R&D tax credit to direct assistance in 2009. New Zealand had introduced a R&D tax credit in 2008 but has since repealed it with effect from the 2009-10 fiscal year.
+Contrary to the general trend, Mexico and New Zealand have @@.nolink [[repealed]]@@<<dict "repealed" "78">> their R&D tax credit recently. Mexico converted its R&D tax credit to direct assistance in 2009. New Zealand had introduced a R&D tax credit in 2008 but has since repealed it with effect from the 2009-10 fiscal year.
 
 To help firms facing the financial crisis, some countries have provided more generous but temporary R&D fiscal incentives. For instance Japan and the Netherlands increased temporarily the ceilings of eligible R&D. Japan also allowed a longer carry-forward of unused R&D credits recognising that several firms would not be in position to claim the totality of their R&D tax credit in the next few years because of the likely fall in profits for Japanese firms. Finally, France will refund, in 2009, all pending claims from the previous years. Before 2009, firms would have had to wait up to three years before getting the refund of their unused credit. With the 2009 scheme, firms will be able to get a refund from their unused credit earned in the last three years. This measure is expected to increase forgone tax revenue to USD 6 billiion in 2009 (0.29 per cent of GDP).
+
+实施措施有：
+
+* 提高上限
+* 延长 Carry-forward 的时间
+* 提前 refund
 
 <$macrocall $name="navi" title={{!!title}}/>

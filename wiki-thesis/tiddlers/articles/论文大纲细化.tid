@@ -1,6 +1,6 @@
 created: 20140728130641857
-modified: 20140728134721585
-tags: 论文写作
+modified: 20140728212432015
+tags: 论文写作 写作中
 title: 论文大纲细化
 type: text/vnd.tiddlywiki
 
@@ -8,15 +8,30 @@ type: text/vnd.tiddlywiki
 
 # [[Why do governments support business R&D?|1) Why do governments support business R&D?]]
 # [[Direct versus Indirect funding of R&D|2) The policy mix: Direct versus Indirect funding of R&D]]
+# [[The design of tax incentives|5) The design of tax incentives]]
+#* Incremental versus volume based tax credits
+#* Several issues to be considered when designing
+#*# The general fiscal environment: less effective in a country with a low rate of corporate income tax
+#*# target groups need to be selected
+#*# eligible expenses must be defined
+#*# choice between incremental or all R&D outlays
+# [[Efficiency of R&D tax incentives|8) Efficiency of R&D tax incentives]]
+#* Incremental vs. level-based schemes
+#* Tax credit for R&D wages
+#* Temporary vs. permanent programmes
+#* Presence of sub-national R&D tax incentive programmes
 
 !! Review of world wide policies
 
+# [[R&D tax incentives on the rise|4) R&D tax incentives on the rise]]
 # [[Comparable “quantitative” estimates of R&D-related tax expenditures|3) The first internationally comparable “quantitative” estimates of R&D-related tax expenditures]]
 # Direct tax cost as percentage of GDP Comparison
 # Forgone tax revenue
 # [[The B index]]
 # [[Changes in tax support for business R&D]]
 # [[Business R&D intensity and government support to business R&D|R&D tax incentives, direct support and business R&D intensity]]
+# Multi-faced schemes, sub-national tax incentives, and innovation tax incentives
+# [[Recent changes in R&D tax incentive schemes|7) Recent changes in R&D tax incentive schemes]]
 
 !!The empirical analysis on the efficacy
 
