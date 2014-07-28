@@ -1,10 +1,11 @@
 created: 20140720150757534
-modified: 20140721125304464
+list: [[The generosity of R&D tax incentives]] [[A more complete picture of government support for business R&D]] [[Changes in tax support for business R&D]] [[R&D tax incentives, direct support and business R&D intensity]] [[Definitions and Measurement]]
+modified: 20140728100107823
 source: http://www.oecd.org/sti/rd-tax-stats.htm
-tags: 资料整理
+tags: 资料整理 OECD.org
 title: Measuring R&D Tax Incentives
 type: text/vnd.tiddlywiki
 
 R&D tax incentives have become an important policy instrument in several OECD countries and partner economies to encourage firms to invest in R&D. This page provides the latest indicators on R&D tax incentives featured in the [[OECD Science, Technology and Industry Scoreboard 2013|http://www.oecd.org/sti/scoreboard.htm]].
 
-<$macrocall $name="listof" tag={{!!title}} type="show">
+<$macrocall $name="listof" title={{!!title}} type="show">
