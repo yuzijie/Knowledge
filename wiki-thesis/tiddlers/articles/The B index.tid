@@ -1,14 +1,14 @@
 created: 20140720155026965
-modified: 20140720164026062
+modified: 20140728103420564
 pdf: http://www.oecd-ilibrary.org/deliver/fulltext/9209031ec031.pdf
 source: http://www.oecd-ilibrary.org/sites/sti_scoreboard-2009-en/02/14/index.html?itemId=/content/chapter/sti_scoreboard-2009-31-en
-tags: 句子和公式
+tags: 句子和公式 CountryComparison
 title: The B index
 type: text/vnd.tiddlywiki
 
 !! Tax treatment of R&D
 
-Research and development (R&D) tax concessions are extensively used by OECD countries as an indirect way of encouraging business R&D expenditures. Special tax treatment for R&D expenditures includes immediate write-off of current R&D expenditures and various types of tax relief, such as tax credits or allowances against taxable income. Depreciation allowances are a third type.
+Research and development (R&D) tax @@.nolink [[concessions]]@@<<dict "concessions" "246">> are extensively used by OECD countries as an indirect way of encouraging business R&D expenditures. Special tax treatment for R&D expenditures includes ''immediate write-off of current R&D expenditures'' and various types of tax relief, such as ''tax credits'' or ''allowances against taxable income''. ''Depreciation allowances'' are a third type.<<footnote tiddler:"Ways to Incentivise R&D">>
 
 ''The amount of tax subsidy for R&D is calculated as 1 minus the B index'' (Warda, 2001). The B index is defined as the present value of before tax income necessary to cover the initial cost of R&D investment and to pay corporate income tax, so that it is profitable to perform research activities.
 
