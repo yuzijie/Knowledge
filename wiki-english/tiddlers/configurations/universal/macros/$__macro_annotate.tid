@@ -1,5 +1,5 @@
 created: 20140716130346842
-modified: 20140716131144762
+modified: 20140728104937509
 tags: $:/tags/Macro
 title: $:/macro/annotate
 type: text/vnd.tiddlywiki
@@ -11,8 +11,8 @@ type: text/vnd.tiddlywiki
 @@.tw-drop-down.inline-link
 $comment$
 <$reveal type="nomatch" state="$tiddler$" text="">
+<p>[[$tiddler$]]</p>
 <$transclude tiddler="$tiddler$" mode="block"/>
-<p style="text-align:right;">[[$tiddler$]]</p>
 </$reveal>
 @@
 
