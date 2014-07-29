@@ -229,6 +229,8 @@ Error message and password prompt
 
 <li>抓紧时间</li>
 
+<li>拖拉一点也无妨</li>
+
 <li>无时无刻不在想同一个问题</li>
 
 <li>有计划的去完成一件事</li>
@@ -293,6 +295,7 @@ Error message and password prompt
 把目标设得小一点: articles/把目标设得小一点.tid
 把背诵作为一件快乐的事情: articles/把背诵作为一件快乐的事情.tid
 抓紧时间: articles/抓紧时间.tid
+拖拉一点也无妨: articles/拖拉一点也无妨.tid
 无时无刻不在想同一个问题: articles/无时无刻不在想同一个问题.tid
 有计划的去完成一件事: articles/有计划的去完成一件事.tid
 查缺补漏，总结经验教训: articles/查缺补漏，总结经验教训.tid
@@ -4243,17 +4246,17 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140621160857357" modified="20140708180512740" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[modified]limit[7]]</pre>
 </div>
-<div current-tiddler="互联网思维对我的启示" modified="20140727160121960" title="$:/HistoryList" type="application/json">
+<div current-tiddler="拖拉一点也无妨" modified="20140729083855301" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;互联网思维对我的启示&quot;
+        &quot;title&quot;: &quot;拖拉一点也无妨&quot;
     }
 ]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20140716130346842" modified="20140716131144762" tags="$:/tags/Macro" title="$:/macro/annotate" type="text/vnd.tiddlywiki">
+<div created="20140716130346842" modified="20140728104937509" tags="$:/tags/Macro" title="$:/macro/annotate" type="text/vnd.tiddlywiki">
 <pre>\define footnote(comment:&quot;&quot;,tiddler:&quot;&quot;)
 &lt;$button popup=&lt;&lt;qualify &quot;$:/state/comment/$comment$_$tiddler$&quot;&gt;&gt; class=&quot;btn-invisible&quot;&gt;&lt;sup style=&quot;color:orangered;&quot;&gt;&amp;dagger;&lt;/sup&gt;&lt;/$button&gt;
 &lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/comment/$comment$_$tiddler$&quot;&gt;&gt;&gt;
@@ -4261,8 +4264,8 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 @@.tw-drop-down.inline-link
 $comment$
 &lt;$reveal type=&quot;nomatch&quot; state=&quot;$tiddler$&quot; text=&quot;&quot;&gt;
+&lt;p&gt;[[$tiddler$]]&lt;/p&gt;
 &lt;$transclude tiddler=&quot;$tiddler$&quot; mode=&quot;block&quot;/&gt;
-&lt;p style=&quot;text-align:right;&quot;&gt;[[$tiddler$]]&lt;/p&gt;
 &lt;/$reveal&gt;
 @@
 
@@ -4294,9 +4297,9 @@ $comment$
 \end
 </pre>
 </div>
-<div created="20140720145353571" modified="20140721125245757" tags="$:/tags/Macro" title="$:/macro/listof" type="text/vnd.tiddlywiki">
-<pre>\define listof(tag,type:&quot;hide&quot;)
-&lt;$list filter=&quot;[!is[system]tag[$tag$]sort[created]]&quot;&gt;
+<div created="20140720145353571" modified="20140728093702520" tags="$:/tags/Macro" title="$:/macro/listof" type="text/vnd.tiddlywiki">
+<pre>\define listof(title,type:&quot;hide&quot;)
+&lt;$list filter=&quot;[list[$title$]]&quot;&gt;
 &lt;$macrocall $name=&quot;$type$&quot; heading=&quot;h1&quot; title={{!!title}}/&gt;
 &lt;/$list&gt;
 \end
@@ -4372,25 +4375,25 @@ $title$
 <div created="20140621160551420" modified="20140708175350665" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Reflections</pre>
 </div>
-<div list="互联网思维对我的启示 让阅读文献更有收获 看财经郎眼的收获 阅读能力是人的第二视力 阅读能力很重要 外观对于工作效率的提升 大企业行为对我的启示" title="$:/StoryList">
+<div list="拖拉一点也无妨 我从复习考试中收获了什么 大企业行为对我的启示 看财经郎眼的收获 互联网思维对我的启示 踏实下心来，一点一点解决问题 找不到答案就给我思路" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140716163738913" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
-<pre>\define toc-heading(caption)
-&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
-  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140729075017640" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<pre>\define toc-heading(tag,caption)
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$tag$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$tag$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
   &lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;$caption$&lt;/span&gt;
   &lt;/$button&gt;
 &lt;/$reveal&gt;
-&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
-  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;hide&quot; class=&quot;btn-invisible&quot;&gt;
+&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$tag$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$tag$&quot;&gt;&gt; setTo=&quot;hide&quot; class=&quot;btn-invisible&quot;&gt;
   &lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;$caption$&lt;/span&gt;
   &lt;/$button&gt;
 &lt;/$reveal&gt;
 
-&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$tag$&quot;&gt;&gt; text=&quot;show&quot;&gt;
 &lt;ol style=&quot;padding-left: 20px;&quot;&gt;
-    &lt;$list filter=&quot;[!is[system]tag[$caption$]!sort[modified]]&quot;&gt;
+    &lt;$list filter=&quot;[!is[system]tag[$tag$]!sort[modified]]&quot;&gt;
       &lt;li style=&quot;line-height: 1.35em; padding: 3px 0 5px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
     &lt;/$list&gt;
 &lt;/ol&gt;
@@ -4401,10 +4404,11 @@ $title$
 &lt;div style=&quot;width:228px;&quot;&gt;
 &lt;ol style=&quot;padding-left:1.5em;&quot;&gt;
 
-&lt;li&gt;&lt;&lt;toc-heading &quot;我的任务&quot;&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;toc-heading &quot;我的目标&quot;&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;toc-heading &quot;我的收获&quot;&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;toc-heading &quot;我的反思&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;我的任务&quot; &quot;我的任务&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;我的目标&quot; &quot;我的目标&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;inspiration&quot; &quot;My Inspiration&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;reflection&quot; &quot;My Reflection&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;BookReview&quot; &quot;Book Review&quot;&gt;&gt;&lt;/li&gt;
 
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -4535,7 +4539,7 @@ tiddlerwidth: `660px`</pre>
 
 勇于去挑战自己从前不能完成，但又不是过于困难的事情，尝试突破自己的极限。</pre>
 </div>
-<div created="20140708180705479" modified="20140716213443309" tags="我的收获" title="互联网思维对我的启示" type="text/vnd.tiddlywiki">
+<div created="20140708180705479" modified="20140729075058307" tags="inspiration" title="互联网思维对我的启示" type="text/vnd.tiddlywiki">
 <pre># 在想得到的地方免费，在想不到的地方赚钱。这样就可以有效的打击到行业中，使用传统盈利模式的企业。例如：360 让杀毒软件免费，但是用杀毒软件中捆绑的游戏来盈利。
 # 不追求多的SKU，但追求极致的用户体验是互联网精神之一。
 # 在互联网上，产品的不断升级和优化早已经深入互联网人意识，大到操作系统，小到手机上的APP。
@@ -4560,12 +4564,12 @@ tiddlerwidth: `660px`</pre>
 
 看似如小丘一样的书本，在不知不觉中被看完。</pre>
 </div>
-<div created="20140709101553627" modified="20140709102216611" tags="我的反思" title="外观对于工作效率的提升" type="text/vnd.tiddlywiki">
+<div created="20140709101553627" modified="20140729074248647" tags="reflection" title="外观对于工作效率的提升" type="text/vnd.tiddlywiki">
 <pre>于我来说，产品外观的提升对于工作效率的提升是很有帮助的。当然我只能代表某一部分人，至于这部分人多不多，我不清楚。
 
 自从我将 Tiddlywiki 里的正文字体由默认的 Helvetica 换成 Lato 之后，每当我再次阅读 wiki 里面的英文文章时，我的心情都要比原来有了些许舒畅，也更能踏实下来阅读这里的文字了。确实感觉工作效率有了一定的提高。</pre>
 </div>
-<div created="20140708181551430" modified="20140708182701713" tags="我的收获" title="大企业行为对我的启示" type="text/vnd.tiddlywiki">
+<div created="20140708181551430" modified="20140729075125620" tags="inspiration" title="大企业行为对我的启示" type="text/vnd.tiddlywiki">
 <pre># 苹果通过收购指纹识别公司，达到指纹识别技术的垄断。利用收购的方式，对新技术进行严格控制，垄断市场，成为寡头。
 # 从三星的 AMOLED 屏幕，到苹果的 Ax 处理器，知名的手机企业越来重视技术的独立性，未来的竞争，一定是有独立技术的公司之间的竞争，谁掌握的技术越多，谁越有竞争优势，那些像 HTC 那样，研发能力不足，只能在参数上和设计上下工夫的公司，会越来越向低端方向发展，或者即使在高端领域也只能苟延残喘。
 # 待续...</pre>
@@ -4592,7 +4596,7 @@ tiddlerwidth: `660px`</pre>
 
 不断用思索和计算来锻炼自己的大脑，让自己的大脑永保青春。</pre>
 </div>
-<div created="20140622155537490" modified="20140702151645043" tags="我的收获" title="我从复习考试中收获了什么" type="text/vnd.tiddlywiki">
+<div created="20140622155537490" modified="20140729075135162" tags="inspiration" title="我从复习考试中收获了什么" type="text/vnd.tiddlywiki">
 <pre># [[不断试探自己的极限]]
 # [[再坚持一会]]
 # [[思考到头大]]
@@ -4615,12 +4619,12 @@ tiddlerwidth: `660px`</pre>
 # 负责人的人，为自己负责，为别人负责
 # 做各方面均衡发展的人</pre>
 </div>
-<div created="20140708174251721" modified="20140708174839726" tags="我的反思" title="找不到答案就给我思路" type="text/vnd.tiddlywiki">
+<div created="20140708174251721" modified="20140729074512142" tags="reflection" title="找不到答案就给我思路" type="text/vnd.tiddlywiki">
 <pre>很多时候，得到答案是非常困难的，尤其是创造性的工作，当前人没有类似的经验的情况下，未来的不确定性非常之高，谁都没有把握得到确定的答案。
 
 但是，再远的路也是也是一步一步走出来的，再困难的事情也是一点一点做出来的。人不应该因为没有确定的答案而被吓住，答案可以没有，但是思路却可以得到，''谨慎小心的去思考下一步要做什么，然后一步一步向着最后的答案靠近''，这是大多数创造性工作完成的方式。</pre>
 </div>
-<div created="20140708174859661" modified="20140708180639930" tags="我的反思" title="把目标设得小一点" type="text/vnd.tiddlywiki">
+<div created="20140708174859661" modified="20140729074502512" tags="reflection" title="把目标设得小一点" type="text/vnd.tiddlywiki">
 <pre>对于创造性的工作来说，目标往往是前进的障碍。当然，情况并不总是如此，对于心里有底，有经验的人来说，目标是一种激励与动力。但是对于心里没底，缺乏经验的人来说，目标是巨大的压力，而且目标越大，压力也越大。
 
 身负巨大压力的人是很难做好创造性的工作的，无压力的环境才能更好的激发一个人的灵感。
@@ -4638,6 +4642,11 @@ tiddlerwidth: `660px`</pre>
 <pre>时间在考试当中是尤为宝贵的。抓紧时间才能在考试中得到高分。
 
 要想在生活中取得高分，就要在生活中抓紧时间。</pre>
+</div>
+<div created="20140729072034272" modified="20140729082757560" tags="BookReview" title="拖拉一点也无妨" type="text/vnd.tiddlywiki">
+<pre># 烂的开始是完成的一半
+#&gt; 追求“完成”的人，时常能体会，“烂开始”带来了“好结束”；&lt;br&gt;苛求“完美”的人，却往往发现，“好开始”只换到了“烂结束”。
+# 一件无聊或看似无聊的事情，总是容易被我们拖延。但如果你能找到一件“有聊”的事情，跟它绑在一起做，并且能两不耽误，那么前一件事就不容易拖延了。</pre>
 </div>
 <div created="20140622170944357" modified="20140622171224748" title="无时无刻不在想同一个问题" type="text/vnd.tiddlywiki">
 <pre>有时候解决问题需要具备死缠烂打的精神。不停的去想同一个问题，也许会在未来的某一天得到解决。</pre>
@@ -4673,7 +4682,7 @@ tiddlerwidth: `660px`</pre>
 
 具有快速而准确的理解力，是顺利完成考试和工作的重中之重。</pre>
 </div>
-<div created="20140715211951533" modified="20140715213126215" tags="我的收获" title="看财经郎眼的收获" type="text/vnd.tiddlywiki">
+<div created="20140715211951533" modified="20140729075118479" tags="inspiration" title="看财经郎眼的收获" type="text/vnd.tiddlywiki">
 <pre># 郎咸平说，他上博士课程之前，踌躇满志，以为自己可以写出伟大的改变世界的论文。但是后来他发现，飞跃式的创新非常困难，在前人基础之上，一点小小的突破，都可以被看成是巨大的成果。所以大部分的创新都应当是微创新。由于中国学校教育的不足，学生往往好高骛远，论文的结论往往被说成可以改变世界，但实际上连微创新都算不上。我要端正心态，即使自己没有什么巨大的创新，也不应当气馁，应当继续努力。</pre>
 </div>
 <div created="20140622170130291" modified="20140622170821597" title="表达能力很重要" type="text/vnd.tiddlywiki">
@@ -4687,7 +4696,7 @@ tiddlerwidth: `660px`</pre>
 <div created="20140622163001919" modified="20140622163049749" title="要甘于寂寞" type="text/vnd.tiddlywiki">
 <pre>没有一个伟大的人不是寂寞的好朋友，没有寂寞，你将一事无成。</pre>
 </div>
-<div created="20140716162431354" modified="20140716163635386" tags="我的反思" title="让阅读文献更有收获" type="text/vnd.tiddlywiki">
+<div created="20140716162431354" modified="20140729074430323" tags="reflection" title="让阅读文献更有收获" type="text/vnd.tiddlywiki">
 <pre>左边的文献电子版，右边是 Tiddlywiki。边看边抄，同时在抄录的文字里划重点，列关键词，加注释，最后列出总的目录。
 
 这些事情做过以后，感觉确实对文章的整体结构有了清晰的理解，对我的论文写作有了明确的指导。
@@ -4699,7 +4708,7 @@ tiddlerwidth: `660px`</pre>
 <div created="20140622171959394" modified="20140622172747479" title="记笔记并时常复习" type="text/vnd.tiddlywiki">
 <pre>好记性不如烂笔头，笔记可以帮助一个人理解和加深记忆。笔记是人一生的财富。</pre>
 </div>
-<div created="20140704143125334" modified="20140704143549457" tags="我的反思" title="踏实下心来，一点一点解决问题" type="text/vnd.tiddlywiki">
+<div created="20140704143125334" modified="20140729074522181" tags="reflection" title="踏实下心来，一点一点解决问题" type="text/vnd.tiddlywiki">
 <pre>我对于复杂，麻烦的事情总是由恐惧心理。因为恐惧心理，所以千方百计的想摆脱这些事。最后导致的是拖延。
 
 积极的面对，踏实下心来，一点一点的把它们解决。长征也是一步一步走出来的。</pre>
@@ -4715,7 +4724,7 @@ tiddlerwidth: `660px`</pre>
 
 ''大量而深入的阅读练习，是培养记忆力和耐心的有效手段。''</pre>
 </div>
-<div created="20140709112430254" modified="20140709115821165" tags="我的反思 阅读" title="阅读能力是人的第二视力" type="text/vnd.tiddlywiki">
+<div created="20140709112430254" modified="20140729074450604" tags="阅读 reflection" title="阅读能力是人的第二视力" type="text/vnd.tiddlywiki">
 <pre>阅读是开阔眼界的重要方式，增强阅读能力是未来获得长远发展的重要途径。</pre>
 </div>
 
