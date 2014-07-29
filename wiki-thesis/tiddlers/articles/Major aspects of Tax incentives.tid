@@ -1,6 +1,41 @@
 created: 20140729192742808
-modified: 20140729192836271
-tags: 资料整理 写作中
+modified: 20140729203400793
+tags: 资料整理
 title: Major aspects of Tax incentives
 type: text/vnd.tiddlywiki
 
+Existing R&D tax incentive schemes differ significantly in terms of:
+
+* their generosity
+* their design
+* the categories of firms or R&D areas they target
+
+They include: 基于支出和收入的激励
+
+# expenditure-based tax incentives
+## R&D tax credits
+## R&D tax allowances
+## payroll withholding tax credit for R&D wages
+# income-based tax incentives
+## preferential rates on @@.nolink [[royalty]]@@<<dict "royalty" "48">> income
+## other income from knowledge capital
+
+!! Differences in R&D tax incentives schemes in selected OECD countries, 2009
+
+|Design of the R&D tax incentive scheme|Volume-based R&D tax credit|Australia, Brazil, Canada, China, France, India, Norway|
+|~|Incremental R&D tax credit|United States|
+|~|Hybrid volume and incremental credit|Japan, Korea, Portugal, Spain|
+|~|R&D tax allowance|Austria, Czech Republic, Denmark, Hungary, Turkey, United Kingdom|
+|Payroll withholding tax credit for R&D wages|<|Belgium, Hungary, Netherlands, Spain, Turkey|
+|More generous R&D tax incentives for SMEs|<|Australia, Canada, France, Hungary, Japan, Korea, Norway, United Kingdom|
+|Targeting|Energy|United States|
+|~|Collaboration|Hungary, Italy, Japan, Norway, Turkey|
+|~|New claimants|France|
+|~|Young firms and start-ups|France, Korea, Netherlands|
+|Ceilings on amounts that can be claimed|<|Austria, Italy, Japan, Netherlands, Norway, United States|
+|Income-based R&D tax incentives|<|Belgium, Netherlands, Spain|
+|No R&D tax incentives|<|Estonia, Finland, Germany, Luxembourg, Mexico, New Zealand, Sweden, Switzerland|
+
+R&D tax allowances are available in Austria, the Czech Republic, Denmark, Hungary, and the United Kingdom. Payroll withholding tax credit for R&D wages (deductions from payroll taxes and social security contributions), are used in Belgium, Hungary, the Netherlands, Spain and Turkey.
+
+In addition, R&D tax incentives may provide for special treatment of certain types of firms or of R&D. Certain countries allow carry-forward or carry-back for firms whose tax bill is lower than their allowable R&D credit. It can even be refunded in certain cases (e.g. for start-up firms, which often do not show a profit).
