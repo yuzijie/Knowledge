@@ -1,26 +1,26 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140716163738913
+modified: 20140729075017640
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
 
-\define toc-heading(caption)
-<$reveal type="nomatch" state=<<qualify "$:/state/toc/$caption$">> text="show">
-  <$button set=<<qualify "$:/state/toc/$caption$">> setTo="show" class="btn-invisible">
+\define toc-heading(tag,caption)
+<$reveal type="nomatch" state=<<qualify "$:/state/toc/$tag$">> text="show">
+  <$button set=<<qualify "$:/state/toc/$tag$">> setTo="show" class="btn-invisible">
   <span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">$caption$</span>
   </$button>
 </$reveal>
-<$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
-  <$button set=<<qualify "$:/state/toc/$caption$">> setTo="hide" class="btn-invisible">
+<$reveal type="match" state=<<qualify "$:/state/toc/$tag$">> text="show">
+  <$button set=<<qualify "$:/state/toc/$tag$">> setTo="hide" class="btn-invisible">
   <span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">$caption$</span>
   </$button>
 </$reveal>
 
-<$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
+<$reveal type="match" state=<<qualify "$:/state/toc/$tag$">> text="show">
 <ol style="padding-left: 20px;">
-    <$list filter="[!is[system]tag[$caption$]!sort[modified]]">
+    <$list filter="[!is[system]tag[$tag$]!sort[modified]]">
       <li style="line-height: 1.35em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
     </$list>
 </ol>
@@ -31,10 +31,11 @@ type: text/vnd.tiddlywiki
 <div style="width:228px;">
 <ol style="padding-left:1.5em;">
 
-<li><<toc-heading "我的任务">></li>
-<li><<toc-heading "我的目标">></li>
-<li><<toc-heading "我的收获">></li>
-<li><<toc-heading "我的反思">></li>
+<li><<toc-heading "我的任务" "我的任务">></li>
+<li><<toc-heading "我的目标" "我的目标">></li>
+<li><<toc-heading "inspiration" "My Inspiration">></li>
+<li><<toc-heading "reflection" "My Reflection">></li>
+<li><<toc-heading "BookReview" "Book Review">></li>
 
 </ol>
 </div>
