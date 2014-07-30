@@ -95,8 +95,8 @@ body.tw-body .story-river .body > ul {
 }
 
 body.tw-body .story-river .body li {
-	margin: 4px 0;
-	line-height: 24px;
+	margin: 5px 0;
+	line-height: 23px;
 }
 
 b, strong {
