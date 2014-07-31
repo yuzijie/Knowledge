@@ -1,5 +1,5 @@
 created: 20140720155026965
-modified: 20140728112244090
+modified: 20140731142723142
 source: http://www.oecd-ilibrary.org/sites/sti_scoreboard-2009-en/02/14/index.html?itemId=/content/chapter/sti_scoreboard-2009-31-en
 tags: 句子和公式 CountryComparison
 title: The B index
@@ -21,7 +21,7 @@ Algebraically, the B index is equal to the after-tax cost of an expenditure of U
 
 [img[B-index.gif]]
 
-where ''A = the net present discounted value of depreciation allowances, tax credits and special allowances on R&D assets''; and //tau// = the statutory corporate income tax rate (CITR). In a country with full @@.nolink [[write-off]]@@<<dict "write-off" "427">> of current R&D expenditure and no R&D tax incentive scheme, A = //tau//, and consequently B = 1. The more ''favourable'' a country's tax treatment of R&D, the ''lower'' its B index.
+where ''A = the net present discounted value of depreciation allowances, tax credits and special allowances on R&D assets''; and //tau// = the statutory corporate income tax rate (CITR). In a country with full @@.nolink [[write-off]]@@<<dict "write-off" "427">> of current R&D expenditure and no R&D tax incentive scheme, A = //tau//, and consequently B = 1. The more ''favourable'' a country's tax treatment of R&D, the ''lower'' its B index.<<footnote "因为 B index 的定义是：能够平衡科研支出的最低税前收入。所以，B index 越低，证明这个国家越适合科研。">>
 
 ''The B index is a unique tool for comparing the generosity of the tax treatment of R&D in different countries.'' However, its computation requires some simplifying assumptions. It should therefore be examined together with a set of other relevant policy indicators. Furthermore, its "synthetic" nature does not allow for distinguishing the relative importance of the various policy tools it takes into account (e.g. depreciation allowances, special R&D allowances, tax credit, CITR). B indexes have been calculated under the assumption that the "representative firm" is taxable and may enjoy the full benefit of the tax allowance or credit. For incremental tax credits, calculation of the B index implicitly assumes that R&D investment is fully eligible for the credit and does not exceed the ceiling if there is one. //Some detailed features of R&D tax schemes (e.g. refunding, carry-back and carry-forward of unused tax credit, or flow-through mechanisms) are therefore not taken into account.//
 

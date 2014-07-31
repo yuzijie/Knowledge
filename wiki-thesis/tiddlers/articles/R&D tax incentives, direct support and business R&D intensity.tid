@@ -1,8 +1,8 @@
 created: 20140728095300272
-modified: 20140728095500094
+modified: 20140731143714158
 title: R&D tax incentives, direct support and business R&D intensity
 type: text/vnd.tiddlywiki
 
 Below, bubble sizes represent the total amount of tax incentive support for R&D expenditures in USD PPP. For example, in the Netherlands, tax support for R&D is just above USD 1 billion. Total government support for business R&D is just above 0.2% of GDP and business R&D is close to 1% of GDP. Across countries, the correlation between the two variables is 29%.
 
-[img class="border" [Business_RnD_intensity_and_government_support_to_business_RnD_2011.png]]
+{{Business_RnD_intensity_and_government_support_to_business_RnD_2011.png}}

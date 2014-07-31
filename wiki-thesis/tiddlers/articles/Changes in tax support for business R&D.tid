@@ -1,8 +1,8 @@
 created: 20140720210332510
-modified: 20140731120920204
+modified: 20140731143648696
 title: Changes in tax support for business R&D
 type: text/vnd.tiddlywiki
 
 Over 2006-11, the importance of tax incentives @@.nolink [[vis-à-vis]]@@<<dict "vis-à-vis" "82">> direct support increased in 11 out of 23 countries for which complete data are available. @@.yellow Their share of support fell in many countries owing to the crisis-driven decline in business R&D.@@<<footnote "由于经济危机，企业的科研经费减少使得 Tax incentive 减少">> Mexico and New Zealand abolished their tax incentives but Finland introduced them in 2013. Falling profits at the outset of the economic crisis also reduced firms’ ability to claim incentives.
 
-[img class="border"[Tax_incentive_share_of_government_funds_for_RnD.png]]
+{{Tax_incentive_share_of_government_funds_for_RnD.png}}
