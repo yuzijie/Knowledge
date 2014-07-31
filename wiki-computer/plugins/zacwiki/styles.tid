@@ -176,6 +176,11 @@ hr {
 	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
+.tw-tiddler-frame img {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 .tw-tiddler-info {
 	box-shadow: none;
 }
