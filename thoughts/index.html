@@ -4249,10 +4249,10 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140621160857357" modified="20140708180512740" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[modified]limit[7]]</pre>
 </div>
-<div current-tiddler="真正激发效率的核心" modified="20140731220158979" title="$:/HistoryList" type="application/json">
+<div current-tiddler="我从复习考试中收获了什么" modified="20140731230805099" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;真正激发效率的核心&quot;
+        &quot;title&quot;: &quot;我从复习考试中收获了什么&quot;
     }
 ]</pre>
 </div>
@@ -4378,7 +4378,7 @@ $title$
 <div created="20140621160551420" modified="20140708175350665" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Reflections</pre>
 </div>
-<div list="真正激发效率的核心 拖拉一点也无妨 我从复习考试中收获了什么 大企业行为对我的启示 看财经郎眼的收获 互联网思维对我的启示 踏实下心来，一点一点解决问题" title="$:/StoryList">
+<div list="我从复习考试中收获了什么 真正激发效率的核心 拖拉一点也无妨 大企业行为对我的启示 看财经郎眼的收获 互联网思维对我的启示 踏实下心来，一点一点解决问题" title="$:/StoryList">
 <pre></pre>
 </div>
 <div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140729113555572" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
@@ -4599,23 +4599,22 @@ tiddlerwidth: `660px`</pre>
 
 不断用思索和计算来锻炼自己的大脑，让自己的大脑永保青春。</pre>
 </div>
-<div created="20140622155537490" modified="20140729075135162" tags="inspiration" title="我从复习考试中收获了什么" type="text/vnd.tiddlywiki">
-<pre># [[不断试探自己的极限]]
-# [[再坚持一会]]
-# [[思考到头大]]
-# [[一切以目标为中心]]
-# [[把背诵作为一件快乐的事情]]
-# [[有计划的去完成一件事]]
-# [[要甘于寂寞]]
-# [[学会将大拆成小]]
-# [[理解能力是学习能力的关键]]
-# [[阅读能力很重要]]
-# [[表达能力很重要]]
-# [[抓紧时间]]
-# [[无时无刻不在想同一个问题]]
-# [[人需要有压力]]
-# [[记笔记并时常复习]]
-# [[查缺补漏，总结经验教训]]</pre>
+<div created="20140622155537490" list="不断试探自己的极限 再坚持一会 思考到头大 一切以目标为中心 把背诵作为一件快乐的事情 有计划的去完成一件事 要甘于寂寞 学会将大拆成小 理解能力是学习能力的关键 阅读能力很重要 表达能力很重要 抓紧时间 无时无刻不在想同一个问题 人需要有压力 记笔记并时常复习 查缺补漏，总结经验教训" modified="20140731230640739" tags="inspiration" title="我从复习考试中收获了什么" type="text/vnd.tiddlywiki">
+<pre>\define alist(title)
+&lt;ol&gt;
+&lt;$list filter=&quot;[list[$title$]]&quot;&gt;
+&lt;li&gt;
+&lt;$link to={{!!title}}&gt;{{!!title}}&lt;/$link&gt;
+&lt;blockquote style=&quot;margin:0;&quot;&gt;
+&lt;$transclude tiddler={{!!title}} mode=&quot;block&quot;/&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ol&gt;
+\end
+
+&lt;$macrocall $name=&quot;alist&quot; title={{!!title}}/&gt;
+</pre>
 </div>
 <div created="20140622155620831" modified="20140702151441606" tags="我的目标" title="我要成为一个什么样的人" type="text/vnd.tiddlywiki">
 <pre># 永远做正确事情的人，即使再活一次，也不会比现在做得好太多
