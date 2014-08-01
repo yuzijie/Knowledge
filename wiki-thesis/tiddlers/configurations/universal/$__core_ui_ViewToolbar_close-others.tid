@@ -1,5 +1,6 @@
 created: 20140630131636250
-modified: 20140707201132308
+list-after: $:/core/ui/ViewToolbar/edit
+modified: 20140801134250028
 tags: $:/tags/ViewToolbar $:/tags/EditToolbar
 title: $:/core/ui/ViewToolbar/close-others
 type: text/vnd.tiddlywiki
