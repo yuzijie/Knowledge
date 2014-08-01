@@ -181,8 +181,6 @@ Error message and password prompt
 
 <li>$:/TableOfContents</li>
 
-<li>$:/tags/ViewToolbar</li>
-
 <li>$:/theme</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
@@ -281,6 +279,7 @@ Error message and password prompt
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
 <pre>Keywords: articles/Keywords.tid
+《拖拉一点也无妨》: articles/《拖拉一点也无妨》.tid
 一切以目标为中心: articles/一切以目标为中心.tid
 不断试探自己的极限: articles/不断试探自己的极限.tid
 互联网思维对我的启示: articles/互联网思维对我的启示.tid
@@ -318,32 +317,30 @@ $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
 $:/TableOfContents: configurations/$__TableOfContents.tid
 $:/Overview: configurations/universal/$__Overview.tid
-$:/config/AnimationDuration: configurations/universal/$__config_AnimationDuration.tid
-$:/config/Navigation/UpdateHistory: configurations/universal/$__config_Navigation_UpdateHistory.tid
-$:/core/ui/PageControls/control-panel: configurations/universal/$__core_ui_PageControls_control-panel.tid
-$:/core/ui/PageControls/new-tiddler: configurations/universal/$__core_ui_PageControls_new-tiddler.tid
-$:/core/ui/PageControls/save-wiki: configurations/universal/$__core_ui_PageControls_save-wiki.tid
 $:/core/ui/SideBarLists: configurations/universal/$__core_ui_SideBarLists.tid
-$:/core/ui/SideBar/More: configurations/universal/$__core_ui_SideBar_More.tid
-$:/core/ui/SideBar/Open: configurations/universal/$__core_ui_SideBar_Open.tid
-$:/core/ui/SideBar/Tools: configurations/universal/$__core_ui_SideBar_Tools.tid
 $:/core/ui/ViewToolbar/close-others: configurations/universal/$__core_ui_ViewToolbar_close-others.tid
-$:/tags/ViewToolbar: configurations/universal/$__tags_ViewToolbar.tid
 $:/core/images/cancel-button: configurations/universal/buttons/$__core_images_cancel-button.tid
 $:/core/images/close-button: configurations/universal/buttons/$__core_images_close-button.tid
 $:/core/images/close-others-button: configurations/universal/buttons/$__core_images_close-others-button.tid
 $:/core/images/done-button: configurations/universal/buttons/$__core_images_done-button.tid
 $:/core/images/edit-button: configurations/universal/buttons/$__core_images_edit-button.tid
 $:/core/images/info-button: configurations/universal/buttons/$__core_images_info-button.tid
+$:/config/AnimationDuration: configurations/universal/config/$__config_AnimationDuration.tid
+$:/config/Navigation/UpdateHistory: configurations/universal/config/$__config_Navigation_UpdateHistory.tid
 $:/macro/annotate: configurations/universal/macros/$__macro_annotate.tid
 $:/macro/hide: configurations/universal/macros/$__macro_hide.tid
 $:/macro/listof: configurations/universal/macros/$__macro_listof.tid
 $:/macro/navi: configurations/universal/macros/$__macro_navi.tid
 $:/macro/show: configurations/universal/macros/$__macro_show.tid
+$:/core/ui/PageControls/control-panel: configurations/universal/page-control/$__core_ui_PageControls_control-panel.tid
+$:/core/ui/PageControls/new-tiddler: configurations/universal/page-control/$__core_ui_PageControls_new-tiddler.tid
+$:/core/ui/PageControls/save-wiki: configurations/universal/page-control/$__core_ui_PageControls_save-wiki.tid
+$:/core/ui/SideBar/More: configurations/universal/sidebar/$__core_ui_SideBar_More.tid
+$:/core/ui/SideBar/Open: configurations/universal/sidebar/$__core_ui_SideBar_Open.tid
+$:/core/ui/SideBar/Tools: configurations/universal/sidebar/$__core_ui_SideBar_Tools.tid
 $:/theme: configurations/universal/theme/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/theme/$__themes_tiddlywiki_vanilla_metrics.tid
 $:/themes/tiddlywiki/vanilla/settings: configurations/universal/theme/$__themes_tiddlywiki_vanilla_settings.tid
-《拖拉一点也无妨》: 《拖拉一点也无妨》.tid
 </pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core plugin" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.0.13-beta">
@@ -4243,13 +4240,13 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 &lt;/div&gt;
 </pre>
 </div>
-<div created="20140630131636250" modified="20140707201132308" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
+<div created="20140630131636250" list-after="$:/core/ui/ViewToolbar/edit" modified="20140801134250028" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
 <div created="20140621160857357" modified="20140708180512740" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[modified]limit[7]]</pre>
 </div>
-<div current-tiddler="《拖拉一点也无妨》" modified="20140731231226307" title="$:/HistoryList" type="application/json">
+<div current-tiddler="《拖拉一点也无妨》" modified="20140801140208265" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;《拖拉一点也无妨》&quot;
@@ -4421,9 +4418,6 @@ $title$
 
 &lt;/div&gt;
 </pre>
-</div>
-<div created="20140630131957902" list="$:/core/ui/ViewToolbar/info $:/core/ui/ViewToolbar/edit $:/core/ui/ViewToolbar/close-others $:/core/ui/ViewToolbar/close" modified="20140630132003486" title="$:/tags/ViewToolbar" type="text/vnd.tiddlywiki">
-<pre></pre>
 </div>
 <div created="20140712230336409" modified="20140712230334883" title="$:/theme" type="text/vnd.tiddlywiki">
 <pre>$:/themes/zacwiki</pre>
